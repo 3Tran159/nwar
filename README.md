@@ -89,13 +89,13 @@ Wybór siatki M13 (z M10–M13): różnice względem najgęstszej M12: CL +1,15 
 
 ## Gdzie są ciężkie dane
 
-Nic z poniższego nie jest w repo; pełna lista w `ARCHIWUM_DANYCH_inwentarz.csv` (1278 plików, ~412 GB; stan na 26.11.2026 — po sprzątaniu dysków uruchom ponownie `skrypty/zbuduj_repo.py`, odświeży inwentarz).
+Nic z poniższego nie jest w repo; pełna lista w `ARCHIWUM_DANYCH_inwentarz.csv` (786 plików, ~261 GB; stan na 26.11.2026 po sprzątaniu — po sprzątaniu dysków uruchom ponownie `skrypty/zbuduj_repo.py`, odświeży inwentarz).
 
 | Miejsce | Zawartość |
 |---|---|
-| `H:\10_ARCHIWUM_PROJEKTOW\NTNU_RESEARCH_ARCHIVE\NWAR_SIM_FINALS` | Końcowe `.sim` każdego przypadku (`C01_final.sim`, `W01_final.sim` … `W08bi_final_t25.6800.sim`) + `.simh` — **od tego zaczynać** |
+| `H:\10_ARCHIWUM_PROJEKTOW\NTNU_RESEARCH_ARCHIVE\NWAR_SIM_FINALS` | Końcowe `.sim` każdego przypadku (`C01_final.sim`, `W01_final.sim` … `W08bi_final_t25.6800.sim`) + `.simh` — **od tego zaczynać**. W `z_dysku_F\` ostatnie stany przebiegów przygotowawczych przeniesione z F: 26.11 (M11, M13, PRE_W04, W08, C01) |
 | `H:\…\NWAR_PORTABLE_ARCHIVE` | Archiwa paczek GLHF (14 GB) |
-| `F:\20_DANE_OBLICZEN\NTNU_NWAR\ntnu_mesh_optimization_20261030` | Przebiegi siatek M10–M13 i kampania fal na laptopie (176 GB w `nwar_automation_20261102`) |
+| `F:\20_DANE_OBLICZEN\NTNU_NWAR\ntnu_mesh_optimization_20261030` | Kampania fal na laptopie: W04b, W04k oraz stany W03–W06 (ich finały są na H:). Checkpointy usunięte 26.11 |
 | `F:\…\ntnu_siatki_i_fale_2026-10` | Pierwsze próby fal quasi-2D, stabilizacja siatki (29.10) |
 | `F:\…\NWAR_portable_20261103` | Paczki GLHF (zip), wyniki odebrane z GLHF, środowisko uruchomieniowe |
 

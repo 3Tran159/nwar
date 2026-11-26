@@ -89,7 +89,7 @@ Wybór siatki M13 (z M10–M13): różnice względem najgęstszej M12: CL +1,15 
 
 ## Gdzie są ciężkie dane
 
-Nic z poniższego nie jest w repo; pełna lista w `ARCHIWUM_DANYCH_inwentarz.csv` (1305 plików, ~436 GB).
+Nic z poniższego nie jest w repo; pełna lista w `ARCHIWUM_DANYCH_inwentarz.csv` (1278 plików, ~412 GB; stan na 26.11.2026 — po sprzątaniu dysków uruchom ponownie `skrypty/zbuduj_repo.py`, odświeży inwentarz).
 
 | Miejsce | Zawartość |
 |---|---|

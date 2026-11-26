@@ -26,7 +26,10 @@ def ok(f, base, exts=LIGHT, maxb=MAXB):
 
 def cp(src, dst):
     dst.parent.mkdir(parents=True, exist_ok=True)
-    shutil.copy2(src, dst)
+    try:
+        shutil.copy2(src, dst)
+    except PermissionError:
+        print('ZAJETY (pominiety):', src); return
     copied.append([str(dst.relative_to(DST)), str(src), src.stat().st_size])
 
 def take(src, dst, recursive=True, exts=LIGHT, maxb=MAXB, java_to_makra=True):

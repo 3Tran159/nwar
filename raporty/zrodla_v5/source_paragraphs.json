@@ -1,0 +1,492 @@
+[
+  {
+    "id": 0,
+    "style": "Title",
+    "text": "Negative wave added resistance of a fixed hydrofoil"
+  },
+  {
+    "id": 1,
+    "style": "Normal",
+    "text": "Julian Serkieza   •   10 November 2026"
+  },
+  {
+    "id": 2,
+    "style": "Normal",
+    "text": "The 14 accepted regular wave cases reduce mean horizontal force by 0.768–10.1 N relative to the calm reference. The wavelength trend is broadly consistent with classical unsteady wave thrust from oscillatory inflow. A model using delayed local inflow reproduces the W04e force waveform with a cycle-held-out R² of 0.967. HRIC upper Courant 1.00 is below the historical interface maxima 1.90–2.00; the W04e saved-step interface maximum lies in the incoming wave at x = −11.9 m. Upwind blending risks numerical wave attenuation; attenuated cases have Hloc/H ≈0.96–0.99. Quasi-steady compliance removes 11/24/41% of the W04e benefit under unloading; stiffening gains ≤0.1 N, below model error. No compliance benefit is resolved by that model. Numerical bias and the separation of incident waves from foil-induced flow remain unresolved."
+  },
+  {
+    "id": 3,
+    "style": "Heading 2",
+    "text": "Measured force changes"
+  },
+  {
+    "id": 4,
+    "style": "Normal",
+    "text": "Table 1 reports cycles 2–5 after discarding the first full measured cycle. Fx and Fz are forces along fixed domain axes; Fz is buoyancy corrected. C01 has Fx = 27.0 N, Fz = 1.22 × 10³ N and Fz/Fx = 45.1. These quantities are not lift and drag resolved along the instantaneous inflow."
+  },
+  {
+    "id": 5,
+    "style": "Normal",
+    "text": "Table 1. Four-cycle means and cycle scatter. Negative ΔFx denotes reduced resistance. Hloc is the local measured crest-to-trough height."
+  },
+  {
+    "id": 7,
+    "style": "Normal",
+    "text": "Five measured cycles were independently verified for W04i and W04j on 9 November 2026, using the same native SIM/CSV endpoint, C01/PRE lineage, clean saved exit, numerical-health and cycles 2–5 repeatability gates as the other accepted cases."
+  },
+  {
+    "id": 8,
+    "style": "Normal",
+    "text": "The nominal 95% Student-t half-width t* describes scatter among the means of cycles 2–5, assuming independent normal errors. Serial correlation and systematic numerical error are excluded; these intervals do not establish total uncertainty. Hloc is measured at x = −0.5 m except W01 at −6 m, and includes the foil response. See Appendices A–B for definitions and the small distinction between equal-cycle and duration-weighted averages."
+  },
+  {
+    "id": 9,
+    "style": "Normal",
+    "text": "The largest reduction, W04, is −0.827% of calm Fz. The calm M12–M13 force difference is 1.14 N, with different time steps and settling as well as meshes. W02 is smaller than that difference; W01 and W03 are of the same order. Their small scatter does not resolve this bias."
+  },
+  {
+    "id": 10,
+    "style": "Heading 1",
+    "text": "Classical theory and the local inflow test"
+  },
+  {
+    "id": 11,
+    "style": "Normal",
+    "text": "The nominal orbital angle in the H = 1.5 m series spans only 2.09–2.27°, while encounter reduced frequency varies substantially. Its declining CFD/QS ratio is consistent with unsteady attenuation. Wavelength also changes steepness and wave propagation, so this is not an isolated frequency experiment. [1–4]"
+  },
+  {
+    "id": 13,
+    "style": "Normal",
+    "text": "Figure 1. Left: measured force change divided by −qSπθa², with frozen-gust Sears and travelling-wave predictions. Right: all 14 cases and the origin fit ΔFx = sθa² (R² = 0.850). Error bars in both panels are the nominal cycle-scatter intervals from Table 1. The physical models have no fitted force parameters."
+  },
+  {
+    "id": 14,
+    "style": "Normal",
+    "text": "Across all cases, RMSE is 6.30 N for the quasi-steady estimate, 0.818 N with Sears attenuation and 0.935 N for the travelling-wave model. Sears uses frozen convected-gust kinematics; the travelling-wave model distinguishes encounter frequency from spatial wavelength. The closer Sears fit therefore does not establish the correct wave kinematics or isolate the mechanism. [2–4]"
+  },
+  {
+    "id": 16,
+    "style": "Normal",
+    "text": "Figure 2. W04e cycle-held-out predictions, averaged by wave phase at x = 0. Each prediction uses a model fitted to the other three cycles. All curves show the same fixed-axis ΔFx convention."
+  },
+  {
+    "id": 17,
+    "style": "Normal",
+    "text": "An independently prescribed advection delay of 0.0500 s improves R² from 0.677 to 0.967; the wave-phase delay of 0.0390 s gives 0.917. The model includes local angle, speed and force projection, calibrated on repeated CFD cycles rather than an independent polar. Matched angle and speed have 0/120 opposite-branch phase matches, so the existing data cannot discriminate a memory effect from local-inflow effects."
+  },
+  {
+    "id": 18,
+    "style": "Heading 1",
+    "text": "Engineering implications and verification"
+  },
+  {
+    "id": 19,
+    "style": "Heading 2",
+    "text": "Equal load and finite span change the interpretation"
+  },
+  {
+    "id": 20,
+    "style": "Normal",
+    "text": "The wave cases increase mean Fz by 9.88–19.2 N. The W04e regression gives a projected force sensitivity dFx/dFz = 0.0511 N/N. Table 6 brackets the observed force change and ΔFx − (dFx/dFz)ΔFz as sensitivity endpoints. This is a wave-regression derivative, not a steady polar. For W01–W03 and W04j the correction is at least 30% of the signal (W02: 70%; also W04h: 35%). A laminar NACA 66 drag bucket can have dCd/dCl close to zero; that behavior cannot be assumed for this SST simulation without a matched polar. [14]"
+  },
+  {
+    "id": 21,
+    "style": "Normal",
+    "text": "For W04, the same 2D force reduction would be 16.5, 20.3 and 22.9% of a drag baseline augmented by mean induced drag at aspect ratios 4, 6 and 8 with assumed span efficiency 0.9. These are illustrations holding the 2D force change fixed. Finite-span lift response, force variance and vessel motions are not included."
+  },
+  {
+    "id": 22,
+    "style": "Heading 2",
+    "text": "Amplitude only compliance has no resolved resistance benefit"
+  },
+  {
+    "id": 23,
+    "style": "Normal",
+    "text": "Unloading removes 11.1, 23.9 and 41.0% of the W04e benefit at κ = 0.3, 0.5 and 0.7 after restoring mean Fz. Stiffening gains at most 0.0981 N near κ = 0.190, with 17.8% greater Fz amplitude and extrapolated effective angles. This is below the model RMSE. The amplitude-only result is negative; a phase-dependent response remains open. [9–13]"
+  },
+  {
+    "id": 24,
+    "style": "Normal",
+    "text": "The fitted change ΔFx(κ) = −1.03κ + 2.72κ² N places the optimum close to the rigid foil. The forward projection −Fn sin β strengthens linearly with angle amplification, while the parallel b2α² term grows quadratically. Restoring mean Fz leaves only a small optimum; the equivalent-angle model omits curvature change, elastic work and damping."
+  },
+  {
+    "id": 25,
+    "style": "Normal",
+    "text": "Table 2. What the present evidence supports and what remains to be tested."
+  },
+  {
+    "id": 27,
+    "style": "Heading 2",
+    "text": "Minimum verification before a design claim"
+  },
+  {
+    "id": 28,
+    "style": "Normal",
+    "text": "W05 at Δt/2 and Δt/4 costs an estimated 17.6 and 35.3 GPU wall-hours at the same 1.36 s/step proxy. Targets are CFLi ≈0.99, near HRIC upper = 1.00, and ≈0.5, reaching Courant-unblended HRIC. The archived W05 maximum 1.94 scales to 0.969/0.485; verify actual maxima. Together with the Δt baseline, the pair permits an observed temporal order if convergence is monotonic and asymptotic; the changing HRIC blend may confound it. Then use the M12-equivalent expanded mesh (32.9 h), followed by the empty channel (8.81 h). These are planning proxies. No solver was launched for v4."
+  },
+  {
+    "id": 29,
+    "style": "Normal",
+    "text": "The 14-case comparison supports classical unsteady inflow as a plausible quantitative basis for NWAR and the flattened Fx waveform. Pressure and viscous forces at matched phases, incident-only velocities, and equal-load polars are the next discriminating evidence. Appendix G lists the unavailable quantities explicitly."
+  },
+  {
+    "id": 30,
+    "style": "Heading 1",
+    "text": "Appendix A   Configuration and measurement definitions"
+  },
+  {
+    "id": 31,
+    "style": "Normal",
+    "text": "Table 3. Reproducible parameters from the archived setup, mesh design and force convention."
+  },
+  {
+    "id": 33,
+    "style": "Normal",
+    "text": "HRIC upper = 1.00 is below every historical interface maximum in Table 4, so affected high-Courant interface cells use an upwind contribution that can damp the wave. The attenuated cases have Hloc/H near 0.96–0.99; squaring the measured ratios gives up to 8.14% less predicted |ΔFx|. The temporal maxima do not measure how much of the interface uses upwind, and foil-induced propagation also affects Hloc."
+  },
+  {
+    "id": 34,
+    "style": "Normal",
+    "text": "The saved area means y+ = 0.937 and 0.950 agree within 7% with ITTC = 1.00 using the full 1.53 μm layer. The cell-centre estimate is 0.500. Local extrema exceed a 50% deviation: ITTC assumes flat-plate mean shear and uniform spacing, while foil pressure gradients and nonuniform wall-cell spacing invalidate that pointwise approximation. Only 0.117% of foil area exceeds y+ = 1. The maximum 255 belongs to HF_012_wall; its collocated coordinate was not recorded, so no x/c, surface side or edge location can be assigned from this audit."
+  },
+  {
+    "id": 35,
+    "style": "Normal",
+    "text": "Consistency across cycles 2–5 demonstrates repeatability within one run, including retained continuation segments, without establishing independent-run reproducibility. Each accepted regular case has five complete measured cycles; the first is excluded from all means and repeatability assessments. Surface-elevation crossings define the measured cycles. Published Qx uses the original C01 only."
+  },
+  {
+    "id": 36,
+    "style": "Normal",
+    "text": "The 22.7 N buoyancy correction defines the fixed-axis Fz convention. Fx is positive along +x. Fz is the stored vertical force minus the constant buoyancy correction of 22.7 N. Reference differences are ΔFx = Fxwave − FxC01 and ΔFz = Fzwave − FzC01. Qx = ΔFx/qS is a fixed-axis resistance coefficient difference; it is not an instantaneous-flow drag coefficient."
+  },
+  {
+    "id": 37,
+    "style": "Heading 1",
+    "text": "Appendix B   Extended case matrix and theoretical models"
+  },
+  {
+    "id": 38,
+    "style": "Normal",
+    "text": "Table 4. CFLi and CFLmax are time maxima of spatial maxima, not means. CFLi covers cells with 0.01 ≤ αwater ≤ 0.99; CFLmax covers the entire fluid region. Saved-step locations are audited separately; a historical maximum is not automatically a foil-wall value."
+  },
+  {
+    "id": 40,
+    "style": "Normal",
+    "text": "The W04e saved-step global maximum is 17.4 at (x,z) = (0.353, −0.0676) m, 0.0273 m from a wall in the foil near-wall region; it is not an interface maximum or necessarily in the first prism layer. The saved-step interface maximum is 1.89 at (−11.9, 1.91) m in the upstream free-surface zone. Historical peak locations were not retained."
+  },
+  {
+    "id": 41,
+    "style": "Normal",
+    "text": "The 2 m submergence enters θa = (H/2)ω₀ exp(−kwh)/U, with kw = 2π/λ. Local-height force sensitivities multiply the prediction by (Hloc/H)²; the CSV retains them. Local height includes foil-induced flow."
+  },
+  {
+    "id": 42,
+    "style": "Normal",
+    "text": "Table 5. All 14 cases, with nominal H and with Hloc. Local-height force predictions scale by (Hloc/H)²; the origin-fit slope is refitted for its changed predictor."
+  },
+  {
+    "id": 44,
+    "style": "Normal",
+    "text": "The local-height Sears RMSE falls from 0.818 to 0.701 N. The conclusion is unchanged: classical unsteady models explain much of the trend, while height calibration does not isolate numerical diffusion from foil-induced wave response."
+  },
+  {
+    "id": 45,
+    "style": "Normal",
+    "text": "The 14-case descriptive origin-fit slope is −5.66 × 10³ N/rad². Before adding W04i/W04j, the 12-case R² was 0.839."
+  },
+  {
+    "id": 46,
+    "style": "Heading 2",
+    "text": "Frozen gust and travelling waves"
+  },
+  {
+    "id": 47,
+    "style": "Normal",
+    "text": "Two ideal-response functions use H⁽²⁾ and J, denoting Hankel and Bessel functions. Frozen-gust attenuation multiplies the QS force by |S(σ)|². [1–2]"
+  },
+  {
+    "id": 49,
+    "style": "Normal",
+    "text": "The travelling-wave response separates encounter frequency σ from spatial scale κw = kwc/2, with F = Re C and G = Im C. The zero-motion limit of [3], Eq. 2.16 and Appendix A16, A25–A26, gives"
+  },
+  {
+    "id": 52,
+    "style": "Normal",
+    "text": "Setting κw = σ recovers |S|², the frozen-gust limit. These inviscid thin-foil models omit camber, viscosity and free-surface feedback. Wave resistance and thrust coexist in free-surface theory [5]; those effects remain possible CFD residuals."
+  },
+  {
+    "id": 53,
+    "style": "Heading 1",
+    "text": "Appendix C   Equal load and finite span sensitivities"
+  },
+  {
+    "id": 54,
+    "style": "Normal",
+    "text": "Table 6. Illustrations only. The bracket lists endpoints [observed, wave-regression scenario], in that order; it is not a confidence interval. AR columns hold the observed 2D ΔFx fixed and add a calm mean induced-drag baseline with e = 0.9."
+  },
+  {
+    "id": 56,
+    "style": "Normal",
+    "text": "At AR = 4, 6 and 8, the illustrative calm induced-drag additions Di = qS Cz₀²/(πeAR) are 34.0, 22.6 and 17.0 N. The CSV also evaluates the change in mean induced drag associated with each measured mean Fz. It omits the mean-square contribution of force oscillations; it is not a prediction for a 3D foil or vessel."
+  },
+  {
+    "id": 57,
+    "style": "Normal",
+    "text": "The projected derivative 0.0511 N/N is the ratio of mean model derivatives dFx/dα and dFz/dα at fixed recorded inflow. The parallel-only value is 0.0758. The bracket spans no trim correction and the correction transferred from this local model, rather than treating either as a verified equal-load answer. This wave-regression derivative is not the derivative of a steady trim polar."
+  },
+  {
+    "id": 58,
+    "style": "Normal",
+    "text": "Table 7. Equivalent-angle compliance at restored model mean Fz. Positive ΔFx means a loss of the rigid model benefit. κ controls the imposed angle response, not material stiffness."
+  },
+  {
+    "id": 60,
+    "style": "Normal",
+    "text": "*The 99th and 1st percentiles define amplitude as half their difference. Linear unloading uses αeff = ᾱ + (1 − κ)(α − ᾱ) + trim; the high-angle law applies unloading only above ᾱ; stiffening uses (1 + κ). Trim restores the rigid model mean Fz to numerical root tolerance. Recorded speed and inflow direction remain fixed. These laws do not simulate camber change, flap mechanics, structural work or fluid–structure coupling."
+  },
+  {
+    "id": 61,
+    "style": "Heading 1",
+    "text": "Appendix D   Phase shape and the bichromatic diagnostic"
+  },
+  {
+    "id": 62,
+    "style": "Normal",
+    "text": "Table 8. Horizontal-force harmonics at x = 0 and reconciliation of averaging windows. A1–A3 are Fourier amplitudes in N; δwindow is the foil-phase mean minus the published Q-window mean."
+  },
+  {
+    "id": 64,
+    "style": "Normal",
+    "text": "The second harmonic A2 quantifies departures from a sinusoid without choosing phase sectors after viewing the waveform. Phase and sign also affect where flattening occurs; A2/A1 alone is not a causal mechanism. The phase histories are interpolated on a common x = 0 grid; reconstructed older histories use propagation from the available upstream gauge. Vertical-force harmonics and both exact window endpoints are supplied in the CSV files."
+  },
+  {
+    "id": 65,
+    "style": "Normal",
+    "text": "The 14-case maximum Q-to-mechanism window difference is 0.00961 N. The two window conventions therefore agree closely in mean force for the archived accepted cases, while their endpoints remain different. The analysis keeps both rather than silently treating them as identical."
+  },
+  {
+    "id": 66,
+    "style": "Heading 2",
+    "text": "W08bi remains a separate diagnostic"
+  },
+  {
+    "id": 67,
+    "style": "Normal",
+    "text": "The two first-order components are H = 0.500 m, λ = 20.0 m and H = 1.00 m, λ = 30.0 m, both at phase 0°. The nominal beat period is 2.85 s; the archived value is 2.85 s. The saved diagnostic ends at 25.7 s and averages three beat envelopes over 17.1–25.7 s. It has no single regular-wave cycle and is excluded from the 14-case fits."
+  },
+  {
+    "id": 68,
+    "style": "Normal",
+    "text": "Over that window, ΔFx = −5.67 N and ΔFz = 15.2 N. The archived two-component surface fit gives heights 0.475 and 0.986 m. Those are local fitted amplitudes, not foil-free incident measurements. Its independent quasi-steady polar diagnostic and the W04e fitted model use different inputs and are not pooled as one validation."
+  },
+  {
+    "id": 69,
+    "style": "Heading 1",
+    "text": "Appendix E   Details of the local inflow model"
+  },
+  {
+    "id": 70,
+    "style": "Normal",
+    "text": "The x = −0.9 m W04e inflow probe is sampled at force time minus a prescribed transport delay. Its velocity components define β = atan2(Uz, Ux), α = β − chord angle and the local dynamic-pressure factor qlocalS. Force components are rotated into directions parallel and normal to that measured inflow. The model fits a quadratic parallel coefficient and a linear normal coefficient against α, then rotates back to fixed axes."
+  },
+  {
+    "id": 71,
+    "style": "Normal",
+    "text": "Table 9. Leave-one-cycle-out performance. Four folds use three cycles to predict the fourth. No delay is selected by optimizing force agreement."
+  },
+  {
+    "id": 73,
+    "style": "Normal",
+    "text": "The 0.0500 s advection delay uses distance from the probe to the measured leading edge divided by U. The wave-phase delay uses that distance times measured encounter period divided by wavelength. Physical-time interpolation uses the recorded velocity histories and retains cycle-to-cycle timing. All fits use unique phase points and exclude the duplicated 360° endpoint."
+  },
+  {
+    "id": 74,
+    "style": "Normal",
+    "text": "The compliance model fitted to cycles 2–5 uses Cparallel = b0 + b1α + b2α² and Cnormal = a0 + a1α, with α in degrees. The coefficients are recorded at full precision in results.json. This is a reduced description of the same CFD data; leaving out one repeated cycle tests consistency within W04e, not transfer to a new wave or independent geometry."
+  },
+  {
+    "id": 75,
+    "style": "Normal",
+    "text": "Only 0/120 phase points match opposite branches within ±0.0500° in α and ±0.0500 m/s in speed, with branches separated by at least 30.0°. A loop in an undelayed AoA–Fx plot can arise from transport and speed mismatch. The present evidence therefore leaves the size of an additional memory effect open."
+  },
+  {
+    "id": 77,
+    "style": "Normal",
+    "text": "Figure 3. Mean horizontal-force change from the rigid W04e reduced model after restoring its mean vertical load. Equivalent-angle laws illustrate sensitivity; they are not simulated flexible geometries."
+  },
+  {
+    "id": 78,
+    "style": "Normal",
+    "text": "Attribution of the residual requires matched pressure and viscous-force histories over cycles 2–5. Native field histories contain only the saved segments and sampling cadence; forces at an arbitrary maximum or minimum do not guarantee a field snapshot at exactly that time. No new field reconstruction solver run was made for this report."
+  },
+  {
+    "id": 79,
+    "style": "Heading 1",
+    "text": "Appendix E continued   Phase dependent amplitude response"
+  },
+  {
+    "id": 80,
+    "style": "Normal",
+    "text": "The 399 scenarios use g = 0–2 in increments of 0.1 and φ = −90° to 90° in increments of 10°. They impose αeff = ᾱ + g[α(t − φ/ωe) − ᾱ] + trim, with φ in radians and ωe = 2π/Te from the measured period. Local speed and force-projection angle remain unchanged; trim restores the rigid model mean Fz."
+  },
+  {
+    "id": 82,
+    "style": "Normal",
+    "text": "Figure 4. Change in mean Fx from the rigid reduced model. Diverging colours place zero at the midpoint; negative (−0.1 to 0 N) and positive (0 to 15 N) ranges are separately linear, expanding the small negative region. Hatching marks max αeff > 3.41° or min αeff < −0.38° and warns of extrapolation."
+  },
+  {
+    "id": 84,
+    "style": "Normal",
+    "text": "Figure 5. Vertical-force amplitude, half the 99th-minus-1st percentile range. The same extrapolation mask applies. All scenarios preserve mean Fz."
+  },
+  {
+    "id": 85,
+    "style": "Normal",
+    "text": "The reconstructed rigid α range is −0.380° to 3.45°, slightly wider than the prescribed −0.38° to 3.41° mask. Hatching therefore also flags the rigid reference boundary; it is applied literally to all 209 flagged grid points."
+  },
+  {
+    "id": 86,
+    "style": "Normal",
+    "text": "The best nonzero-phase point within the prescribed angle bounds gives a 0.219 N penalty at g = 0.900 and φ = 10.0°. Even including extrapolation, the best nonzero-phase point has a 0.0201 N penalty: no phase-shifted gain exceeds either the 2.68 N RMSE or the 0.000263 N held-out minus in-sample RMSE difference. These are error screens, not confidence bounds on a mean saving."
+  },
+  {
+    "id": 87,
+    "style": "Heading 1",
+    "text": "Appendix E continued   Interpretation of phase response"
+  },
+  {
+    "id": 88,
+    "style": "Normal",
+    "text": "The φ = 0 grid optimum is structurally favoured by the instantaneous angle law with β and speed held fixed against changes in φ; it does not rule out a physical phase benefit. In a harmonic limit, forward projection follows an even cos φ correlation. The recorded map is only approximately even: the largest ±φ discrepancy is 0.0440 N. Finite windows, measured harmonics and speed/angle correlations break exact symmetry; zero phase is not a general theorem for arbitrary inflow."
+  },
+  {
+    "id": 89,
+    "style": "Normal",
+    "text": "Linear unsteady transfer gives arg C = −15.1° to −13.2° and arg S = −12.8° to −11.0° over σ = 0.137–0.316, using exp(+iωt). These are circulatory/gust-response lags, not the phase of the total nonlinear CFD force. A phase-leading flap could test compensation of these lags; the quasi-steady map cannot settle that question. [1–2]"
+  },
+  {
+    "id": 90,
+    "style": "Normal",
+    "text": "A Mini-VOF test with a prescribed flap hinged at x/c = 0.80 is the next discriminating calculation: synchronize flap motion with the incident wave and scan its phase at matched mean Fz. No such run is part of this report."
+  },
+  {
+    "id": 91,
+    "style": "Normal",
+    "text": "At g > 1, a passive equivalent would need a load-amplifying torsional response, potentially an effective hinge aft of the centre of pressure, with divergence risk as fluid stiffness offsets structural stiffness. Hinge position, inertia and damping would set phase. At k = σ ≈0.32 this quasi-steady model omits curvature change, elastic work and damping."
+  },
+  {
+    "id": 92,
+    "style": "Heading 1",
+    "text": "Appendix F   Verified literature"
+  },
+  {
+    "id": 93,
+    "style": "Normal",
+    "text": "[1] Theodorsen, T. General theory of aerodynamic instability and the mechanism of flutter. NACA Report 496 (original report 1934; commonly cited as 1935). NASA archive; no DOI assigned. NASA NACA TR 496"
+  },
+  {
+    "id": 94,
+    "style": "Normal",
+    "text": "[2] Sears, W. R. (1941). Some aspects of non-stationary airfoil theory and its practical application. Journal of the Aeronautical Sciences 8(3), 104–108. doi:10.2514/8.10655"
+  },
+  {
+    "id": 95,
+    "style": "Normal",
+    "text": "[3] Rehman, A. and Floryan, D. (2025). Propulsion of a flexible foil in a wavy flow: resonance, antiresonance and destructive self-interference. Journal of Fluid Mechanics 1023, A11. Full text used for the fixed-foil limit. doi:10.1017/jfm.2025.10825"
+  },
+  {
+    "id": 96,
+    "style": "Normal",
+    "text": "[4] Wu, T. Y. (1972). Extraction of flow energy by a wing oscillating in waves. Journal of Ship Research 16(1), 66–78. Bibliographic metadata verified; the equation specialization here follows [3]. doi:10.5957/jsr.1972.16.1.66"
+  },
+  {
+    "id": 97,
+    "style": "Normal",
+    "text": "[5] Isshiki, H. (1982). A theory of wave devouring propulsion, 1st report: thrust generation by a linear Wells turbine. Journal of the Society of Naval Architects of Japan 151, 54–64. Open primary paper. doi:10.2534/jjasnaoe1968.1982.54"
+  },
+  {
+    "id": 98,
+    "style": "Normal",
+    "text": "[6] Bøckmann, E. and Steen, S. (2014). Experiments with actively pitch-controlled and spring-loaded oscillating foils. Applied Ocean Research 48, 227–235. Experimental context for wave-energy extraction and passive response; metadata verified. doi:10.1016/j.apor.2014.09.004"
+  },
+  {
+    "id": 99,
+    "style": "Normal",
+    "text": "[7] Godø, J. M. K. and Steen, S. (2023). An efficient method for unsteady hydrofoil simulations, based on Non-Linear Dynamic Lifting Line theory. Ocean Engineering 288, 116001. doi:10.1016/j.oceaneng.2023.116001"
+  },
+  {
+    "id": 100,
+    "style": "Normal",
+    "text": "[8] Godø and co-authors (2024). Active wave energy extraction by hydrofoil vessels through deep reinforcement learning-based flight control. Ocean Engineering 312, 119236. Vessel-control context rather than validation of the present fixed foil. doi:10.1016/j.oceaneng.2024.119236"
+  },
+  {
+    "id": 101,
+    "style": "Normal",
+    "text": "Sources [1–5] provide classical unsteady and wave-thrust context; [6–8] connect it to hydrofoils and vessel control. Bibliographic verification is distinguished from access to full text. Report equations and numerical predictions are reproducible in calculate_v3.py and calculate_v4.py; no numerical gain from another experiment is transferred to this campaign."
+  },
+  {
+    "id": 102,
+    "style": "Heading 1",
+    "text": "Appendix F continued   Compliance research"
+  },
+  {
+    "id": 103,
+    "style": "Normal",
+    "text": "[9] Cleaver, D. J., Gursul, I., Calderon, D. E. and Wang, Z. (2014). Thrust enhancement due to flexible trailing-edge of plunging foils. Journal of Fluids and Structures. Imposed plunge and flexible trailing sections differ from the fixed-foil problem. doi:10.1016/j.jfluidstructs.2014.09.006"
+  },
+  {
+    "id": 104,
+    "style": "Normal",
+    "text": "[10] Arredondo-Galeana, A., Young, A. M., Smyth, A. S. M. and Viola, I. M. (2021). Unsteady load mitigation through a passive trailing-edge flap. Journal of Fluids and Structures 106, 103352. DOI verified in the primary author repository; load alleviation differs from reduced mean resistance. doi:10.1016/j.jfluidstructs.2021.103352"
+  },
+  {
+    "id": 105,
+    "style": "Normal",
+    "text": "[11] Cavens, W. D. K., Chopra, A. and Arrieta, A. F. (2020 online; 2021 issue). Passive load alleviation on wind turbine blades from aeroelastically driven selectively compliant morphing. Wind Energy 24(1), 24–38. Threshold-dependent compliance is relevant to the proposed switching concept. doi:10.1002/we.2555"
+  },
+  {
+    "id": 106,
+    "style": "Normal",
+    "text": "[12] Sacher and co-authors (2017). Flexible hydrofoil optimization for the 35th Americas Cup with constrained EGO method. Conference paper in the primary author repository; DOI not verified. Load-matched optimization and cavitation constraints are relevant to industrial comparison. Author repository and paper record"
+  },
+  {
+    "id": 107,
+    "style": "Normal",
+    "text": "[13] Li, Park, Sotiropoulos and Shen (2026). Hydrodynamics and wave energy extraction in passive propulsion of a flexible foil under water surface waves. Publisher record. Fixed-leading-edge flexibility in waves is relevant, but its low-Reynolds-number regime differs from this campaign. doi:10.1103/bctn-vnrj"
+  },
+  {
+    "id": 108,
+    "style": "Normal",
+    "text": "[14] Abbott, I. H., von Doenhoff, A. E. and Stivers, L. S. (1945). Summary of airfoil data. NACA Report 824. The NACA 6-series low-drag range motivates the possible near-zero laminar polar slope, not a measured polar for this campaign. NASA NACA TR 824"
+  },
+  {
+    "id": 109,
+    "style": "Heading 1",
+    "text": "Appendix G   Quantities unavailable from existing extracts"
+  },
+  {
+    "id": 110,
+    "style": "Normal",
+    "text": "Saved-field audits of C01 and W04e provide phase viscosity, density, HRIC thresholds, turbulence-model names and foil y+ with 0 advanced steps. Vertical domain bounds remain outside the present extraction."
+  },
+  {
+    "id": 111,
+    "style": "Normal",
+    "text": "Acceptance of cycles 2–5 leaves causal attribution conditional on independent incident-only inflow at the foil, a same-geometry equal-load steady polar, a controlled wave mesh/time-step refinement pair, and a quantified reflection coefficient. The calm mesh difference confounds several changes. Existing XFOIL active-flap calibration data cannot be silently substituted for the present rigid foil."
+  },
+  {
+    "id": 112,
+    "style": "Normal",
+    "text": "The 14 accepted cases do not quantify phase-resolved pressure/viscous attribution, independent-run uncertainty, finite-span NWAR, structural work and damping, or CPU-only verification cost. Native field histories are absent for the imported W04i/W04j exports. Their force histories, probes and final SIMs remain available."
+  },
+  {
+    "id": 113,
+    "style": "Heading 1",
+    "text": "Appendix H   Data lineage"
+  },
+  {
+    "id": 114,
+    "style": "Normal",
+    "text": "Fourteen accepted cases retain the original C01 reference and immutable evidence snapshots; README.txt contains the detailed lineage and reproduction instructions. Source paths, hashes and numerical checks are recorded in data/lineage.json and checks.json in the data package."
+  }
+]

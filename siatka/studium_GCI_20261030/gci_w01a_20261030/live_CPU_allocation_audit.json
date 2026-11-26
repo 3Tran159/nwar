@@ -1,0 +1,461 @@
+{
+    "at":  "2026-10-30T13:31:54.4766475+01:00",
+    "job":  "calm_pilot_G10_F_r1",
+    "configured_workers":  22,
+    "native_solver_processes":  22,
+    "owned_average_busy_cores":  23.12,
+    "all_owned_exclude_C01_cores":  true,
+    "all_owned_full_22_mask":  true,
+    "processes":  [
+                      {
+                          "pid":  7440,
+                          "name":  "cmd",
+                          "affinity":  16777212,
+                          "cores":  0
+                      },
+                      {
+                          "pid":  17236,
+                          "name":  "cmd",
+                          "affinity":  16777212,
+                          "cores":  0
+                      },
+                      {
+                          "pid":  2084,
+                          "name":  "conhost",
+                          "affinity":  16777212,
+                          "cores":  0
+                      },
+                      {
+                          "pid":  4764,
+                          "name":  "conhost",
+                          "affinity":  16777212,
+                          "cores":  0
+                      },
+                      {
+                          "pid":  6960,
+                          "name":  "conhost",
+                          "affinity":  16777212,
+                          "cores":  0
+                      },
+                      {
+                          "pid":  7748,
+                          "name":  "conhost",
+                          "affinity":  16777212,
+                          "cores":  0
+                      },
+                      {
+                          "pid":  8228,
+                          "name":  "conhost",
+                          "affinity":  16777212,
+                          "cores":  0
+                      },
+                      {
+                          "pid":  8972,
+                          "name":  "conhost",
+                          "affinity":  16777212,
+                          "cores":  0
+                      },
+                      {
+                          "pid":  9712,
+                          "name":  "conhost",
+                          "affinity":  16777212,
+                          "cores":  0
+                      },
+                      {
+                          "pid":  16040,
+                          "name":  "conhost",
+                          "affinity":  16777212,
+                          "cores":  0
+                      },
+                      {
+                          "pid":  18640,
+                          "name":  "conhost",
+                          "affinity":  16777212,
+                          "cores":  0
+                      },
+                      {
+                          "pid":  19536,
+                          "name":  "conhost",
+                          "affinity":  16777212,
+                          "cores":  0
+                      },
+                      {
+                          "pid":  21224,
+                          "name":  "conhost",
+                          "affinity":  16777212,
+                          "cores":  0
+                      },
+                      {
+                          "pid":  22640,
+                          "name":  "conhost",
+                          "affinity":  16777212,
+                          "cores":  0
+                      },
+                      {
+                          "pid":  23620,
+                          "name":  "conhost",
+                          "affinity":  16777212,
+                          "cores":  0
+                      },
+                      {
+                          "pid":  27720,
+                          "name":  "conhost",
+                          "affinity":  16777212,
+                          "cores":  0
+                      },
+                      {
+                          "pid":  33268,
+                          "name":  "conhost",
+                          "affinity":  16777212,
+                          "cores":  0
+                      },
+                      {
+                          "pid":  35324,
+                          "name":  "conhost",
+                          "affinity":  16777212,
+                          "cores":  0
+                      },
+                      {
+                          "pid":  36204,
+                          "name":  "conhost",
+                          "affinity":  16777212,
+                          "cores":  0
+                      },
+                      {
+                          "pid":  37068,
+                          "name":  "conhost",
+                          "affinity":  16777212,
+                          "cores":  0
+                      },
+                      {
+                          "pid":  37272,
+                          "name":  "conhost",
+                          "affinity":  16777212,
+                          "cores":  0
+                      },
+                      {
+                          "pid":  37852,
+                          "name":  "conhost",
+                          "affinity":  16777212,
+                          "cores":  0
+                      },
+                      {
+                          "pid":  38372,
+                          "name":  "conhost",
+                          "affinity":  16777212,
+                          "cores":  0
+                      },
+                      {
+                          "pid":  38468,
+                          "name":  "conhost",
+                          "affinity":  16777212,
+                          "cores":  0
+                      },
+                      {
+                          "pid":  38828,
+                          "name":  "conhost",
+                          "affinity":  16777212,
+                          "cores":  0
+                      },
+                      {
+                          "pid":  39868,
+                          "name":  "conhost",
+                          "affinity":  16777212,
+                          "cores":  0
+                      },
+                      {
+                          "pid":  28044,
+                          "name":  "mpiexec",
+                          "affinity":  16777212,
+                          "cores":  0
+                      },
+                      {
+                          "pid":  5188,
+                          "name":  "python",
+                          "affinity":  16777212,
+                          "cores":  0
+                      },
+                      {
+                          "pid":  34072,
+                          "name":  "smpd",
+                          "affinity":  16777212,
+                          "cores":  0
+                      },
+                      {
+                          "pid":  4872,
+                          "name":  "starccm+",
+                          "affinity":  16777212,
+                          "cores":  0
+                      },
+                      {
+                          "pid":  7064,
+                          "name":  "starccm+",
+                          "affinity":  16777212,
+                          "cores":  0
+                      },
+                      {
+                          "pid":  7972,
+                          "name":  "starccm+",
+                          "affinity":  16777212,
+                          "cores":  0
+                      },
+                      {
+                          "pid":  12068,
+                          "name":  "starccm+",
+                          "affinity":  16777212,
+                          "cores":  0
+                      },
+                      {
+                          "pid":  19528,
+                          "name":  "starccm+",
+                          "affinity":  16777212,
+                          "cores":  0
+                      },
+                      {
+                          "pid":  21120,
+                          "name":  "starccm+",
+                          "affinity":  16777212,
+                          "cores":  0
+                      },
+                      {
+                          "pid":  24832,
+                          "name":  "starccm+",
+                          "affinity":  16777212,
+                          "cores":  0
+                      },
+                      {
+                          "pid":  25308,
+                          "name":  "starccm+",
+                          "affinity":  16777212,
+                          "cores":  0
+                      },
+                      {
+                          "pid":  27528,
+                          "name":  "starccm+",
+                          "affinity":  16777212,
+                          "cores":  0
+                      },
+                      {
+                          "pid":  28040,
+                          "name":  "starccm+",
+                          "affinity":  16777212,
+                          "cores":  0
+                      },
+                      {
+                          "pid":  29852,
+                          "name":  "starccm+",
+                          "affinity":  16777212,
+                          "cores":  0
+                      },
+                      {
+                          "pid":  33264,
+                          "name":  "starccm+",
+                          "affinity":  16777212,
+                          "cores":  0
+                      },
+                      {
+                          "pid":  33736,
+                          "name":  "starccm+",
+                          "affinity":  16777212,
+                          "cores":  0
+                      },
+                      {
+                          "pid":  34252,
+                          "name":  "starccm+",
+                          "affinity":  16777212,
+                          "cores":  0
+                      },
+                      {
+                          "pid":  36016,
+                          "name":  "starccm+",
+                          "affinity":  16777212,
+                          "cores":  0
+                      },
+                      {
+                          "pid":  37100,
+                          "name":  "starccm+",
+                          "affinity":  16777212,
+                          "cores":  0
+                      },
+                      {
+                          "pid":  37220,
+                          "name":  "starccm+",
+                          "affinity":  16777212,
+                          "cores":  0
+                      },
+                      {
+                          "pid":  37252,
+                          "name":  "starccm+",
+                          "affinity":  16777212,
+                          "cores":  0
+                      },
+                      {
+                          "pid":  37616,
+                          "name":  "starccm+",
+                          "affinity":  16777212,
+                          "cores":  0
+                      },
+                      {
+                          "pid":  37868,
+                          "name":  "starccm+",
+                          "affinity":  16777212,
+                          "cores":  0.039
+                      },
+                      {
+                          "pid":  38196,
+                          "name":  "starccm+",
+                          "affinity":  16777212,
+                          "cores":  0
+                      },
+                      {
+                          "pid":  39476,
+                          "name":  "starccm+",
+                          "affinity":  16777212,
+                          "cores":  0
+                      },
+                      {
+                          "pid":  39560,
+                          "name":  "starccm+",
+                          "affinity":  16777212,
+                          "cores":  0
+                      },
+                      {
+                          "pid":  39616,
+                          "name":  "starccm+",
+                          "affinity":  16777212,
+                          "cores":  0
+                      },
+                      {
+                          "pid":  1448,
+                          "name":  "star-ccm+",
+                          "affinity":  16777212,
+                          "cores":  1.084
+                      },
+                      {
+                          "pid":  6156,
+                          "name":  "star-ccm+",
+                          "affinity":  16777212,
+                          "cores":  1.101
+                      },
+                      {
+                          "pid":  13128,
+                          "name":  "star-ccm+",
+                          "affinity":  16777212,
+                          "cores":  1.064
+                      },
+                      {
+                          "pid":  13788,
+                          "name":  "star-ccm+",
+                          "affinity":  16777212,
+                          "cores":  0.967
+                      },
+                      {
+                          "pid":  15136,
+                          "name":  "star-ccm+",
+                          "affinity":  16777212,
+                          "cores":  1.098
+                      },
+                      {
+                          "pid":  15196,
+                          "name":  "star-ccm+",
+                          "affinity":  16777212,
+                          "cores":  0.891
+                      },
+                      {
+                          "pid":  15928,
+                          "name":  "star-ccm+",
+                          "affinity":  16777212,
+                          "cores":  1.051
+                      },
+                      {
+                          "pid":  17800,
+                          "name":  "star-ccm+",
+                          "affinity":  16777212,
+                          "cores":  1.051
+                      },
+                      {
+                          "pid":  28676,
+                          "name":  "star-ccm+",
+                          "affinity":  16777212,
+                          "cores":  1.021
+                      },
+                      {
+                          "pid":  32156,
+                          "name":  "star-ccm+",
+                          "affinity":  16777212,
+                          "cores":  1
+                      },
+                      {
+                          "pid":  35108,
+                          "name":  "star-ccm+",
+                          "affinity":  16777212,
+                          "cores":  1.068
+                      },
+                      {
+                          "pid":  37316,
+                          "name":  "star-ccm+",
+                          "affinity":  16777212,
+                          "cores":  1.094
+                      },
+                      {
+                          "pid":  39792,
+                          "name":  "star-ccm+",
+                          "affinity":  16777212,
+                          "cores":  1.103
+                      },
+                      {
+                          "pid":  40236,
+                          "name":  "star-ccm+",
+                          "affinity":  16777212,
+                          "cores":  1.027
+                      },
+                      {
+                          "pid":  40380,
+                          "name":  "star-ccm+",
+                          "affinity":  16777212,
+                          "cores":  1.016
+                      },
+                      {
+                          "pid":  40384,
+                          "name":  "star-ccm+",
+                          "affinity":  16777212,
+                          "cores":  1.074
+                      },
+                      {
+                          "pid":  40480,
+                          "name":  "star-ccm+",
+                          "affinity":  16777212,
+                          "cores":  1.092
+                      },
+                      {
+                          "pid":  40520,
+                          "name":  "star-ccm+",
+                          "affinity":  16777212,
+                          "cores":  0.938
+                      },
+                      {
+                          "pid":  40588,
+                          "name":  "star-ccm+",
+                          "affinity":  16777212,
+                          "cores":  1.055
+                      },
+                      {
+                          "pid":  40624,
+                          "name":  "star-ccm+",
+                          "affinity":  16777212,
+                          "cores":  1.076
+                      },
+                      {
+                          "pid":  40856,
+                          "name":  "star-ccm+",
+                          "affinity":  16777212,
+                          "cores":  1.127
+                      },
+                      {
+                          "pid":  40864,
+                          "name":  "star-ccm+",
+                          "affinity":  16777212,
+                          "cores":  1.08
+                      }
+                  ]
+}

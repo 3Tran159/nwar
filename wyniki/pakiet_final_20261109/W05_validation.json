@@ -1,0 +1,181 @@
+{
+  "id": "GLHF_W05_2ddb611d46d5d518ee3a",
+  "case_id": "W05",
+  "generated_at": "2026-11-04T11:58:25.587827+01:00",
+  "project_accepted": true,
+  "run_verification": "passed",
+  "verification_kind": "glhf_saved_state",
+  "scope": "User-authorized qualitative acceptance of a transferred saved state",
+  "native_controller_exit_verified": false,
+  "policy_id": "quasi2d_five_cycles_discard_first_20261103",
+  "manifest_sha256": "2ddb611d46d5d518ee3adbe07963394e4019c4f5582ed61008ff10f20dd6815b",
+  "checkpoint": "H:\\NTNU_RESEARCH_ARCHIVE\\NWAR_SIM_FINALS\\W05_GLHF_supplied.sim",
+  "checkpoint_sha256": "ba075782b1af141622087ca6b35f122ef27fef43b5889b0d9f08677c3151c653",
+  "checkpoint_bytes": 869706294,
+  "checkpoint_mtime_ns": 1793788928522000000,
+  "time_s": 15.090800000014148,
+  "checks": [
+    {
+      "id": "checkpoint",
+      "title": "Native checkpoint and CSV endpoint",
+      "values": {
+        "actual_sha256": "ba075782b1af141622087ca6b35f122ef27fef43b5889b0d9f08677c3151c653",
+        "native": {
+          "time_s": 15.090800000014148,
+          "step": 37727,
+          "iteration": 377270,
+          "release": "21.04.009",
+          "mpi": "Np=1",
+          "wave_numbers": [
+            0.3141592653589793
+          ],
+          "time_steps": [
+            0.0004
+          ],
+          "scene_count": 30,
+          "state_offset": 860828815
+        },
+        "previous": {
+          "time_s": 14.10560000001207,
+          "step": 35264,
+          "iteration": 352640,
+          "release": "21.04.009",
+          "mpi": "Np=1",
+          "wave_numbers": [
+            0.3141592653589793
+          ],
+          "time_steps": [
+            0.0004
+          ],
+          "scene_count": 30,
+          "state_offset": 857636767
+        }
+      },
+      "status": "passed",
+      "group": "run",
+      "criterion": "Native checkpoint and CSV endpoint",
+      "evidence_files": [
+        "H:\\NTNU_RESEARCH_ARCHIVE\\NWAR_SIM_FINALS\\W05_GLHF_supplied.sim",
+        "E:\\ntnu_mesh_optimization_20261030\\nwar_automation_20261102\\glhf_imports\\GLHF_W05_2ddb611d46d5d518ee3a\\manifest.json"
+      ]
+    },
+    {
+      "id": "configuration",
+      "title": "Saved configuration and original C01",
+      "values": {
+        "height_m": 1.0,
+        "wavelength_m": 20.0,
+        "C01_sha256": "9af4857b948e0494088b5421f8ede100e66344fc2631cc00030406640d7cc295"
+      },
+      "status": "passed",
+      "group": "run",
+      "criterion": "Saved configuration and original C01",
+      "evidence_files": [
+        "H:\\NTNU_RESEARCH_ARCHIVE\\NWAR_SIM_FINALS\\W05_GLHF_supplied.sim",
+        "E:\\ntnu_mesh_optimization_20261030\\nwar_automation_20261102\\glhf_imports\\GLHF_W05_2ddb611d46d5d518ee3a\\manifest.json"
+      ]
+    },
+    {
+      "id": "health",
+      "title": "Joined numerical history",
+      "values": {
+        "ok": true,
+        "checks": {
+          "max_CFL": {
+            "ok": true,
+            "min": 16.949503460931414,
+            "max": 17.768875410402053
+          },
+          "interface_CFL": {
+            "ok": true,
+            "min": 0.78717172433364,
+            "max": 1.9381250206404295
+          },
+          "max_speed_m_s": {
+            "ok": true,
+            "min": 21.27665502300706,
+            "max": 29.785016852671443
+          },
+          "alpha_min": {
+            "ok": true,
+            "min": 0.0,
+            "max": 0.0
+          },
+          "alpha_max": {
+            "ok": true,
+            "min": 1.0,
+            "max": 1.0
+          },
+          "p_min_Pa": {
+            "ok": true,
+            "min": -72805.59332828042,
+            "max": -60059.884180582005
+          },
+          "p_max_Pa": {
+            "ok": true,
+            "min": 236818.9113055356,
+            "max": 237697.18879016428
+          },
+          "water_inventory": {
+            "ok": true,
+            "change_m3": 0.022473816455132578,
+            "note": "Volume change does not replace mass-flux closure."
+          },
+          "CL_hydrodynamic": {
+            "ok": true
+          },
+          "CD_total": {
+            "ok": true
+          },
+          "Fx_N": {
+            "ok": true
+          },
+          "Fz_N": {
+            "ok": true
+          }
+        }
+      },
+      "status": "passed",
+      "group": "run",
+      "criterion": "Joined numerical history",
+      "evidence_files": [
+        "H:\\NTNU_RESEARCH_ARCHIVE\\NWAR_SIM_FINALS\\W05_GLHF_supplied.sim",
+        "E:\\ntnu_mesh_optimization_20261030\\nwar_automation_20261102\\glhf_imports\\GLHF_W05_2ddb611d46d5d518ee3a\\manifest.json"
+      ]
+    },
+    {
+      "id": "repeatability",
+      "title": "Repeatability of measured cycles 2–5",
+      "values": {
+        "metrics": {
+          "CL": {
+            "mean_spread": 0.0005493943380395042,
+            "amplitude_spread": 0.0009619978807853118,
+            "phase_RMS": 0.0005846954074260178,
+            "passed": true
+          },
+          "CD": {
+            "mean_spread": 0.0010088843620263774,
+            "amplitude_spread": 0.0014243844456981525,
+            "phase_RMS": 0.0014684261015567915,
+            "passed": true
+          }
+        },
+        "count": 5
+      },
+      "status": "passed",
+      "group": "run",
+      "criterion": "Repeatability of measured cycles 2–5",
+      "evidence_files": [
+        "H:\\NTNU_RESEARCH_ARCHIVE\\NWAR_SIM_FINALS\\W05_GLHF_supplied.sim",
+        "E:\\ntnu_mesh_optimization_20261030\\nwar_automation_20261102\\glhf_imports\\GLHF_W05_2ddb611d46d5d518ee3a\\manifest.json"
+      ]
+    }
+  ],
+  "counts": {
+    "passed": 4,
+    "failed": 0,
+    "pending": 0,
+    "future": 0
+  }
+}

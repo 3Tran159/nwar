@@ -1,0 +1,13 @@
+{
+    "at":  "2026-10-31T23:27:35.0309206+01:00",
+    "event":  "verified_failed_native_process_cleanup_intent",
+    "case":  "E:\\ntnu_mesh_optimization_20261030\\wave_surface_only\\WAVE_H050_pressure_aligned_CPU1_20261031_once",
+    "native_pid":  6932,
+    "native_started":  "2026-10-31T23:06:31.1989806+01:00",
+    "cpu_seconds_unchanged_since_2320":  25.921875,
+    "last_history":  "2026-10-31T23:09:27.1667830+01:00",
+    "STOP_since":  "2026-10-31T23:10:45.6190815+01:00",
+    "healthy_source_sha256_verified":  true,
+    "scope":  "Only native PID 6932. No process-tree kill. M13 GPU pilot, HF, all files and STOP untouched.",
+    "reason":  "Controller/frontend exited but native server remains; \u003e15min no steps and \u003e10min after STOP; no save activity."
+}

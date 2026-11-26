@@ -1,0 +1,2 @@
+time_s,step,wall_s,max_speed_m_s,max_CFL,interface_CFL,water_volume_m3
+0.0,0,0.0082593,0.0,0.0,NaN,38.39999999999396

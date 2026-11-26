@@ -1,0 +1,72 @@
+{
+  "at": "2026-10-30T12:58:13.101761+01:00",
+  "scope": "Calm-water verification of W01a meshes only",
+  "incident_wave_height_m": 0,
+  "CPU_only": true,
+  "GPU_main_wave_untouched": true,
+  "source_time_s": 0.587,
+  "coefficients": [
+    "CL_total",
+    "CD",
+    "CD_pressure",
+    "CD_viscous"
+  ],
+  "stabilization": {
+    "window_s": 0.2,
+    "threshold_pct": 0.5,
+    "mean_shift": true,
+    "RMS_each_window": true,
+    "consecutive_passes": 2
+  },
+  "wave_GCI_removed": true,
+  "reason": "User lacks compute resources for separate wave accuracy study",
+  "no_new_report": true,
+  "common_timestep_candidate_s": 0.0001,
+  "controls": [
+    "fine dt/2",
+    "fine inner iterations x2",
+    "fine baseline continuation"
+  ],
+  "effective_refinement_dimension": 2,
+  "GCI_nuisance_limit_fraction_of_smallest_grid_difference": 0.1,
+  "CPU_workers": 22,
+  "CPU_logical_processors": [
+    2,
+    3,
+    4,
+    5,
+    6,
+    7,
+    8,
+    9,
+    10,
+    11,
+    12,
+    13,
+    14,
+    15,
+    16,
+    17,
+    18,
+    19,
+    20,
+    21,
+    22,
+    23
+  ],
+  "reserved_for_C01": [
+    0,
+    1
+  ],
+  "execution_order": [
+    "G10_F",
+    "G10_M",
+    "W01a"
+  ],
+  "target_production_cell_count": 300000,
+  "current_light_candidate_cells": 317277,
+  "fine_reference_cells": 1154199,
+  "resource_change_at": "2026-10-30T13:26:11.299023+01:00",
+  "calm_pilot_duration_s": 0.004,
+  "reuse_computed_pilot_fields_on_dt_change": true
+}

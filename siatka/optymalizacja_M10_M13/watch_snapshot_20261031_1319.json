@@ -1,0 +1,62 @@
+{
+  "at": "2026-10-31T13:20:55.438218+01:00",
+  "runbook_sha_match": true,
+  "M11": {
+    "physical_time_s": 1.8949999999998564,
+    "steps": 6449,
+    "dt_s": 0.0002,
+    "CL": 0.3077024467596053,
+    "CD": 0.007536237423381593,
+    "CL_total": 0.3135947045435941,
+    "max_CFL": 12.025383697525553,
+    "interface_max_CFL": 0.6429784671388695,
+    "CL_field_corrected_with_CSV_header": true
+  },
+  "aux": {
+    "phase": "own-mesh calm from zero",
+    "physical_time_s": 0.22000000000000017,
+    "steps": 220,
+    "max_speed_m_s": 18.00000000000887,
+    "bulk_CFL": 0.09000000000004352,
+    "water_volume_m3": 38.39999999999479,
+    "performance_monitor": {
+      "at": "2026-10-31T13:20:44.967242+01:00",
+      "steps": 207,
+      "main_windows": [
+        {
+          "start": 6345,
+          "end": 6374,
+          "median_s": 1.409790300000168,
+          "slowdown_pct": 9.206171484782754
+        },
+        {
+          "start": 6375,
+          "end": 6404,
+          "median_s": 1.4033171999999468,
+          "slowdown_pct": 8.70474764276723
+        },
+        {
+          "start": 6405,
+          "end": 6434,
+          "median_s": 1.4308216000008542,
+          "slowdown_pct": 10.835312892850734
+        }
+      ],
+      "baseline_M11_s_per_step": 1.2909437999999973,
+      "reason": null,
+      "elapsed_wall_s": 300.94,
+      "io_bytes": 128910393
+    }
+  },
+  "free_gib": {
+    "C": 53.52,
+    "E": 223.63,
+    "RAM": 37.88
+  },
+  "flags": {
+    "STOP_ALL": false,
+    "aux_lock": true,
+    "wave_lock": true
+  },
+  "actions": "read-only check; healthy M11 and auxiliary; no intervention; no extra solver"
+}

@@ -1,0 +1,20 @@
+{
+  "M10": {
+    "internal_id": "W01a",
+    "cells": 317277,
+    "role": "light candidate"
+  },
+  "M11": {
+    "internal_id": "G10_M",
+    "cells": 595285,
+    "role": "systematically refined medium"
+  },
+  "M12": {
+    "internal_id": "G10_F",
+    "cells": 1154199,
+    "role": "systematically refined fine"
+  },
+  "selected_wave_case": "C01",
+  "selection_status": "pending_campaign",
+  "existing_result_paths_preserved": true
+}

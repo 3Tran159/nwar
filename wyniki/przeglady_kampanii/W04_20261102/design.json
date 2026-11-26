@@ -1,0 +1,37 @@
+{
+  "id": "M13_W04",
+  "case": "W04",
+  "at": "2026-11-02T10:50:45.981356+01:00",
+  "H_m": 1.5,
+  "lambda_m": 38.99857691441418,
+  "free_surface_target_m": 0.02,
+  "free_surface_z_m": [
+    1.0,
+    3.0
+  ],
+  "original_free_surface_z_m": [
+    1.6,
+    2.4
+  ],
+  "x_bounds_m": [
+    -70.0,
+    90.0
+  ],
+  "original_x_bounds_m": [
+    -35.0,
+    45.0
+  ],
+  "extension_dx_max_m": 0.2,
+  "forcing_length_m": 40.0,
+  "damping_length_m": 40.0,
+  "forcing_end_x_m": -30.0,
+  "damping_start_x_m": 50.0,
+  "span_m": 0.02,
+  "prism_layers": 48,
+  "prism_first_m": 1.530612244897959e-06,
+  "original_C01": "E:\\ntnu_mesh_optimization_20261030\\clean_c01_campaign_20261101\\C01_warm_M13_steady_rho1000_air1p2_20261101\\final.sim",
+  "original_C01_sha256": "9af4857b948e0494088b5421f8ede100e66344fc2631cc00030406640d7cc295",
+  "reference_policy": "One original C01. Wave allowed only after adjacent 0.2 s calm windows are stable below 0.5% and both means agree with original C01 within 0.5%.",
+  "no_new_Q_reference": true,
+  "no_cell_stretching": true
+}

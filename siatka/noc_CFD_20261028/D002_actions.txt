@@ -1,0 +1,15 @@
+REUSED Streamline z=0.0
+CREATED NTNU_Stream_Z_005_mm z=0.005 n=60
+REUSED Streamline 2 z=0.01
+REUSED Streamline 7 z=0.015
+REUSED Streamline 6 z=0.02
+CREATED NTNU_Stream_Z_025_mm z=0.025 n=60
+REUSED Streamline 5 z=0.03
+CREATED NTNU_Stream_Z_035_mm z=0.035 n=60
+REUSED Streamline 4 z=0.04
+CREATED NTNU_Stream_Z_045_mm z=0.045 n=60
+REUSED Streamline 3 z=0.05
+SELECTED_PARTS 11 scene=streamlines disp=Streamline Stream 7
+ITER 420 TIME 2.1E-4
+SAVED E:\ntnu_cfd_night_20261028\D002\checkpoint_visualisation_5mm.sim bytes=10883371250
+PNG E:\ntnu_cfd_night_20261028\visualisations_20261029\D002_streamlines_5mm.png bytes=788157

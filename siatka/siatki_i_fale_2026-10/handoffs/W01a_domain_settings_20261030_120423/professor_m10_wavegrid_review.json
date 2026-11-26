@@ -1,0 +1,2050 @@
+{
+  "status": "short_domain_geometry_audited_pending_long_domain_and_flow_validation",
+  "generated_at": "2026-10-30T01:10:55.852948+01:00",
+  "scope": "Actual M09 versus M10_FS020_r1 short-domain CGNS geometry. Read-only; no solver steps, no admission of a wave result.",
+  "build_status": "short_domain_mesh_audited_pending_extension",
+  "flow_steps": 0,
+  "method": {
+    "free_surface_band_z_m": [
+      1.7,
+      2.3
+    ],
+    "wave_height_m": 0.5,
+    "wavelength_m": 20,
+    "bbox": "Source-span polygons intersecting the band; unweighted cell percentiles plus full-polygon-area-weighted p95. Boxes are geometric extents, not directional face-normal spacings.",
+    "rays": "Exact half-open line/polygon intersections. Crossed cells include partially intersected end cells. Grazing chords are not meaningful CFL length limits.",
+    "foil": "Source-plane wall vertices sorted by rounded x,z; independent per-edge layer CSVs sorted by rounded centroid x,z and compared numerically."
+  },
+  "nominal_changes": [
+    {
+      "parameter": "Free-surface nominal isotropic size",
+      "unit": "m",
+      "M09": 0.028571428571428574,
+      "M10_FS020_r1": 0.02,
+      "change_pct": -30.000000000000004
+    }
+  ],
+  "shared_controls": {
+    "base_m": 0.25,
+    "foil_target_m": 0.0028571428571428576,
+    "foil_min_m": 0.00028571428571428574,
+    "global_min_m": 0.0003571428571428572,
+    "near_foil_m": 0.00892857142857143,
+    "first_layer_um": 1.530612244897959,
+    "layers": 48,
+    "total_prism_m": 0.01546,
+    "protected_middle_size_m": 0.14285714285714288,
+    "protected_middle_xz_m": [
+      -11.9,
+      30.94,
+      -3,
+      3.2
+    ]
+  },
+  "meshes": {
+    "M09": {
+      "source": "F:\\ntnu\\mesh_screening_20261028\\quasi2d_012_20261029\\M09\\mesh.CGNS",
+      "sha256": "9079ce01c95d6ca45c6c723d04f25c32060c5c846b4d701017dc592b84281fb0",
+      "totals": {
+        "cell_count": 214908,
+        "domain_bounds_m": {
+          "x": [
+            -11.9,
+            30.940000000000005
+          ],
+          "y": [
+            0.01,
+            0.03
+          ],
+          "z": [
+            -22.0,
+            8.0
+          ]
+        },
+        "foil_source_nodes": 856,
+        "foil_bounds_xz_m": [
+          [
+            -0.0003685843239392502,
+            -0.04214490729867749
+          ],
+          [
+            1.1900000000000004,
+            0.10091477404404608
+          ]
+        ]
+      },
+      "free_surface": {
+        "cells": 40225,
+        "bbox_dx_m": {
+          "min": 0.005802452269438874,
+          "median": 0.03068937489617074,
+          "p95": 0.039188911851947235,
+          "max": 0.04547473134509605,
+          "area_weighted_p95": 0.0397743356549711
+        },
+        "bbox_dz_m": {
+          "min": 0.01525642345337097,
+          "median": 0.03150805451037675,
+          "p95": 0.03926371570500019,
+          "max": 0.04681862453326291,
+          "area_weighted_p95": 0.040176657093814905
+        },
+        "area_fraction_bbox_dz_above_0p025": 0.9408581921903243,
+        "area_fraction_bbox_dx_above_0p25": 0.0,
+        "lambda20_over_max_bbox_dx": 439.8046873158005,
+        "height0p5_over_max_bbox_dz": 10.679510664495673
+      },
+      "foil_above": {
+        "cells": 977,
+        "bbox_dx_m": {
+          "min": 0.020058024231966787,
+          "median": 0.031505880933297536,
+          "p95": 0.03989918332433273,
+          "max": 0.04218972492296125,
+          "area_weighted_p95": 0.03989918332433273
+        },
+        "bbox_dz_m": {
+          "min": 0.02087363650288432,
+          "median": 0.03270866211776058,
+          "p95": 0.04170269368435218,
+          "max": 0.042291740233361796,
+          "area_weighted_p95": 0.042211458491322684
+        },
+        "area_fraction_bbox_dz_above_0p025": 0.9928659473817635,
+        "area_fraction_bbox_dx_above_0p25": 0.0,
+        "lambda20_over_max_bbox_dx": 474.0490732404667,
+        "height0p5_over_max_bbox_dz": 11.822639532945384
+      },
+      "incoming": {
+        "cells": 10639,
+        "bbox_dx_m": {
+          "min": 0.007829021262487856,
+          "median": 0.02927157728408858,
+          "p95": 0.03859378747739446,
+          "max": 0.045076456167028045,
+          "area_weighted_p95": 0.03934085755416028
+        },
+        "bbox_dz_m": {
+          "min": 0.01776142731424457,
+          "median": 0.031220009022941753,
+          "p95": 0.037169515428104496,
+          "max": 0.04568983104196289,
+          "area_weighted_p95": 0.03802418545867026
+        },
+        "area_fraction_bbox_dz_above_0p025": 0.9262523905156723,
+        "area_fraction_bbox_dx_above_0p25": 0.0,
+        "lambda20_over_max_bbox_dx": 443.6906026039675,
+        "height0p5_over_max_bbox_dz": 10.943354103034114
+      },
+      "downstream": {
+        "cells": 27791,
+        "bbox_dx_m": {
+          "min": 0.005802452269438874,
+          "median": 0.031178456878137695,
+          "p95": 0.038460041106230136,
+          "max": 0.04547473134509605,
+          "area_weighted_p95": 0.039376878074383725
+        },
+        "bbox_dz_m": {
+          "min": 0.01525642345337097,
+          "median": 0.03150983322864276,
+          "p95": 0.03996262437437237,
+          "max": 0.04681862453326291,
+          "area_weighted_p95": 0.040856004632771725
+        },
+        "area_fraction_bbox_dz_above_0p025": 0.9429843660241867,
+        "area_fraction_bbox_dx_above_0p25": 0.0,
+        "lambda20_over_max_bbox_dx": 439.8046873158005,
+        "height0p5_over_max_bbox_dz": 10.679510664495673
+      },
+      "vertical_rays": [
+        {
+          "x_m": -11.8,
+          "band_1p7_to_2p3": {
+            "crossed_cells_including_partial": 22,
+            "coverage_m": 0.5999999999999999,
+            "full_intersection_length_m": {
+              "min": 0.024153224591482614,
+              "median": 0.029132854466421887,
+              "p95": 0.03391803565019794,
+              "max": 0.03587377433015804
+            }
+          },
+          "height_1p76_to_2p26": {
+            "crossed_cells_including_partial": 18,
+            "coverage_m": 0.4999999999999998,
+            "full_intersection_length_m": {
+              "min": 0.024153224591482614,
+              "median": 0.028645184689020997,
+              "p95": 0.03422891768794259,
+              "max": 0.03587377433015804
+            }
+          }
+        },
+        {
+          "x_m": -10,
+          "band_1p7_to_2p3": {
+            "crossed_cells_including_partial": 29,
+            "coverage_m": 0.5999999999999999,
+            "full_intersection_length_m": {
+              "min": 0.002015690207721743,
+              "median": 0.020768632489228445,
+              "p95": 0.032349238874628615,
+              "max": 0.03234923887462915
+            }
+          },
+          "height_1p76_to_2p26": {
+            "crossed_cells_including_partial": 25,
+            "coverage_m": 0.4999999999999998,
+            "full_intersection_length_m": {
+              "min": 0.0035738220543906074,
+              "median": 0.020768632489228445,
+              "p95": 0.032349238874628664,
+              "max": 0.03234923887462915
+            }
+          }
+        },
+        {
+          "x_m": -5,
+          "band_1p7_to_2p3": {
+            "crossed_cells_including_partial": 24,
+            "coverage_m": 0.5999999999999999,
+            "full_intersection_length_m": {
+              "min": 0.006819089977969206,
+              "median": 0.02753247413483073,
+              "p95": 0.0349959426781453,
+              "max": 0.03523640261560601
+            }
+          },
+          "height_1p76_to_2p26": {
+            "crossed_cells_including_partial": 20,
+            "coverage_m": 0.4999999999999998,
+            "full_intersection_length_m": {
+              "min": 0.006819089977969206,
+              "median": 0.027930658228057292,
+              "p95": 0.03502695847465524,
+              "max": 0.03523640261560601
+            }
+          }
+        },
+        {
+          "x_m": -1,
+          "band_1p7_to_2p3": {
+            "crossed_cells_including_partial": 28,
+            "coverage_m": 0.5999999999999999,
+            "full_intersection_length_m": {
+              "min": 0.0012499700350780962,
+              "median": 0.024221029389807414,
+              "p95": 0.03524297763151036,
+              "max": 0.03898903906853812
+            }
+          },
+          "height_1p76_to_2p26": {
+            "crossed_cells_including_partial": 23,
+            "coverage_m": 0.4999999999999998,
+            "full_intersection_length_m": {
+              "min": 0.0012499700350780962,
+              "median": 0.02558555277108887,
+              "p95": 0.03541123248669615,
+              "max": 0.03898903906853812
+            }
+          }
+        },
+        {
+          "x_m": 0.01,
+          "band_1p7_to_2p3": {
+            "crossed_cells_including_partial": 24,
+            "coverage_m": 0.5999999999999999,
+            "full_intersection_length_m": {
+              "min": 0.0043134032867819805,
+              "median": 0.030684379167968512,
+              "p95": 0.03634729711277775,
+              "max": 0.03780609815750413
+            }
+          },
+          "height_1p76_to_2p26": {
+            "crossed_cells_including_partial": 20,
+            "coverage_m": 0.4999999999999998,
+            "full_intersection_length_m": {
+              "min": 0.0043134032867819805,
+              "median": 0.0310003505805172,
+              "p95": 0.03658456282521856,
+              "max": 0.03780609815750413
+            }
+          }
+        },
+        {
+          "x_m": 0.3,
+          "band_1p7_to_2p3": {
+            "crossed_cells_including_partial": 22,
+            "coverage_m": 0.5999999999999999,
+            "full_intersection_length_m": {
+              "min": 0.00012260132279129365,
+              "median": 0.03550532165465192,
+              "p95": 0.03984763784072583,
+              "max": 0.03984763803623448
+            }
+          },
+          "height_1p76_to_2p26": {
+            "crossed_cells_including_partial": 18,
+            "coverage_m": 0.4999999999999998,
+            "full_intersection_length_m": {
+              "min": 0.00012260132279129365,
+              "median": 0.036897536298986844,
+              "p95": 0.039847637874692185,
+              "max": 0.03984763803623448
+            }
+          }
+        },
+        {
+          "x_m": 0.6,
+          "band_1p7_to_2p3": {
+            "crossed_cells_including_partial": 30,
+            "coverage_m": 0.5999999999999999,
+            "full_intersection_length_m": {
+              "min": 0.0025861606913903934,
+              "median": 0.020707230514877217,
+              "p95": 0.029063521410024128,
+              "max": 0.029778039725783412
+            }
+          },
+          "height_1p76_to_2p26": {
+            "crossed_cells_including_partial": 25,
+            "coverage_m": 0.4999999999999998,
+            "full_intersection_length_m": {
+              "min": 0.013654830492257908,
+              "median": 0.020793400666097916,
+              "p95": 0.028860045421021892,
+              "max": 0.029078810674177058
+            }
+          }
+        },
+        {
+          "x_m": 0.9,
+          "band_1p7_to_2p3": {
+            "crossed_cells_including_partial": 26,
+            "coverage_m": 0.5999999999999999,
+            "full_intersection_length_m": {
+              "min": 0.0013014456220838966,
+              "median": 0.026299865602179784,
+              "p95": 0.028848314385715113,
+              "max": 0.030892924379416264
+            }
+          },
+          "height_1p76_to_2p26": {
+            "crossed_cells_including_partial": 21,
+            "coverage_m": 0.4999999999999998,
+            "full_intersection_length_m": {
+              "min": 0.01873369744430753,
+              "median": 0.026404905616888463,
+              "p95": 0.02885006098011411,
+              "max": 0.030892924379416264
+            }
+          }
+        },
+        {
+          "x_m": 1.18,
+          "band_1p7_to_2p3": {
+            "crossed_cells_including_partial": 25,
+            "coverage_m": 0.5999999999999999,
+            "full_intersection_length_m": {
+              "min": 0.004334552554905002,
+              "median": 0.026956935042493635,
+              "p95": 0.0316451898589432,
+              "max": 0.033124992479609094
+            }
+          },
+          "height_1p76_to_2p26": {
+            "crossed_cells_including_partial": 19,
+            "coverage_m": 0.4999999999999998,
+            "full_intersection_length_m": {
+              "min": 0.01739970679127234,
+              "median": 0.029011805271796254,
+              "p95": 0.0318221957223354,
+              "max": 0.033124992479609094
+            }
+          }
+        },
+        {
+          "x_m": 2,
+          "band_1p7_to_2p3": {
+            "crossed_cells_including_partial": 24,
+            "coverage_m": 0.5999999999999999,
+            "full_intersection_length_m": {
+              "min": 0.00678190864880035,
+              "median": 0.026862132798298743,
+              "p95": 0.033925757727876205,
+              "max": 0.03685713193640705
+            }
+          },
+          "height_1p76_to_2p26": {
+            "crossed_cells_including_partial": 22,
+            "coverage_m": 0.4999999999999998,
+            "full_intersection_length_m": {
+              "min": 0.00678190864880035,
+              "median": 0.02633434819296432,
+              "p95": 0.0339535836639262,
+              "max": 0.03685713193640705
+            }
+          }
+        },
+        {
+          "x_m": 5,
+          "band_1p7_to_2p3": {
+            "crossed_cells_including_partial": 31,
+            "coverage_m": 0.5999999999999999,
+            "full_intersection_length_m": {
+              "min": 0.00023008942083801998,
+              "median": 0.022160102117364078,
+              "p95": 0.03412275116973684,
+              "max": 0.03458964263012998
+            }
+          },
+          "height_1p76_to_2p26": {
+            "crossed_cells_including_partial": 25,
+            "coverage_m": 0.4999999999999998,
+            "full_intersection_length_m": {
+              "min": 0.00023008942083801998,
+              "median": 0.02165262974341786,
+              "p95": 0.033938580218050074,
+              "max": 0.03458964263012998
+            }
+          }
+        },
+        {
+          "x_m": 10,
+          "band_1p7_to_2p3": {
+            "crossed_cells_including_partial": 30,
+            "coverage_m": 0.5999999999999999,
+            "full_intersection_length_m": {
+              "min": 0.00024052269147034622,
+              "median": 0.023698359161133276,
+              "p95": 0.029594547020398786,
+              "max": 0.03121375345895272
+            }
+          },
+          "height_1p76_to_2p26": {
+            "crossed_cells_including_partial": 24,
+            "coverage_m": 0.4999999999999998,
+            "full_intersection_length_m": {
+              "min": 0.001580592435899586,
+              "median": 0.02487452471251861,
+              "p95": 0.02969647634568111,
+              "max": 0.03121375345895272
+            }
+          }
+        },
+        {
+          "x_m": 20,
+          "band_1p7_to_2p3": {
+            "crossed_cells_including_partial": 30,
+            "coverage_m": 0.5999999999999999,
+            "full_intersection_length_m": {
+              "min": 0.001901173837549619,
+              "median": 0.022725290344645543,
+              "p95": 0.03610041104153705,
+              "max": 0.04102884045884814
+            }
+          },
+          "height_1p76_to_2p26": {
+            "crossed_cells_including_partial": 24,
+            "coverage_m": 0.4999999999999998,
+            "full_intersection_length_m": {
+              "min": 0.003514670852164059,
+              "median": 0.02252506251887909,
+              "p95": 0.037176216918300156,
+              "max": 0.04102884045884814
+            }
+          }
+        },
+        {
+          "x_m": 25,
+          "band_1p7_to_2p3": {
+            "crossed_cells_including_partial": 34,
+            "coverage_m": 0.5999999999999999,
+            "full_intersection_length_m": {
+              "min": 0.0021213353409867963,
+              "median": 0.02084422997267199,
+              "p95": 0.031117727981951913,
+              "max": 0.03195718299978134
+            }
+          },
+          "height_1p76_to_2p26": {
+            "crossed_cells_including_partial": 30,
+            "coverage_m": 0.4999999999999998,
+            "full_intersection_length_m": {
+              "min": 0.0021213353409867963,
+              "median": 0.01968971316011703,
+              "p95": 0.030680890355727235,
+              "max": 0.03195718299978134
+            }
+          }
+        },
+        {
+          "x_m": 30.8,
+          "band_1p7_to_2p3": {
+            "crossed_cells_including_partial": 24,
+            "coverage_m": 0.5999999999999999,
+            "full_intersection_length_m": {
+              "min": 0.0016282125935860314,
+              "median": 0.029296875,
+              "p95": 0.029296875,
+              "max": 0.02939720665906731
+            }
+          },
+          "height_1p76_to_2p26": {
+            "crossed_cells_including_partial": 18,
+            "coverage_m": 0.4999999999999998,
+            "full_intersection_length_m": {
+              "min": 0.027601695580211416,
+              "median": 0.029296875,
+              "p95": 0.029311924748860095,
+              "max": 0.02939720665906731
+            }
+          }
+        }
+      ],
+      "horizontal_rays": [
+        {
+          "z_m": 1.75,
+          "short_domain": {
+            "crossed_cells_including_partial": 2034,
+            "coverage_m": 42.83999999999992,
+            "full_intersection_length_m": {
+              "min": 0.00019684298315603144,
+              "median": 0.022044721775258624,
+              "p95": 0.03318272974886707,
+              "max": 0.041563961605094235
+            }
+          },
+          "foil_above": {
+            "crossed_cells_including_partial": 57,
+            "coverage_m": 1.19,
+            "full_intersection_length_m": {
+              "min": 0.0008808588967910147,
+              "median": 0.0244999565267201,
+              "p95": 0.03161987859040513,
+              "max": 0.03538354099111837
+            }
+          }
+        },
+        {
+          "z_m": 1.9,
+          "short_domain": {
+            "crossed_cells_including_partial": 2034,
+            "coverage_m": 42.83999999999993,
+            "full_intersection_length_m": {
+              "min": 2.31002694999205e-05,
+              "median": 0.022045725410365147,
+              "p95": 0.03318272974886938,
+              "max": 0.03914736141221198
+            }
+          },
+          "foil_above": {
+            "crossed_cells_including_partial": 50,
+            "coverage_m": 1.19,
+            "full_intersection_length_m": {
+              "min": 0.005465141658259509,
+              "median": 0.024816649669926485,
+              "p95": 0.03452118574496813,
+              "max": 0.035589763179867534
+            }
+          }
+        },
+        {
+          "z_m": 2.0,
+          "short_domain": {
+            "crossed_cells_including_partial": 1974,
+            "coverage_m": 42.83999999999995,
+            "full_intersection_length_m": {
+              "min": 5.271032505271833e-05,
+              "median": 0.02229821384763886,
+              "p95": 0.03398304176800329,
+              "max": 0.0421020648089776
+            }
+          },
+          "foil_above": {
+            "crossed_cells_including_partial": 55,
+            "coverage_m": 1.19,
+            "full_intersection_length_m": {
+              "min": 0.0015867525687708328,
+              "median": 0.021901238538198697,
+              "p95": 0.03456358278981527,
+              "max": 0.03626977445665841
+            }
+          }
+        },
+        {
+          "z_m": 2.1,
+          "short_domain": {
+            "crossed_cells_including_partial": 2013,
+            "coverage_m": 42.8399999999999,
+            "full_intersection_length_m": {
+              "min": 4.453192428677255e-05,
+              "median": 0.022015496907254573,
+              "p95": 0.03403274514231709,
+              "max": 0.04267544094803455
+            }
+          },
+          "foil_above": {
+            "crossed_cells_including_partial": 51,
+            "coverage_m": 1.1900000000000002,
+            "full_intersection_length_m": {
+              "min": 0.00035747579618522485,
+              "median": 0.025339592723219614,
+              "p95": 0.03548347034229207,
+              "max": 0.03724977349394182
+            }
+          }
+        },
+        {
+          "z_m": 2.25,
+          "short_domain": {
+            "crossed_cells_including_partial": 2022,
+            "coverage_m": 42.84,
+            "full_intersection_length_m": {
+              "min": 1.2114160002241192e-05,
+              "median": 0.02206181997417289,
+              "p95": 0.03338613505195385,
+              "max": 0.04169984722686815
+            }
+          },
+          "foil_above": {
+            "crossed_cells_including_partial": 50,
+            "coverage_m": 1.19,
+            "full_intersection_length_m": {
+              "min": 1.3545852958873894e-05,
+              "median": 0.027204755800826097,
+              "p95": 0.03609476395589468,
+              "max": 0.038257468378743366
+            }
+          }
+        }
+      ],
+      "extension_interface_rows": {
+        "DOMAIN.inlet": {
+          "intersected_rows": 22,
+          "row_height_m": {
+            "min": 0.028576011039204374,
+            "median": 0.02857601103920615,
+            "p95": 0.02857601103920615,
+            "max": 0.02857601103920615
+          },
+          "wave_height0p5_over_max_row_height": 17.497193688580342,
+          "wave_height0p5_over_median_row_height": 17.497193688580342,
+          "intersected_row_bounds_m": [
+            [
+              1.676687558494283,
+              1.7052635695334892
+            ],
+            [
+              1.7052635695334892,
+              1.7338395805726954
+            ],
+            [
+              1.7338395805726954,
+              1.7624155916119015
+            ],
+            [
+              1.7624155916119015,
+              1.790991602651106
+            ],
+            [
+              1.790991602651106,
+              1.8195676136903103
+            ],
+            [
+              1.8195676136903103,
+              1.8481436247295164
+            ],
+            [
+              1.8481436247295164,
+              1.8767196357687226
+            ],
+            [
+              1.8767196357687226,
+              1.9052956468079287
+            ],
+            [
+              1.9052956468079287,
+              1.9338716578471349
+            ],
+            [
+              1.9338716578471349,
+              1.962447668886341
+            ],
+            [
+              1.962447668886341,
+              1.9910236799255472
+            ],
+            [
+              1.9910236799255472,
+              2.0195996909647533
+            ],
+            [
+              2.0195996909647533,
+              2.0481757020039595
+            ],
+            [
+              2.0481757020039595,
+              2.0767517130431656
+            ],
+            [
+              2.0767517130431656,
+              2.105327724082372
+            ],
+            [
+              2.105327724082372,
+              2.133903735121578
+            ],
+            [
+              2.133903735121578,
+              2.162479746160784
+            ],
+            [
+              2.162479746160784,
+              2.1910557571999885
+            ],
+            [
+              2.1910557571999885,
+              2.219631768239193
+            ],
+            [
+              2.219631768239193,
+              2.248207779278399
+            ],
+            [
+              2.248207779278399,
+              2.276783790317605
+            ],
+            [
+              2.276783790317605,
+              2.3053598013568113
+            ]
+          ]
+        },
+        "DOMAIN.outlet": {
+          "intersected_rows": 22,
+          "row_height_m": {
+            "min": 0.028160128351782276,
+            "median": 0.028554431956566262,
+            "p95": 0.029186360394526822,
+            "max": 0.029296875
+          },
+          "wave_height0p5_over_max_row_height": 17.066666666666666,
+          "wave_height0p5_over_median_row_height": 17.510416623259843,
+          "intersected_row_bounds_m": [
+            [
+              1.6722383278456139,
+              1.7014289157540894
+            ],
+            [
+              1.7014289157540894,
+              1.7299833477106557
+            ],
+            [
+              1.7299833477106557,
+              1.758537779667222
+            ],
+            [
+              1.758537779667222,
+              1.7870922116237882
+            ],
+            [
+              1.7870922116237882,
+              1.8156466435803544
+            ],
+            [
+              1.8156466435803544,
+              1.8442010755369207
+            ],
+            [
+              1.8442010755369207,
+              1.872755507493487
+            ],
+            [
+              1.872755507493487,
+              1.9013099394500532
+            ],
+            [
+              1.9013099394500532,
+              1.9298643714066195
+            ],
+            [
+              1.9298643714066195,
+              1.9584188033631857
+            ],
+            [
+              1.9584188033631857,
+              1.986973235319752
+            ],
+            [
+              1.986973235319752,
+              2.0155276672763183
+            ],
+            [
+              2.0155276672763183,
+              2.0440820992328845
+            ],
+            [
+              2.0440820992328845,
+              2.072636531189451
+            ],
+            [
+              2.072636531189451,
+              2.101190963146017
+            ],
+            [
+              2.101190963146017,
+              2.1297453951025833
+            ],
+            [
+              2.1297453951025833,
+              2.1582998270591496
+            ],
+            [
+              2.1582998270591496,
+              2.186854259015716
+            ],
+            [
+              2.186854259015716,
+              2.215014387367498
+            ],
+            [
+              2.215014387367498,
+              2.243354899870498
+            ],
+            [
+              2.243354899870498,
+              2.2724609375
+            ],
+            [
+              2.2724609375,
+              2.3017578125
+            ]
+          ]
+        }
+      },
+      "quality": {
+        "notes": [
+          "min_cell_quality field=CellQuality population=fluid units=",
+          "min_volume_change field=VolumeChange population=fluid units=",
+          "min_face_validity field=FaceValidity population=fluid units=",
+          "max_skewness_angle_deg field=SkewnessAngle population=fluid units=",
+          "Diagnostic CellQuality < 0.01: 0.0 elements in fluid; review trigger, not universal acceptance limit",
+          "Diagnostic VolumeChange < 0.01: 2.0 elements in fluid; review trigger, not universal acceptance limit",
+          "Diagnostic SkewnessAngle > 80.0: 0.0 elements in fluid; review trigger, not universal acceptance limit",
+          "Directed sweep does not retain PrismLayerNumber metadata; audit layered topology separately.",
+          "Centroid y mismatch needs topology inspection before flow."
+        ],
+        "case_id": "M09",
+        "status": "mesh_generated",
+        "metrics": {
+          "cell_count": 214908,
+          "mesh_time_s": 0,
+          "NegativeVolumeCells": 0,
+          "UnclosedCells": 0,
+          "DegeneratedFeCells": 0,
+          "min_cell_quality": 0.07094186540770887,
+          "min_volume_change": 0.00425582898144689,
+          "min_face_validity": 1.0,
+          "max_skewness_angle_deg": 43.24629812294616,
+          "diagnostic_CellQuality_below_0.01": 0.0,
+          "diagnostic_VolumeChange_below_0.01": 2.0,
+          "diagnostic_SkewnessAngle_above_80.0": 0.0,
+          "centroid_y_min_m": 0.019999999999999987,
+          "centroid_y_max_m": 0.02000000000000001,
+          "centroid_y_range_m": 2.42861286636753e-17
+        }
+      },
+      "topology": {
+        "cells": 214908,
+        "cells_with_one_source_and_target_face": 214908,
+        "invalid_cells": [],
+        "single_layer_topology": true,
+        "node_y_min_m": 0.01,
+        "node_y_max_m": 0.03,
+        "source_nodes": 389168,
+        "paired_nodes": 389168,
+        "max_target_source_xz_displacement_m": 0.0,
+        "y_plane_error_m": 0.0,
+        "foil_edges": 856,
+        "foil_perimeter_m": 2.4202471996937547,
+        "area_fraction_any_quad_layers": 0.9988296604199051,
+        "area_fraction_at_least_15_quad_layers": 0.9870391818075642,
+        "layer_histogram": {
+          "48": 835,
+          "49": 9,
+          "3": 2,
+          "2": 2,
+          "1": 6,
+          "0": 2
+        },
+        "first_thickness_min_m": 1.5260233597707663e-06,
+        "first_thickness_max_m": 1.5307210708848237e-06,
+        "method": "CGNS connectivity: every volume cell must touch both span planes; prism coverage inferred by following consecutive quadrilateral cells normal to each foil edge, area weighted."
+      },
+      "extrusion": {
+        "cells": 214908,
+        "source_vertices": 389168,
+        "source_cells_unchanged": true,
+        "source_xz_coordinates_unchanged": true,
+        "span_m": 0.02,
+        "minimum_source_area_m2": 7.736736434995602e-10,
+        "minimum_reconstructed_volume_m3": 1.5473472869991203e-11,
+        "total_volume_m3": 25.701684231824405,
+        "negative_or_zero_reconstructed_volumes": 0,
+        "self_intersecting_source_cells": 0,
+        "nonmanifold_source_edges": 0,
+        "same_side_internal_faces": 0,
+        "boundary_face_counts": {
+          "Polyfaces_fluid": 602534,
+          "HF_012_wall": 856,
+          "DOMAIN.top": 172,
+          "DOMAIN.inlet": 171,
+          "DOMAIN.outlet": 171,
+          "Q2D_span_source": 214908,
+          "Q2D_span_target": 214908,
+          "DOMAIN.bottom": 172
+        },
+        "method": "Rebuild all spanwise faces and signed NFACE connectivity from unchanged valid source-plane polygons. Native target projection and its inconsistent pairings are discarded.",
+        "output_sha256": "42fb0d37887f66bbbbfb094326d5a1154483378cdde977b62fd3bc0514212468"
+      },
+      "nominal": {
+        "id": "M09",
+        "family": "low_yplus",
+        "reference": "M08",
+        "linear_refinement": 1.4,
+        "outer_base_m": 0.25,
+        "first_layer_um": 1.530612244897959,
+        "layers": 48,
+        "total_prism_m": 0.01546,
+        "surface_and_outer_match": "M08 surface, near-foil and free-surface controls; remote outer base changed",
+        "prism_match": "M07/M08",
+        "protected_middle_size_m": 0.14285714285714288,
+        "protected_middle_xz_m": [
+          -11.9,
+          30.94,
+          -3,
+          3.2
+        ],
+        "purpose": "Coarsen remote domain only; protect middle region and preserve M08 foil/prisms/near-foil/FS targets.",
+        "base_m": 0.25,
+        "foil_target_m": 0.0028571428571428576,
+        "foil_min_m": 0.00028571428571428574,
+        "global_min_m": 0.0003571428571428572,
+        "near_foil_m": 0.00892857142857143,
+        "free_surface_m": 0.028571428571428574
+      }
+    },
+    "M10_FS020_r1": {
+      "source": "F:\\ntnu\\mesh_screening_20261028\\quasi2d_012_20261029\\M10_FS020_r1\\mesh.CGNS",
+      "sha256": "fa16baf7161bdb2c40eed2c35139e01aa31e8859835e14d31a33dc19ffafb414",
+      "totals": {
+        "cell_count": 282379,
+        "domain_bounds_m": {
+          "x": [
+            -11.9,
+            30.940000000000005
+          ],
+          "y": [
+            0.01,
+            0.03
+          ],
+          "z": [
+            -22.0,
+            8.0
+          ]
+        },
+        "foil_source_nodes": 856,
+        "foil_bounds_xz_m": [
+          [
+            -0.0003685843239392502,
+            -0.04214490729867749
+          ],
+          [
+            1.1900000000000004,
+            0.10091477404404608
+          ]
+        ]
+      },
+      "free_surface": {
+        "cells": 86005,
+        "bbox_dx_m": {
+          "min": 0.004495726909802045,
+          "median": 0.021811805359813974,
+          "p95": 0.028830795937676613,
+          "max": 0.03394654863755875,
+          "area_weighted_p95": 0.029645805104346223
+        },
+        "bbox_dz_m": {
+          "min": 0.01126131085723614,
+          "median": 0.019966227053996866,
+          "p95": 0.027419861070709043,
+          "max": 0.032852314165915164,
+          "area_weighted_p95": 0.028414979814484376
+        },
+        "area_fraction_bbox_dz_above_0p025": 0.16900593443786782,
+        "area_fraction_bbox_dx_above_0p25": 0.0,
+        "lambda20_over_max_bbox_dx": 589.1615142834236,
+        "height0p5_over_max_bbox_dz": 15.219627983430115
+      },
+      "foil_above": {
+        "cells": 2462,
+        "bbox_dx_m": {
+          "min": 0.014358597932845357,
+          "median": 0.01980086496940997,
+          "p95": 0.023705928178977542,
+          "max": 0.026904192493386325,
+          "area_weighted_p95": 0.023705928178977764
+        },
+        "bbox_dz_m": {
+          "min": 0.015981196976536882,
+          "median": 0.021145870116681564,
+          "p95": 0.02807674164725471,
+          "max": 0.028076741647255155,
+          "area_weighted_p95": 0.02807674164725471
+        },
+        "area_fraction_bbox_dz_above_0p025": 0.17556546868917555,
+        "area_fraction_bbox_dx_above_0p25": 0.0,
+        "lambda20_over_max_bbox_dx": 743.3785646945719,
+        "height0p5_over_max_bbox_dz": 17.80833425337591
+      },
+      "incoming": {
+        "cells": 21074,
+        "bbox_dx_m": {
+          "min": 0.004495726909802045,
+          "median": 0.02301580123873137,
+          "p95": 0.027472032855203953,
+          "max": 0.031162412702817832,
+          "area_weighted_p95": 0.027994095886154202
+        },
+        "bbox_dz_m": {
+          "min": 0.01126131085723614,
+          "median": 0.020898923370946232,
+          "p95": 0.027591344030213072,
+          "max": 0.031796617623613965,
+          "area_weighted_p95": 0.02830162707482664
+        },
+        "area_fraction_bbox_dz_above_0p025": 0.199061396889046,
+        "area_fraction_bbox_dx_above_0p25": 0.0,
+        "lambda20_over_max_bbox_dx": 641.7988295942027,
+        "height0p5_over_max_bbox_dz": 15.724943008676236
+      },
+      "downstream": {
+        "cells": 60371,
+        "bbox_dx_m": {
+          "min": 0.010960628967055186,
+          "median": 0.021688380310278532,
+          "p95": 0.029693471280451966,
+          "max": 0.03394654863755875,
+          "area_weighted_p95": 0.030469265234067677
+        },
+        "bbox_dz_m": {
+          "min": 0.011365073805870818,
+          "median": 0.01946936141167943,
+          "p95": 0.027236390405712574,
+          "max": 0.032852314165915164,
+          "area_weighted_p95": 0.028646791852626974
+        },
+        "area_fraction_bbox_dz_above_0p025": 0.1563132067429647,
+        "area_fraction_bbox_dx_above_0p25": 0.0,
+        "lambda20_over_max_bbox_dx": 589.1615142834236,
+        "height0p5_over_max_bbox_dz": 15.219627983430115
+      },
+      "vertical_rays": [
+        {
+          "x_m": -11.8,
+          "band_1p7_to_2p3": {
+            "crossed_cells_including_partial": 42,
+            "coverage_m": 0.5999999999999999,
+            "full_intersection_length_m": {
+              "min": 0.0022680146546973923,
+              "median": 0.01550560208437135,
+              "p95": 0.017964229081942368,
+              "max": 0.021938651982339907
+            }
+          },
+          "height_1p76_to_2p26": {
+            "crossed_cells_including_partial": 35,
+            "coverage_m": 0.4999999999999998,
+            "full_intersection_length_m": {
+              "min": 0.0022680146546973923,
+              "median": 0.01550560208437135,
+              "p95": 0.018219682286444546,
+              "max": 0.021938651982339907
+            }
+          }
+        },
+        {
+          "x_m": -10,
+          "band_1p7_to_2p3": {
+            "crossed_cells_including_partial": 51,
+            "coverage_m": 0.5999999999999999,
+            "full_intersection_length_m": {
+              "min": 5.607848912636548e-05,
+              "median": 0.014333263320860379,
+              "p95": 0.016181564416817285,
+              "max": 0.01618156441681773
+            }
+          },
+          "height_1p76_to_2p26": {
+            "crossed_cells_including_partial": 44,
+            "coverage_m": 0.4999999999999998,
+            "full_intersection_length_m": {
+              "min": 5.607848912636548e-05,
+              "median": 0.013901154404391436,
+              "p95": 0.016181564416817285,
+              "max": 0.01618156441681773
+            }
+          }
+        },
+        {
+          "x_m": -5,
+          "band_1p7_to_2p3": {
+            "crossed_cells_including_partial": 40,
+            "coverage_m": 0.5999999999999999,
+            "full_intersection_length_m": {
+              "min": 0.0031302722483768086,
+              "median": 0.016559093223878163,
+              "p95": 0.022306838829945858,
+              "max": 0.02567288259470324
+            }
+          },
+          "height_1p76_to_2p26": {
+            "crossed_cells_including_partial": 33,
+            "coverage_m": 0.4999999999999998,
+            "full_intersection_length_m": {
+              "min": 0.0031302722483768086,
+              "median": 0.016551395317566886,
+              "p95": 0.021713009605325295,
+              "max": 0.024166999602044603
+            }
+          }
+        },
+        {
+          "x_m": -1,
+          "band_1p7_to_2p3": {
+            "crossed_cells_including_partial": 40,
+            "coverage_m": 0.5999999999999999,
+            "full_intersection_length_m": {
+              "min": 0.00022507322404008434,
+              "median": 0.017058919518986193,
+              "p95": 0.022407188785457142,
+              "max": 0.023707802068153372
+            }
+          },
+          "height_1p76_to_2p26": {
+            "crossed_cells_including_partial": 33,
+            "coverage_m": 0.4999999999999998,
+            "full_intersection_length_m": {
+              "min": 0.00022507322404008434,
+              "median": 0.017066931662051976,
+              "p95": 0.022846089773538122,
+              "max": 0.023707802068153372
+            }
+          }
+        },
+        {
+          "x_m": 0.01,
+          "band_1p7_to_2p3": {
+            "crossed_cells_including_partial": 45,
+            "coverage_m": 0.5999999999999999,
+            "full_intersection_length_m": {
+              "min": 0.0007332576227365717,
+              "median": 0.01651542214969881,
+              "p95": 0.02298100836151162,
+              "max": 0.025204436739158176
+            }
+          },
+          "height_1p76_to_2p26": {
+            "crossed_cells_including_partial": 40,
+            "coverage_m": 0.4999999999999998,
+            "full_intersection_length_m": {
+              "min": 0.0007332576227365717,
+              "median": 0.016025778186911754,
+              "p95": 0.019954974257960577,
+              "max": 0.021839697331063057
+            }
+          }
+        },
+        {
+          "x_m": 0.3,
+          "band_1p7_to_2p3": {
+            "crossed_cells_including_partial": 44,
+            "coverage_m": 0.5999999999999999,
+            "full_intersection_length_m": {
+              "min": 0.002032772735744981,
+              "median": 0.015787112286978044,
+              "p95": 0.01992731475470829,
+              "max": 0.02002477544339243
+            }
+          },
+          "height_1p76_to_2p26": {
+            "crossed_cells_including_partial": 38,
+            "coverage_m": 0.4999999999999998,
+            "full_intersection_length_m": {
+              "min": 0.002032772735744981,
+              "median": 0.015354391053438832,
+              "p95": 0.01992731475470836,
+              "max": 0.02002477544339243
+            }
+          }
+        },
+        {
+          "x_m": 0.6,
+          "band_1p7_to_2p3": {
+            "crossed_cells_including_partial": 39,
+            "coverage_m": 0.5999999999999999,
+            "full_intersection_length_m": {
+              "min": 0.0019572754634800127,
+              "median": 0.018491929123152673,
+              "p95": 0.02141194895676475,
+              "max": 0.026243200556286705
+            }
+          },
+          "height_1p76_to_2p26": {
+            "crossed_cells_including_partial": 33,
+            "coverage_m": 0.4999999999999998,
+            "full_intersection_length_m": {
+              "min": 0.0019572754634800127,
+              "median": 0.018722810846485194,
+              "p95": 0.021018369126512136,
+              "max": 0.023681076024956393
+            }
+          }
+        },
+        {
+          "x_m": 0.9,
+          "band_1p7_to_2p3": {
+            "crossed_cells_including_partial": 36,
+            "coverage_m": 0.5999999999999999,
+            "full_intersection_length_m": {
+              "min": 0.001055058471478798,
+              "median": 0.017681934886807027,
+              "p95": 0.026779280296481578,
+              "max": 0.02677928029648191
+            }
+          },
+          "height_1p76_to_2p26": {
+            "crossed_cells_including_partial": 31,
+            "coverage_m": 0.4999999999999998,
+            "full_intersection_length_m": {
+              "min": 0.001055058471478798,
+              "median": 0.01719542333210544,
+              "p95": 0.02673953507119564,
+              "max": 0.02677928029648191
+            }
+          }
+        },
+        {
+          "x_m": 1.18,
+          "band_1p7_to_2p3": {
+            "crossed_cells_including_partial": 44,
+            "coverage_m": 0.5999999999999996,
+            "full_intersection_length_m": {
+              "min": 4.569481756622196e-05,
+              "median": 0.01616684515675959,
+              "p95": 0.025889489294097207,
+              "max": 0.026779280296481467
+            }
+          },
+          "height_1p76_to_2p26": {
+            "crossed_cells_including_partial": 38,
+            "coverage_m": 0.49999999999999956,
+            "full_intersection_length_m": {
+              "min": 4.569481756622196e-05,
+              "median": 0.015920383319061093,
+              "p95": 0.021966495702194343,
+              "max": 0.026656237991338205
+            }
+          }
+        },
+        {
+          "x_m": 2,
+          "band_1p7_to_2p3": {
+            "crossed_cells_including_partial": 38,
+            "coverage_m": 0.5999999999999999,
+            "full_intersection_length_m": {
+              "min": 0.002254263056991501,
+              "median": 0.01767155236635709,
+              "p95": 0.024306248615837543,
+              "max": 0.02571700690541512
+            }
+          },
+          "height_1p76_to_2p26": {
+            "crossed_cells_including_partial": 33,
+            "coverage_m": 0.4999999999999998,
+            "full_intersection_length_m": {
+              "min": 0.002254263056991501,
+              "median": 0.018052341847212716,
+              "p95": 0.024545692651103755,
+              "max": 0.02571700690541512
+            }
+          }
+        },
+        {
+          "x_m": 5,
+          "band_1p7_to_2p3": {
+            "crossed_cells_including_partial": 43,
+            "coverage_m": 0.5999999999999999,
+            "full_intersection_length_m": {
+              "min": 0.0011301358428501551,
+              "median": 0.016332830543710486,
+              "p95": 0.01870568437408602,
+              "max": 0.018791695249312568
+            }
+          },
+          "height_1p76_to_2p26": {
+            "crossed_cells_including_partial": 36,
+            "coverage_m": 0.4999999999999998,
+            "full_intersection_length_m": {
+              "min": 0.0011301358428501551,
+              "median": 0.015948779679001213,
+              "p95": 0.018705684374086096,
+              "max": 0.018791695249312568
+            }
+          }
+        },
+        {
+          "x_m": 10,
+          "band_1p7_to_2p3": {
+            "crossed_cells_including_partial": 34,
+            "coverage_m": 0.5999999999999999,
+            "full_intersection_length_m": {
+              "min": 0.0010284591894826889,
+              "median": 0.02059093461738526,
+              "p95": 0.025960523363289335,
+              "max": 0.02642866978193026
+            }
+          },
+          "height_1p76_to_2p26": {
+            "crossed_cells_including_partial": 30,
+            "coverage_m": 0.4999999999999998,
+            "full_intersection_length_m": {
+              "min": 0.0010284591894826889,
+              "median": 0.021300463138756,
+              "p95": 0.025927328534860017,
+              "max": 0.02601819510928971
+            }
+          }
+        },
+        {
+          "x_m": 20,
+          "band_1p7_to_2p3": {
+            "crossed_cells_including_partial": 40,
+            "coverage_m": 0.5999999999999999,
+            "full_intersection_length_m": {
+              "min": 3.201998293134167e-05,
+              "median": 0.017228266138120008,
+              "p95": 0.023359657118862807,
+              "max": 0.023908174632709223
+            }
+          },
+          "height_1p76_to_2p26": {
+            "crossed_cells_including_partial": 32,
+            "coverage_m": 0.4999999999999998,
+            "full_intersection_length_m": {
+              "min": 3.201998293134167e-05,
+              "median": 0.018085867429338265,
+              "p95": 0.023400409637731802,
+              "max": 0.023908174632709223
+            }
+          }
+        },
+        {
+          "x_m": 25,
+          "band_1p7_to_2p3": {
+            "crossed_cells_including_partial": 38,
+            "coverage_m": 0.5999999999999999,
+            "full_intersection_length_m": {
+              "min": 0.0006696639891652367,
+              "median": 0.017144647414357728,
+              "p95": 0.024233370322238913,
+              "max": 0.025271137290059142
+            }
+          },
+          "height_1p76_to_2p26": {
+            "crossed_cells_including_partial": 29,
+            "coverage_m": 0.4999999999999998,
+            "full_intersection_length_m": {
+              "min": 0.00482097389314351,
+              "median": 0.017211755265539752,
+              "p95": 0.02425174251488773,
+              "max": 0.025271137290059142
+            }
+          }
+        },
+        {
+          "x_m": 30.8,
+          "band_1p7_to_2p3": {
+            "crossed_cells_including_partial": 42,
+            "coverage_m": 0.5999999999999999,
+            "full_intersection_length_m": {
+              "min": 0.0146484375,
+              "median": 0.0146484375,
+              "p95": 0.0146484375,
+              "max": 0.015326914330826336
+            }
+          },
+          "height_1p76_to_2p26": {
+            "crossed_cells_including_partial": 35,
+            "coverage_m": 0.4999999999999998,
+            "full_intersection_length_m": {
+              "min": 0.0146484375,
+              "median": 0.0146484375,
+              "p95": 0.0146484375,
+              "max": 0.0146484375
+            }
+          }
+        }
+      ],
+      "horizontal_rays": [
+        {
+          "z_m": 1.75,
+          "short_domain": {
+            "crossed_cells_including_partial": 2815,
+            "coverage_m": 42.84000000000012,
+            "full_intersection_length_m": {
+              "min": 5.1116491661673535e-05,
+              "median": 0.016104823954209202,
+              "p95": 0.023933582900635207,
+              "max": 0.03114148951988227
+            }
+          },
+          "foil_above": {
+            "crossed_cells_including_partial": 95,
+            "coverage_m": 1.1900000000000004,
+            "full_intersection_length_m": {
+              "min": 5.430793222793717e-05,
+              "median": 0.013930556348598966,
+              "p95": 0.019109271073515243,
+              "max": 0.02140387947616633
+            }
+          }
+        },
+        {
+          "z_m": 1.9,
+          "short_domain": {
+            "crossed_cells_including_partial": 2839,
+            "coverage_m": 42.83999999999989,
+            "full_intersection_length_m": {
+              "min": 1.2205175640045418e-05,
+              "median": 0.016160244762550846,
+              "p95": 0.023428636990167815,
+              "max": 0.031150485920660387
+            }
+          },
+          "foil_above": {
+            "crossed_cells_including_partial": 90,
+            "coverage_m": 1.19,
+            "full_intersection_length_m": {
+              "min": 0.00020411804196796002,
+              "median": 0.015096722153923159,
+              "p95": 0.020673397249989293,
+              "max": 0.022249202863461326
+            }
+          }
+        },
+        {
+          "z_m": 2.0,
+          "short_domain": {
+            "crossed_cells_including_partial": 2860,
+            "coverage_m": 42.83999999999997,
+            "full_intersection_length_m": {
+              "min": 2.5019663377978674e-05,
+              "median": 0.015934228453741484,
+              "p95": 0.023008661526355566,
+              "max": 0.031014265406531294
+            }
+          },
+          "foil_above": {
+            "crossed_cells_including_partial": 84,
+            "coverage_m": 1.1899999999999997,
+            "full_intersection_length_m": {
+              "min": 0.0008774527450163827,
+              "median": 0.015714461242997982,
+              "p95": 0.021827691409571526,
+              "max": 0.02280074299520518
+            }
+          }
+        },
+        {
+          "z_m": 2.1,
+          "short_domain": {
+            "crossed_cells_including_partial": 2873,
+            "coverage_m": 42.83999999999994,
+            "full_intersection_length_m": {
+              "min": 1.0954682032604524e-05,
+              "median": 0.015952019823387564,
+              "p95": 0.022678464447758853,
+              "max": 0.030981407911713
+            }
+          },
+          "foil_above": {
+            "crossed_cells_including_partial": 88,
+            "coverage_m": 1.19,
+            "full_intersection_length_m": {
+              "min": 0.00045487196142124375,
+              "median": 0.014615961823845586,
+              "p95": 0.018785727575781425,
+              "max": 0.02274899548254905
+            }
+          }
+        },
+        {
+          "z_m": 2.25,
+          "short_domain": {
+            "crossed_cells_including_partial": 2859,
+            "coverage_m": 42.83999999999992,
+            "full_intersection_length_m": {
+              "min": 8.417309470765133e-06,
+              "median": 0.015994269692631846,
+              "p95": 0.022545146254159043,
+              "max": 0.03009201994112054
+            }
+          },
+          "foil_above": {
+            "crossed_cells_including_partial": 88,
+            "coverage_m": 1.19,
+            "full_intersection_length_m": {
+              "min": 0.0007291001744301195,
+              "median": 0.014616432698539822,
+              "p95": 0.01868783225576722,
+              "max": 0.018761688644397312
+            }
+          }
+        }
+      ],
+      "extension_interface_rows": {
+        "DOMAIN.inlet": {
+          "intersected_rows": 31,
+          "row_height_m": {
+            "min": 0.019756932298689023,
+            "median": 0.019970401461471,
+            "p95": 0.020168305097978845,
+            "max": 0.0201838706242512
+          },
+          "wave_height0p5_over_max_row_height": 24.772255495893,
+          "wave_height0p5_over_median_row_height": 25.037053008906838,
+          "intersected_row_bounds_m": [
+            [
+              1.6945329633117723,
+              1.7145033647732433
+            ],
+            [
+              1.7145033647732433,
+              1.7346715163197217
+            ],
+            [
+              1.7346715163197217,
+              1.7546419177811927
+            ],
+            [
+              1.7546419177811927,
+              1.7744145691576563
+            ],
+            [
+              1.7744145691576563,
+              1.7941869134311172
+            ],
+            [
+              1.7941869134311172,
+              1.8141573148925865
+            ],
+            [
+              1.8141573148925865,
+              1.8343257735420657
+            ],
+            [
+              1.8343257735420657,
+              1.8542961750035367
+            ],
+            [
+              1.8542961750035367,
+              1.8742665764650077
+            ],
+            [
+              1.8742665764650077,
+              1.8942369779264787
+            ],
+            [
+              1.8942369779264787,
+              1.9142073793879497
+            ],
+            [
+              1.9142073793879497,
+              1.9341777808494207
+            ],
+            [
+              1.9341777808494207,
+              1.954361651473672
+            ],
+            [
+              1.954361651473672,
+              1.9743320529351411
+            ],
+            [
+              1.9743320529351411,
+              1.9940889852338302
+            ],
+            [
+              1.9940889852338302,
+              2.013877036265761
+            ],
+            [
+              2.013877036265761,
+              2.033847437727232
+            ],
+            [
+              2.033847437727232,
+              2.054000189618243
+            ],
+            [
+              2.054000189618243,
+              2.073970591079714
+            ],
+            [
+              2.073970591079714,
+              2.0939409925411834
+            ],
+            [
+              2.0939409925411834,
+              2.1139113940026526
+            ],
+            [
+              2.1139113940026526,
+              2.1338817954641236
+            ],
+            [
+              2.1338817954641236,
+              2.1538521969255946
+            ],
+            [
+              2.1538521969255946,
+              2.1738225983870656
+            ],
+            [
+              2.1738225983870656,
+              2.1937929998485366
+            ],
+            [
+              2.1937929998485366,
+              2.2137634013100076
+            ],
+            [
+              2.2137634013100076,
+              2.2335671491967446
+            ],
+            [
+              2.2335671491967446,
+              2.253537550658214
+            ],
+            [
+              2.253537550658214,
+              2.273674605694417
+            ],
+            [
+              2.273674605694417,
+              2.293645007155888
+            ],
+            [
+              2.293645007155888,
+              2.313615408617359
+            ]
+          ]
+        },
+        "DOMAIN.outlet": {
+          "intersected_rows": 31,
+          "row_height_m": {
+            "min": 0.019751567073635456,
+            "median": 0.019994912828655842,
+            "p95": 0.02007514962226775,
+            "max": 0.020238258583676227
+          },
+          "wave_height0p5_over_max_row_height": 24.705682948595683,
+          "wave_height0p5_over_median_row_height": 25.006360582048735,
+          "intersected_row_bounds_m": [
+            [
+              1.6844886890506707,
+              1.7044836018793266
+            ],
+            [
+              1.7044836018793266,
+              1.7244785147079806
+            ],
+            [
+              1.7244785147079806,
+              1.7444734275366365
+            ],
+            [
+              1.7444734275366365,
+              1.7644424732254826
+            ],
+            [
+              1.7644424732254826,
+              1.7844373860541385
+            ],
+            [
+              1.7844373860541385,
+              1.804458166022604
+            ],
+            [
+              1.804458166022604,
+              1.824453078851258
+            ],
+            [
+              1.824453078851258,
+              1.844447991679914
+            ],
+            [
+              1.844447991679914,
+              1.8644429045085698
+            ],
+            [
+              1.8644429045085698,
+              1.8844378173372256
+            ],
+            [
+              1.8844378173372256,
+              1.9044327301658814
+            ],
+            [
+              1.9044327301658814,
+              1.9244276429945355
+            ],
+            [
+              1.9244276429945355,
+              1.9444225558231913
+            ],
+            [
+              1.9444225558231913,
+              1.9644174686518472
+            ],
+            [
+              1.9644174686518472,
+              1.984277775033087
+            ],
+            [
+              1.984277775033087,
+              2.004272687861743
+            ],
+            [
+              2.004272687861743,
+              2.024402207137813
+            ],
+            [
+              2.024402207137813,
+              2.044397119966469
+            ],
+            [
+              2.044397119966469,
+              2.0643920327951246
+            ],
+            [
+              2.0643920327951246,
+              2.0843869456237805
+            ],
+            [
+              2.0843869456237805,
+              2.1043818584524363
+            ],
+            [
+              2.1043818584524363,
+              2.1243767712810904
+            ],
+            [
+              2.1243767712810904,
+              2.144371684109746
+            ],
+            [
+              2.144371684109746,
+              2.164366596938402
+            ],
+            [
+              2.164366596938402,
+              2.184361509767058
+            ],
+            [
+              2.184361509767058,
+              2.2041130768406934
+            ],
+            [
+              2.2041130768406934,
+              2.2241079896693474
+            ],
+            [
+              2.2241079896693474,
+              2.2443462482530236
+            ],
+            [
+              2.2443462482530236,
+              2.2643411610816795
+            ],
+            [
+              2.2643411610816795,
+              2.2843360739103353
+            ],
+            [
+              2.2843360739103353,
+              2.304330986738991
+            ]
+          ]
+        }
+      },
+      "quality": {
+        "notes": [
+          "min_cell_quality field=CellQuality population=fluid units=",
+          "min_volume_change field=VolumeChange population=fluid units=",
+          "min_face_validity field=FaceValidity population=fluid units=",
+          "max_skewness_angle_deg field=SkewnessAngle population=fluid units=",
+          "Diagnostic CellQuality < 0.01: 0.0 elements in fluid; review trigger, not universal acceptance limit",
+          "Diagnostic VolumeChange < 0.01: 2.0 elements in fluid; review trigger, not universal acceptance limit",
+          "Diagnostic SkewnessAngle > 80.0: 0.0 elements in fluid; review trigger, not universal acceptance limit",
+          "Directed sweep does not retain PrismLayerNumber metadata; audit layered topology separately.",
+          "Centroid y mismatch needs topology inspection before flow."
+        ],
+        "metrics": {
+          "cell_count": 282379,
+          "mesh_time_s": 0,
+          "NegativeVolumeCells": 0,
+          "UnclosedCells": 0,
+          "DegeneratedFeCells": 0,
+          "min_cell_quality": 0.07094186540769823,
+          "min_volume_change": 0.0042558289814210015,
+          "min_face_validity": 1.0,
+          "max_skewness_angle_deg": 45.040696525393734,
+          "diagnostic_CellQuality_below_0.01": 0.0,
+          "diagnostic_VolumeChange_below_0.01": 2.0,
+          "diagnostic_SkewnessAngle_above_80.0": 0.0,
+          "centroid_y_min_m": 0.019999999999999987,
+          "centroid_y_max_m": 0.020000000000000014,
+          "centroid_y_range_m": 2.7755575615628914e-17
+        },
+        "status": "mesh_generated",
+        "case_id": "M10_FS020_r1"
+      },
+      "topology": {
+        "cells": 282379,
+        "cells_with_one_source_and_target_face": 282379,
+        "invalid_cells": [],
+        "single_layer_topology": true,
+        "node_y_min_m": 0.01,
+        "node_y_max_m": 0.03,
+        "source_nodes": 524110,
+        "paired_nodes": 524110,
+        "max_target_source_xz_displacement_m": 0.0,
+        "y_plane_error_m": 0.0,
+        "foil_edges": 856,
+        "foil_perimeter_m": 2.420247199693756,
+        "area_fraction_any_quad_layers": 0.9988296604199051,
+        "area_fraction_at_least_15_quad_layers": 0.987039181807564,
+        "layer_histogram": {
+          "48": 835,
+          "49": 9,
+          "3": 2,
+          "2": 2,
+          "1": 6,
+          "0": 2
+        },
+        "first_thickness_min_m": 1.5260233597707663e-06,
+        "first_thickness_max_m": 1.5307210708864613e-06,
+        "method": "CGNS connectivity: every volume cell must touch both span planes; prism coverage inferred by following consecutive quadrilateral cells normal to each foil edge, area weighted."
+      },
+      "extrusion": {
+        "cells": 282379,
+        "source_vertices": 524110,
+        "source_cells_unchanged": true,
+        "source_xz_coordinates_unchanged": true,
+        "span_m": 0.02,
+        "minimum_source_area_m2": 7.736736434995602e-10,
+        "minimum_reconstructed_volume_m3": 1.5473472869991203e-11,
+        "total_volume_m3": 25.701684231833642,
+        "negative_or_zero_reconstructed_volumes": 0,
+        "self_intersecting_source_cells": 0,
+        "nonmanifold_source_edges": 0,
+        "same_side_internal_faces": 0,
+        "boundary_face_counts": {
+          "Polyfaces_fluid": 804916,
+          "HF_012_wall": 856,
+          "DOMAIN.top": 172,
+          "DOMAIN.inlet": 187,
+          "DOMAIN.outlet": 186,
+          "Q2D_span_source": 282379,
+          "Q2D_span_target": 282379,
+          "DOMAIN.bottom": 172
+        },
+        "method": "Rebuild all spanwise faces and signed NFACE connectivity from unchanged valid source-plane polygons. Native target projection and its inconsistent pairings are discarded.",
+        "output_sha256": "f8c63dd74d83926bb7b03a816915f2c6022c3fbae6ecf028d0adcc86e8faab72"
+      },
+      "nominal": {
+        "id": "M10_FS020_r1",
+        "mesh_number": 10,
+        "family": "M09_derived_wave_grid",
+        "reference": "M09",
+        "linear_refinement": 1.4,
+        "outer_base_m": 0.25,
+        "first_layer_um": 1.530612244897959,
+        "layers": 48,
+        "total_prism_m": 0.01546,
+        "free_surface_m": 0.02,
+        "protected_middle_size_m": 0.14285714285714288,
+        "protected_middle_xz_m": [
+          -11.9,
+          30.94,
+          -3,
+          3.2
+        ],
+        "purpose": "Wave FS sensitivity: change only nominal free-surface control0.0285714to0.020m; preserve M09 foil/near-foil/prism/outer controls. Regenerated actual edges must be audited. Extend to matched4lambda domain after build; requires its own pairedcalm/wave, no accuracyclaim.",
+        "base_m": 0.25,
+        "foil_target_m": 0.0028571428571428576,
+        "foil_min_m": 0.00028571428571428574,
+        "global_min_m": 0.0003571428571428572,
+        "near_foil_m": 0.00892857142857143
+      }
+    }
+  },
+  "difference": {
+    "cells_added": 67471,
+    "cell_count_change_pct": 31.39529473076852,
+    "free_surface": {
+      "bbox_dx_m_median_change_pct": -28.92717615263145,
+      "bbox_dx_m_p95_change_pct": -26.431241452691534,
+      "bbox_dz_m_median_change_pct": -36.63135549222418,
+      "bbox_dz_m_p95_change_pct": -30.164884860305886,
+      "cell_count_change_pct": 113.80981976382847
+    },
+    "foil_above": {
+      "bbox_dx_m_median_change_pct": -37.15184472596961,
+      "bbox_dx_m_p95_change_pct": -40.58543006688472,
+      "bbox_dz_m_median_change_pct": -35.35085586640518,
+      "bbox_dz_m_p95_change_pct": -32.67403333758807,
+      "cell_count_change_pct": 151.9959058341863
+    },
+    "incoming": {
+      "bbox_dx_m_median_change_pct": -21.371503095454024,
+      "bbox_dx_m_p95_change_pct": -28.817473871163468,
+      "bbox_dz_m_median_change_pct": -33.059201374385125,
+      "bbox_dz_m_p95_change_pct": -25.76888960637138,
+      "cell_count_change_pct": 98.08252655324749
+    },
+    "downstream": {
+      "bbox_dx_m_median_change_pct": -30.43792899998715,
+      "bbox_dx_m_p95_change_pct": -22.793968944453557,
+      "bbox_dz_m_median_change_pct": -38.21179163213856,
+      "bbox_dz_m_p95_change_pct": -31.845340910145538,
+      "cell_count_change_pct": 117.23219747400235
+    }
+  },
+  "preservation_checks": {
+    "foil_source_coordinates_same_to_1e_minus12_m": true,
+    "max_foil_source_coordinate_displacement_m": 4.441434166503682e-16,
+    "foil_edge_count_equal": true,
+    "layer_histogram_equal": true,
+    "per_edge_prism_comparison_max_abs_delta": {
+      "x": 2.220446049250313e-16,
+      "z": 2.7755575615628914e-17,
+      "edge_length_m": 6.657001339060997e-16,
+      "continuous_quad_layers": 0.0,
+      "first_thickness_m": 6.394717586943703e-17,
+      "total_thickness_m": 6.245004513516506e-17
+    },
+    "per_edge_layer_count_equal": true,
+    "all_shared_nominal_controls_match": true,
+    "domain_bounds_equal_to_1e_minus10_m": true,
+    "source_build_audit_pass": true
+  },
+  "cost_interpretation": {
+    "measured_cell_count_ratio": 1.3139529473076852,
+    "measured_solver_cost_available": false,
+    "statement": "Cell count rises by 31.40% on the unchanged short domain. This is not a measured runtime penalty. Smaller free-surface streamwise cells can also increase temporal-resolution cost; measure actual cost with matched solver settings and physical time."
+  },
+  "extension_plan": {
+    "status": "pending separate long-domain construction/import/quality audit",
+    "original_short_x_m": [
+      -11.9,
+      30.94
+    ],
+    "target_W01_L4_x_m": [
+      -35,
+      45
+    ],
+    "target_length_m": 80,
+    "remote_extension_nominal_dx_m": 0.2,
+    "vertical_rows": "Carry the actual refined inlet/outlet z rows coherently into extension strips; do not restore old M09 vertical spacing.",
+    "distinction": "The changed0.020m control is isotropic in the short-domain core, so it refines both x and z. Planned remote strips use approximately0.2m in x with inherited refined vertical rows. This is coupled free-surface refinement, not a vertical-only experiment."
+  },
+  "limits": [
+    "No accepted flow, calm or wave result exists for this new grid in this review.",
+    "Short-domain mesh audit does not validate the extended80m domain, wave propagation, boundary treatment, CFL or timestep.",
+    "An approximately H/20 guideline is not a universal acceptance criterion; compare measured wave amplitude,phase,mean level and force-cycle responses on matched grids.",
+    "Every regenerated wave grid needs its own matched calm reference; preserve M09 data separately.",
+    "A forthcoming extended mesh must be audited independently; do not assume the reported short-domain cell count or statistics apply to the complete wave domain."
+  ],
+  "provenance": [
+    {
+      "path": "F:\\ntnu\\mesh_screening_20261028\\force_stabilization_20261029\\wave_fs_refinement_result.json",
+      "sha256": "1f992bf0c2fdc7ad4294d7e82388904fafd19bee4568c6ab633c9f3817669f92"
+    },
+    {
+      "path": "F:\\ntnu\\mesh_screening_20261028\\force_stabilization_20261029\\wave_fs_refinement_state.json",
+      "sha256": "36c0b25cc5dc111abb136860e164b66414abf1576335356000c38efad9a0c435"
+    },
+    {
+      "path": "F:\\ntnu\\mesh_screening_20261028\\force_stabilization_20261029\\MeshRawM10_FS020_r1.java",
+      "sha256": "61b92ce86ecfad17f21620110fd7176904de1fcc4a54d458c5dc06e35728a1ef"
+    },
+    {
+      "path": "F:\\ntnu\\mesh_screening_20261028\\force_stabilization_20261029\\professor_c01_fs_review.py",
+      "sha256": "bad993813f4fcd3120228c00363b2b3f14010b86c1d3d75d6b7e17c272e7a7a7"
+    },
+    {
+      "path": "F:\\ntnu\\mesh_screening_20261028\\force_stabilization_20261029\\professor_c01_fs_ray_review.py",
+      "sha256": "5862fcc6edd021b5369da32b176bc5913059d0fc870c1c4bd7a1946ddaf2a41e"
+    },
+    {
+      "path": "F:\\ntnu\\mesh_screening_20261028\\force_stabilization_20261029\\professor_c01_wavegrid_recommendation.json",
+      "sha256": "948b41758d5bdf7a8b6b33442df6a15e3e54096bcc7c528fc7f51182ee6742fd"
+    },
+    {
+      "path": "F:\\ntnu\\mesh_screening_20261028\\quasi2d_012_20261029\\M09\\design.json",
+      "sha256": "6655b207dc964a64f71aa3e3b0dd61f70d1b504ec34aa625e994ffb2a139a6b6"
+    },
+    {
+      "path": "F:\\ntnu\\mesh_screening_20261028\\quasi2d_012_20261029\\M09\\topology_audit.json",
+      "sha256": "59b5cb69de93cd528404c77010594ff32d190f4a875420357e95b8056156c9be"
+    },
+    {
+      "path": "F:\\ntnu\\mesh_screening_20261028\\quasi2d_012_20261029\\M09\\extrusion_validation.json",
+      "sha256": "d67906d8d12bbd36d1703ff1794881c673e12c82640a862e9381b7b1a4cd05c6"
+    },
+    {
+      "path": "F:\\ntnu\\mesh_screening_20261028\\quasi2d_012_20261029\\M09\\measurement.json",
+      "sha256": "b06039779eb517fddc9629962a9bacc9e47735098321763334b31e7891275d7b"
+    },
+    {
+      "path": "F:\\ntnu\\mesh_screening_20261028\\quasi2d_012_20261029\\M09\\foil_layer_topology.csv",
+      "sha256": "f750c02c0e105ad46f9442b5525d2ab324d0476b83b44ad8244907c90317f0fc"
+    },
+    {
+      "path": "F:\\ntnu\\mesh_screening_20261028\\quasi2d_012_20261029\\M10_FS020_r1\\design.json",
+      "sha256": "b6ea61b61a34afbde7c62ba0739f24d6a4fa88b9a4e397eb56622095e99a5214"
+    },
+    {
+      "path": "F:\\ntnu\\mesh_screening_20261028\\quasi2d_012_20261029\\M10_FS020_r1\\topology_audit.json",
+      "sha256": "06d779d9998342ec8a7aba827e53439053f7b602332c27818eba33f96ab89183"
+    },
+    {
+      "path": "F:\\ntnu\\mesh_screening_20261028\\quasi2d_012_20261029\\M10_FS020_r1\\extrusion_validation.json",
+      "sha256": "c50792e2bc086bcfbec5095319f5a7267ae26284f46e21c650f19919140e51db"
+    },
+    {
+      "path": "F:\\ntnu\\mesh_screening_20261028\\quasi2d_012_20261029\\M10_FS020_r1\\measurement.json",
+      "sha256": "b20530b2ad2cf3a97dd87564940d2467cb95db9135f71b2f411f80ae035a0b96"
+    },
+    {
+      "path": "F:\\ntnu\\mesh_screening_20261028\\quasi2d_012_20261029\\M10_FS020_r1\\foil_layer_topology.csv",
+      "sha256": "456b07262d5abaaefa149315aa6e72d7148db8b3a030766afd23d411e29570ed"
+    }
+  ]
+}

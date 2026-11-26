@@ -1,0 +1,14 @@
+{
+  "at": "2026-11-02T09:35:35.238847+01:00",
+  "status": "passed",
+  "first_job": "5873921a9db143fd",
+  "second_job": "c8d21a96c5764191",
+  "third_job": "c85d49e79ffb49f7",
+  "new_steps": 10,
+  "extension_steps": 20,
+  "pause_saved": true,
+  "resume_contiguous": true,
+  "C01_source_unchanged": true,
+  "macro_sha256": "cc329cf17bf829b46b3a89dcc406f4ab62ccc3bb1588be6ee2f0d62f4c76f31e",
+  "scientific_result": false
+}

@@ -1,0 +1,101 @@
+{
+  "at": "2026-11-01T04:51:27.553057+01:00",
+  "type": "read_only_four_cycle_milestone",
+  "source_run": "E:\\ntnu_mesh_optimization_20261030\\M13_wave_direct_20261031\\M13_GPU_W20_H050_continuation_R4V_20261101",
+  "lineage": [
+    "M13_GPU_W20_H050_pilot_20261031_r2",
+    "M13_GPU_W20_H050_continuation_R3V_20261101",
+    "M13_GPU_W20_H050_continuation_R4V_20261101"
+  ],
+  "active_solver_verified_by_collector": true,
+  "dt_s": 0.0004,
+  "cells": 309441,
+  "last": {
+    "time": 11.153200000005839,
+    "CL": 0.2967367857488424,
+    "CD": 0.008303059998155846,
+    "CFL": 17.606559164926203,
+    "water": 38.409775128611145,
+    "step": 4935.0,
+    "inlet_H": 0.5
+  },
+  "verified_native_frame": {
+    "time_s": 11.13920000000581,
+    "sha256": "80681e4fbccc1f1c68f4557fe0ae1db3feab9944dd62d29ced2128617564eaee",
+    "generated_at": "2026-11-01T04:50:56.868665600+01:00",
+    "interface_CFL": 0.9276390298546916,
+    "verified_bytes": true
+  },
+  "cycles": {
+    "count": 4,
+    "status": "four_cycles_available_diagnostic_only",
+    "gauge_x_m": -0.5,
+    "not_before_s": 7.054375334575275,
+    "overlays": [
+      {
+        "number": 1,
+        "start": 7.3932763438357085,
+        "end": 8.240879110709262,
+        "T": 0.8476027668735533,
+        "CL_mean": 0.3184025319804023,
+        "CD_mean": 0.00664942492086062,
+        "CL_ptp": 0.10362492034624499,
+        "CD_ptp": 0.004718586637429549
+      },
+      {
+        "number": 2,
+        "start": 8.240879110709262,
+        "end": 9.088019681086953,
+        "T": 0.8471405703776913,
+        "CL_mean": 0.31801998638284923,
+        "CD_mean": 0.006673395925769287,
+        "CL_ptp": 0.103033230975841,
+        "CD_ptp": 0.004653017681773463,
+        "CL_cycle_RMS_abs": 0.00047929461566922666,
+        "CL_mean_delta": -0.0003825455975530745,
+        "CD_cycle_RMS_abs": 3.5206174154854805e-05,
+        "CD_mean_delta": 2.3971004908667458e-05
+      },
+      {
+        "number": 3,
+        "start": 9.088019681086953,
+        "end": 9.935200000003269,
+        "T": 0.8471803189163154,
+        "CL_mean": 0.31809638796942113,
+        "CD_mean": 0.006669353773359243,
+        "CL_ptp": 0.10300748848856667,
+        "CD_ptp": 0.004654410858271755,
+        "CL_cycle_RMS_abs": 8.328604910886861e-05,
+        "CL_mean_delta": 7.640158657190588e-05,
+        "CD_cycle_RMS_abs": 4.612121731354059e-06,
+        "CD_mean_delta": -4.042152410043895e-06
+      },
+      {
+        "number": 4,
+        "start": 9.935200000003269,
+        "end": 10.782427723342698,
+        "T": 0.8472277233394294,
+        "CL_mean": 0.3181700933067692,
+        "CD_mean": 0.006665234491563065,
+        "CL_ptp": 0.1030165860430175,
+        "CD_ptp": 0.004665274618062671,
+        "CL_cycle_RMS_abs": null,
+        "CL_mean_delta": 7.370533734807339e-05,
+        "CD_cycle_RMS_abs": null,
+        "CD_mean_delta": -4.119281796177883e-06
+      }
+    ]
+  },
+  "calm_reference_separate_run": {
+    "CL": 0.31435149741930424,
+    "CD": 0.007071965956387301,
+    "window": [
+      3.6991999999996357,
+      3.899199999999636
+    ],
+    "source": "M13 calm last 0.2 s; separate saved source, same dt"
+  },
+  "scientific_acceptance": false,
+  "note": "Four complete gauge-phase cycles are diagnostic only; no 20-cycle acceptance, no confirmed incident-wave validation; source solvers and archives unchanged",
+  "new_solver_started": false
+}

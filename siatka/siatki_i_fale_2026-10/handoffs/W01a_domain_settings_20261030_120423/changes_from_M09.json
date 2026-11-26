@@ -1,0 +1,62 @@
+[
+  {
+    "item": "Horizontal domain",
+    "old": [
+      -11.9,
+      30.94
+    ],
+    "new": [
+      -35,
+      45
+    ],
+    "reason": "Original wave scope requires4 wavelengths forlambda20:80m. Remote inlet/outlet strips appended."
+  },
+  {
+    "item": "Vertical domain",
+    "old": [
+      -22,
+      8
+    ],
+    "new": [
+      -22,
+      8
+    ],
+    "reason": "UNCHANGED.24mwater+6mair withwaterlinez2; historical16m is superseded."
+  },
+  {
+    "item": "Mesh family/cells",
+    "old": "M09 short214908",
+    "new": "M10 FS020 short282379;80mextended317277",
+    "reason": "Refinedfree-surfacegridplusremoteextension; notanotheracceptedmemberofoldcalmcohort."
+  },
+  {
+    "item": "Nominal free-surface control [m]",
+    "old": 0.028571428571428574,
+    "new": 0.02,
+    "reason": "Wavefree-surfaceresolutioncandidate; requiresownwavegrid/timeaccuracychecks."
+  },
+  {
+    "item": "Foil/prism controls",
+    "old": "SameasexportedM09controls",
+    "new": "Preserved856foiledgesand48prism layers",
+    "reason": "Independentgeometryreviewpreservedfoil/prismstopology/coordinates."
+  },
+  {
+    "item": "Bed boundary",
+    "old": "Symmetry",
+    "new": "Slip wall",
+    "reason": "InstalledSiemensVOFwaveguidelines recommend slipwall/wavevelocity; fixeddepthretained."
+  },
+  {
+    "item": "Outlet backflow pressure",
+    "old": "Static in historical setup",
+    "new": "Environmental",
+    "reason": "Controlledwaveoutletstabilityrecovery; currentcalmandwavepairedconditionsmatch."
+  },
+  {
+    "item": "Pressure AMG relative tolerance",
+    "old": 0.1,
+    "new": 0.01,
+    "reason": "Currentexploratorywaveconfiguration; SO1ms10inner unchanged afterguardedstartup."
+  }
+]

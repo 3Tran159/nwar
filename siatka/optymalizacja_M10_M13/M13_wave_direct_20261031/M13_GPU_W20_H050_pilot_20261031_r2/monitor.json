@@ -1,0 +1,11 @@
+{
+  "at": "2026-10-31T23:48:58.763010+01:00",
+  "phase": "isolated_M13_gpu_foil_wave_pilot",
+  "status": "running",
+  "reason": null,
+  "pid": 14880,
+  "last_step": "1200",
+  "time_s": "4.379199999999583",
+  "elapsed_wall_s": 1140.720887100004,
+  "main_timing": []
+}

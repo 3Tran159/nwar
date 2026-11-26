@@ -1,0 +1,10 @@
+{
+  "dt_s": 0.0001,
+  "flow_max_CFL_limit": 25,
+  "interface_max_CFL_limit": 1,
+  "effective_VOF_max_CFL_limit": 1,
+  "workers": 22,
+  "gpu": false,
+  "scope": "calm water",
+  "interpretation": "Project screening limits for implicit URANS/VOF; temporal and inner iteration controls are still required for GCI."
+}

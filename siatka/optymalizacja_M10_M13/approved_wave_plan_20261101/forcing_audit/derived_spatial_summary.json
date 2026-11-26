@@ -1,0 +1,84 @@
+{
+  "at": "2026-11-01T10:47:18.125383+01:00",
+  "source_csv": "E:\\ntnu_mesh_optimization_20261030\\approved_wave_plan_20261101\\forcing_audit\\wave_R4V\\forcing_and_fields.csv",
+  "rows": 309441,
+  "x_range_m": [
+    -34.90043103448277,
+    44.900985915492974
+  ],
+  "z_range_m": [
+    -21.971243213271997,
+    7.971313051520504
+  ],
+  "forcing_fields_invalid_sentinel_count": {
+    "Damping Boundary Distance (m)": 309441,
+    "Forcing Boundary Distance (m)": 309441,
+    "Damping Strength Indicator": 309441,
+    "Forcing Strength Indicator": 309441,
+    "VOF Wave Damping Factor": 309441
+  },
+  "forcing_fields_valid_count": {
+    "Damping Boundary Distance (m)": 0,
+    "Forcing Boundary Distance (m)": 0,
+    "Damping Strength Indicator": 0,
+    "Forcing Strength Indicator": 0,
+    "VOF Wave Damping Factor": 0
+  },
+  "spatial_cell_sample_summary_unweighted": {
+    "-1000000000.0:-15": {
+      "n": 17500,
+      "u_min": 17.39537491499718,
+      "u_max": 18.47209441621633,
+      "alpha_min": 0.0,
+      "alpha_max": 1.0,
+      "pressure_min": -70.07374259182683,
+      "pressure_max": 236210.0099673486
+    },
+    "-15:-5": {
+      "n": 28906,
+      "u_min": 17.620314981529614,
+      "u_max": 18.47696313488185,
+      "alpha_min": 0.0,
+      "alpha_max": 1.0,
+      "pressure_min": -70.23939232329566,
+      "pressure_max": 236816.96270540197
+    },
+    "-5:5": {
+      "n": 152243,
+      "u_min": 0.000513425874949974,
+      "u_max": 21.698078059653895,
+      "alpha_min": 0.0,
+      "alpha_max": 1.0,
+      "pressure_min": -64177.97365130845,
+      "pressure_max": 236908.5208519139
+    },
+    "5:15": {
+      "n": 36548,
+      "u_min": 17.45689716541094,
+      "u_max": 18.434610946493606,
+      "alpha_min": 0.0,
+      "alpha_max": 1.0,
+      "pressure_min": -70.29610114781738,
+      "pressure_max": 236813.59085848508
+    },
+    "15:25": {
+      "n": 39764,
+      "u_min": 17.646865496584738,
+      "u_max": 18.513910392686917,
+      "alpha_min": 0.0,
+      "alpha_max": 1.0,
+      "pressure_min": -70.17047871071206,
+      "pressure_max": 236009.1273405679
+    },
+    "25:1000000000.0": {
+      "n": 34480,
+      "u_min": -3.082873744588744,
+      "u_max": 19.017198871524418,
+      "alpha_min": 0.0,
+      "alpha_max": 1.0,
+      "pressure_min": -70.1164862443272,
+      "pressure_max": 235508.07333786527
+    }
+  },
+  "interpretation": "Cells are not volume-weighted. Sentinel >1e300 is not a physical forcing value; absence of valid values cannot prove forcing is zero."
+}

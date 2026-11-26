@@ -1,0 +1,74 @@
+{
+  "status": "both_meshes_built_pending_family_audit",
+  "pid": 2564,
+  "updated_at": "2026-10-30T13:21:59.383083+01:00",
+  "results": [
+    {
+      "mesh": "G10_M",
+      "cells": 595285,
+      "gates": {
+        "NegativeVolumeCells": true,
+        "UnclosedCells": true,
+        "DegeneratedFeCells": true,
+        "min_cell_quality": true,
+        "min_face_validity": true,
+        "exact_source_extrusion": true,
+        "source_unchanged": true
+      },
+      "metrics": {
+        "cell_count": 595285,
+        "mesh_time_s": 0,
+        "NegativeVolumeCells": 0,
+        "UnclosedCells": 0,
+        "DegeneratedFeCells": 0,
+        "min_cell_quality": 0.13362966311141047,
+        "min_volume_change": 0.0032356147526815867,
+        "min_face_validity": 1.0,
+        "max_skewness_angle_deg": 49.28514678265151,
+        "diagnostic_CellQuality_below_0.01": 0.0,
+        "diagnostic_VolumeChange_below_0.01": 2.0,
+        "diagnostic_SkewnessAngle_above_80.0": 0.0,
+        "centroid_y_min_m": 0.01999999999999999,
+        "centroid_y_max_m": 0.020000000000000014,
+        "centroid_y_range_m": 2.42861286636753e-17
+      },
+      "source_sha256": "bbc848738cc372b085974bdf5fd3bd871d500054435687ab8eca0aa3a5bf612a",
+      "status": "basic_quality_passed",
+      "scope": "Geometry-only artifact; production physics and fields must come from the current W01a saved checkpoint via mesh replacement."
+    },
+    {
+      "mesh": "G10_F",
+      "cells": 1154199,
+      "gates": {
+        "NegativeVolumeCells": true,
+        "UnclosedCells": true,
+        "DegeneratedFeCells": true,
+        "min_cell_quality": true,
+        "min_face_validity": true,
+        "exact_source_extrusion": true,
+        "source_unchanged": true
+      },
+      "metrics": {
+        "cell_count": 1154199,
+        "mesh_time_s": 0,
+        "NegativeVolumeCells": 0,
+        "UnclosedCells": 0,
+        "DegeneratedFeCells": 0,
+        "min_cell_quality": 0.13384653265284904,
+        "min_volume_change": 0.00252528261836432,
+        "min_face_validity": 1.0,
+        "max_skewness_angle_deg": 53.14441833368803,
+        "diagnostic_CellQuality_below_0.01": 0.0,
+        "diagnostic_VolumeChange_below_0.01": 2.0,
+        "diagnostic_SkewnessAngle_above_80.0": 0.0,
+        "centroid_y_min_m": 0.019999999999999987,
+        "centroid_y_max_m": 0.020000000000000014,
+        "centroid_y_range_m": 2.7755575615628914e-17
+      },
+      "source_sha256": "42a37a1a6b5d4f391dbd1c4e27b8d1daa28dba86ce2633ee68ed830e1f227155",
+      "status": "basic_quality_passed",
+      "scope": "Geometry-only artifact; production physics and fields must come from the current W01a saved checkpoint via mesh replacement."
+    }
+  ],
+  "flow_launched": false
+}

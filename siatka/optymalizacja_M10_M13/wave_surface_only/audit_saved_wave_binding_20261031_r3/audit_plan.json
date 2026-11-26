@@ -1,0 +1,11 @@
+{
+  "at": "2026-10-31T14:43:45.404986+01:00",
+  "source_sha256": "eabd30c5e87754857fe0bca27d2cdd4dfe2268e132919d822c1ffbeac01f5e46",
+  "model": "wave-only no foil",
+  "source_physical_s": 2.507,
+  "M11": "E:\\ntnu_mesh_optimization_20261030\\M11_G10_M_GPU_queue_20261031_105607_91db08",
+  "steps_requested": 0,
+  "source_preserved": true,
+  "CPU_workers": 2,
+  "GPU": false
+}

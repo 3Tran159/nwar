@@ -1,0 +1,20 @@
+{
+  "status": "wave_ramp_pilot_stopped_or_failed",
+  "at": "2026-10-31T10:08:49.172641+01:00",
+  "directory": "E:\\ntnu_mesh_optimization_20261030\\wave_surface_only\\WS_L20_H050_baseline_inlet_wave_CPU2_20261031_100620_c8139b",
+  "exit_code": 0,
+  "reason": "another_STAR_solver_started",
+  "completed": {
+    "status": "stopped_by_marker",
+    "steps": 0,
+    "time_s": 0.4000000000000003,
+    "stage": "incident_wave_ramp_only; no acceptance; downstream arrival not yet established",
+    "calm_source_preserved": true,
+    "initialization_performed": false
+  },
+  "source_unchanged": true,
+  "final_sim_exists": true,
+  "propagation_verified": false,
+  "C01_hold_unchanged": true,
+  "M12_not_restarted": true
+}

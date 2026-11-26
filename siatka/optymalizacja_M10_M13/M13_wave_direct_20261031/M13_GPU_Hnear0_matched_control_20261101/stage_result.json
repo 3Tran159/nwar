@@ -1,0 +1,10 @@
+{
+  "exit_code": 1,
+  "source_unchanged": true,
+  "controller_reason": null,
+  "completed": {},
+  "phase": "M13_matched_nearzero_control",
+  "at": "2026-11-01T11:42:48.108804+01:00",
+  "wall_s": 2432.4745400000247,
+  "timing": []
+}

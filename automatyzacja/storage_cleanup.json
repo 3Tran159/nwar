@@ -1,0 +1,13 @@
+{
+  "enabled": true,
+  "backup_root": "H:/10_ARCHIWUM_PROJEKTOW/NTNU_RESEARCH_ARCHIVE/NWAR_SIM_FINALS",
+  "minimum_backup_free_GiB": 10,
+  "interval_minutes": 60,
+  "archive_completed_runs": true,
+  "deduplicate_identical_sim_and_field_history": true,
+  "delete_obsolete_local_reports": true,
+  "protected_case_ids": [
+    "W04k"
+  ],
+  "authorization": "User 2026-11-09: automatic cleanup; final SIMs and field histories on backup; remove redundant copies and old reports; do not touch active W04k."
+}

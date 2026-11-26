@@ -1,0 +1,21 @@
+{
+  "stage": "flat_calm_ONLY",
+  "old_source_wave_filled": true,
+  "no_wave_activation": true,
+  "source": "E:\\ntnu\\quasi2d_waves_20261029\\W20_H24_X4_Q2D_r5\\built.sim",
+  "source_sha256": "0b422d8c395f985212c056ed5434a92551cc1ded79a178539b3782ce123a59f0",
+  "macro_sha256": "d1d48ff2f19937677237d947189943de1de10a0a3b9f3cfd0fea29fb8439e787",
+  "source_built_cells": 53200,
+  "reference_CGNS_verified_equivalent": true,
+  "steps": 400,
+  "dt_s": 0.001,
+  "inner": 10,
+  "CPU_workers": 2,
+  "CPU_mask": 3145728,
+  "gpu": false,
+  "M12_job": "calm_settle_G10_F_GPU_live_r2_resume_20261030_173420_4854e1",
+  "M12_pid": 1996,
+  "M12_baseline_median_s_per_step": 2.3571798999983002,
+  "max_acceptable_slowdown": 0.15,
+  "note": "Independent calm stage, NOT a settled 1ms-wave propagation result, does not release foil-wave hold."
+}

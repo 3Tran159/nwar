@@ -1,0 +1,44 @@
+{
+  "at_local": "2026-10-31T22:58:11+01:00",
+  "status": "read_only_pressure_field_audit_pass_for_finiteness_and_plausibility_not_iterative_convergence",
+  "mode": "STAR-CCM+ batch read-only of copied final .sim, CPU1, 0 solver steps, no saves, SHA verified, sources unchanged",
+  "source_receipts": [
+    "E:\\ntnu_mesh_optimization_20261030\\wave_surface_only\\wave_pressure_readonly_20261031\\flat_calm_53200\\receipt.json",
+    "E:\\ntnu_mesh_optimization_20261030\\wave_surface_only\\wave_pressure_readonly_20261031\\coarse_wave_41200\\receipt.json"
+  ],
+  "flat_calm": {
+    "t_s": 0.4,
+    "pressure_min_Pa": -66.8308007021,
+    "pressure_max_Pa": 233820.5037682,
+    "speed_min_m_s": 17.99999999999,
+    "speed_max_m_s": 18.00000000004,
+    "VOF_water_min": 0,
+    "VOF_water_max": 1
+  },
+  "coarse_wave": {
+    "t_s": 5.503,
+    "pressure_min_Pa": -68.1587266032,
+    "pressure_max_Pa": 233993.21716025,
+    "speed_min_m_s": 17.2611988236,
+    "speed_max_m_s": 18.6302032733,
+    "VOF_water_min": 0,
+    "VOF_water_max": 1
+  },
+  "assessment": "Both snapshots have finite physically plausible global pressure, velocity and VOF extrema, despite huge printed normalized STAR residuals. Catastrophic pressure-field blow-up in the saved coarse state is NOT supported. Does not establish inner-iteration convergence, conservation flux, or trustworthiness of pressure-dependent foil forces.",
+  "provisional_wave_evidence": {
+    "cells": 41200,
+    "lambda_m": 20,
+    "H_m": 0.5,
+    "x0_x10_x20_harmonic_heights_m": [
+      0.5214,
+      0.5281,
+      0.5307
+    ],
+    "max_cfl": 0.1948,
+    "max_water_volume_excursion_pct": 0.049,
+    "upstream_generation_only": true
+  },
+  "next_scientific_gate": "Trace STAR normalized residual reference/scaling and per-step residual reduction; check incident wave mass budget and reflection outside damping zone; no phantom acceptance.",
+  "campaign_hold": "unchanged true",
+  "joined_foil_wave_started": false
+}

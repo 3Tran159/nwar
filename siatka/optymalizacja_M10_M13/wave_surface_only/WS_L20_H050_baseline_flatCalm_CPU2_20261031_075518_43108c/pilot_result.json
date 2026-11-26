@@ -1,0 +1,99 @@
+{
+  "status": "calm_pilot_completed",
+  "at": "2026-10-31T08:05:31.018358+01:00",
+  "directory": "E:\\ntnu_mesh_optimization_20261030\\wave_surface_only\\WS_L20_H050_baseline_flatCalm_CPU2_20261031_075518_43108c",
+  "returncode": 0,
+  "reason": null,
+  "completed": {
+    "stage": "flat calm only; wave not activated; this alone does not certify settled calm",
+    "steps": 400,
+    "time_s": 0.4000000000000003,
+    "status": "target_reached"
+  },
+  "initial_flat_audit": {
+    "cells": 53200,
+    "reinitialized_disposable_copy": true,
+    "throughflow_current_target_m_s": 18.0,
+    "throughflow_current_actual": "[18.0, 0.0, 0.0]",
+    "wave_stage": "flat calm before any inlet incident wave",
+    "forcing_wave": "Calm",
+    "flat_initial_function": "VolumeFractionHeavyFluidWave0",
+    "initial_time_s": 0.0,
+    "GPU": 0,
+    "dt_s": 0.001,
+    "steps_planned": 400,
+    "water_volume_m3": 38.39999999999396,
+    "initial_max_velocity_m_s": 18.000000000000004,
+    "initial_eta_m": [
+      -4.938272013532696e-13,
+      -4.938272013532696e-13,
+      -4.973799150320701e-13,
+      -4.938272013532696e-13,
+      -4.938272013532696e-13
+    ]
+  },
+  "final_sim_exists": true,
+  "main_m12_config_unchanged": true,
+  "original_source_unchanged": true,
+  "timing_windows": [
+    {
+      "at": "2026-10-31T07:56:31.205767+01:00",
+      "main_steps": 31,
+      "main_time_s": 3.098600000002163,
+      "median_s_per_step": 2.3735679500023252,
+      "slowdown_fraction": -0.04568980559582558,
+      "excess_windows": 0
+    },
+    {
+      "at": "2026-10-31T07:57:48.887225+01:00",
+      "main_steps": 32,
+      "main_time_s": 3.1018000000021697,
+      "median_s_per_step": 2.374799899997015,
+      "slowdown_fraction": -0.04519449117311125,
+      "excess_windows": 0
+    },
+    {
+      "at": "2026-10-31T07:59:06.886787+01:00",
+      "main_steps": 31,
+      "main_time_s": 3.1049000000021763,
+      "median_s_per_step": 2.555821649999416,
+      "slowdown_fraction": 0.027586615192942476,
+      "excess_windows": 0
+    },
+    {
+      "at": "2026-10-31T08:00:29.934736+01:00",
+      "main_steps": 31,
+      "main_time_s": 3.108000000002183,
+      "median_s_per_step": 2.633532899999409,
+      "slowdown_fraction": 0.0588309863915053,
+      "excess_windows": 0
+    },
+    {
+      "at": "2026-10-31T08:01:52.920985+01:00",
+      "main_steps": 31,
+      "main_time_s": 3.1111000000021893,
+      "median_s_per_step": 2.651347449998866,
+      "slowdown_fraction": 0.06599345531226586,
+      "excess_windows": 0
+    },
+    {
+      "at": "2026-10-31T08:03:15.882957+01:00",
+      "main_steps": 32,
+      "main_time_s": 3.114300000002196,
+      "median_s_per_step": 2.628801000006206,
+      "slowdown_fraction": 0.056928491709433926,
+      "excess_windows": 0
+    },
+    {
+      "at": "2026-10-31T08:04:39.150925+01:00",
+      "main_steps": 32,
+      "main_time_s": 3.117500000002203,
+      "median_s_per_step": 2.6106973999994807,
+      "slowdown_fraction": 0.049649808138644946,
+      "excess_windows": 0
+    }
+  ],
+  "M12_baseline_s_per_step": 2.4872079999986454,
+  "trustworthy_wave_propagation_result": false,
+  "performance_pass": true
+}

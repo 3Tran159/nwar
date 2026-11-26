@@ -1,0 +1,23 @@
+﻿{
+    "at":  "2026-10-31T07:58:44.1047154+01:00",
+    "event":  "launch_corrected_independent_nofoil_18m_s_flat_calm_CPU2",
+    "directory":  "E:\\ntnu_mesh_optimization_20261030\\wave_surface_only\\WS_L20_H050_baseline_flatCalm_CPU2_20261031_075518_43108c",
+    "physical_stage":  "flat_calm_only",
+    "initial_max_velocity_m_s":  18.000000000000004,
+    "last_max_velocity_m_s":  18.000000000000746,
+    "confirmed_solver_steps":  44,
+    "last_physical_time_s":  0.044000000000000032,
+    "dt_s":  0.001,
+    "last_bulk_max_CFL":  0.090000000000021188,
+    "interface_CFL":  "unavailable_empty_VOF_threshold_not_validated",
+    "water_volume_m3":  38.399999999993945,
+    "five_initial_gauges_flat":  true,
+    "current_corrected_to_m_s":  18,
+    "GPU_used":  0,
+    "auxiliary_lock_present":  true,
+    "source_copy_only":  true,
+    "M12_untouched":  true,
+    "wave_activated":  false,
+    "settled_calm_certified":  false,
+    "propagation_certified":  false
+}

@@ -1,0 +1,58 @@
+{
+  "ok": true,
+  "expanded_profile": "M13_W04_20261102",
+  "source_sha256": "642f9c60686cb67bcefae93083bfd4d0a01668ba1d0891d6122301ca10949d35",
+  "macro_sha256": "59130137d2cf3c3f9343a3104671ab73de6d592cc93dce404757df62752ce142",
+  "messages": "Note: Some input files use or override a deprecated API.\nNote: Recompile with -Xlint:deprecation for details.\nNote: Some input files use or override a deprecated API.\nNote: Recompile with -Xlint:deprecation for details.\n",
+  "compiled_at": "2026-11-09T09:37:16.617499+01:00",
+  "change_authorization": "C:\\Users\\ThinkPad\\Documents\\ChatGPT\\ntnu science\\nwar_automation\\qa\\w04_progress_io_recovery_authorization_20261103.json",
+  "custom_wave_authorization": "User 2026-11-03: self-service wave configurations, H max 1.5 m and wavelength max 40 m; existing numerical guards retained.",
+  "versions": {
+    "2602": {
+      "compiled": true,
+      "build": "21.02.007"
+    },
+    "2606": {
+      "compiled": true,
+      "build": "21.04.009"
+    }
+  },
+  "io_fix": "Unique temporary files, bounded atomic replace retries; optional progress IO cannot abort otherwise healthy solver; critical receipts still fail closed",
+  "cycle_policy_id": "five_measured_cycles_discard_first_20261103",
+  "cycle_policy_verification": "C:\\Users\\ThinkPad\\Documents\\ChatGPT\\ntnu science\\nwar_automation\\qa\\five_cycles_20261103\\verification.json",
+  "short_wave_diagnostic": "W04b H=1.50 m, lambda=10 m, user-authorized 2026-11-06; existing numerical guards retained",
+  "wake_history": {
+    "enabled": true,
+    "compiled": [
+      {
+        "build": "21.02.007",
+        "passed": true
+      },
+      {
+        "build": "21.04.009",
+        "passed": true
+      }
+    ],
+    "native_recording_verified": false,
+    "description": "Compressed wake.simh on a clipped midspan section after startup and propagation.",
+    "native_qa": "E:\\ntnu_mesh_optimization_20261030\\nwar_automation_20261102\\wake_history_native_qa_20261106\\cpu_snapshot\\wake_native_test.txt"
+  },
+  "macro_error_phase_and_stack": true,
+  "wake_history_resume_fix": "A resumed segment uses its unique run folder name as the wake history basename; inherited recording is not reused.",
+  "w04b_checkpoint_stride_steps": 250,
+  "wake_mask_syntax_fix": "Use vector Position components and repair inherited wake recording masks.",
+  "w04b_recovery_checkpoint_stride_steps": 20,
+  "w04b_recovery_checkpoints_retained": 2,
+  "overnight_checkpoint_stride_steps": 20,
+  "native_monitor_export_sha256": "0bac5695dbd6be1c88a6033b6ac98602aa92bfabd1be76ef4857b948fad9ef37",
+  "surface_magnitude_limit_enabled": false,
+  "surface_rule_verification": "E:\\ntnu_mesh_optimization_20261030\\nwar_automation_20261102\\qa\\thinkpad_surface_rule_20261107\\compile.json",
+  "W04g_native_verification": "E:\\ntnu_mesh_optimization_20261030\\nwar_automation_20261102\\qa\\native_W04g_20261107\\compile.json",
+  "custom_wavelength_range_m": [
+    15,
+    40
+  ],
+  "custom_range_verification": "C:\\Users\\ThinkPad\\Documents\\ChatGPT\\ntnu science\\nwar_automation\\qa\\custom_15m_20261108\\compile.json",
+  "W04h_native_verification": "E:\\ntnu_mesh_optimization_20261030\\nwar_automation_20261102\\qa\\native_W04h_20261108\\compile.json",
+  "W04k_native_verification": "E:\\ntnu_mesh_optimization_20261030\\nwar_automation_20261102\\qa\\native_W04k_20261109\\compile.json"
+}

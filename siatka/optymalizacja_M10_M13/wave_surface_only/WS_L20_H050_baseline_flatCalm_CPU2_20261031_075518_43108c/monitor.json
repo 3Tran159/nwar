@@ -1,0 +1,89 @@
+{
+  "status": "running_calm",
+  "at": "2026-10-31T08:05:26.012227+01:00",
+  "directory": "E:\\ntnu_mesh_optimization_20261030\\wave_surface_only\\WS_L20_H050_baseline_flatCalm_CPU2_20261031_075518_43108c",
+  "controller_pid": 12248,
+  "auxiliary_pid": 4528,
+  "owned_auxiliary_pids": [
+    1968,
+    3996,
+    4528,
+    5340,
+    5516,
+    8116,
+    12216,
+    15152,
+    17444,
+    17556,
+    17964,
+    19084,
+    20588,
+    27252,
+    31424
+  ],
+  "M12_job": "calm_settle_G10_F_GPU_live_r2_resume_20261030_173420_4854e1",
+  "M12_baseline_s_per_step": 2.4872079999986454,
+  "M12_last_time_s": 3.1193000000022066,
+  "auxiliary_steps": 390,
+  "auxiliary_time_s": 0.3900000000000003,
+  "free_RAM_GiB": 38.103816986083984,
+  "reason": null,
+  "timing_windows": [
+    {
+      "at": "2026-10-31T07:56:31.205767+01:00",
+      "main_steps": 31,
+      "main_time_s": 3.098600000002163,
+      "median_s_per_step": 2.3735679500023252,
+      "slowdown_fraction": -0.04568980559582558,
+      "excess_windows": 0
+    },
+    {
+      "at": "2026-10-31T07:57:48.887225+01:00",
+      "main_steps": 32,
+      "main_time_s": 3.1018000000021697,
+      "median_s_per_step": 2.374799899997015,
+      "slowdown_fraction": -0.04519449117311125,
+      "excess_windows": 0
+    },
+    {
+      "at": "2026-10-31T07:59:06.886787+01:00",
+      "main_steps": 31,
+      "main_time_s": 3.1049000000021763,
+      "median_s_per_step": 2.555821649999416,
+      "slowdown_fraction": 0.027586615192942476,
+      "excess_windows": 0
+    },
+    {
+      "at": "2026-10-31T08:00:29.934736+01:00",
+      "main_steps": 31,
+      "main_time_s": 3.108000000002183,
+      "median_s_per_step": 2.633532899999409,
+      "slowdown_fraction": 0.0588309863915053,
+      "excess_windows": 0
+    },
+    {
+      "at": "2026-10-31T08:01:52.920985+01:00",
+      "main_steps": 31,
+      "main_time_s": 3.1111000000021893,
+      "median_s_per_step": 2.651347449998866,
+      "slowdown_fraction": 0.06599345531226586,
+      "excess_windows": 0
+    },
+    {
+      "at": "2026-10-31T08:03:15.882957+01:00",
+      "main_steps": 32,
+      "main_time_s": 3.114300000002196,
+      "median_s_per_step": 2.628801000006206,
+      "slowdown_fraction": 0.056928491709433926,
+      "excess_windows": 0
+    },
+    {
+      "at": "2026-10-31T08:04:39.150925+01:00",
+      "main_steps": 32,
+      "main_time_s": 3.117500000002203,
+      "median_s_per_step": 2.6106973999994807,
+      "slowdown_fraction": 0.049649808138644946,
+      "excess_windows": 0
+    }
+  ]
+}

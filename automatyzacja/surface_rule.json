@@ -1,0 +1,7 @@
+{
+  "at": "2026-11-07T09:40:40.866321+01:00",
+  "scope": "ThinkPad, all wave cases",
+  "magnitude_limit_enabled": false,
+  "nonfinite_guard_enabled": true,
+  "authorization": "E:\\ntnu_mesh_optimization_20261030\\nwar_automation_20261102\\qa\\thinkpad_surface_rule_20261107\\authorization.json"
+}

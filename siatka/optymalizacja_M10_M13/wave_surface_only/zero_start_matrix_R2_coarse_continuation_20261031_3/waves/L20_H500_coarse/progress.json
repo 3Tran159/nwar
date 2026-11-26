@@ -1,0 +1,1 @@
+{"stage":"nofoil_upstream_inlet_wave_ramp","steps":2000,"time_s":4.50699999999984,"max_speed_m_s":18.503487798760446,"max_CFL":0.10695501765045465,"interface_CFL":0.10035864061831522,"water_volume_m3":38.40676294396404,"max_abs_gauge_eta_m":0.25924356921204605,"wave_height_m":0.5,"expected_wave_height_m":0.5,"wave_period_s":0.8472673206891129,"wall_s":1717.0824382}

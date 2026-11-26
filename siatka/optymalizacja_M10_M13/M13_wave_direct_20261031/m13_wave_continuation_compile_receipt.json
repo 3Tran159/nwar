@@ -1,0 +1,11 @@
+{
+  "at": "2026-10-31T23:33:58.694109+01:00",
+  "status": "javac_pass",
+  "source": "E:\\ntnu_mesh_optimization_20261030\\M13_wave_direct_20261031\\M13InletWavePilotR2.java",
+  "source_sha256": "616ae2931a04b0e2d0aa9c20449684d03c126da5d5683a6b462cda22d950eea8",
+  "new_macro": "E:\\ntnu_mesh_optimization_20261030\\M13_wave_direct_20261031\\M13ContinueWaveR3.java",
+  "new_sha256": "b6cf6f2662b9ad3b586574bbbffe6417548ff256c45252bf01cb34013cf832b3",
+  "scope": "Offline compiled conditional continuation ONLY after verified saved R2 pilot, same actual fields, dt=0.4ms, same bound FifthOrder wave, GPU, no reinit; up to 12k steps, bounded wall; checkpoints every 1000",
+  "start_run": false,
+  "compiler_stderr": "Note: E:\\ntnu_mesh_optimization_20261030\\M13_wave_direct_20261031\\M13ContinueWaveR3.java uses or overrides a deprecated API.\nNote: Recompile with -Xlint:deprecation for details.\n"
+}

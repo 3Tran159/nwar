@@ -1,0 +1,50 @@
+{
+  "at": "2026-10-31T16:57:55.345397+01:00",
+  "status": "bounded_matched_M10_0p2_vs_0p4_test_not_final_settling",
+  "matched_time_s": [
+    0.8964,
+    0.9244
+  ],
+  "source_time_s": 0.896,
+  "ref_dt_s": 0.0002,
+  "candidate_dt_s": 0.0004,
+  "ref_steps": 142,
+  "candidate_steps": 71,
+  "matched_pairs": 71,
+  "forces": {
+    "CL": {
+      "mean_signed_pct": -8.235815746108554e-05,
+      "mean_abs_pct": 0.0005255437297505128,
+      "last20_mean_abs_pct": 0.000777322162121024,
+      "max_abs_pct": 0.0014672180970655376,
+      "last_0p4_value": 0.29685239130491053,
+      "last_0p2_value": 0.2968551094956142
+    },
+    "CD": {
+      "mean_signed_pct": 0.0009335879725643276,
+      "mean_abs_pct": 0.00118479866533339,
+      "last20_mean_abs_pct": 0.00202787475281679,
+      "max_abs_pct": 0.002503653917944868,
+      "last_0p4_value": 0.007979237051871356,
+      "last_0p2_value": 0.007979066676335073
+    }
+  },
+  "ref_performance": {
+    "max_interface_CFL": 0.4552288307181274,
+    "max_bulk_CFL": 8.784716494155155,
+    "wall_s": 116.4175345,
+    "s_per_step": 0.8198417922535212
+  },
+  "candidate_performance": {
+    "max_interface_CFL": 0.9104503049019934,
+    "max_bulk_CFL": 17.569402779183527,
+    "wall_s": 60.201881400000005,
+    "s_per_step": 0.8479138225352113
+  },
+  "source_preserved": true,
+  "guard_ok": true,
+  "short_force_guard_ok": true,
+  "preliminary_exploratory_dt4_supported": true,
+  "full_temporal_validation_at_settled_state_required": true,
+  "caution": "CFL close to interface limit; no automatic production accuracy certification."
+}

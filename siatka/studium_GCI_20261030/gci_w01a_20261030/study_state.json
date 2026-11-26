@@ -1,0 +1,12 @@
+{
+  "status": "calm_geometry_and_mapping_verified",
+  "pid": 34376,
+  "updated_at": "2026-10-30T13:28:19.791466+01:00",
+  "starting_states": {
+    "W01a": "E:\\ntnu\\quasi2d_waves_20261029\\W01a_W20L4_M10_calm_start_r1\\final.sim",
+    "G10_M": "C:\\Users\\ThinkPad\\Documents\\ChatGPT\\ntnu science\\mesh_study_20261030\\gci_w01a_20261030\\mapped_G10_M\\mapped.sim",
+    "G10_F": "C:\\Users\\ThinkPad\\Documents\\ChatGPT\\ntnu science\\mesh_study_20261030\\gci_w01a_20261030\\mapped_G10_F\\mapped.sim"
+  },
+  "source_time_s": 0.5870000000000004,
+  "incident_wave_height_m": 0
+}

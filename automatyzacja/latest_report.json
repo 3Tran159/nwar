@@ -1,0 +1,38 @@
+{
+  "generated_at": "2026-11-09T22:06:02.552455+01:00",
+  "directory": "H:\\NTNU_RESEARCH_ARCHIVE\\NWAR_final_reports\\final_20261109_220322_207069",
+  "relative": "reports/final/final_20261109_220322_207069",
+  "report": "H:\\NTNU_RESEARCH_ARCHIVE\\NWAR_final_reports\\final_20261109_220322_207069\\report.html",
+  "zip": "H:\\NTNU_RESEARCH_ARCHIVE\\NWAR_final_reports\\final_20261109_220322_207069\\nwar_report.zip",
+  "cases": 14,
+  "force_wave_comparison": {
+    "case_count": 14,
+    "cases": [
+      "W01",
+      "W02",
+      "W03",
+      "W04",
+      "W04c",
+      "W04e",
+      "W04f",
+      "W04g",
+      "W04h",
+      "W04i",
+      "W04j",
+      "W05",
+      "W06",
+      "W07"
+    ],
+    "files": {
+      "preview": "force_wave_comparison.png",
+      "png": "force_wave_comparison_600dpi.png",
+      "svg": "force_wave_comparison.svg",
+      "pdf": "force_wave_comparison.pdf",
+      "csv": "force_wave_comparison.csv",
+      "caption": "force_wave_comparison_caption.txt",
+      "evidence": "force_wave_comparison.json",
+      "interactive": "force_wave_comparison_interactive.html"
+    }
+  },
+  "errors": []
+}

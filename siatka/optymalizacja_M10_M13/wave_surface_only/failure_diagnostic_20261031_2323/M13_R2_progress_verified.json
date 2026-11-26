@@ -1,0 +1,27 @@
+{
+  "at": "2026-10-31T23:34:59.052246+01:00",
+  "directory": "E:\\ntnu_mesh_optimization_20261030\\M13_wave_direct_20261031\\M13_GPU_W20_H050_pilot_20261031_r2",
+  "step": 187,
+  "physical_time_s": 3.9739999999996276,
+  "elapsed_wave_start_s": 0.07479999999999176,
+  "CL_hydro": 0.3146956763248878,
+  "CD_total": 0.007053256095269049,
+  "CL_change_vs_pre_switch_pct": 0.04687225389972127,
+  "CD_change_vs_pre_switch_pct": -0.11381061777767654,
+  "max_CFL_bulk": 17.43068219051419,
+  "max_speed_m_s": 22.155860440833866,
+  "alpha_bounds": [
+    0.0,
+    1.0
+  ],
+  "water_change_pct": 0.0033111991345036174,
+  "median_seconds_per_step": 0.817602149999999,
+  "timing_samples": 100,
+  "hours_for_20_periods_only_estimate": 9.629536433333321,
+  "estimate_caution": "Uses approximate T=.848 only for cost projection; excludes wave travel and ramp; not actual measured period or predicted convergence",
+  "arrival_confirmed": false,
+  "calm_reference_status": "provisional in this inlet-switched pilot, no full settling windows yet",
+  "wave_accepted": false,
+  "periodic_force_accepted": false,
+  "new_solver_launched_by_this_review": false
+}

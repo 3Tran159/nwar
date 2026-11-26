@@ -1,0 +1,17 @@
+{
+  "sources": {
+    "G10_F": "C:\\Users\\ThinkPad\\Documents\\ChatGPT\\ntnu science\\mesh_study_20261030\\gci_w01a_20261030\\force_stabilization_20261029\\calm_settle_G10_F_GPU_r1\\final.sim",
+    "G10_M": "C:\\Users\\ThinkPad\\Documents\\ChatGPT\\ntnu science\\mesh_study_20261030\\gci_w01a_20261030\\force_stabilization_20261029\\calm_pilot_G10_M_continued_r1\\final.sim",
+    "W01a": "C:\\Users\\ThinkPad\\Documents\\ChatGPT\\ntnu science\\mesh_study_20261030\\gci_w01a_20261030\\force_stabilization_20261029\\calm_pilot_W01a_continued_r1\\final.sim"
+  },
+  "start_times": {
+    "G10_F": 0.7009999999999879,
+    "G10_M": 0.591,
+    "W01a": 0.591
+  },
+  "dt_s": 0.0001,
+  "gpu": true,
+  "reinitialized": false,
+  "lift_convention": "hydrodynamic_lift_v1",
+  "prior_history": "C:\\Users\\ThinkPad\\Documents\\ChatGPT\\ntnu science\\mesh_study_20261030\\gci_w01a_20261030\\force_stabilization_20261029\\calm_settle_G10_F_GPU_r1\\history.csv"
+}

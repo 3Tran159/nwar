@@ -1,0 +1,48 @@
+{
+  "stage": "calm_coarse",
+  "at": "2026-10-31T11:33:52.911547+01:00",
+  "exit_code": 0,
+  "completed": {
+    "status": "target_reached",
+    "stage": "flat calm only; wave not activated; this alone does not certify settled calm",
+    "steps": 200,
+    "time_s": 0.6000000000000004
+  },
+  "source_unchanged": true,
+  "stop_reason": null,
+  "receipt_present": true,
+  "receipt_bytes": 50304032,
+  "monitor": {
+    "at": "2026-10-31T11:33:40.891584+01:00",
+    "step": 193,
+    "main_windows": [
+      {
+        "start": 1467,
+        "end": 1496,
+        "median_s": 1.3641104000000723,
+        "slowdown_pct": 5.6676828224493825
+      },
+      {
+        "start": 1497,
+        "end": 1526,
+        "median_s": 1.3592396999999892,
+        "slowdown_pct": 5.290385220486904
+      },
+      {
+        "start": 1527,
+        "end": 1556,
+        "median_s": 1.357832199999848,
+        "slowdown_pct": 5.181356461826669
+      },
+      {
+        "start": 1557,
+        "end": 1586,
+        "median_s": 1.3508993000000373,
+        "slowdown_pct": 4.6443152676390875
+      }
+    ],
+    "baseline_M11_s_per_step": 1.2909437999999973,
+    "io_bytes": 61510084,
+    "stop_reason": null
+  }
+}

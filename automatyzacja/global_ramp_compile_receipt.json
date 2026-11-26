@@ -1,0 +1,8 @@
+{
+  "ok": true,
+  "macro_sha256": "74c0c23f199a241c3063ff435be1ba398c8081ae82306a936df4aca94c63d9e7",
+  "template_sha256": "ea63ef91d398d009754adc9d7b444c8f1d6df2be942126b2dc01a40e81cf2144",
+  "ramp_s": 1.0,
+  "scope": "whole fluid region",
+  "messages": "Note: C:\\Users\\ThinkPad\\Documents\\ChatGPT\\ntnu science\\nwar_automation\\PreW04GlobalRamp.java uses or overrides a deprecated API.\nNote: Recompile with -Xlint:deprecation for details.\n"
+}

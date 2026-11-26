@@ -1,0 +1,43 @@
+{
+  "at": "2026-10-31T15:18:48.662108+01:00",
+  "phase": "waves",
+  "exit_code": 0,
+  "completed": {
+    "status": "target_reached",
+    "steps": 2000,
+    "time_s": 4.50699999999984,
+    "stage": "independent no-foil inlet-wave continuation; no wave propagation or mesh acceptance asserted",
+    "calm_source_preserved": true,
+    "initialization_performed": false
+  },
+  "source_unchanged": true,
+  "controller_reason": null,
+  "monitor": {
+    "at": "2026-10-31T15:18:42.645185+01:00",
+    "steps": 1998,
+    "main_windows": [
+      {
+        "start": 11481,
+        "end": 11510,
+        "median_s": 1.443758200000957,
+        "slowdown_pct": 11.837416934878187
+      },
+      {
+        "start": 11511,
+        "end": 11540,
+        "median_s": 1.4506104000010964,
+        "slowdown_pct": 12.36820688871967
+      },
+      {
+        "start": 11541,
+        "end": 11570,
+        "median_s": 1.4323531999998522,
+        "slowdown_pct": 10.953954773232976
+      }
+    ],
+    "baseline_M11_s_per_step": 1.2909437999999973,
+    "reason": null,
+    "elapsed_wall_s": 1854.31,
+    "io_bytes": 640189053
+  }
+}

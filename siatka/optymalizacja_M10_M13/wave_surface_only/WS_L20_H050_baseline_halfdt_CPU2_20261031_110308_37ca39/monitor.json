@@ -1,0 +1,39 @@
+{
+  "at": "2026-10-31T11:13:34.281630+01:00",
+  "main_baseline_s": 1.2909437999999973,
+  "main_monitor_windows": [
+    {
+      "start": 511,
+      "end": 540,
+      "median_s": 1.3516579000000775,
+      "slowdown_pct": 4.703078476389155
+    },
+    {
+      "start": 541,
+      "end": 570,
+      "median_s": 1.355440900000076,
+      "slowdown_pct": 4.996119893064188
+    },
+    {
+      "start": 571,
+      "end": 600,
+      "median_s": 1.3975468000001001,
+      "slowdown_pct": 8.257756844264108
+    },
+    {
+      "start": 601,
+      "end": 630,
+      "median_s": 1.355875900000001,
+      "slowdown_pct": 5.029816170154255
+    },
+    {
+      "start": 631,
+      "end": 660,
+      "median_s": 1.3489231999999447,
+      "slowdown_pct": 4.491241214369479
+    }
+  ],
+  "aux_output_bytes": 191146444,
+  "stop_reason": null,
+  "confirmed_wave_steps": 392
+}

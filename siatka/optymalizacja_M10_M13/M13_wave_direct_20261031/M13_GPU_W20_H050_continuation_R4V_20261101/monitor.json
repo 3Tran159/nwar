@@ -1,0 +1,11 @@
+{
+  "at": "2026-11-01T06:34:12.670694+01:00",
+  "phase": "M13_foil_wave_R4_continuation",
+  "status": "running",
+  "reason": null,
+  "pid": 34072,
+  "last_step": "11999",
+  "time_s": "13.978800000011802",
+  "elapsed_wall_s": 10632.7189049,
+  "main_timing": []
+}

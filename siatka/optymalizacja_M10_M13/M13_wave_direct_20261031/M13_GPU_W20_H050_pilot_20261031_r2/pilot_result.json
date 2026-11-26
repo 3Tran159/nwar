@@ -1,0 +1,16 @@
+{
+  "at": "2026-10-31T23:49:05.050482+01:00",
+  "pilot_saved": true,
+  "not_full_wave_validation": true,
+  "last_measured_step": "1200",
+  "last_physical_time_s": "4.379199999999583",
+  "completion": {
+    "time_s": 4.379199999999583,
+    "periodic_forces_validated": false,
+    "global_initialization": false,
+    "status": "target_reached",
+    "steps": 1200,
+    "propagation_validated": false
+  },
+  "source_unchanged": true
+}

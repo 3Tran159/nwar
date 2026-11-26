@@ -1,0 +1,15 @@
+{
+  "date_local": "2026-10-31 07:48+01:00",
+  "case": "WS_L20_H050_baseline_flatCalm_CPU2_20261031_074419_5622b5",
+  "status": "running at ~64 physical steps, 0.064 s",
+  "verified_flat_initial_water_volume_m3": 38.39999999999396,
+  "verified_initial_gauge_elevations_m": "approximately zero at all 5 gauges",
+  "actual_velocity_max_m_s": 2.6994260662472135e-12,
+  "expected_study_inflow_m_s": 18,
+  "concern": "A calm inflow with near-zero velocity is not physically comparable to intended 18 m/s wave study; this pilot must NOT be accepted as the production calm reference. Verify FlatVofWave current setting or explicit inlet velocity on disposable copy before wave activation.",
+  "wave_activated": false,
+  "original_source_changed": false,
+  "main_M12_changed": false,
+  "previous_fault": "First pilot ended at t0 due NaN on empty VOF-interface threshold; revised pilot explicitly retains NaN as unavailable rather than fictional zero.",
+  "recommendation": "Treat this run as numerical flat initialization demonstration only. Do not proceed to incident wave until calm 18m/s initialization is verified with gauges/CFL. No automatic wave release."
+}

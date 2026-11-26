@@ -1,0 +1,194 @@
+{
+  "at": "2026-10-31T15:33:59.479149+01:00",
+  "mesh_force": {
+    "M10": {
+      "n_cells": 317277,
+      "rows": 40,
+      "last_t_s": 0.591,
+      "last_CL_total": 0.29160389099270634,
+      "last_CD": 0.008444508729138898,
+      "CL_hydro_derived_once": 0.2857116332087175,
+      "note": "only short W01a continuation, NOT stabilized"
+    },
+    "M11": {
+      "n_cells": 595285,
+      "rows": 12275,
+      "last_step": 12275,
+      "last_t_s": 3.0601999999997282,
+      "last_CL": 0.31232579740567,
+      "last_CD": 0.007281940781698426,
+      "previous_window": {
+        "n": 1000,
+        "start_time": 2.6601999999997723,
+        "end_time": 2.8599999999997503,
+        "CL_mean": 0.3113267631486969,
+        "CD_mean": 0.007334228772836342,
+        "CL_RMS_pct": 0.06769073882997774,
+        "CD_RMS_pct": 0.1515724883844745,
+        "pressure_drag_N": 7.074573417945881,
+        "viscous_drag_N": 21.203279038601924
+      },
+      "last_window": {
+        "n": 1001,
+        "start_time": 2.8601999999997503,
+        "end_time": 3.0601999999997282,
+        "CL_mean": 0.3120121094607364,
+        "CD_mean": 0.007298359686760507,
+        "CL_RMS_pct": 0.05924430015118706,
+        "CD_RMS_pct": 0.1323590611118613,
+        "pressure_drag_N": 6.939378084388968,
+        "viscous_drag_N": 21.200177523884843
+      },
+      "CL_window_shift_pct": 0.22013729404695148,
+      "CD_window_shift_pct": -0.4890641836628129,
+      "pressure_delta_over_total_CD_pct": 0.4804458728451315,
+      "viscous_delta_over_total_CD_pct": 0.011021903686953046,
+      "sum_component_moduli_pct": 0.49146777653208457,
+      "component_opposing_sign": false,
+      "current_single_diagnostic_window_pass": true,
+      "note": "NOT two consecutive formal checks; different dt from M12"
+    },
+    "M12": {
+      "n_cells": 1154199,
+      "rows": 24414,
+      "last_step": 24414,
+      "last_t_s": 3.3314000000026542,
+      "last_CL": 0.31105375680025343,
+      "last_CD": 0.0072843331881356135,
+      "last_window": {
+        "n": 2000,
+        "start_time": 3.1315000000022324,
+        "end_time": 3.3314000000026542,
+        "CL_mean": 0.31078551290370987,
+        "CD_mean": 0.007298297963291139,
+        "CL_RMS_pct": 0.05086778581907147,
+        "CD_RMS_pct": 0.11299135955110357,
+        "pressure_drag_N": 6.653951876067226,
+        "viscous_drag_N": 21.485365751198092
+      },
+      "matched_M11_time_window": {
+        "n": 2000,
+        "start_time": 2.86020000000166,
+        "end_time": 3.0601000000020817,
+        "CL_mean": 0.3099900739949788,
+        "CD_mean": 0.007340066677316709,
+        "CL_RMS_pct": 0.058084048422856416,
+        "CD_RMS_pct": 0.12905207984932993,
+        "pressure_drag_N": 6.811379732111958,
+        "viscous_drag_N": 21.488981348950347
+      },
+      "saved_primary_two_pass": true
+    },
+    "relative_M11_vs_M12": {
+      "instantaneous_CL_pct": 0.40894558500170763,
+      "instantaneous_CD_pct": -0.0328431769305082,
+      "last_0p2s_mean_vs_M12_final_0p2s_CL_pct": 0.3946762336398013,
+      "last_0p2s_mean_vs_M12_final_0p2s_CD_pct": 0.0008457241630566159,
+      "same_physical_0p2s_CL_pct": 0.6522903910111344,
+      "same_physical_0p2s_CD_pct": -0.5682099685155539,
+      "time_step_not_matched": true
+    }
+  },
+  "wave": {
+    "case": "H0.5 lambda20 FS_coarse 41200 cells",
+    "time_s": 4.50699999999984,
+    "wave_start_time_s": 0.4,
+    "post_ramp_last_2_periods": {
+      "begin_s": 2.8124653586216137,
+      "end_s": 4.50699999999984
+    },
+    "first_stage": {
+      "steps": 2107,
+      "status": "wall_budget"
+    },
+    "continuation": {
+      "steps": 2000,
+      "status": "target_reached"
+    },
+    "total_wave_solver_steps": 4107,
+    "first_wall_s": 1800.1025994000001,
+    "continuation_wall_s": 1717.0824382,
+    "weighted_s_per_step": 0.8563878835159484,
+    "max_bulk_CFL": 0.10914596886894304,
+    "max_interface_CFL_finite": 0.1029279326124671,
+    "water_vol_start_m3": 38.399999999994705,
+    "water_vol_end_m3": 38.40676294396404,
+    "water_vol_range_m3": 0.03253535532398644,
+    "gauges_late": [
+      {
+        "x_m": -34.0,
+        "n": 339,
+        "max_eta_m": 0.259573197096433,
+        "min_eta_m": -0.24047366922221514,
+        "H_peak_to_peak_m": 0.5000468663186481,
+        "harmonic_H_m": 0.5018640973121719,
+        "eta_mean_m": -2.3898892482535507e-05
+      },
+      {
+        "x_m": -25.0,
+        "n": 339,
+        "max_eta_m": 0.2737214965818069,
+        "min_eta_m": -0.25089742935852044,
+        "H_peak_to_peak_m": 0.5246189259403273,
+        "harmonic_H_m": 0.5176830059295945,
+        "eta_mean_m": -8.333102422598125e-05
+      },
+      {
+        "x_m": -15.0,
+        "n": 339,
+        "max_eta_m": 0.2703389567778842,
+        "min_eta_m": -0.2475038911290035,
+        "H_peak_to_peak_m": 0.5178428479068877,
+        "harmonic_H_m": 0.5127881662456891,
+        "eta_mean_m": 3.835940104996653e-05
+      },
+      {
+        "x_m": -10.0,
+        "n": 339,
+        "max_eta_m": 0.2874046316837351,
+        "min_eta_m": -0.25546704253667585,
+        "H_peak_to_peak_m": 0.5428716742204109,
+        "harmonic_H_m": 0.5169410457799406,
+        "eta_mean_m": 0.0026470690740322722
+      },
+      {
+        "x_m": 0.0,
+        "n": 339,
+        "max_eta_m": 0.2708847205089313,
+        "min_eta_m": -0.24330271410326532,
+        "H_peak_to_peak_m": 0.5141874346121966,
+        "harmonic_H_m": 0.44427543685396836,
+        "eta_mean_m": 0.011723430084140354
+      },
+      {
+        "x_m": 10.0,
+        "n": 339,
+        "max_eta_m": 0.2564511301862211,
+        "min_eta_m": -0.24958612140283876,
+        "H_peak_to_peak_m": 0.5060372515890599,
+        "harmonic_H_m": 0.3889076574765443,
+        "eta_mean_m": -0.015396494925895088
+      },
+      {
+        "x_m": 20.0,
+        "n": 339,
+        "max_eta_m": 0.30631261220738537,
+        "min_eta_m": -0.20231946697529324,
+        "H_peak_to_peak_m": 0.5086320791826786,
+        "harmonic_H_m": 0.3129476606966923,
+        "eta_mean_m": 0.024743178098799397
+      },
+      {
+        "x_m": 40.0,
+        "n": 339,
+        "max_eta_m": 0.0834826057344209,
+        "min_eta_m": -0.04502179593798061,
+        "H_peak_to_peak_m": 0.1285044016724015,
+        "harmonic_H_m": 0.0419050544185759,
+        "eta_mean_m": 0.009682252006985262
+      }
+    ],
+    "full_propagation_or_wave_grid_accepted": false,
+    "warning": "These peak-to-peak values are measured on last 2 commanded periods; no decomposition of reflections or phase-error validation, and no independent mesh comparison."
+  }
+}

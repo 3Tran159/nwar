@@ -1,0 +1,98 @@
+[
+  {
+    "source": "E:\\ntnu\\quasi2d_waves_20261029\\C01_W20L4_M10_FS020_mesh_r2\\mesh_star_export.CGNS",
+    "export_name": "mesh_star_export.CGNS",
+    "bytes": 119249889,
+    "sha256": "b753a668779dc5b9c7da17c781d508d73f5ac353c5005a4f04f7a757f55e7aac"
+  },
+  {
+    "source": "E:\\ntnu\\quasi2d_waves_20261029\\C01_W20L4_M10_FS020_mesh_r2\\topology_audit.json",
+    "export_name": "topology_audit.json",
+    "bytes": 901,
+    "sha256": "5932b80ee0f3237d2f4f1378c3f3327ddcd9e9fe17847429e1761a29abb39c89"
+  },
+  {
+    "source": "E:\\ntnu\\quasi2d_waves_20261029\\C01_W20L4_M10_FS020_mesh_r2\\measurement.json",
+    "export_name": "measurement.json",
+    "bytes": 1291,
+    "sha256": "56fe647acb0018e170825c873d0bf7ce201360237ddd7cf083c7cbb4dd587df0"
+  },
+  {
+    "source": "E:\\ntnu\\quasi2d_waves_20261029\\C01_W20L4_M10_FS020_mesh_r2\\mesh.validation.json",
+    "export_name": "mesh.validation.json",
+    "bytes": 2103,
+    "sha256": "21a98127f87d05f4cfd014f22c565333b4ae6a7dcd19ffdedf6f3b608cd4f1b5"
+  },
+  {
+    "source": "F:\\ntnu\\mesh_screening_20261028\\quasi2d_012_20261029\\M10_FS020_r1\\design.json",
+    "export_name": "design.json",
+    "bytes": 877,
+    "sha256": "b6ea61b61a34afbde7c62ba0739f24d6a4fa88b9a4e397eb56622095e99a5214"
+  },
+  {
+    "source": "E:\\ntnu\\quasi2d_waves_20261029\\C01_W20L4_M10_FS020_env_setup_r1\\initial_audit.json",
+    "export_name": "initial_audit.json",
+    "bytes": 2280,
+    "sha256": "99e2d3d5bcd91cb4d7ae507af751e7314d429f3ec9d7f24f54706d3324c7244a"
+  },
+  {
+    "source": "F:\\ntnu\\mesh_screening_20261028\\force_stabilization_20261029\\wave_startup_policy_current.json",
+    "export_name": "wave_startup_policy_current.json",
+    "bytes": 1180,
+    "sha256": "e5f7f25d37377b764f59ca4dd48ecc7b7ec6208d033fede35a96e7702d64b550"
+  },
+  {
+    "source": "F:\\ntnu\\mesh_screening_20261028\\force_stabilization_20261029\\matched_endpoint_results.json",
+    "export_name": "matched_endpoint_results.json",
+    "bytes": 5938,
+    "sha256": "cac5d843e9d4939abaa75e618ffd673b302b721eed912b143cbdea0348f17931"
+  },
+  {
+    "source": "F:\\ntnu\\mesh_screening_20261028\\force_stabilization_20261029\\professor_m10_wavegrid_review.json",
+    "export_name": "professor_m10_wavegrid_review.json",
+    "bytes": 71609,
+    "sha256": "58ed094c80f2a8e788c00b1a4e882440f339179e4fba72e2a064f67a296d3fab"
+  },
+  {
+    "source": "E:\\ntnu\\quasi2d_waves_20261029\\W01a_W20L4_M10_calm_start_r1\\final.sim",
+    "export_name": null,
+    "bytes": 492754772,
+    "sha256": "bb2f9004ba8993ed6a7c8401be27b15be56d54d04c7743b15013a8925d9a131d",
+    "note": "Computedstateorcontext reference; originalpathprovided, notduplicatedinarchive"
+  },
+  {
+    "source": "E:\\ntnu\\quasi2d_waves_20261029\\W01a_W20L4_M10_calm_start_r1\\checkpoint_startup_t0.020.sim",
+    "export_name": null,
+    "bytes": 427466350,
+    "sha256": "489990d40da561cee752209e8dd8aa2675733a7e3651d4b246d535fd20556179",
+    "note": "Computedstateorcontext reference; originalpathprovided, notduplicatedinarchive"
+  },
+  {
+    "source": "E:\\ntnu\\quasi2d_waves_20261029\\W01a_W20L4_M10_calm_start_r1\\source_identity.json",
+    "export_name": null,
+    "bytes": 420,
+    "sha256": "87888384d6602ad1872c8cec9cd108b1649178cc10364d245251ce875269b3f4",
+    "note": "Computedstateorcontext reference; originalpathprovided, notduplicatedinarchive"
+  },
+  {
+    "source": "E:\\ntnu\\quasi2d_waves_20261029\\W01a_W20L4_M10_calm_start_r1\\calm_settling.json",
+    "export_name": null,
+    "bytes": 544,
+    "sha256": "1e6c6d4fbdd9f17898db63dbae78ab4898704e4e36eaa56d78edf572215fd30f",
+    "note": "Computedstateorcontext reference; originalpathprovided, notduplicatedinarchive"
+  },
+  {
+    "source": "E:\\ntnu\\quasi2d_waves_20261029\\W01a_W20L4_M10_calm_start_r1\\completed.json",
+    "export_name": null,
+    "bytes": 70,
+    "sha256": "92f1a576ba5793dc4d20eb334159a9d47038f7ab8a17c503d7aaf59f3ee5a7d4",
+    "note": "Computedstateorcontext reference; originalpathprovided, notduplicatedinarchive"
+  },
+  {
+    "source": "E:\\ntnu\\quasi2d_waves_20261029\\W01a_W20L4_M10_calm_start_r1\\user_wave_activation_request.json",
+    "export_name": null,
+    "bytes": 368,
+    "sha256": "628e989a0a1a6acc4417f9f0da01ea13934327e61bebf75a991c7250d942d8ba",
+    "note": "Computedstateorcontext reference; originalpathprovided, notduplicatedinarchive"
+  }
+]

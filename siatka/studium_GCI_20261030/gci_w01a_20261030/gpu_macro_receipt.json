@@ -1,0 +1,10 @@
+{
+  "status": "javac_passed",
+  "source_CPU_macro_sha256": "039909efc05e4ee299b148a0ebd22d8ef3f0dff0319d894fcd49423b879ae6fb",
+  "GPU_macro_sha256": "5b6e13578e1a4d575bb5eccd947bee2494db3b9243bc45aab0b66a79026b4662",
+  "changes": [
+    "class name",
+    "require one GPU"
+  ],
+  "physics_and_diagnostics_unchanged": true
+}

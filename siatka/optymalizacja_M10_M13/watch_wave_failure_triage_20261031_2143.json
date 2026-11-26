@@ -1,0 +1,39 @@
+{
+  "at": "2026-10-31T21:43:00+01:00",
+  "kind": "read_only_postmortem_no_retry",
+  "runs": {
+    "failed_dt1": {
+      "directory": "wave_surface_only/zero_start_matrix_evening_20261031_182305_689cb9/waves/L20_H500_baseline",
+      "dt_s": 0.001,
+      "verified_history_steps": 18,
+      "t_last_s": 0.418,
+      "completed": false,
+      "exception": "non-finite monitor values / connection reset"
+    },
+    "failed_dt05": {
+      "directory": "wave_surface_only/zero_start_matrix_evening_dt05_20261031/waves/L20_H500_baseline",
+      "dt_s": 0.0005,
+      "verified_history_steps": 19,
+      "t_last_s": 0.4095,
+      "completed": false,
+      "exception": "non-finite monitor values / connection reset",
+      "last_recorded_max_CFL": 0.04500013935534682,
+      "last_recorded_wave_height_m": 0.0000397963111541814,
+      "interface_CFL": "UNAVAILABLE",
+      "finished_state_at": "2026-10-31T18:49:16+01:00"
+    },
+    "earlier_completed_startup": {
+      "directory": "wave_surface_only/WS_L20_H050_baseline_inlet_wave_CPU2_20261031_101019_5dd9f0",
+      "dt_s": 0.001,
+      "verified_steps": 500,
+      "t_last_s": 0.9,
+      "completed": true,
+      "full_wave_validation": false
+    }
+  },
+  "macro_readonly_diff": "Between failed 1 ms and failed 0.5 ms macros, difference only class name and dt. Comparing morning and evening, scientific wave settings for H=0.5 m, lambda=20 m, ramp ~1.694 s, own calm t0.4 and upstream inlet appear equivalent. Morning macro hardcodes parameters; evening macro takes bounded values from environment. Different execution context/worker counts and configuration provenance not yet experimentally isolated.",
+  "interpretation": "Halving dt did not cure failure; low last recorded bulk CFL and tiny ramp height do not establish CFL as cause. Fatal log includes residual divergence/non-finite monitors, but connection reset by itself does not prove root cause. Earlier successful startup is not full wave-validation.",
+  "locks_and_ownership_at": "2026-10-31T21:38:26+01:00",
+  "locks": "STOP_ALL absent; M13 flow_handoff absent; wave inlet / comparison and auxiliary absent; no owned wave/foil solver process observed",
+  "decision": "Do not duplicate or repeat failed baseline automatically. Retain all evidence and compare checkpoint, CPU1 vs prior CPU2, live STAR server/monitor instrumentation and VOF/RANS residuals before any distinct bounded pilot. C01/foil-wave and HF remain held."
+}

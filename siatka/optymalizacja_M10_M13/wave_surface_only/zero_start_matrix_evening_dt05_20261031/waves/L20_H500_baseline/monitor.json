@@ -1,0 +1,11 @@
+{
+  "at": "2026-10-31T18:49:10.663851+01:00",
+  "phase": "waves",
+  "status": "running",
+  "reason": null,
+  "pid": 33496,
+  "last_step": "19",
+  "time_s": "0.4095000000000003",
+  "elapsed_wall_s": 1014.1150168000022,
+  "main_timing": []
+}

@@ -1,0 +1,10 @@
+{
+    "at":  "2026-10-30T13:34:52.8745754+01:00",
+    "job":  "calm_pilot_G10_F_r1",
+    "workers":  22,
+    "native_ranks":  22,
+    "busy_cores":  17.59,
+    "percent_of_allocated_22":  80,
+    "exclusive_cores_2_to_23":  true,
+    "measurement_seconds":  13.2
+}

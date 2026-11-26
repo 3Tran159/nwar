@@ -1,0 +1,60 @@
+const {chromium}=require('C:/Users/ThinkPad/.cache/codex-runtimes/codex-primary-runtime/dependencies/node/node_modules/playwright');
+const assert=require('node:assert/strict'),fs=require('node:fs');
+(async()=>{
+ const browser=await chromium.launch({headless:true,executablePath:'C:/Program Files/Google/Chrome/Application/chrome.exe',args:['--disable-gpu']});
+ try{
+  const page=await browser.newPage({viewport:{width:1280,height:1040}}),errors=[];
+  page.on('pageerror',e=>errors.push(e.message));
+  const base=process.env.NWAR_TEST_URL;assert.ok(base&&base!=='http://127.0.0.1:8782');
+  const out=process.env.NWAR_QA_DIR,release=process.env.NWAR_TEST_RELEASE;
+  const state=await(await page.request.get(base+'/api/status')).json();
+  const real=await(await page.request.get('http://127.0.0.1:8782/api/wave-view?case=W04')).json();
+  assert.ok(real.in_progress_cycle&&real.cycle_count>=1);
+  await page.route('**/api/wave-view?case=W04',r=>r.fulfill({json:real}));
+  await page.goto(base);
+  await page.waitForFunction(()=>document.querySelector('#view-lift path[data-provisional="true"]'));
+  assert.match(await page.locator('#view-cycle-progress-title').innerText(),new RegExp('Cycle '+real.in_progress_cycle.number+' in progress'));
+  assert.match(await page.locator('#view-cycle-eta').innerText(),/remaining/);
+  assert.equal(await page.locator('#view-lift .wave-live-end').count(),1);
+  assert.equal(await page.locator('#view-drag .wave-live-end').count(),1);
+  await page.locator('#wave-explorer').screenshot({path:out+'/rolling_cycle_'+release+'.png'});
+  let fixture=structuredClone(real),requests=0;
+  const partial=real.in_progress_cycle,n=partial.number,half=Math.max(2,Math.floor(partial.phase.length/2));
+  for(const field of ['phase','time_s','CL','CD'])fixture.in_progress_cycle[field]=partial[field].slice(0,half);
+  fixture.in_progress_cycle.end=fixture.in_progress_cycle.time_s.at(-1);
+  fixture.cycle_progress.percent=100*fixture.in_progress_cycle.phase.at(-1);
+  await page.route('**/api/wave-view?case=W04',r=>{requests++;return r.fulfill({json:fixture})});
+  await page.click('#view-refresh');
+  const curve=page.locator('#view-lift path[data-cycle-number="'+n+'"]');
+  await page.waitForFunction(v=>Number(document.querySelector('#view-lift path[data-provisional="true"]').dataset.phaseEnd)===v,fixture.in_progress_cycle.phase.at(-1));
+  const short=await curve.getAttribute('d'),shortEnd=Number(await curve.getAttribute('data-phase-end'));
+  // Let the normal automatic refresh extend the recorded prefix; no button click.
+  const priorRequests=requests;fixture=structuredClone(real);
+  await page.waitForFunction(v=>Number(document.querySelector('#view-lift path[data-provisional="true"]').dataset.phaseEnd)>v,shortEnd,{timeout:16000});
+  assert.ok(requests>priorRequests);assert.notEqual(await curve.getAttribute('d'),short);
+  assert.equal(await curve.getAttribute('stroke-dasharray'),'7 4');
+  const cycle1color=await page.locator('#view-lift path[data-cycle-number="1"]').getAttribute('stroke');
+  await page.uncheck('#view-cycles input[data-cycle="'+n+'"]');assert.equal(await curve.count(),0);
+  await page.click('#view-refresh');await page.waitForTimeout(250);
+  assert.equal(await page.isChecked('#view-cycles input[data-cycle="'+n+'"]'),false);
+  await page.check('#view-cycles input[data-cycle="'+n+'"]');
+  const liveColor=await curve.getAttribute('stroke');assert.notEqual(liveColor,cycle1color);
+  // Browser-only fixture: promote cycle 2, start drawing cycle 3 and reset its bar.
+  const template=real.cycles.at(-1),finished={...structuredClone(template),number:n,start:partial.start,end:partial.start+partial.T,T:partial.T};
+  const next={...structuredClone(partial),number:n+1,start:finished.end,end:finished.end+.1*partial.T,estimated_end:finished.end+partial.T,phase:[0,.05,.1],time_s:[finished.end,finished.end+.05*partial.T,finished.end+.1*partial.T],CL:template.CL.slice(0,3),CD:template.CD.slice(0,3)};
+  fixture={...structuredClone(real),cycle_count:n,cycles:[...real.cycles,finished].slice(-4),in_progress_cycle:next,cycle_progress:{...real.cycle_progress,cycle_number:n+1,completed_cycles:n,percent:10,current_time_s:next.end,cycle_start_s:next.start,target_time_s:next.estimated_end,eta_wall_s:1000}};
+  await page.click('#view-refresh');await page.waitForFunction(v=>document.querySelector('#view-cycle-progress-title').textContent.includes('Cycle '+v+' in progress'),n+1);
+  assert.equal(await curve.getAttribute('data-provisional'),'false');assert.equal(await curve.getAttribute('stroke-dasharray'),null);assert.equal(await curve.getAttribute('stroke'),liveColor);
+  assert.equal(await page.locator('#view-cycle-progress').getAttribute('aria-valuenow'),'10');
+  assert.equal(await page.locator('#view-lift path[data-provisional="true"]').getAttribute('data-cycle-number'),String(n+1));
+  await page.selectOption('#view-case','W05');await page.waitForFunction(()=>document.querySelector('#view-status').textContent.includes('no recorded samples'));
+  assert.equal(await page.locator('#view-lift .view-empty').count(),1);assert.match(await page.locator('#view-cycle-progress-title').innerText(),/W05.*Cycle 1/);
+  fixture=structuredClone(real);await page.selectOption('#view-case','W04');await page.waitForFunction(()=>document.querySelector('#view-lift path[data-provisional="true"]'));
+  await page.setViewportSize({width:390,height:844});assert.ok(await page.evaluate(()=>document.documentElement.scrollWidth<=innerWidth+1));
+  await page.locator('.first-cycle-progress').screenshot({path:out+'/rolling_cycle_mobile_'+release+'.png'});
+  const after=await(await page.request.get(base+'/api/status')).json();
+  assert.deepEqual(after.jobs.map(j=>j.id),state.jobs.map(j=>j.id));assert.deepEqual(errors,[]);
+  const result={passed:true,release,at:new Date().toISOString(),real_cycle_number:n,auto_refresh_extends_recorded_curve:true,checkbox_preserved:true,measured_completion_promotes_same_colour:true,next_cycle_resets_countdown:true,next_wave_preserves_layout:true,mobile_overflow:false,no_jobs_added:true,page_errors:errors};
+  fs.writeFileSync(out+'/rolling_cycle_'+release+'.json',JSON.stringify(result,null,2));console.log(JSON.stringify(result));
+ }finally{await browser.close()}
+})().catch(e=>{console.error(e);process.exitCode=1});

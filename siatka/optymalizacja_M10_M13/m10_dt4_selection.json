@@ -1,0 +1,34 @@
+{
+  "approved_for_continuation_pilot": true,
+  "at": "2026-10-31T16:58:00.605282+01:00",
+  "status": "dt0p4_exploratory_only_not_final_temporal_validation",
+  "directory": "E:\\ntnu_mesh_optimization_20261030\\M10_W01a_dt0004_matched_GPU_20261031",
+  "final_sim_sha256": "413d695290a368bb35533e95adae8f156f6a0c78fcce6ecfe14c9afdd2fa6acc",
+  "source_time_s": 0.9243999999999633,
+  "source_dt_s": 0.0002,
+  "candidate_dt_s": 0.0004,
+  "pilot_CFL_guard_pass": true,
+  "force_short_pilot_guard_pass": true,
+  "candidate_CFL": 0.9104503049019934,
+  "comparison_forces": {
+    "CL": {
+      "mean_signed_pct": -8.235815746108554e-05,
+      "mean_abs_pct": 0.0005255437297505128,
+      "last20_mean_abs_pct": 0.000777322162121024,
+      "max_abs_pct": 0.0014672180970655376,
+      "last_0p4_value": 0.29685239130491053,
+      "last_0p2_value": 0.2968551094956142
+    },
+    "CD": {
+      "mean_signed_pct": 0.0009335879725643276,
+      "mean_abs_pct": 0.00118479866533339,
+      "last20_mean_abs_pct": 0.00202787475281679,
+      "max_abs_pct": 0.002503653917944868,
+      "last_0p4_value": 0.007979237051871356,
+      "last_0p2_value": 0.007979066676335073
+    }
+  },
+  "original_saved_M10_dt2_preserved": true,
+  "original_saved_M11_M12_preserved": true,
+  "separate_terminal_temporal_control_required": true
+}

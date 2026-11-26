@@ -1,0 +1,43 @@
+{
+  "at": "2026-10-31T15:51:33.100158+01:00",
+  "phase": "waves",
+  "exit_code": 0,
+  "completed": {
+    "status": "stopped_by_marker",
+    "steps": 996,
+    "time_s": 5.503000000000172,
+    "stage": "independent no-foil inlet-wave continuation; no wave propagation or mesh acceptance asserted",
+    "calm_source_preserved": true,
+    "initialization_performed": false
+  },
+  "source_unchanged": true,
+  "controller_reason": "M11_slowdown_two_windows_over_15pct",
+  "monitor": {
+    "at": "2026-10-31T15:51:24.088600+01:00",
+    "steps": 995,
+    "main_windows": [
+      {
+        "start": 12913,
+        "end": 12942,
+        "median_s": 1.4437344999969355,
+        "slowdown_pct": 11.83558106843523
+      },
+      {
+        "start": 12943,
+        "end": 12972,
+        "median_s": 1.4864415000010922,
+        "slowdown_pct": 15.143780852512357
+      },
+      {
+        "start": 12973,
+        "end": 13002,
+        "median_s": 1.4911140000003797,
+        "slowdown_pct": 15.505725346090426
+      }
+    ],
+    "baseline_M11_s_per_step": 1.2909437999999973,
+    "reason": "M11_slowdown_two_windows_over_15pct",
+    "elapsed_wall_s": 995.33,
+    "io_bytes": 368318340
+  }
+}

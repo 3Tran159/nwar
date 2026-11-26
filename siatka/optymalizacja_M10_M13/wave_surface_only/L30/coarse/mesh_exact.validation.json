@@ -1,0 +1,36 @@
+{
+  "cells": 61800,
+  "dx_m": 0.2,
+  "dz_free_surface_m": 0.05,
+  "free_surface_z": [
+    1.25,
+    2.75
+  ],
+  "dz_far_max_m": 0.8000000000000007,
+  "span_m": 0.02,
+  "bounds": [
+    [
+      -52.5,
+      20,
+      -22
+    ],
+    [
+      67.5,
+      20.02,
+      8
+    ]
+  ],
+  "total_volume_m3": 72.00000000000001,
+  "min_volume_m3": 9.999999999999397e-05,
+  "boundary_face_counts": {
+    "Polyfaces_fluid": 122897,
+    "DOMAIN.inlet": 103,
+    "DOMAIN.outlet": 103,
+    "DOMAIN.bottom": 600,
+    "DOMAIN.top": 600,
+    "DOMAIN.span_source": 61800,
+    "DOMAIN.span_target": 61800
+  },
+  "source": "Analytic rectangle with conforming Cartesian connectivity; no native trimming",
+  "sha256": "6f1109403466e58ed4137a672917f3d1556b8d73363a0cf14581d92f659a165b"
+}

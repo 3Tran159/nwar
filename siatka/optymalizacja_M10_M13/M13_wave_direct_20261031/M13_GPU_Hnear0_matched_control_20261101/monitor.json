@@ -1,0 +1,11 @@
+{
+  "at": "2026-11-01T11:42:41.813142+01:00",
+  "phase": "M13_matched_nearzero_control",
+  "status": "running",
+  "reason": null,
+  "pid": 33856,
+  "last_step": "2756",
+  "time_s": "5.001599999999515",
+  "elapsed_wall_s": 2426.1788832000166,
+  "main_timing": []
+}

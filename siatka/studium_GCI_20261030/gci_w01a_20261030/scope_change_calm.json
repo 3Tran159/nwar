@@ -1,0 +1,24 @@
+{
+  "at": "2026-10-30T12:58:13.101761+01:00",
+  "scope": "Calm-water verification of W01a meshes only",
+  "incident_wave_height_m": 0,
+  "CPU_only": true,
+  "GPU_main_wave_untouched": true,
+  "source_time_s": 0.587,
+  "coefficients": [
+    "CL_total",
+    "CD",
+    "CD_pressure",
+    "CD_viscous"
+  ],
+  "stabilization": {
+    "window_s": 0.2,
+    "threshold_pct": 0.5,
+    "mean_shift": true,
+    "RMS_each_window": true,
+    "consecutive_passes": 2
+  },
+  "wave_GCI_removed": true,
+  "reason": "User lacks compute resources for separate wave accuracy study",
+  "no_new_report": true
+}

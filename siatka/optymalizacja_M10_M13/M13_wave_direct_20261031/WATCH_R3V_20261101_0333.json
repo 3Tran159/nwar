@@ -1,0 +1,227 @@
+{
+  "observed": "2026-11-01T03:35:05.761298+01:00",
+  "runbook_verified": true,
+  "E_STOP": {
+    "exists": false,
+    "contents": null
+  },
+  "F_STOP": {
+    "exists": false,
+    "contents": null
+  },
+  "R3V_STOP": {
+    "exists": false,
+    "contents": null
+  },
+  "GPU_LOCK": {
+    "exists": false,
+    "contents": {}
+  },
+  "R3V_LOCK": {
+    "exists": false,
+    "contents": {}
+  },
+  "WAVE_LOCK": {
+    "exists": false,
+    "contents": {}
+  },
+  "hold_active": true,
+  "samples": 12001,
+  "history_tail": {
+    "time_s": "9.179200000001673",
+    "step": "12000",
+    "CL_hydrodynamic": "0.36950491478874414",
+    "CD_total": "0.004192546734845735",
+    "max_CFL": "17.290300067025985",
+    "max_speed_m_s": "22.303539752317555",
+    "water_volume_m3": "38.405273088626615",
+    "alpha_min": "0.0",
+    "alpha_max": "1.0",
+    "p_min_Pa": "-69214.46961179486",
+    "p_max_Pa": "237076.32572031565",
+    "target_H_m": "0.5"
+  },
+  "first_data_time": "4.379199999999583",
+  "receipt": {
+    "time_s": 9.179200000001673,
+    "periodic_forces_validated": false,
+    "global_initialization": false,
+    "status": "target_reached",
+    "steps": 12000,
+    "propagation_validated": false
+  },
+  "stage": {
+    "exit_code": 0,
+    "source_unchanged": true,
+    "controller_reason": null,
+    "completed": {
+      "time_s": 9.179200000001673,
+      "periodic_forces_validated": false,
+      "global_initialization": false,
+      "status": "target_reached",
+      "steps": 12000,
+      "propagation_validated": false
+    },
+    "phase": "M13_foil_wave_R3_continuation",
+    "at": "2026-11-01T02:45:14.160442+01:00",
+    "wall_s": 10540.4582409,
+    "timing": []
+  },
+  "final_sim": {
+    "exists": true,
+    "size_bytes": 528486359
+  },
+  "recent_CL": {
+    "min": 0.3182015462466379,
+    "max": 0.36950491478874414,
+    "mean": 0.3496053706828415
+  },
+  "recent_CD": {
+    "min": 0.004143095864254313,
+    "max": 0.006175347574945509,
+    "mean": 0.004816940059167777
+  },
+  "gauges": {
+    "-34.0": {
+      "count": 1201,
+      "last": [
+        9.179200000001673,
+        -0.23602711705339274
+      ],
+      "min_last300": -0.24061378911475728,
+      "max_last300": 0.2611778382287433
+    },
+    "-25.0": {
+      "count": 1201,
+      "last": [
+        9.179200000001673,
+        0.23251966440291483
+      ],
+      "min_last300": -0.23815576450709486,
+      "max_last300": 0.26695601349867104
+    },
+    "-15.0": {
+      "count": 1201,
+      "last": [
+        9.179200000001673,
+        -0.1946680235643008
+      ],
+      "min_last300": -0.21874612356535295,
+      "max_last300": 0.28434866986474816
+    },
+    "-10.0": {
+      "count": 1201,
+      "last": [
+        9.179200000001673,
+        -0.08256909173025306
+      ],
+      "min_last300": -0.1934247172330359,
+      "max_last300": 0.30514322864374677
+    },
+    "-6.0": {
+      "count": 1201,
+      "last": [
+        9.179200000001673,
+        0.24368139579188153
+      ],
+      "min_last300": -0.1618674740875754,
+      "max_last300": 0.3330851090632443
+    },
+    "-0.5": {
+      "count": 1201,
+      "last": [
+        9.179200000001673,
+        0.31440910752012385
+      ],
+      "min_last300": -0.07906988399035342,
+      "max_last300": 0.412862506286352
+    },
+    "5.0": {
+      "count": 1201,
+      "last": [
+        9.179200000001673,
+        -0.12723611713117222
+      ],
+      "min_last300": -0.14723492810199446,
+      "max_last300": 0.3554538021654814
+    },
+    "10.0": {
+      "count": 1201,
+      "last": [
+        9.179200000001673,
+        -0.07019410229652223
+      ],
+      "min_last300": -0.18458300183956666,
+      "max_last300": 0.2817096880771395
+    },
+    "20.0": {
+      "count": 1201,
+      "last": [
+        9.179200000001673,
+        0.08031355836281406
+      ],
+      "min_last300": -0.25875863973421787,
+      "max_last300": 0.1999578198043892
+    },
+    "40.0": {
+      "count": 1201,
+      "last": [
+        9.179200000001673,
+        0.003216292330716186
+      ],
+      "min_last300": -0.28714113334559244,
+      "max_last300": 0.09992678903864771
+    }
+  },
+  "frame": {
+    "time_s": 9.155200000001622,
+    "interface_CFL": 0.8865894832848624,
+    "bytes_verified": true
+  },
+  "latest_checkpoints": [
+    {
+      "name": "checkpoint_t8.3792.sim",
+      "bytes": 525893655
+    },
+    {
+      "name": "checkpoint_t8.7792.sim",
+      "bytes": 527189890
+    },
+    {
+      "name": "checkpoint_t9.1792.sim",
+      "bytes": 528486125
+    }
+  ],
+  "process_error": "No module named 'psutil'",
+  "disk_free_gib": {
+    "C": 53.53,
+    "E": 195.62
+  },
+  "gpu_status": "11321, 0",
+  "dashboard_runs": [
+    {
+      "id": "M13_GPU_W20_H050_continuation_R3V_20261101",
+      "status": "saved",
+      "last": {
+        "time": 9.179200000001673,
+        "CL": 0.36950491478874414,
+        "CD": 0.004192546734845735,
+        "CFL": 17.290300067025985,
+        "water": 38.405273088626615,
+        "step": 12000.0,
+        "inlet_H": 0.5
+      },
+      "cycles": {
+        "status": "awaiting_four_full_cycles",
+        "count": 2,
+        "gauge_x": -0.5,
+        "method": "Consecutive upward crossings of one upstream surface gauge; forces are not phase-fitted.",
+        "acceptance": false,
+        "phase_reference": "upstream gauge, not yet foil-local certification",
+        "analysis_not_before_s": 7.054375334575275,
+        "review_due_20": false
+      },
+      "frame": true
+    }
+  ]
+}

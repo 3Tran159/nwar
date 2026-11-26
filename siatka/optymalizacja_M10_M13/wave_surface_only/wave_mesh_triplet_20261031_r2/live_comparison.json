@@ -1,0 +1,60 @@
+{
+  "updated_at": "2026-10-31T11:37:26.346431+01:00",
+  "records": [
+    {
+      "mesh": "coarse",
+      "cells": 41200,
+      "dz_mm": 50.0,
+      "spatial_cells_per_0p5m": 10,
+      "map_pass": true,
+      "calm_steps": 200,
+      "calm_complete": true,
+      "wave_steps": 0,
+      "physical_time_s": null,
+      "max_interface_CFL": null,
+      "max_bulk_CFL": null,
+      "max_abs_eta_mm": null,
+      "water_volume_range_m3": null,
+      "wave_solver_wall_s": null,
+      "status": "calm ready",
+      "full_propagation_validated": false
+    },
+    {
+      "mesh": "baseline",
+      "cells": 53200,
+      "dz_mm": 25.0,
+      "spatial_cells_per_0p5m": 20,
+      "map_pass": "direct same mesh",
+      "calm_steps": null,
+      "calm_complete": false,
+      "wave_steps": 0,
+      "physical_time_s": null,
+      "max_interface_CFL": null,
+      "max_bulk_CFL": null,
+      "max_abs_eta_mm": null,
+      "water_volume_range_m3": null,
+      "wave_solver_wall_s": null,
+      "status": "queued",
+      "full_propagation_validated": false
+    },
+    {
+      "mesh": "fine",
+      "cells": 77200,
+      "dz_mm": 12.5,
+      "spatial_cells_per_0p5m": 40,
+      "map_pass": null,
+      "calm_steps": null,
+      "calm_complete": false,
+      "wave_steps": 0,
+      "physical_time_s": null,
+      "max_interface_CFL": null,
+      "max_bulk_CFL": null,
+      "max_abs_eta_mm": null,
+      "water_volume_range_m3": null,
+      "wave_solver_wall_s": null,
+      "status": "queued",
+      "full_propagation_validated": false
+    }
+  ],
+  "full_validation": false
+}

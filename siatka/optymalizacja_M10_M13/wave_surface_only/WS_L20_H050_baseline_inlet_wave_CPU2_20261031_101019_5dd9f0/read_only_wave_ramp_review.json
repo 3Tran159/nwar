@@ -1,0 +1,125 @@
+{
+  "schema": "read_only_wave_ramp_quality_v1",
+  "sampled_at": "2026-10-31T10:13:30.066545+01:00",
+  "run_path": "E:\\ntnu_mesh_optimization_20261030\\wave_surface_only\\WS_L20_H050_baseline_inlet_wave_CPU2_20261031_101019_5dd9f0",
+  "phase": "inlet_wave_ramp_from_computed_flat_calm",
+  "source_time_s": 0.4,
+  "target_dt_s": 0.001,
+  "n_history_samples": 52,
+  "n_gauge_samples": 88,
+  "last_step": 51,
+  "last_physical_time_s": 0.45100000000000035,
+  "completed_status": "not_yet_completed",
+  "exit_code": null,
+  "max_speed_m_s": {
+    "n": 52,
+    "min": 18.000000000041055,
+    "max": 18.000172402973107,
+    "mean": 18.000094969723143
+  },
+  "bulk_CFL": {
+    "n": 52,
+    "min": 0.09000000000020053,
+    "max": 0.09003271024922886,
+    "mean": 0.09000981214433652
+  },
+  "interface_CFL_valid": {
+    "n": 0,
+    "min": null,
+    "max": null,
+    "mean": null
+  },
+  "interface_CFL_unavailable_samples": 52,
+  "water_volume_m3": {
+    "n": 52,
+    "min": 38.399999525710236,
+    "max": 38.40000002092095,
+    "mean": 38.39999994129335
+  },
+  "water_volume_range_pct": 1.2896112345885687e-06,
+  "nominal_H_m": {
+    "n": 52,
+    "min": 1e-06,
+    "max": 0.0011176697825883198,
+    "mean": 0.0003769812808032294
+  },
+  "evaluated_H_m": {
+    "n": 52,
+    "min": 1e-06,
+    "max": 0.0011176697825883198,
+    "mean": 0.0003769812808032294
+  },
+  "max_abs_evaluated_height_difference_m": 0.0,
+  "wave_period_s_after_first_step": {
+    "n": 51,
+    "min": 0.8478873402355592,
+    "max": 0.8478873433311412,
+    "mean": 0.8478873426802803
+  },
+  "raw_surface_probe_statistics": {
+    "-34.0": {
+      "samples": 11,
+      "min_eta_m": -1.7768991718014604e-06,
+      "max_eta_m": 1.9830686426303146e-08,
+      "max_abs_eta_m": 1.7768991718014604e-06,
+      "first_abs_eta_over_5mm": null
+    },
+    "-25.0": {
+      "samples": 11,
+      "min_eta_m": -5.329070518200751e-13,
+      "max_eta_m": 9.77061130669199e-07,
+      "max_abs_eta_m": 9.77061130669199e-07,
+      "first_abs_eta_over_5mm": null
+    },
+    "-15.0": {
+      "samples": 11,
+      "min_eta_m": -4.617406190732254e-08,
+      "max_eta_m": 7.372058519194979e-10,
+      "max_abs_eta_m": 4.617406190732254e-08,
+      "first_abs_eta_over_5mm": null
+    },
+    "-10.0": {
+      "samples": 11,
+      "min_eta_m": -1.493082990577932e-08,
+      "max_eta_m": 1.0021956597938697e-09,
+      "max_abs_eta_m": 1.493082990577932e-08,
+      "first_abs_eta_over_5mm": null
+    },
+    "0.0": {
+      "samples": 11,
+      "min_eta_m": -4.849358248293356e-09,
+      "max_eta_m": 6.418119369300257e-10,
+      "max_abs_eta_m": 4.849358248293356e-09,
+      "first_abs_eta_over_5mm": null
+    },
+    "10.0": {
+      "samples": 11,
+      "min_eta_m": -2.226986595132985e-09,
+      "max_eta_m": 3.5197089687244443e-10,
+      "max_abs_eta_m": 2.226986595132985e-09,
+      "first_abs_eta_over_5mm": null
+    },
+    "20.0": {
+      "samples": 11,
+      "min_eta_m": -1.0918412840510427e-09,
+      "max_eta_m": 1.7830714682531834e-10,
+      "max_abs_eta_m": 1.0918412840510427e-09,
+      "first_abs_eta_over_5mm": null
+    },
+    "40.0": {
+      "samples": 11,
+      "min_eta_m": -1.4430057149183995e-10,
+      "max_eta_m": 2.2939872224014835e-11,
+      "max_abs_eta_m": 1.4430057149183995e-10,
+      "first_abs_eta_over_5mm": null
+    }
+  },
+  "measured_probe_wave_disturbance": false,
+  "wave_height_envelope_complete": false,
+  "propagation_accuracy_accepted": false,
+  "mesh_convergence_accepted": false,
+  "reflection_evaluated": false,
+  "phase_speed_evaluated": false,
+  "ramp_startup_must_be_excluded_from_amplitude_or_phase_accuracy": true,
+  "disclaimer": "Source is raw solver history and probes only; no guessed phase, reflection, damping or full-height wave. Empty interface threshold yields unavailable CFL, not zero. Station arrival needs actual full-height time-series evidence."
+}

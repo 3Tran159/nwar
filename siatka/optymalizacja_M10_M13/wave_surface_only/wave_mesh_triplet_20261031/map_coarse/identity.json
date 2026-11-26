@@ -1,0 +1,10 @@
+{
+  "source": "E:\\ntnu_mesh_optimization_20261030\\wave_surface_only\\WS_L20_H050_baseline_flatCalm_CPU2_20261031_075518_43108c\\calm_pilot_final.sim",
+  "source_sha256": "fdc5d295ac806813dbc783f6ba30c9e626f2ee5c2f91b7825164e69660bc5d28",
+  "macro": "E:\\ntnu_mesh_optimization_20261030\\wave_surface_only\\NoFoilFlatMeshMapper.java",
+  "macro_sha256": "49e80ce470a7b8ff6defe603f7c7b15910cd43dbf670212e77320ec7b2bfe74b",
+  "at": "2026-10-31T11:21:58.663713+01:00",
+  "stage": "map_coarse",
+  "inputs_copied": true,
+  "secondary_GPU_used": false
+}

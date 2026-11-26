@@ -1,0 +1,465 @@
+{
+  "version": "light-mesh-watch-4-adaptive-recovery",
+  "created_at": "2026-10-30T21:02:57.427218+01:00",
+  "authorization": "User extended mesh search through Saturday 31 October 2026, requested a decision by 06:00 before a cycling trip, and wants wave work after mesh selection. Keep the existing M12/M11/M10 campaign computing; additional combinations remain conditional on its verified completion and resource availability. No further cleanup is authorized by this optimization task. User additionally authorized preparing an autonomous recovery prompt to direct further calculations during absence when an unintended stop or hang occurs. Bounded verified recovery is now permitted; healthy solvers, user pauses, scientific gates, HF and wave hold remain protected. User additionally authorized targeted parameter change or independent simulation after repeated failure, with scientific and safety gates unchanged.",
+  "status": "clean_C01_first_uniform_density",
+  "deadline_local": "2026-11-02T09:00:00+01:00",
+  "deadline_meaning": "Explicit 1 Nov authorization: M13 wave validation then selected H/lambda cases until 2 Nov 09:00 Oslo. Not a new blanket mesh-search or recovery budget. No automatic killing of healthy existing runs at expiry.",
+  "root": "E:\\ntnu_mesh_optimization_20261030",
+  "baseline_study": "C:\\Users\\ThinkPad\\Documents\\ChatGPT\\ntnu science\\mesh_study_20261030\\gci_w01a_20261030",
+  "legacy_policy": "F:\\ntnu\\mesh_screening_20261028\\force_stabilization_20261029\\mesh_selection_plan.json",
+  "baseline_cases": {
+    "M10": "W01a",
+    "M11": "G10_M",
+    "M12": "G10_F"
+  },
+  "gate": [
+    "Project-primary settled CL and total CD on all three meshes with 2 passes of 0.5% mean/RMS checks; componentown drift diagnostic only. Preserve original solver results and independently require actual mesh agreement.",
+    "Original controller and its planned numerical/GCI controls are finished and all campaign resources are idle; never steal GPU or remove an existing lock.",
+    "No STOP_ALL, no user pause, no unresolved safety failure, and the separate C01/wave hold remains intact.",
+    "Check actual current time, measured cost, available memory and disk before each attempt; include mesh generation, warm start, stabilization and saves in the budget.",
+    "All new scripts, meshes, temporary folders and logs are under this E-drive root; preserve original scripts, inputs, checkpoints and histories."
+  ],
+  "selection": {
+    "agreement_pct": 1.0,
+    "agreement_basis": "Existing policy: settled CL and total CD agree with at least two genuinely finer comparable meshes. Recompute identical last 0.2 s means from raw data, with hydrodynamic CL. Retain the adjacent-window stability checks and examine force components.",
+    "stabilization": {
+      "window_s": 0.2,
+      "threshold_pct": 0.5,
+      "mean_shift": true,
+      "RMS_each_window": true,
+      "consecutive_passes": 2,
+      "coefficients": [
+        "CL",
+        "CD"
+      ],
+      "legacy_solver_coefficients": [
+        "CL",
+        "CD",
+        "CD_pressure",
+        "CD_viscous"
+      ],
+      "diagnostic_only_coefficients": [
+        "CD_pressure",
+        "CD_viscous"
+      ],
+      "legacy_solver_unchanged": true,
+      "component_diagnostics": "Pressure and viscous deltas relative to total CD and possible cancellation; no own-component 0.5%-gate."
+    },
+    "CL_convention": "CL_total - buoyancy/(0.5*rho*U^2*S); unchanged baseline: 22.718189111947265/3855.6. Validate geometry, span, rho, U and area before reusing offset.",
+    "comparability": "Same foil, angle, domain, waterline, single spanwise cell, physics, boundary conditions, time order, dt and inner-iteration treatment. More cells alone do not prove finer resolution.",
+    "no_claims": "Optimization candidates are not automatically a systematic GCI family or wave validation. Keep original M10/M11/M12 GCI evidence intact.",
+    "user_primary_CL_CD_override": {
+      "authorized": true,
+      "at": "2026-10-31T06:54:58.699859+01:00",
+      "primary_coefficients": [
+        "CL",
+        "CD"
+      ],
+      "mean_shift_and_RMS_threshold_pct": 0.5,
+      "window_s": 0.2,
+      "consecutive_passes": 2,
+      "pressure_own_0p5_gate": false,
+      "component_diagnostics_required": true,
+      "legacy_active_solver_unchanged": true,
+      "save_policy": "Only verified gentle saved stop; never falsely mark legacy solver stabilized."
+    },
+    "lightweight_optimization_screen": {
+      "approved_by_user_at": "2026-10-31T18:53:33.056595+01:00",
+      "objective": "Select the lightest adequately reliable foil mesh for multi-wave CFD campaigns",
+      "reference_mesh": "M12 / G10_F",
+      "max_abs_relative_difference_each_pct": 5.0,
+      "coefficients": [
+        "hydrodynamic_CL",
+        "total_CD"
+      ],
+      "both_required": true,
+      "ordering": "Among meshes passing scientific/numerical guards and the individual 5% limits, minimize actual cell count and measured computational cost",
+      "reference_basis": "Recompute means over a matched physical-time window for each run from raw data; compare against original M12 accepted reference, with explicit dt sensitivity assessment",
+      "separate_temporal_settling_gate": "CL and total CD each mean drift and RMS <0.5% over adjacent full 0.2s windows, 2 consecutive checks",
+      "numerical_guards": [
+        "correct physics/BC/geometry",
+        "valid prism coverage and cell quality",
+        "VOF/conservation/CFL safeguards",
+        "no conflicting solver resource impact"
+      ],
+      "not_a_formal_GCI_or_ITTC_rule": true,
+      "existing_stricter_1pct_reference_retained": "Original 1% GCI-oriented mesh agreement remains recorded for rigor; it is NOT a hard screen for this new 5% practical optimization objective.",
+      "explanatory_note": "M10/M11/M12 have unequal dt, so their currently displayed CL/CD deviations are provisional for a strict mesh-only verdict."
+    }
+  },
+  "candidates": [
+    {
+      "order": 1,
+      "condition": "M10 satisfies agreement with M11 and M12",
+      "change": "Increase far-field base size by about 15%; keep absolute foil, near-field, free-surface, protected region and prism controls unchanged. Audit actual cells and quality; do not promise a cell count."
+    },
+    {
+      "order": 2,
+      "condition": "First coarsening passes and time remains",
+      "change": "Increase far-field base size to about 30% above original M10, keeping protected absolute resolutions unchanged. Stop coarsening at first failed acceptance or negligible computational saving."
+    },
+    {
+      "alternative": "If M10 fails",
+      "change": "Do not blindly coarsen. Inspect component differences and refine the likely sensitive region on a copy of M10, aiming for fewer cells than M11. Keep dt and solver settings fixed for the comparison."
+    }
+  ],
+  "limits": {
+    "maximum_extra_attempts": 3,
+    "maximum_mesh_number": 15,
+    "assign_ids": "Read registry before assigning unused M13/M14/M15; never overwrite a prior case.",
+    "minimum_C_free_GiB": 15,
+    "minimum_E_free_GiB_before_launch": 25,
+    "minimum_RAM_free_GiB_before_launch": 16,
+    "minimum_GPU_free_MiB_before_launch": 4000,
+    "no_parallel_solver": false,
+    "no_unvalidated_import_side_effects": true,
+    "no_cleanup_authorized": true,
+    "parallel_exception_policy": "parallel_execution overrides prior blanket ban; never unlimited concurrency"
+  },
+  "implementation": "Only use a separately copied, inspected and validated build/audit/map/continue workflow. Existing references include MeshG10_M.java, MeshG10_F.java, audit_family.py, extrude.py, FinalizeG10_*.java and MapW01Solution.java. Redirect every output path before execution. If safe automation cannot be validated, record the blocker and launch nothing.",
+  "journal": "Record each decision, source identity, parameters, actual cells, audit gates, source checkpoint, current attempt PID, last outcome and acceptance in this directory to avoid duplicate launches.",
+  "updated_at": "2026-11-01T11:00:34.462722+01:00",
+  "morning_review": {
+    "scheduled_local": "2026-10-31T05:45:00+01:00",
+    "decision_requested_by_local": "2026-10-31T06:00:00+01:00",
+    "read_only": true,
+    "deliver_even_if_still_running": true,
+    "output": "Verified progress and checkpoints, pass/fail of all four stability metrics, comparable mesh agreement when available, actual s/step and resources, recommendation for the rest of Saturday and readiness or blockers for waves."
+  },
+  "watch_policy": {
+    "cadence": "hourly",
+    "while_existing_jobs_run": "Healthy progress: read only and silent. Suspected fault: diagnose against prior readings and save/load activity, then follow the bounded recovery runbook. Never parallelize solvers or meshers.",
+    "unexpected_stop": "Diagnose first. Follow recovery runbook H on repeated verified failures: controlled one-parameter diagnostic on separate copy, then pivot to independently prepared next mesh or offline analysis if appropriate. Preserve locks, hardware gates, wave hold, original solver and total start limit.",
+    "idle_after_verified_completion": "Follow the separately copied and validated optimization workflow only when acceptance gates and resources permit. Journal attempts and verify that the next authorized job actually advances.",
+    "normal_progress_notifications": false,
+    "preserve_separate_M12_monitor": true
+  },
+  "finish_objective": "Once a sufficiently light and credible calm-water mesh is available, prioritize first defensible waves and varied H/lambda. Do not delay for full wave-specific grid convergence; user accepts this limited-resolution approximation. Never manufacture proof of wave accuracy.",
+  "wave_handoff": {
+    "goal": "Find a light, credible calm-water mesh and proceed to several physically interpretable wave cases. User explicitly accepts lack of formal wave-mesh independence as a compute-budget limitation; keep cheap wave-plausibility checks and disclose uncertainty.",
+    "prepare_when_ready": "Mandatory two stages per wave: verified flat calm-water continuation on same mesh/domain, then wave injected at upstream x_min or strictly localized inlet forcing from calm checkpoint; preserve initial flat downstream VOF and permit wave travel before evaluating forces. Record wave onset, arrival and averaging time; do not initialize a full wave field throughout domain.",
+    "launch_policy": "No automatic release of existing C01/wave hold. Once approved, proceed with selected calm-mesh-based wave setup without demanding costly formal wave-GCI; require only necessary basic propagation/numerical sanity checks before interpreting wave forces. Document unquantified wave-grid uncertainty.",
+    "preserve_HF_session": true,
+    "wave_program": {
+      "reference_plan": "F:\\ntnu\\mesh_screening_20261028\\force_stabilization_20261029\\mesh_selection_plan.json",
+      "extension_plan": "F:\\ntnu\\mesh_screening_20261028\\force_stabilization_20261029\\wave_extension_plan.json",
+      "sequence": [
+        {
+          "id": "C01",
+          "purpose": "Verified calm-water baseline on selected wave-ready mesh"
+        },
+        {
+          "id": "W01",
+          "H_m": 0.5,
+          "lambda_m": 20,
+          "purpose": "First reference head-wave case"
+        },
+        {
+          "id": "W02",
+          "H_m": 0.5,
+          "lambda_m": 30,
+          "purpose": "Second reference head-wave case"
+        },
+        {
+          "id": "W03-W06",
+          "purpose": "Explore lower and higher wave heights at 20 m and 30 m wavelength according to authorized extension plan"
+        },
+        {
+          "id": "W07+",
+          "purpose": "Explore shorter/other wavelengths and remaining authorized variations, subject to quality and compute budget"
+        }
+      ],
+      "keep_shared_baseline": {
+        "water_depth_m": 24,
+        "speed_m_s": 18,
+        "nominal_submergence_m": 2,
+        "wave_model_from_existing_plan": "FifthOrderVofWave",
+        "changing_wave_conditions_require_domain_resolution_review": true
+      },
+      "before_quantitative_wave_claims": [
+        "verify incident wave amplitude/phase and propagation over multiple periods",
+        "verify sponge forcing/damping, boundary reflections and 3 vs 4 wavelength sensitivity where planned",
+        "verify free-surface mesh spatial and temporal resolution and interface CFL",
+        "verify periodic force extraction and complete encounter-cycle averaging rather than initial transient",
+        "baseline comparison same geometry, wave time settings, normalized lift without buoyancy"
+      ],
+      "hold_policy": "Current C01/wave hold remains in force until explicit readiness review and permitted release; mesh optimization automation does not automatically launch waves."
+    },
+    "staged_wave_start": {
+      "mandatory": true,
+      "user_instruction": "First stabilize flat calm water, then launch the incident wave from the START/UPSTREAM END of the computational domain. Never initialize a full wave simultaneously in the whole domain.",
+      "phase_1_calm": {
+        "wave_height_m": 0,
+        "wave_forcing": "off",
+        "wave_initial_condition": "flat water at z=2 m in baseline domain",
+        "goal": "Obtain and save a verified calm-water velocity, pressure, turbulence and VOF field for the same domain and foil arrangement. For propagation-only calibration the no-foil domain also starts flat and steady.",
+        "checks": [
+          "Finite stable flow and VOF",
+          "Control of conservation/mass and physically plausible forces",
+          "Use existing accepted 0.5% CL/CD force criteria in foil baseline, never mark failed baseline accepted",
+          "Record time, mesh/physics/BC identity, completed .sim and hash"
+        ]
+      },
+      "phase_2_inlet_wave": {
+        "start_from": "verified phase-1 calm-water .sim without reinitializing/recreating the previous flow",
+        "wave_origin": "upstream domain inlet x_min, or the narrow upstream wave forcing region if used as the physically equivalent boundary generator",
+        "initial_free_surface": "preserve initially FLAT free surface downstream; do not prepopulate wave train in entire domain",
+        "generator": "Configure selected wave model (existing FifthOrderVofWave), height and length, verified upstream orientation and phase; ramp/inlet transition if necessary for stability, counting it as startup transient",
+        "propagation": "Allow wave to develop through upstream section, verify height/period/arrival and reflections at gauges; protect foil zone and damp outgoing waves downstream",
+        "discard": "Discard initial boundary switching and wave-travel transient; begin force-period statistics only after arrival and sufficiently periodic response"
+      },
+      "results": {
+        "time_indexing": "Preserve calm saved timestamp and physical time; distinguish wave onset timestamp, first arrival at foil, and first accepted averaging window",
+        "comparison": "Calculate wave-induced forces relative to same-setup calm control with matching density/area/CL convention and stable comparison windows; do not mix unequal startup histories",
+        "review_gates": "No full wave GCI required under current compute-budget policy, but require basic propagation, CFL/VOF, reflections, mass-budget and time-window sanity checks before interpretation"
+      },
+      "controls": {
+        "no_active_solver_change": true,
+        "do_not_remove_wave_hold": true,
+        "do_not_launch_wave_on_this_plan_update": true,
+        "preserve_HF": true,
+        "independent_surface_mesh_trials": "Allowed geometrical preparation in separate E: root only if cheap and non-interfering. Propagation solver trials only after safe resource and hold authorization checks; not concurrent with current M12/M11/M10."
+      }
+    },
+    "surface_grid_screen_reference": "E:\\ntnu_mesh_optimization_20261030\\wave_surface_only\\plan.json",
+    "timestep_priority": {
+      "user_priority": "Aim for dt=0.001 s in practical W01/W02 and other foil-in-wave runs; dt=0.0001 s M12 is a conservative calm-water mesh-screen setting and must not become a default production wave timestep.",
+      "wave_production_target_dt_s": 0.001,
+      "wave_temporal_check_dt_s": 0.0005,
+      "fine_diagnostic_only_dt_s": 0.0001,
+      "selection_rule": "Choose the least expensive (mesh,dt,VOF substepping,inner convergence) combination with stable finite free-surface transport and sufficiently insensitive wave probes/force results. Neither grid size nor the earlier calm-water dt alone proves a viable 1 ms foil simulation.",
+      "test_sequence": [
+        "Use a common 1 ms physical step, same time order, 10 inner iterations and identical inlet/initial forcing, boundary/sponge conditions and probes across wave-only surface-mesh candidates. BEGIN with stabilized calm water, THEN inject wave upstream and allow propagation; never start with a domain filled by a wave.",
+        "Repeat a short matched segment at 0.5 ms on a chosen candidate, using identical physical windows and compare gauge amplitude, phase, reflection, and where available force response. Probe half-step only if its cost is justified and bounded.",
+        "If 1 ms triggers a guard, identify the local cause: advection/interface CFL, local foil cell size, pressure/VOF solver convergence, backflow near outlet or numerical startup. Do not assume refinement fixes a CFL failure; it can worsen time-step constraints.",
+        "When preparing joined foil+wave mesh, preserve supported near-foil/prism and wave surface resolutions, check transition and validity, then perform short calm-to-wave pilot at 1 ms with full guards. If 1 ms cannot pass, prefer an evidence-supported 0.5 ms rather than relaxing safety or corrupting scientific agreement.",
+        "0.1 ms is optional targeted diagnostic or independently supported fallback, not the default for all long waves."
+      ],
+      "prior_evidence": {
+        "calm_M12_dt_s": 0.0001,
+        "historic_W01_with_foil_dt_s": 0.001,
+        "historic_W01_problem": "Earlier foil-wave continuation at dt=1 ms had interface CFL around 4.58 and later numerical air jet; no-foil 1 ms run encountered outlet backflow and 50 m/s guard at t=0.704 s. Neither is evidence that simply refining a surface mesh makes 1 ms stable.",
+        "initial_wave_period_s_approx": 0.847,
+        "physical_steps_per_period_at_1ms_approx": 847
+      },
+      "research_limitations": "1 ms temporal accuracy and robust VOF/force convergence remain hypotheses to test; do not claim validated until short matched check passes.",
+      "resource_safety": "M12 is actively using GPU. Only offline mesh geometry/audit on spare CPU resources is permitted without altering its performance; do not launch another STAR solver or wave cases while the main solver holds resources or the C01 wave hold remains.",
+      "changes_to_active_solver": false
+    }
+  },
+  "completed_separate_cleanup": {
+    "target": "C:\\Autodesk",
+    "authorized_and_completed": true,
+    "deleted_logical_GiB": 26.956,
+    "free_C_after_GiB": 60.055,
+    "audit": "E:\\ntnu_audits\\cleanup_Autodesk_20261030_211710\\result.json",
+    "scope": "One-off extracted-installer cleanup only; no CFD, ProgramData, installed programs or Arduino files changed."
+  },
+  "recovery_policy": {
+    "runbook": "E:\\ntnu_mesh_optimization_20261030\\AUTONOMOUS_RECOVERY_PROMPT.md",
+    "runbook_sha256": "b3d24d5a5e0dec25035465fa5ad464069965e042c04ab1df4cfcacaf52450845",
+    "authorized": true,
+    "scope": "Diagnose unintended stalls; recover from verified healthy checkpoints, following runbook and limits. Never override deliberate pauses or numerical acceptance gates.",
+    "maximum_restarts_per_logical_stage": 2,
+    "maximum_recovery_starts_total": 4,
+    "maximum_extra_continuation_chunks": 2,
+    "extra_chunk_physical_s": 0.4,
+    "maximum_diagnostic_dt_half_pilots": 1,
+    "normal_progress_read_only": true,
+    "state_journal_root": "E:\\ntnu_mesh_optimization_20261030",
+    "existing_resume_endpoint_exception": "A validated existing campaign endpoint may write its required metadata and new registered continuation under the original study root, with recorded paths and sufficient C space. Source files and prior attempts stay immutable. New standalone trials remain on E.",
+    "repeated_failure_pivot": {
+      "authorized": true,
+      "trigger": "two evidenced matching failures",
+      "max_distinct_diagnostic_changes_per_failure_family": 2,
+      "all_starts_count_against_existing_global_limit": 4,
+      "one_variable_at_a_time": true,
+      "fallback": "M11, then M10 if independent start is safe; otherwise offline analysis",
+      "no_false_M12_stabilization": true,
+      "no_wave_autostart": true
+    }
+  },
+  "dashboard_forecast": {
+    "scope": "Conditional estimate of CL/CD mean-change threshold only; never a solver stop or mesh acceptance criterion.",
+    "implementation_root": "E:\\ntnu_mesh_optimization_20261030\\dashboard_forecast_v4",
+    "methods": "Anchored linear trend plus exponential/window-sensitivity scenarios; no calibrated confidence interval.",
+    "cannot_establish_full_stabilization": true
+  },
+  "mission": {
+    "ultimate_scientific_goal": "Run trustworthy hydrofoil simulations in multiple incident wave conditions, quantify wave-induced CL/CD and negative wave added resistance, then investigate active feedforward flap control.",
+    "mesh_goal": "Select the lightest mesh that passes quality, force settling and comparable mesh-agreement checks and is usable as a starting point for wave-domain validation. Mesh is a means, not the deliverable.",
+    "decision_principle": "Prefer sufficient scientific validity and compute efficiency over marginal cell-count savings. Stop optional mesh coarsening as soon as a defensible lightweight candidate exists and further saving is small or risks delaying wave research.",
+    "calm_water_is_not_wave_validation": true,
+    "do_not_relax": [
+      "0.5% four-coefficient settling criterion",
+      "1% CL/CD agreement with two genuinely finer comparable meshes",
+      "documented mesh quality and source provenance",
+      "wave propagation/free-surface accuracy checks"
+    ],
+    "stage_priority": [
+      "Complete or transparently diagnose baseline calm-water mesh verification M12/M11/M10; do not fabricate confirmations",
+      "Choose lowest-cost supported production candidate, possibly with no extra mesh variant if evidence is already sufficient",
+      "Preserve a usable settled calm-water checkpoint and document wave-domain changes and validation blockers",
+      "After explicit review of C01/wave hold, start from accepted flat calm water on the selected wave-domain mesh, inject each wave at upstream inlet and propagate it to the foil before sampling forces; then run W01/W02",
+      "Continue authorized contrasting wave-height/wavelength cases from original wave extension plan, analyze wave-added forces",
+      "Once wave baseline is trustworthy, assess active flap control as a separate controlled comparison"
+    ],
+    "critical_transition": "Use practical wave production target dt=0.001 s (if verified), compare to 0.0005 s on bounded cases; do not automatically use 0.0001 s M12 step for all waves. Short no-foil wave-surface trials then join with credible foil nearfield and start waves from calm checkpoint/inlet.",
+    "wave_mesh_accuracy_budget": {
+      "user_decision": "Explicitly accept not having a formally mesh-verified wave solution because of limited computing power; prioritize wave simulations once a defendable lightweight calm-water reference is chosen.",
+      "formal_wave_GCI_required_to_start": false,
+      "full_multi_mesh_wave_sensitivity_campaign_required": false,
+      "status_for_wave_mesh": "Transferred from calm-water-supported mesh. Wave-specific grid convergence/uncertainty is NOT established.",
+      "cost_strategy": "Reuse chosen calm-water-verified hydrofoil mesh as the starting template. Make only essential local wave/surface/domain adjustments as physics and stability demand, avoiding a new 3-mesh wave GCI campaign.",
+      "minimal_wave_case_sanity_checks": [
+        "Check incident wave height, length/period, direction and arrival at the foil against imposed conditions at available probes/field views.",
+        "Check finite stable VOF, interface/flow CFL, mass conservation, and absence of severe unexplained numerical force spikes or unphysical wave reflections.",
+        "Check that at least the foil and dynamically important free-surface band have plausible spatial resolution for the chosen wavelength/height, and respond to obvious under-resolution without a full convergence campaign.",
+        "Compare wave-added loads only after initial transients, using consistent cycle windows and the same solver configuration across cases."
+      ],
+      "important_distinction": "Short plausibility/quality checks prevent invalid calculations; they are NOT formal wave mesh validation or proof of grid independence.",
+      "research_claims": "Report results as exploratory, subject to unquantified wave-discretization uncertainty. Separate observations and within-mesh trends from validated absolute negative wave added resistance. Avoid strong quantitative accuracy claims absent further evidence.",
+      "stop_rule": "Do not hold up wave research awaiting full wave-GCI. If simple checks reveal manifestly wrong propagation or unstable numerics, fix the concrete cause or clearly flag limitations instead of silently accepting invalid data.",
+      "preserve_calm_gates": "Existing 0.5% calm force stabilization and 1% comparable CL/CD mesh-agreement gates remain unchanged. An early switch cannot misrepresent failed calm checks as passing.",
+      "wave_hold": "Still respect existing user hold/ready review for C01 and waves. Policy does not itself authorize releasing that hold or auto-starting waves."
+    }
+  },
+  "parallel_execution": {
+    "authorized": true,
+    "authorization": "User explicitly allows parallel mesh calculations if they do not drastically increase M12 time per step.",
+    "maximum_auxiliary_solvers": 1,
+    "first_auxiliary_backend": "CPU only, 2 workers, BELOW_NORMAL priority; never a second GPU solve",
+    "allow_growth_to_4_workers_after_measured_pass": true,
+    "initial_pilot_max_steps": 60,
+    "initial_pilot_solver_budget_s": 600,
+    "M12_slowdown_fraction_soft_limit": 0.15,
+    "performance_threshold_is_project_choice_not_ITTC": true,
+    "comparison": "Measure before/after in same M12 continuation using wall_seconds increments. Baseline median of >=200 consecutive physical steps; use two independent windows of >=30 newly completed M12 steps and assess persistent slowdown. Log full wall-time and save overhead separately.",
+    "automatic_action_on_slowdown": "Graceful STOP for AUXILIARY only; no M12 stop, no M12 affinity/priority/configuration changes. Also stop auxiliary on stale M12 history, primary stage change, insufficient RAM/disk or explicit pause.",
+    "minimum_free_RAM_GiB": 16,
+    "minimum_free_C_GiB": 15,
+    "minimum_free_E_GiB": 25,
+    "respect_existing_control_locks": true,
+    "all_new_auxiliary_files": "E:\\ntnu_mesh_optimization_20261030\\parallel_cpu_20261031",
+    "first_pilot": "Isolated M10 calm-water performance test on copied verified pilot final.sim, same dt=0.0001 and 10 inner iterations; no acceptance claim and no modification to existing GPU queue.",
+    "later_scope": "One independently configured no-foil wave-surface trial on CPU at target dt=0.001 may run after resource pilot passes and upstream calm-first setup is verified. Preserve existing held C01/foil-wave and HF; new no-foil test is separate authorized scope, not a release of their hold."
+  },
+  "noon_M12_review": {
+    "time_local": "2026-10-31T12:00:00+01:00",
+    "purpose": "User review checkpoint for whether to end expensive M12 and move on, even if internal component thresholds remain unmet.",
+    "no_automatic_extension_past_noon": true,
+    "automatic_kill_at_noon": false,
+    "automatic_acceptance_or_criteria_change": false,
+    "readout": "Actual CL/CD means and drift, longer windows, pressure/viscous absolute contributions normalized by total CD, primary and auxiliary cost, saved checkpoints and recommendation. A stopped result must retain its true not-stabilized status."
+  },
+  "criterion_provenance": {
+    "kind": "project-defined heuristic, not an ITTC numerical threshold",
+    "existing": "0.5% own-mean normalization for all four quantities, 0.2s adjacent windows, two passes; mesh agreement 1% is also project choice",
+    "references": [
+      "ITTC 7.5-03-02-03 (2024) section 3.8",
+      "ITTC 7.5-03-02-04 (2024) section 2.7",
+      "ITTC 7.5-03-01-01 Rev05 (2024) section 3.3"
+    ],
+    "review": "Discuss primary quantities CL and CD and absolute pressure/viscous drift contributions; do not silently alter active solver criteria or reclassify old failures."
+  },
+  "force_convective_scale": {
+    "chord_m": 1.19,
+    "flow_speed_m_s": 18.0,
+    "transit_time_s": 0.0661111111111111,
+    "assessment_0p2s_chord_transits": 3.025210084033614
+  },
+  "historical_deadlines": [
+    {
+      "recorded_at": "2026-11-01T09:57:43.890116+01:00",
+      "deadline_local": "2026-10-31T23:59:59+01:00",
+      "scope": "former mesh/night optimization horizon"
+    }
+  ],
+  "approved_wave_followup_20261101": {
+    "authorized_at": "2026-11-01T09:57:43.890116+01:00",
+    "user_instruction": "przedluzam do jutra do 9, ztwierdzam wdrozenie planu, potem przejdz do innyhc kombinacji fal",
+    "until_local": "2026-11-02T09:00:00+01:00",
+    "timezone": "Europe/Oslo",
+    "approved_source": "Pasted markdown.md, 154 lines, user approved plan on 1 Nov 2026",
+    "base_mesh": "M13,309441 cells",
+    "ordered_stages": [
+      "A_correct_cycle_analysis_and_dashboard",
+      "B_audit_forcing_and_calm_wave_equivalence",
+      "C_paired_dt0p2ms_sensitivity_against_dt0p4ms",
+      "D_H0p25_lambda20",
+      "E_H0p5_lambda30"
+    ],
+    "phase_gauge_x_m": -0.5,
+    "number_of_overlaid_cycles": 4,
+    "twenty_cycles": "diagnostic ceiling for persistent non-repeatability, not compulsory minimum",
+    "sensitivity_quantity": "Q=mean_CD_wave-CD_calm",
+    "working_Q_change_absolute_max": 4e-05,
+    "Q_tolerance_is_project_proposal": true,
+    "dt_sensitivity_test_is_new_explicitly_authorized_experiment": true,
+    "retry_budget_not_reset": true,
+    "blanket_rebuild": false,
+    "F_legacy_hold_preserved": true,
+    "one_GPU_only": true,
+    "originals_immutable": true,
+    "source_runbook_sha256": "b3d24d5a5e0dec25035465fa5ad464069965e042c04ab1df4cfcacaf52450845",
+    "foil_only_scope_clarification": {
+      "recorded_at": "2026-11-01T11:00:34.462722+01:00",
+      "user_instruction": "same testy siatek z fala tylko odpuszczamy, bedizemy jechac od razu te z platem, juz w01 poszlo z tego co wisze w nocy",
+      "standalone_wave_only_mesh_tests_authorized": false,
+      "standalone_wave_only_validation_prerequisite": false,
+      "validation_scope": "Existing M13 with foil: calm-wave comparability and forcing audit, matched dt sensitivity, then selected H/lambda cases",
+      "W01_physical_condition": {
+        "foil": true,
+        "H_m": 0.5,
+        "lambda_m": 20,
+        "cells": 309441,
+        "last_saved_time_s": 13.979200000011803,
+        "path": "E:\\ntnu_mesh_optimization_20261030\\M13_wave_direct_20261031\\M13_GPU_W20_H050_continuation_R4V_20261101",
+        "scientifically_validated": false
+      },
+      "legacy_C01_W01_queue_released": false,
+      "current_forcing_review_gate_unchanged": true,
+      "next_new_wave_conditions": [
+        {
+          "H_m": 0.25,
+          "lambda_m": 20
+        },
+        {
+          "H_m": 0.5,
+          "lambda_m": 30
+        }
+      ],
+      "source_results_untouched": true,
+      "solver_started": false
+    },
+    "campaign_reference_policy": {
+      "at": "2026-11-01T11:16:21.005451+01:00",
+      "reference_C01_status": "pending_compatibility",
+      "historical_mesh_calm_not_a_wave_reference": true,
+      "wave_comparison_allowed": false,
+      "policy": "E:\\ntnu_mesh_optimization_20261030\\wave_campaign_20261101\\C01_REFERENCE_POLICY_20261101.md",
+      "current_control_does_not_auto_approve_reference": true
+    }
+  },
+  "latest_clean_C01_first": {
+    "at": "2026-11-01T11:50:18.565338+01:00",
+    "authorization": "E:\\ntnu_mesh_optimization_20261030\\approved_wave_plan_20261101\\USER_CLEAN_C01_FIRST_20261101_1142.json",
+    "root": "E:\\ntnu_mesh_optimization_20261030\\clean_c01_campaign_20261101",
+    "C01_run": "E:\\ntnu_mesh_optimization_20261030\\clean_c01_campaign_20261101\\C01_rho1000_air1p2_fresh_r3",
+    "source_role": "geometry/mesh only; new fields/history at t0",
+    "water_kg_m3": 1000,
+    "air_kg_m3": 1.2,
+    "order": [
+      "C01 fresh and primary settled saved",
+      "W01 from exactly C01 checkpoint",
+      "next authorized waves from same C01"
+    ],
+    "T01_cancelled_by_user": true,
+    "old_W01_archived": true,
+    "no_remesh": true,
+    "no_wave_only": true,
+    "wave_reinitialize": false,
+    "runbook_unchanged": true
+  }
+}

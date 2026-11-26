@@ -1,0 +1,7 @@
+mesh,cells,near_surface_dz_m,dt_s,geometry_topology_audited,actual_wave_steps,time_s,measured_interface_CFL,measured_max_CFL,measured_max_abs_gauge_eta_m,status,full_wave_validated
+FS_coarse,41200,0.05,0.001,True,0,,,,,not_run_geometry_only,False
+FS_coarse,41200,0.05,0.0005,True,0,,,,,not_run_geometry_only,False
+FS_baseline,53200,0.025,0.001,True,500,0.9000000000000007,0.09333699030271549,0.09382307746514076,0.008070170554191236,bounded_startup_completed_not_full_wave,False
+FS_baseline,53200,0.025,0.0005,True,21,0.4100000000000003,NOT_AVAILABLE_EMPTY_THRESHOLD,0.0450001640014989,8.078167468283937e-09,active_unfinished,False
+FS_fine,77200,0.0125,0.001,True,0,,,,,not_run_geometry_only,False
+FS_fine,77200,0.0125,0.0005,True,0,,,,,not_run_geometry_only,False

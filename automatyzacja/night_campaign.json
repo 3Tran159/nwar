@@ -1,0 +1,59 @@
+{
+  "id": "nwar-night-20261102",
+  "enabled": true,
+  "at": "2026-11-02T21:42:30.754657+01:00",
+  "fallback_at": "2026-11-03T00:00:00+01:00",
+  "phase": "waves",
+  "authority": "User: continue PRE until original C01 compatibility and self stability <0.5%; from midnight, twice-stable PRE may become new C01. If still unstable, keep stabilizing through the night, then waves. Preserve all data.",
+  "original_sequence": [
+    "W04",
+    "W02",
+    "W03",
+    "W06"
+  ],
+  "prepared_sequence": [
+    "W01",
+    "W02",
+    "W03",
+    "W04",
+    "W05",
+    "W06",
+    "W07"
+  ],
+  "unstable_after_midnight": "continue_PRE_until_twice_stable",
+  "self_threshold_pct": 0.5,
+  "window_s": 0.2,
+  "consecutive_checks": 2,
+  "clear_active_view_only_on_new_reference": true,
+  "source_checkpoint": "E:\\ntnu_mesh_optimization_20261030\\nwar_automation_20261102\\PRE_W04_20261102\\calm_global_resume_20261102_204131\\final.sim",
+  "source_sha256": "3fa5c1ec06a6732c0de7b243d2a007846e5ec7882be8e575b9e5d3ed2c6dc1fd",
+  "source_time_s": 3.7831999999996486,
+  "waves_not_yet_released": false,
+  "launch": {
+    "at": "2026-11-02T23:23:37.173921+01:00",
+    "pid": 4332,
+    "birth": "134381318171713743",
+    "log": "C:\\Users\\ThinkPad\\Documents\\ChatGPT\\ntnu science\\nwar_automation\\qa\\night_pre_controller.log",
+    "source_checkpoint": "E:\\ntnu_mesh_optimization_20261030\\nwar_automation_20261102\\PRE_W04_20261102\\calm_global_resume_20261102_214856\\final.sim",
+    "source_sha256": "dbe142b41244cec241afb986e32a325385f4bae20ebb2ce89029120f8dafc59c",
+    "source_time_s": 5.119199999999502
+  },
+  "automation_ready": true,
+  "validation": {
+    "at": "2026-11-02T21:55:28.673823+01:00",
+    "unit_tests_passed": 96,
+    "macro_compile_passed": true,
+    "new_reference_report_test": {
+      "at": "2026-11-02T21:54:58.735425+01:00",
+      "passed": true,
+      "synthetic_only": true,
+      "actual_reference_unchanged": true,
+      "actual_latest_report_unchanged": true,
+      "new_series_empty_without_old_results": true
+    }
+  },
+  "first_verified_time_s": 3.817599999999645,
+  "branch": "original",
+  "reference_id": "C01_original",
+  "decision_at": "2026-11-03T00:13:53.537660+01:00"
+}

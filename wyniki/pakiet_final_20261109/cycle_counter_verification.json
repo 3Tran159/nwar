@@ -1,0 +1,23 @@
+{
+  "at": "2026-11-02T09:36:22.487725+01:00",
+  "passed": true,
+  "macro_sha256": "cc329cf17bf829b46b3a89dcc406f4ab62ccc3bb1588be6ee2f0d62f4c76f31e",
+  "cases": [
+    {
+      "case": "W02_original",
+      "expected": 3,
+      "result": "PASS measured_cycles=3 restored_boundaries=3 gaps=0"
+    },
+    {
+      "case": "W03_original",
+      "expected": 3,
+      "result": "PASS measured_cycles=3 restored_boundaries=3 gaps=0"
+    },
+    {
+      "case": "W03_with_extension",
+      "expected": 4,
+      "result": "PASS measured_cycles=4 restored_boundaries=4 gaps=0"
+    }
+  ],
+  "no_solver_started": true
+}

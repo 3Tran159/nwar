@@ -1,0 +1,12 @@
+{
+  "at": "2026-10-31T23:42:39.864473+01:00",
+  "status": "javac_pass",
+  "source": "E:\\ntnu_mesh_optimization_20261030\\M13_wave_direct_20261031\\M13ContinueWaveR3.java",
+  "source_sha256": "b6cf6f2662b9ad3b586574bbbffe6417548ff256c45252bf01cb34013cf832b3",
+  "new_macro": "E:\\ntnu_mesh_optimization_20261030\\M13_wave_direct_20261031\\M13ContinueWaveR3Visual.java",
+  "new_sha256": "157ff1c078c57690f890000992c7e5954840415a3f5fdd8bb925063513c51e06",
+  "source_unmodified": true,
+  "scope": "Reporting only: native VOF + velocity-streamline scene every 120s wall, additional x=-0.5m gauge, interface-CFL sample. Same mesh, same dt, same wave and all numerical guards. R2 untouched.",
+  "stderr": "Note: E:\\ntnu_mesh_optimization_20261030\\M13_wave_direct_20261031\\M13ContinueWaveR3Visual.java uses or overrides a deprecated API.\nNote: Recompile with -Xlint:deprecation for details.\n",
+  "solver_started": false
+}

@@ -1,0 +1,24 @@
+{
+  "at": "2026-10-31T09:32:17.184970+01:00",
+  "event": "user_primary_CL_CD_verified_request_gentle_M12_save_stop",
+  "id": "11ba16ae504e43ddbf22b5ec5a5e30ba",
+  "job": "calm_settle_G10_F_GPU_live_r2_resume_20261030_173420_4854e1",
+  "controller_pid": 19040,
+  "star_pid": 1996,
+  "generation": "19040|calm_settle_G10_F_GPU_live_r2_resume_20261030_173420_4854e1|C:\\Users\\ThinkPad\\Documents\\ChatGPT\\ntnu science\\mesh_study_20261030\\gci_w01a_20261030\\force_stabilization_20261029\\calm_settle_G10_F_GPU_live_r2_resume_20261030_173420_4854e1",
+  "scientific_audit": "E:\\ntnu_mesh_optimization_20261030\\project_primary_independent_audit_20261031_0930.json",
+  "audit_sha256": "ea3e23f9355fab9b962308ca5b8a7ca087a7f4390c8e209947bbcfa4332c663d",
+  "formal_times_s": [
+    3.0013,
+    3.2013
+  ],
+  "two_primary_passes_from_raw": true,
+  "legacy_four_way_pass": false,
+  "snapshot_time_s": 3.331300000002654,
+  "snapshot_steps": 24413,
+  "source_unmodified": true,
+  "control_route": "local authenticated generation-pinned pause API",
+  "solver_kill": false,
+  "C01_wave_hold_unchanged": true,
+  "HF_untouched": true
+}

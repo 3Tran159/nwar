@@ -1,0 +1,11 @@
+{
+  "created": "2026-10-31T15:34:48.752664+01:00",
+  "phase": "waves",
+  "source": "E:\\ntnu_mesh_optimization_20261030\\wave_surface_only\\zero_start_matrix_R2_coarse_continuation_20261031_3\\waves\\L20_H500_coarse\\wave_pilot_final.sim",
+  "source_sha256": "fd1283e8c03c14b98ccc8f4976826aa8f7a468f76642aa4c6c6bae16723b4399",
+  "macro": "E:\\ntnu_mesh_optimization_20261030\\wave_surface_only\\zero_start_matrix_R2_coarse_continuation_20261031_4\\ContinueWaveOnlySavedR4.java",
+  "macro_sha256": "857f6db56bbe90f4e7083c7698d5d43fd2c2234ca914b25dbb521df21232d55e",
+  "cpu_workers": 2,
+  "gpu": false,
+  "original_untouched": true
+}

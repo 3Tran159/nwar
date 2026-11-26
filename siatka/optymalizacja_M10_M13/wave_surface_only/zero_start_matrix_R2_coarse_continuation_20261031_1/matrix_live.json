@@ -1,0 +1,153 @@
+{
+  "at": "2026-10-31T14:33:37.393023+01:00",
+  "results": [
+    {
+      "case": "L20_H500_coarse",
+      "lambda_m": 20,
+      "H_m": 0.5,
+      "mesh": "coarse",
+      "cells": 41200,
+      "status": "active_or_incomplete",
+      "steps": 0,
+      "time_s": null,
+      "max_CFL": null,
+      "max_abs_eta_m": null
+    },
+    {
+      "case": "L20_H500_baseline",
+      "lambda_m": 20,
+      "H_m": 0.5,
+      "mesh": "baseline",
+      "cells": 53200,
+      "status": "not_started",
+      "steps": 0,
+      "time_s": null,
+      "max_CFL": null,
+      "max_abs_eta_m": null
+    },
+    {
+      "case": "L20_H500_fine",
+      "lambda_m": 20,
+      "H_m": 0.5,
+      "mesh": "fine",
+      "cells": 77200,
+      "status": "not_started",
+      "steps": 0,
+      "time_s": null,
+      "max_CFL": null,
+      "max_abs_eta_m": null
+    },
+    {
+      "case": "L30_H500_coarse",
+      "lambda_m": 30,
+      "H_m": 0.5,
+      "mesh": "coarse",
+      "cells": 61800,
+      "status": "not_started",
+      "steps": 0,
+      "time_s": null,
+      "max_CFL": null,
+      "max_abs_eta_m": null
+    },
+    {
+      "case": "L30_H500_baseline",
+      "lambda_m": 30,
+      "H_m": 0.5,
+      "mesh": "baseline",
+      "cells": 79800,
+      "status": "not_started",
+      "steps": 0,
+      "time_s": null,
+      "max_CFL": null,
+      "max_abs_eta_m": null
+    },
+    {
+      "case": "L30_H500_fine",
+      "lambda_m": 30,
+      "H_m": 0.5,
+      "mesh": "fine",
+      "cells": 115800,
+      "status": "not_started",
+      "steps": 0,
+      "time_s": null,
+      "max_CFL": null,
+      "max_abs_eta_m": null
+    },
+    {
+      "case": "L20_H250_coarse",
+      "lambda_m": 20,
+      "H_m": 0.25,
+      "mesh": "coarse",
+      "cells": 41200,
+      "status": "not_started",
+      "steps": 0,
+      "time_s": null,
+      "max_CFL": null,
+      "max_abs_eta_m": null
+    },
+    {
+      "case": "L20_H250_baseline",
+      "lambda_m": 20,
+      "H_m": 0.25,
+      "mesh": "baseline",
+      "cells": 53200,
+      "status": "not_started",
+      "steps": 0,
+      "time_s": null,
+      "max_CFL": null,
+      "max_abs_eta_m": null
+    },
+    {
+      "case": "L20_H250_fine",
+      "lambda_m": 20,
+      "H_m": 0.25,
+      "mesh": "fine",
+      "cells": 77200,
+      "status": "not_started",
+      "steps": 0,
+      "time_s": null,
+      "max_CFL": null,
+      "max_abs_eta_m": null
+    },
+    {
+      "case": "L20_H750_coarse",
+      "lambda_m": 20,
+      "H_m": 0.75,
+      "mesh": "coarse",
+      "cells": 41200,
+      "status": "not_started",
+      "steps": 0,
+      "time_s": null,
+      "max_CFL": null,
+      "max_abs_eta_m": null
+    },
+    {
+      "case": "L20_H750_baseline",
+      "lambda_m": 20,
+      "H_m": 0.75,
+      "mesh": "baseline",
+      "cells": 53200,
+      "status": "not_started",
+      "steps": 0,
+      "time_s": null,
+      "max_CFL": null,
+      "max_abs_eta_m": null
+    },
+    {
+      "case": "L20_H750_fine",
+      "lambda_m": 20,
+      "H_m": 0.75,
+      "mesh": "fine",
+      "cells": 77200,
+      "status": "not_started",
+      "steps": 0,
+      "time_s": null,
+      "max_CFL": null,
+      "max_abs_eta_m": null
+    }
+  ],
+  "planned": 12,
+  "actual_completed": 0,
+  "scientifically_validated": 0,
+  "warning": "Short ramp pilots alone are not complete wave-propagation validation"
+}

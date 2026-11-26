@@ -1,0 +1,13 @@
+{
+  "at": "2026-10-30T22:02:13.300053+01:00",
+  "reference": "E:\\ntnu\\quasi2d_waves_20261029\\W20_H24_X4_Q2D_r5\\mesh_exact.CGNS",
+  "candidate": "E:\\ntnu_mesh_optimization_20261030\\wave_surface_only\\FS_baseline\\mesh_exact.CGNS",
+  "file_hash_identical": false,
+  "dataset_differences": [],
+  "attribute_differences": [],
+  "dataset_count": 64,
+  "same_dataset_paths": true,
+  "missing_in_candidate": [],
+  "extra_in_candidate": [],
+  "numerical_mesh_equivalent": true
+}

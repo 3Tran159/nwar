@@ -1,0 +1,8 @@
+{
+  "mesh": "G10_F",
+  "source": "C:\\Users\\ThinkPad\\Documents\\ChatGPT\\ntnu science\\mesh_study_20261030\\gci_w01a_20261030\\force_stabilization_20261029\\calm_pilot_G10_F_r1\\final.sim",
+  "time_s": 0.5915999999999999,
+  "reason": "Retain the computed calm mapped-field relaxation. 0.2 ms pilot exceeded the interface CFL screen; continue at 0.1 ms and verify before accepting production timestep.",
+  "requested_dt_s": 0.0001,
+  "original_source_preserved": true
+}

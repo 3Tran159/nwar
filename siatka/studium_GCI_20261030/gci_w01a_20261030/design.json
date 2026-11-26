@@ -1,0 +1,42 @@
+{
+  "reference": "W01a_M10_FS020_80m",
+  "reference_layers": 48,
+  "reference_growth": 1.167518675065768,
+  "grading_function": "y(eta)=T*expm1(a*eta)/expm1(a); eta=k/N",
+  "grading_exponent": 7.434273897919747,
+  "objective": "Verify the lightweight current W01a M10_FS020 mesh; finer grids are references for later cost reduction.",
+  "spanwise_layers": 1,
+  "effective_refinement_dimension": 2,
+  "designs": [
+    {
+      "id": "G10_M",
+      "layers": 67,
+      "linear_refinement_vs_M09": 1.3958333333333333,
+      "first_layer_m": 1.0722177362717153e-06,
+      "prism_growth": 1.1173494431140072,
+      "total_prism_m": 0.01546,
+      "base_m": 0.17910447761194032,
+      "foil_target_m": 0.0020469083155650325,
+      "foil_min_m": 0.00020469083155650323,
+      "global_min_m": 0.00025586353944562906,
+      "near_foil_m": 0.0063965884861407266,
+      "free_surface_m": 0.014328358208955226,
+      "protected_middle_m": 0.10234541577825162
+    },
+    {
+      "id": "G10_F",
+      "layers": 94,
+      "linear_refinement_vs_M09": 1.9583333333333333,
+      "first_layer_m": 7.519683883165456e-07,
+      "prism_growth": 1.0822995820933912,
+      "total_prism_m": 0.01546,
+      "base_m": 0.12765957446808512,
+      "foil_target_m": 0.0014589665653495444,
+      "foil_min_m": 0.00014589665653495443,
+      "global_min_m": 0.00018237082066869305,
+      "near_foil_m": 0.004559270516717326,
+      "free_surface_m": 0.01021276595744681,
+      "protected_middle_m": 0.07294832826747721
+    }
+  ]
+}

@@ -1,0 +1,75 @@
+{
+  "recorded_at": "2026-10-31T18:29:00+01:00",
+  "authorization": "User: when M10 is converged stop/save it, proceed to the next mesh, and run wave-only work in parallel. Previous instruction identified M13 as far-field +15%.",
+  "M10": {
+    "status": "project_primary_accepted_saved",
+    "directory": "E:\\ntnu_mesh_optimization_20261030\\M10_W01a_GPU_queue_20261031_165802_aef11e",
+    "final_time_s": 3.297999999999702,
+    "receipt": "E:\\ntnu_mesh_optimization_20261030\\mesh_queue_completed_M10.json",
+    "do_not_resume": true
+  },
+  "M13": {
+    "directory": "E:\\ntnu_mesh_optimization_20261030\\M13_farfield15_20261031",
+    "existing_build_controller": "E:\\ntnu_mesh_optimization_20261030\\run_M13_build_20261031.py",
+    "observed_build_pid": 8360,
+    "flow_authorized_after_gates": true,
+    "gates": [
+      "Verify completed geometry and mapping audits",
+      "Verify preserved M10 source and healthy mapped checkpoint",
+      "Verify build owner/process/lock has finished",
+      "No competing M13 flow controller or GPU solver",
+      "Use source M10 settings dt=0.0004, second order, 10 inner iterations for the initial matched comparison",
+      "Preserve CFL, VOF, mass, source integrity and resource guards; any dt change is a separate experiment",
+      "Primary stability: CL without buoyancy and total CD mean shift/RMS below 0.5% across adjacent 0.2s windows, two successive checks",
+      "Retain pressure and viscous diagnostics, not their own 0.5% stop gate"
+    ],
+    "never_mark_prepared_mesh_as_solved": true,
+    "do_not_duplicate_active_build": true
+  },
+  "wave_only": {
+    "directory": "E:\\ntnu_mesh_optimization_20261030\\wave_surface_only\\zero_start_matrix_evening_20261031_182305_689cb9\\waves\\L20_H500_baseline",
+    "controller": "E:\\ntnu_mesh_optimization_20261030\\wave_surface_only\\run_evening_baseline_CPU1_20261031.py",
+    "observed_controller_pid": 22592,
+    "observed_star_pid": 27088,
+    "dt_s": 0.001,
+    "workers": 1,
+    "source": "Own previously computed flat calm checkpoint, t=0.4 s. Inlet wave only; no whole-domain wave initialization.",
+    "locks": [
+      "parallel_cpu_20261031/auxiliary.lock",
+      "wave_surface_only/wave_inlet.lock",
+      "wave_surface_only/wave_mesh_comparison.lock"
+    ],
+    "do_not_start_duplicate": true,
+    "guard": "Respect existing local resources/CPU performance monitor; keep prior C01/foil-wave hold and HF untouched. A completed M10 does not require stopping this independent wave trial."
+  },
+  "dashboard": {
+    "installed": "Verified upper-right true saved-simulation preview, existing comparison views preserved, existing mesh/streamline/gallery assets restored with provenance.",
+    "files": [
+      "campaign_visuals.py",
+      "campaign_visuals.js",
+      "campaign_compare.py media utilities",
+      "campaign_compare.css"
+    ],
+    "do_not_overwrite_parallel_dashboard_updates": true,
+    "qa": "E:\\ntnu_mesh_optimization_20261030\\restored_visuals_qa\\qa.json"
+  },
+  "honesty": "Acceptance of calm primary CL/CD is not formal spatial convergence. About 5% cross-mesh deviation is a user-accepted exploratory budget only when materially cheaper; stability still 0.5%, not relaxed.",
+  "updated_at": "2026-10-31T18:33:24.809780+01:00",
+  "latest_wave_override": {
+    "takes_precedence_over_wave_only_stanza": true,
+    "failed_1ms_directory": "E:\\ntnu_mesh_optimization_20261030\\wave_surface_only\\zero_start_matrix_evening_20261031_182305_689cb9\\waves\\L20_H500_baseline",
+    "failed_1ms_last_time_s": 0.418,
+    "failed_1ms_steps": 18,
+    "evidence": "macro_error.json: java.net.SocketException Connection reset at t0.419, star.log reports nonfinite legacy monitor values; do not claim root numerical cause proven",
+    "new_active_state": "E:\\ntnu_mesh_optimization_20261030\\wave_surface_only\\evening_wave_dt05_state.json",
+    "new_directory": "E:\\ntnu_mesh_optimization_20261030\\wave_surface_only\\zero_start_matrix_evening_dt05_20261031\\waves\\L20_H500_baseline",
+    "new_controller": "E:\\ntnu_mesh_optimization_20261030\\run_wave_baseline_halfstep_evening_20261031.py",
+    "observed_controller_pid": 21352,
+    "started_at": "2026-10-31T18:32:16+01:00",
+    "dt_s": 0.0005,
+    "stage": "Separate bounded timestep diagnostic from SAME healthy own calm checkpoint; do not conflate with 1ms spatial comparison",
+    "no_duplicate_start": true,
+    "observe_raw_history_before_claiming_progress": true,
+    "original_hold_and_M13_preserved": true
+  }
+}

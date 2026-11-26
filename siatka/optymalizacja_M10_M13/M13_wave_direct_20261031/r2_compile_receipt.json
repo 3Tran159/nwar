@@ -1,0 +1,11 @@
+{
+  "at": "2026-10-31T23:29:47.256293+01:00",
+  "result": "javac_pass",
+  "r1_source_sha256": "f17cec952ad422978b195940e6d79c9d2c574b6e0bea8a102056f3d566953ba5",
+  "r2_source_sha256": "616ae2931a04b0e2d0aa9c20449684d03c126da5d5683a6b462cda22d950eea8",
+  "one_change": "Early wave period threshold replaced by explicitly audited analytic ramp planning period, before binding; all fluid/wave models, dt, mesh, step budget and pressure BC unchanged",
+  "r1_error": "java.lang.IllegalStateException: Unexpected wave period",
+  "r1_source_unchanged": true,
+  "actual_R1_CFD_steps": 0,
+  "compiler_errors": "Note: E:\\ntnu_mesh_optimization_20261030\\M13_wave_direct_20261031\\M13InletWavePilotR2.java uses or overrides a deprecated API.\nNote: Recompile with -Xlint:deprecation for details.\n"
+}

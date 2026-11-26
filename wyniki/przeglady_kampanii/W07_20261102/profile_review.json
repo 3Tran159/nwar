@@ -1,0 +1,28 @@
+{
+  "at": "2026-11-02T18:58:48.674665+01:00",
+  "case": "W07",
+  "H_m": 1.0,
+  "lambda_m": 40.0,
+  "passed": true,
+  "gates": {
+    "existing_geometry_passed": true,
+    "protected_foil_mesh_passed": true,
+    "matching_mesh": true,
+    "unchanged_cell_sizes": true,
+    "free_surface_envelope": true,
+    "forcing_covers_wavelength": true,
+    "damping_covers_wavelength": true,
+    "domain_covers_four_wavelengths": true,
+    "period_inside_macro_range": true,
+    "lower_steepness_than_W04": true
+  },
+  "geometry_receipt": "E:\\ntnu_mesh_optimization_20261030\\nwar_automation_20261102\\mesh_W04_20261102\\geometry_receipt.json",
+  "protected_receipt": "E:\\ntnu_mesh_optimization_20261030\\nwar_automation_20261102\\mesh_W04_20261102\\protected_receipt.json",
+  "mesh_sha256": "7434e619f12de75ee9fff645b1303d81d55e4981bd5b9b7e79773793f2b38eed",
+  "cells": 572176,
+  "profile": "M13_W04_20261102",
+  "no_remesh": true,
+  "calm_gate_required": true,
+  "original_C01_unchanged": true,
+  "scope": "Geometry and operating-envelope reuse only; actual wave propagation and repeatability are checked during the run."
+}

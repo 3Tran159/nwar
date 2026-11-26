@@ -1,0 +1,26 @@
+{
+  "pass": true,
+  "workers": 8,
+  "gpu_count": 0,
+  "steps": 3,
+  "directory": "C:\\Users\\ThinkPad\\Documents\\ChatGPT\\ntnu science\\mesh_study_20261030\\gci_w01a_20261030\\force_stabilization_20261029\\smoke_cpu8_W01a",
+  "wave": {
+    "period_s": 0.8472673206891129,
+    "start_time_s": 0.020000000000000014,
+    "wavelength_m": 20,
+    "pressure_AMG_tolerance": 0.01,
+    "reinitialized": false,
+    "source_wave": "W01a inlet generated FifthOrder H050 L20 1",
+    "VOF_AMG_tolerance": 0.1,
+    "depth_m": 24,
+    "height_m": 0.5
+  },
+  "diagnostics": {
+    "max_CFL": 6.159097991363165,
+    "interface_CFL": 0.22329241148917345,
+    "effective_VOF_CFL": 0.22329241148917345,
+    "max_yplus": 219.2844263171219,
+    "time_s": 0.020300000000000012
+  },
+  "purpose": "Bounded execution check on an immutable copy; not a convergence result."
+}

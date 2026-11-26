@@ -1,0 +1,11 @@
+{
+  "at": "2026-10-31T21:34:34.864864+01:00",
+  "phase": "nearflat_inlet_boundary_diagnostic_only",
+  "status": "running",
+  "reason": null,
+  "pid": 6044,
+  "last_step": "197",
+  "time_s": "0.5970000000000004",
+  "elapsed_wall_s": 441.25824199999624,
+  "main_timing": []
+}

@@ -1,0 +1,28 @@
+{
+  "at": "2026-11-01T16:07:47.927750+01:00",
+  "status": "C01_primary_settled_checkpoint_accepted_W01_compatibility_pending",
+  "comparison_allowed": false,
+  "source_run": "E:\\ntnu_mesh_optimization_20261030\\clean_c01_campaign_20261101\\C01_warm_M13_steady_rho1000_air1p2_20261101",
+  "candidate_source_run": "E:\\ntnu_mesh_optimization_20261030\\clean_c01_campaign_20261101\\C01_warm_M13_steady_rho1000_air1p2_20261101",
+  "historical_mesh_sources": [
+    "E:\\ntnu_mesh_optimization_20261030\\M13_farfield15_20261031\\M13_GPU_calm_dt0004"
+  ],
+  "reference": {
+    "CL": 0.31565950495122014,
+    "CD": 0.007002316911710474,
+    "window_s": 0.2,
+    "time_s": 4.699199999999548,
+    "density_water": 1000,
+    "density_air": 1.2,
+    "dt_s": 0.0004,
+    "history_sha256": "0dab54c1eeb868f1f5be0ccff4b20e7564da43b92c318c3550dd827d1f9dda53",
+    "checkpoint_sha256": "9af4857b948e0494088b5421f8ede100e66344fc2631cc00030406640d7cc295",
+    "review_receipt": "E:\\ntnu_mesh_optimization_20261030\\clean_c01_campaign_20261101\\C01_warm_M13_steady_rho1000_air1p2_20261101\\C01_final_acceptance_20261101.json"
+  },
+  "compatible_run_ids": [],
+  "compatibility_proofs": {},
+  "user_instruction": "C01 startup continue from healthy saved t1.000 checkpoint at dt0.2ms with 1000/1.2, only wave from accepted C01 without reinitialize",
+  "automatic_acceptance_on_T01_completion": false,
+  "old_results_preserved": true,
+  "accepted_checkpoint": "E:\\ntnu_mesh_optimization_20261030\\clean_c01_campaign_20261101\\C01_warm_M13_steady_rho1000_air1p2_20261101\\final.sim"
+}

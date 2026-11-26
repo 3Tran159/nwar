@@ -1,0 +1,77 @@
+{
+  "at": "2026-11-01T06:02:57+01:00",
+  "kind": "hourly_cfd_readonly_supervision",
+  "case": "M13 GPU foil + upstream inlet FifthOrder wave, R4V",
+  "source_dir": "E:\\ntnu_mesh_optimization_20261030\\M13_wave_direct_20261031\\M13_GPU_W20_H050_continuation_R4V_20261101",
+  "device": "THINKPAD-LUCJAN",
+  "runbook_sha256_matches_plan": true,
+  "process_identity": {
+    "controller_pid": 4080,
+    "frontend_pid": 34072,
+    "controller_start_local": "2026-11-01T03:36:58",
+    "frontend_start_local": "2026-11-01T03:36:59",
+    "matching_live_ownership_locks": true
+  },
+  "real_progress": {
+    "step_first": 9761,
+    "step_last": 9848,
+    "physical_t_first_s": 13.0836,
+    "physical_t_last_s": 13.1184,
+    "dt_s": 0.0004,
+    "CL_hydro_last": 0.28517907868299874,
+    "CD_total_last": 0.00765866642751865,
+    "max_bulk_CFL_last": 17.34688078530807,
+    "water_volume_m3_last": 38.41737435002576,
+    "alpha_bounds_recent": [
+      0,
+      1
+    ]
+  },
+  "phase_cycles": {
+    "count_diagnostic": 6,
+    "gauge_x_m": -0.5,
+    "analysis_start_earliest_is_estimate_s": 7.054375334575275,
+    "cycle_5": {
+      "start_s": 10.776,
+      "end_s": 11.623,
+      "CL_mean": 0.318197041935683,
+      "CD_mean": 0.006663925129372625
+    },
+    "cycle_6": {
+      "start_s": 11.623,
+      "end_s": 12.471,
+      "CL_mean": 0.31823378554557613,
+      "CD_mean": 0.006661996121313352
+    },
+    "full_incident_wave_arrival_confirmed": false,
+    "twenty_period_acceptance": false
+  },
+  "native_frame": {
+    "time_s": 13.0432,
+    "sha256": "2ca628a073279bd40140e564b122e252de61c18f14628141b96a89fa1fe04c02",
+    "interface_CFL": 1.9073858078059622,
+    "source_verified_by_collector": true
+  },
+  "last_checkpoint": {
+    "file": "checkpoint_t12.7792.sim",
+    "bytes": 540391922,
+    "saved_local": "2026-11-01T05:50:38+01:00"
+  },
+  "resources": {
+    "ram_free_GiB": 32.8,
+    "C_free_GiB": 53.4,
+    "E_free_GiB": 190.1
+  },
+  "dashboard": {
+    "local_http_status": 200,
+    "m13_reference_present": true
+  },
+  "controls": {
+    "STOP_ALL_absent": true,
+    "old_C01_wave_campaign_hold_active": true,
+    "new_solver_launched": false,
+    "active_macro_changed": false,
+    "active_process_stopped": false
+  },
+  "assessment": "Current R4V is recording real steps, physically finite summary variables and saved checkpoints. Phase-cycle count is diagnostic using estimated arrival/ramp, not scientific wave validation. Reassess once this bounded stage finishes; no duplicate or blind next start."
+}

@@ -1,0 +1,55 @@
+{
+  "installed_at": "2026-10-31T18:27:58.524598+01:00",
+  "backup": "E:\\ntnu_mesh_optimization_20261030\\dashboard_visuals_backup\\20261031_182758",
+  "hub_sha256": "79d051e8be6c1e0545be7e8dd8b14c6699e63f2d8bb855754f0c2a6d0732a39e",
+  "preview": {
+    "mesh": "M10",
+    "time_s": 3.297999999999702,
+    "active": false,
+    "url": "/simulation_assets/live_velocity_0_3b15d45954dce9bf.png"
+  },
+  "comparison_runs_preserved": 13,
+  "gallery": {
+    "M01": [
+      "mesh"
+    ],
+    "M02": [
+      "mesh"
+    ],
+    "M03": [
+      "mesh"
+    ],
+    "M04": [
+      "streamlines",
+      "pressure"
+    ],
+    "M05": [],
+    "M06": [],
+    "M07": [
+      "streamlines",
+      "pressure"
+    ],
+    "M08": [
+      "streamlines",
+      "pressure"
+    ],
+    "M09": [
+      "streamlines",
+      "pressure"
+    ],
+    "M10": [
+      "mesh",
+      "velocity"
+    ],
+    "M11": [
+      "mesh",
+      "velocity"
+    ],
+    "M12": [
+      "mesh",
+      "velocity"
+    ],
+    "M13": []
+  },
+  "no_solver_changes": true
+}

@@ -1,0 +1,29 @@
+{
+  "at": "2026-11-01T10:40:10.703Z",
+  "passed": true,
+  "state": {
+    "C01status": "reference_pending",
+    "C01mean": null,
+    "C01source": null,
+    "referenceEmpty": true,
+    "W01mean": 0.006663166681197392,
+    "W01Q": null,
+    "W01delta": null,
+    "W01deltaCL": null,
+    "W01cycles": 7,
+    "foilRefEmpty": true,
+    "allRunRefsBlocked": true,
+    "archivalDiagnosticQ": null,
+    "historyHasBaseline": false,
+    "active": [
+      "T01"
+    ]
+  },
+  "mobile": {
+    "overflow": false,
+    "visible": true,
+    "frame": true
+  },
+  "errors": [],
+  "writes": []
+}

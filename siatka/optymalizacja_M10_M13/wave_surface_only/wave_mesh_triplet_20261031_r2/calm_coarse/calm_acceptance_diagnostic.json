@@ -1,0 +1,9 @@
+{
+  "status": "numerically_flat_calming_200_steps",
+  "max_gauge_eta_m": 0.0010888049561685875,
+  "water_volume_delta_m3": 3.543130162597663e-05,
+  "cells": 41200,
+  "source_time_s": 0.4,
+  "final_time_s": 0.6,
+  "does_not_prove_infinite_time_settling": true
+}

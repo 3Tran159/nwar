@@ -1,0 +1,63 @@
+{
+  "checked_at": "2026-10-31T06:28:44.418948+01:00",
+  "source": "direct-device local filesystem and loopback API",
+  "verified_runbook_hash": true,
+  "api": {
+    "status": "running",
+    "job": "calm_settle_G10_F_GPU_live_r2_resume_20261030_173420_4854e1",
+    "generation_present": true,
+    "can_pause": true,
+    "can_resume": false
+  },
+  "job": "calm_settle_G10_F_GPU_live_r2_resume_20261030_173420_4854e1",
+  "controller_status": "GPU_job_running",
+  "controller_pid": 19040,
+  "controller_alive": true,
+  "solver_pid": 1996,
+  "solver_alive": true,
+  "directory": "C:\\Users\\ThinkPad\\Documents\\ChatGPT\\ntnu science\\mesh_study_20261030\\gci_w01a_20261030\\force_stabilization_20261029\\calm_settle_G10_F_GPU_live_r2_resume_20261030_173420_4854e1",
+  "step": 19874,
+  "solver_iteration": 236480,
+  "physical_time_s": 2.877400000001696,
+  "history_age_s": 2.2,
+  "history_bytes": 5966594,
+  "median_recent_s_per_step": 2.308,
+  "progress_since_prior_snapshot": true,
+  "prior_snapshot_at": "2026-10-31T04:55:57.678609+01:00",
+  "prior_step": 17468,
+  "prior_physical_time_s": 2.6368000000011884,
+  "last_step_CFL": 8.889928403855375,
+  "last_step_interface_CFL": 0.9533874331656875,
+  "checkpoint": {
+    "time_s": 2.3900000000006676,
+    "exists": true,
+    "size_GiB": 1.443
+  },
+  "latest_settling_gate": {
+    "time_s": 2.8013000000015356,
+    "pass": false,
+    "consecutive_passes": 0
+  },
+  "M11": {
+    "status": "target_reached",
+    "time_s": 0.591,
+    "steps": 40
+  },
+  "M10": {
+    "status": "target_reached",
+    "steps": 40,
+    "time_s": 0.591
+  },
+  "outstanding_result_files": {
+    "calm_stabilization_progress.json": false,
+    "calm_mesh_screen.json": false,
+    "gci_results.json": false
+  },
+  "free_C_GiB": 56.59,
+  "free_E_GiB": 235.65,
+  "surface_geometry_audit_pass": true,
+  "surface_reference_mesh_data_equivalent": true,
+  "incident_wave_hold_preserved": true,
+  "interventions_this_run": 0,
+  "solver_changed_this_run": false
+}

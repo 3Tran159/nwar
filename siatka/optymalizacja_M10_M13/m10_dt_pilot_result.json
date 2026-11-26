@@ -1,0 +1,40 @@
+{
+  "status": "bounded_dt_sensitivity_only_not_settled",
+  "at": "2026-10-31T16:24:44.022002+01:00",
+  "reference_time_s": [
+    0.5912,
+    0.6052
+  ],
+  "reference_dt_s": 0.0001,
+  "pilot_dt_s": 0.0002,
+  "physical_time_steps": 71,
+  "paired_samples": 71,
+  "max_interface_CFL": 0.4462007190648344,
+  "max_bulk_CFL": 8.818319250034717,
+  "forces": {
+    "CL": {
+      "mean_relative_signed_pct": -0.00028504620646715154,
+      "mean_abs_relative_pct": 0.00040684876730485455,
+      "last_20_mean_abs_relative_pct": 0.0006409618680640406,
+      "last_20_mean_signed_pct": -0.0006409618680640406,
+      "maximum_abs_relative_pct": 0.0008420252357192917,
+      "pilot_endpoint": 0.28640645596730346,
+      "reference_endpoint": 0.286408588993898
+    },
+    "CD": {
+      "mean_relative_signed_pct": 0.001392532293975648,
+      "mean_abs_relative_pct": 0.0014489508017085223,
+      "last_20_mean_abs_relative_pct": 0.002125538638711897,
+      "last_20_mean_signed_pct": 0.002125538638711897,
+      "maximum_abs_relative_pct": 0.0022716038606256077,
+      "pilot_endpoint": 0.008417346327339193,
+      "reference_endpoint": 0.008417155569082886
+    }
+  },
+  "guard_ok": true,
+  "compare_only_startup_not_final_CL_CD": true,
+  "source_preserved": true,
+  "solver_complete": true,
+  "ready_for_full_dt_change": false,
+  "reason": "Early-time matched force and CFL check only. Full comparison at settled time still needed before assigning accuracy."
+}

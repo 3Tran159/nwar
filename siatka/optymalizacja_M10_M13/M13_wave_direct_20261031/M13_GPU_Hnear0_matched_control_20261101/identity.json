@@ -1,0 +1,10 @@
+{
+  "phase": "M13_matched_nearzero_control",
+  "source": "E:\\ntnu_mesh_optimization_20261030\\M13_farfield15_20261031\\M13_GPU_calm_dt0004\\final.sim",
+  "source_sha256": "9c4fa61e6696b8fd845ab62ef486647542ab3caf361b3c985411bcd49ace6fdf",
+  "macro_sha256": "9e743ed94de318d02d9bd4135767b1f9a1940adda2c0d620cc55c42c49b089e2",
+  "workers": 1,
+  "cpu_workers": 1,
+  "gpu": true,
+  "created": "2026-11-01T11:02:15.627753+01:00"
+}

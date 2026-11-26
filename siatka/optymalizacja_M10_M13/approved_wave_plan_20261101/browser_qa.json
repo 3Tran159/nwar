@@ -1,0 +1,19 @@
+{
+  "at": "2026-11-01T09:10:37.017Z",
+  "passed": true,
+  "cycles": 7,
+  "points": [
+    121,
+    121,
+    121,
+    121
+  ],
+  "boundaries": [
+    0,
+    1
+  ],
+  "H1_Hpp_distinct": true,
+  "twenty_is_not_minimum": true,
+  "desktop_mobile_ok": true,
+  "errors": []
+}

@@ -1,0 +1,66 @@
+{
+  "cells": 317277,
+  "source_vertices": 559195,
+  "source_cells_unchanged": true,
+  "source_xz_coordinates_unchanged": true,
+  "span_m": 0.02,
+  "minimum_source_area_m2": 7.736736434995602e-10,
+  "minimum_reconstructed_volume_m3": 1.5473472869991203e-11,
+  "total_volume_m3": 47.997684231839266,
+  "negative_or_zero_reconstructed_volumes": 0,
+  "self_intersecting_source_cells": 0,
+  "nonmanifold_source_edges": 0,
+  "same_side_internal_faces": 0,
+  "boundary_face_counts": {
+    "Polyfaces_fluid": 874525,
+    "DOMAIN.bottom": 359,
+    "DOMAIN.inlet": 187,
+    "DOMAIN.outlet": 186,
+    "DOMAIN.top": 359,
+    "HF_012_wall": 856,
+    "Q2D_span_source": 317277,
+    "Q2D_span_target": 317277
+  },
+  "method": "Preserve all M10_FS020 source polygons; append conforming orthogonal strips at the original inlet and outlet, then rebuild exact one-cell-span connectivity",
+  "purpose": "M10-FS020-derived 4-lambda wave-domain mesh preparation; not a new accepted flow result",
+  "source_mesh": "M10_FS020_r1",
+  "source_sha256": "fa16baf7161bdb2c40eed2c35139e01aa31e8859835e14d31a33dc19ffafb414",
+  "original_cells": 282379,
+  "added_cells": 34898,
+  "original_cell_polygons_preserved": true,
+  "original_coordinates_preserved": true,
+  "extensions": [
+    {
+      "side": "inlet",
+      "old_x_m": -11.9,
+      "new_x_m": -35.0,
+      "columns": 116,
+      "max_dx_m": 0.19913793103448277,
+      "boundary_vertical_segments": 187
+    },
+    {
+      "side": "outlet",
+      "old_x_m": 30.940000000000005,
+      "new_x_m": 45.0,
+      "columns": 71,
+      "max_dx_m": 0.19802816901408443,
+      "boundary_vertical_segments": 186
+    }
+  ],
+  "expected_volume_m3": 47.99768423182085,
+  "x_bounds_m": [
+    -35.0,
+    45.0
+  ],
+  "z_bounds_m": [
+    -22.0,
+    8.0
+  ],
+  "wave_depth_m": 24,
+  "pending": [
+    "Independent STAR mesh import/quality/boundary checks",
+    "Matched calm run on this domain",
+    "Wave propagation/time/domain validation"
+  ],
+  "output_sha256": "a75af7e46002cab7bea8f2d319b5f7b37afcabe3c27ffa3c5424fb4d167d1fbd"
+}

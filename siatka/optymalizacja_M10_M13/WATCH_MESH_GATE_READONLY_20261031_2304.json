@@ -1,0 +1,63 @@
+{
+  "observed_at_local": "2026-10-31T23:03:24+01:00",
+  "scope": "Read-only verification of mesh 5% user screen, existing wave-only safety state; no new solver launch",
+  "runbook_sha256_match": true,
+  "sources": [
+    "E:\\ntnu_mesh_optimization_20261030\\watch_mesh_comparison_readonly_20261031_2140.json",
+    "E:\\ntnu_mesh_optimization_20261030\\M13_farfield15_20261031\\M13_GPU_calm_dt0004\\project_primary_evidence.json",
+    "E:\\ntnu_mesh_optimization_20261030\\M13_farfield15_20261031\\protected_audit\\protected_regions_pass.json",
+    "E:\\ntnu_mesh_optimization_20261030\\wave_surface_only\\pressure_aligned_launch_blocker_20261031.json",
+    "E:\\ntnu_mesh_optimization_20261030\\wave_surface_only\\wave_pressure_postprocess_20261031.json"
+  ],
+  "user_rule": "CLhydro vs M12 <5% and CDtotal vs M12 <5% each, matched 0.2s raw physical window; independent stabilization <0.5% mean and RMS both, two checks; keep dt confound explicit.",
+  "M10": {
+    "cells": 317277,
+    "dt_s": 0.0004,
+    "accepted_inrun": true,
+    "matched_M12_window_s": [
+      3.098,
+      3.298
+    ],
+    "CL_diff_pct": 0.7219662384710723,
+    "CD_diff_pct": -2.1392528334168937,
+    "meets_separate_user_5percent_magnitude": true,
+    "warning": "M10 dt0.4ms vs M12 dt0.1ms, not isolated spatial convergence",
+    "mean_wall_seconds_per_physical_second": 2160.854577083572
+  },
+  "M13": {
+    "cells": 309441,
+    "dt_s": 0.0004,
+    "accepted_inrun": true,
+    "project_two_pass_checks_s": [
+      3.697999999999658,
+      3.897999999999636
+    ],
+    "abs_cell_reduction_vs_M10_pct": 2.469766166472831,
+    "provisional_CL_diff_pct_vs_M12": 1.1474555761251892,
+    "provisional_CD_diff_pct_vs_M12": -3.1012584490658357,
+    "mean_wall_seconds_per_physical_second": 2079.570452083562,
+    "estimated_local_time_cost_reduction_vs_M10_pct": 3.761,
+    "overlap_with_M12_s": 0.03300000000295222,
+    "required_common_window_s": 0.2,
+    "certified_vs_M12_five_percent": false,
+    "reason": "M13 source begins 3.2984s and M12 history ends 3.3314s; only 0.033s overlap. Provisional comparison uses distinct final windows, not strict user criterion.",
+    "quality": "Protected regions pass, map pass, 98.7% prism coverage unchanged from M10; not wave-in-foil validated"
+  },
+  "wave": {
+    "wave_only_coarse_cells": 41200,
+    "gauge_kinematics": "provisional",
+    "pressure_field_extrema": "finite and plausible in saved state",
+    "iterative_convergence": "unresolved, huge residuals",
+    "new_pressure_aligned_macro": "javac passed",
+    "new_solver_launch": "blocked by platform safety checks and not retried",
+    "C01_W01_W08_campaign_hold": true,
+    "HF_untouched": true
+  },
+  "resource_state": {
+    "free_RAM_GiB_approx": 42.2,
+    "free_C_GiB_approx": 53.4,
+    "free_E_GiB_approx": 205.4,
+    "actual_MPI_solver_running": false
+  },
+  "recommendation": "Retain M10 as evidence-backed lightweight screen baseline. M13 is slightly lighter and internally settled but cross-M12 strict 0.2s match not demonstrated; an M12 overlap extension would be expensive for ~3.8% local compute saving. Do not certify M13 or launch foil-wave from it. Observe existing safeguards and blocked launch; continue read-only analysis and morning dashboard."
+}

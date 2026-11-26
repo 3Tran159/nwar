@@ -1,0 +1,36 @@
+{
+  "passed": true,
+  "at": "2026-11-01T10:07:55.211Z",
+  "desktop": {
+    "visible": true,
+    "rows": 8,
+    "controls": 3,
+    "ids": [
+      "C01",
+      "W01",
+      "W02",
+      "W03",
+      "W04",
+      "W05",
+      "W06",
+      "W07"
+    ],
+    "C01": "reference",
+    "W01": "saved",
+    "cycles": 7,
+    "phasePoints": 121,
+    "W02hasResults": false,
+    "active": [
+      "T01"
+    ],
+    "sourceCount": 3,
+    "overflow": false
+  },
+  "mobile": {
+    "visible": true,
+    "overflow": false,
+    "hasNativeFrame": true
+  },
+  "errors": [],
+  "writes": []
+}

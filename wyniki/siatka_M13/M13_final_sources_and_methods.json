@@ -1,0 +1,189 @@
+{
+  "comparison": [
+    {
+      "mesh": "M10",
+      "cells": 317277,
+      "dt_ms": 0.4,
+      "CL": 0.3129367239965651,
+      "CD": 0.007146865736772948,
+      "delta_CL_vs_M12_pct": 0.6921851256051603,
+      "delta_CD_vs_M12_pct": -2.0748978361785575,
+      "end_time_s": 3.297999999999702,
+      "window_start_exclusive_s": 3.097999999999702,
+      "window_end_inclusive_s": 3.297999999999702,
+      "timing_sample_count": 500,
+      "window_wall_s": 433.8540573,
+      "window_physical_s": 0.19999999999997797,
+      "mean_wall_s_per_step": 0.8677081146000001,
+      "median_wall_s_per_step": 0.8671445499999209,
+      "wall_s_per_physical_s": 2169.270286500239,
+      "wall_min_per_physical_s": 36.15450477500398
+    },
+    {
+      "mesh": "M11",
+      "cells": 595285,
+      "dt_ms": 0.2,
+      "CL": 0.3129782829843964,
+      "CD": 0.007247881450893274,
+      "delta_CL_vs_M12_pct": 0.7055573666221227,
+      "delta_CD_vs_M12_pct": -0.6907982196869611,
+      "end_time_s": 3.3935999999996915,
+      "window_start_exclusive_s": 3.1935999999996914,
+      "window_end_inclusive_s": 3.3935999999996915,
+      "timing_sample_count": 1000,
+      "window_wall_s": 1383.3275762999983,
+      "window_physical_s": 0.19999999999997797,
+      "mean_wall_s_per_step": 1.3833275762999984,
+      "median_wall_s_per_step": 1.3733425499995064,
+      "wall_s_per_physical_s": 6916.637881500754,
+      "wall_min_per_physical_s": 115.27729802501257
+    },
+    {
+      "mesh": "M12",
+      "cells": 1154199,
+      "dt_ms": 0.1,
+      "CL": 0.3107855129037099,
+      "CD": 0.007298297963291139,
+      "delta_CL_vs_M12_pct": 0.0,
+      "delta_CD_vs_M12_pct": 0.0,
+      "end_time_s": 3.3314000000026542,
+      "window_start_exclusive_s": 3.131400000002654,
+      "window_end_inclusive_s": 3.3314000000026542,
+      "timing_sample_count": 2000,
+      "window_wall_s": 4912.163220000002,
+      "window_physical_s": 0.20000000000042206,
+      "mean_wall_s_per_step": 2.456081610000001,
+      "median_wall_s_per_step": 2.4491058499988867,
+      "wall_s_per_physical_s": 24560.81609994818,
+      "wall_min_per_physical_s": 409.34693499913635
+    },
+    {
+      "mesh": "M13",
+      "cells": 309441,
+      "dt_ms": 0.4,
+      "CL": 0.3143518926840671,
+      "CD": 0.007071944954464074,
+      "delta_CL_vs_M12_pct": 1.1475373311439219,
+      "delta_CD_vs_M12_pct": -3.101449268933276,
+      "end_time_s": 3.899199999999636,
+      "window_start_exclusive_s": 3.6991999999996357,
+      "window_end_inclusive_s": 3.899199999999636,
+      "timing_sample_count": 500,
+      "window_wall_s": 415.80311099999994,
+      "window_physical_s": 0.19999999999997797,
+      "mean_wall_s_per_step": 0.8316062219999999,
+      "median_wall_s_per_step": 0.8269271499999604,
+      "wall_s_per_physical_s": 2079.0155550002287,
+      "wall_min_per_physical_s": 34.65025925000381
+    }
+  ],
+  "wall_statistics": {
+    "M10": {
+      "time_s": 3.297999999999702,
+      "p95": 0.8000173109690042,
+      "below1_pct": 99.8829660419905,
+      "above1_pct": 0.1170339580094942,
+      "maximum": 252.9365781762004,
+      "area_mean": 0.9373356260653971,
+      "nominal_prism_coverage_pct": 98.70391818075643,
+      "first_layer_m": 1.5306473318731475e-06,
+      "nominal_layers": 48,
+      "matching_error_m": 2.2228841655759984e-16
+    },
+    "M13": {
+      "time_s": 3.899199999999636,
+      "p95": 0.8002490348762632,
+      "below1_pct": 99.8829660419905,
+      "above1_pct": 0.11703395800950339,
+      "maximum": 252.87446251703608,
+      "area_mean": 0.937174189204045,
+      "nominal_prism_coverage_pct": 98.70391818075642,
+      "first_layer_m": 1.5306473318560975e-06,
+      "nominal_layers": 48,
+      "matching_error_m": 2.2247786310271853e-16
+    }
+  },
+  "wall_weighting": "One-to-one matching of exported wall-face coordinates to audited wall edge centres; face area = edge length * 0.02 m span. Both contain 856 faces.",
+  "sources": [
+    {
+      "mesh": "M10",
+      "fields": "E:\\ntnu_mesh_optimization_20261030\\M10_W01a_GPU_queue_20261031_165802_aef11e\\foil_fields.csv",
+      "fields_sha256": "7936cb6aa15c11fa855da69e3a5729ae4a9baec55e070570c61ad7304caf99d0",
+      "wall_columns": "E:\\ntnu_mesh_optimization_20261030\\M13_farfield15_20261031\\protected_audit\\M10_wall_columns.json",
+      "wall_columns_sha256": "69791a7259876eb3e800c41f4197bc5ddcaf648cb0911f256f97cd38872b3b67",
+      "matching_error_m": 2.2228841655759984e-16,
+      "time_s": 3.297999999999702
+    },
+    {
+      "mesh": "M13",
+      "fields": "E:\\ntnu_mesh_optimization_20261030\\M13_farfield15_20261031\\M13_GPU_calm_dt0004\\foil_fields.csv",
+      "fields_sha256": "44eb7f7aa92a8344b820a9b362afa37847300a0e22710687d955273d845c276d",
+      "wall_columns": "E:\\ntnu_mesh_optimization_20261030\\M13_farfield15_20261031\\protected_audit\\M13_wall_columns.json",
+      "wall_columns_sha256": "538f9bc862bcbb0548148548a4e658b507e2a875895c87684387a267797c1570",
+      "matching_error_m": 2.2247786310271853e-16,
+      "time_s": 3.899199999999636
+    }
+  ],
+  "protected_region_audit": "E:\\ntnu_mesh_optimization_20261030\\M13_farfield15_20261031\\protected_audit\\protected_regions_pass.json",
+  "project_comparison_band_pct": 5,
+  "band_source": "E:\\ntnu_mesh_optimization_20261030\\M13_farfield15_20261031\\candidate.json",
+  "band_condition": "Exploratory project budget; accepted only if mesh/cost reduction is material. Not a universal acceptance standard or uncertainty estimate.",
+  "limitations": [
+    "Mixed time steps: M10/M11/M12/M13 = 0.4/0.2/0.1/0.4 ms.",
+    "Final 0.2 s averaging windows end at different physical times. M13 continues mapped M10 fields.",
+    "M12 is the finest compared mesh, not an exact solution.",
+    "M13 saves only 2.47% cells versus M10; no significant runtime advantage over M10 is established here.",
+    "Local high y+ values at the trailing edge are retained and visible.",
+    "These plots support a practical cost/resolution compromise, not formal grid independence."
+  ],
+  "method_reference": "https://www.grc.nasa.gov/www/wind/valid/tutorial/spatconv.html",
+  "timing_sources": [
+    {
+      "mesh": "M10",
+      "history": "E:\\ntnu_mesh_optimization_20261030\\M10_W01a_GPU_queue_20261031_165802_aef11e\\history.csv",
+      "sha256": "f9c867db1f6f1caba814a2499107f92f0860f0a1eb003b96039a3c0a550de024"
+    },
+    {
+      "mesh": "M11",
+      "history": "E:\\ntnu_mesh_optimization_20261030\\M11_G10_M_GPU_queue_20261031_105607_91db08\\history.csv",
+      "sha256": "e8489c538f2d436a69e6d50c18b48056f24ccb5bf680931b6f92004a6c58e154"
+    },
+    {
+      "mesh": "M12",
+      "history": "E:\\ntnu_mesh_optimization_20261030\\report_export_20261101\\current_export.zip.b64 :: M12/calm_settle_G10_F_GPU_live_r2_resume_20261030_173420_4854e1/history.csv",
+      "sha256": "e20501773b79e37c21612c20c7d0024dec24cdfc6a0cd74e2901952b600186f6"
+    },
+    {
+      "mesh": "M13",
+      "history": "E:\\ntnu_mesh_optimization_20261030\\M13_farfield15_20261031\\M13_GPU_calm_dt0004\\history.csv",
+      "sha256": "6d33c4d15f17bbca701079d8ee680055d36c3b059b55f229f62fbd131cf57db2"
+    }
+  ],
+  "project_policy": {
+    "approved_by_user_at": "2026-10-31T18:53:33.056595+01:00",
+    "objective": "Select the lightest adequately reliable foil mesh for multi-wave CFD campaigns",
+    "reference_mesh": "M12 / G10_F",
+    "max_abs_relative_difference_each_pct": 5.0,
+    "coefficients": [
+      "hydrodynamic_CL",
+      "total_CD"
+    ],
+    "both_required": true,
+    "ordering": "Among meshes passing scientific/numerical guards and the individual 5% limits, minimize actual cell count and measured computational cost",
+    "reference_basis": "Recompute means over a matched physical-time window for each run from raw data; compare against original M12 accepted reference, with explicit dt sensitivity assessment",
+    "separate_temporal_settling_gate": "CL and total CD each mean drift and RMS <0.5% over adjacent full 0.2s windows, 2 consecutive checks",
+    "numerical_guards": [
+      "correct physics/BC/geometry",
+      "valid prism coverage and cell quality",
+      "VOF/conservation/CFL safeguards",
+      "no conflicting solver resource impact"
+    ],
+    "not_a_formal_GCI_or_ITTC_rule": true,
+    "existing_stricter_1pct_reference_retained": "Original 1% GCI-oriented mesh agreement remains recorded for rigor; it is NOT a hard screen for this new 5% practical optimization objective.",
+    "explanatory_note": "M10/M11/M12 have unequal dt, so their currently displayed CL/CD deviations are provisional for a strict mesh-only verdict."
+  },
+  "timing_method": "Sum of positive elapsed wall-time increments divided by the corresponding physical-time increments, over the final 0.2 s of each selected run. No extrapolation of total campaign completion time.",
+  "timing_limitations": "One recorded segment per mesh. GPU/CPU load and monitoring overhead were not controlled across runs. Includes different time steps; not a controlled benchmark or an isolated mesh-size speedup.",
+  "scope": "Original M13 mesh-selection run ending at 3.8992 s; excludes later C01 extensions and wave cases.",
+  "figure": "M13_final_selection.png"
+}

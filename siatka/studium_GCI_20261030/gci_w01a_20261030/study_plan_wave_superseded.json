@@ -1,0 +1,105 @@
+{
+  "scope": "Current W01a M10_FS020, 80 m domain; original M09 calm cohort superseded by explicit user selection.",
+  "objective": "Find the least costly mesh with controlled force and wave error. Finer levels are references for later coarsening.",
+  "backend": "CPU only",
+  "workers": 8,
+  "cpu_affinity_mask": 1020,
+  "existing_W01a_GPU_run": "Read completed checkpoint files only; do not stop, modify or use its GPU for mesh tests.",
+  "source_checkpoint": "Completed W01a inlet-wave checkpoint after the full-height ramp; source copied and hashes verified.",
+  "levels": [
+    {
+      "id": "W01a",
+      "cells": 317277,
+      "layers": 48,
+      "free_surface_m": 0.02,
+      "remote_dx_max_m": 0.2
+    },
+    {
+      "id": "G10_M",
+      "layers": 67,
+      "free_surface_m": 0.014328358208955224,
+      "remote_dx_max_m": 0.14328358208955225
+    },
+    {
+      "id": "G10_F",
+      "layers": 94,
+      "free_surface_m": 0.010212765957446808,
+      "remote_dx_max_m": 0.1021276595744681
+    }
+  ],
+  "domain": {
+    "x": [
+      -35,
+      45
+    ],
+    "y": [
+      0.01,
+      0.03
+    ],
+    "z": [
+      -22,
+      8
+    ],
+    "forcing": [
+      -35,
+      -15
+    ],
+    "damping": [
+      25,
+      45
+    ],
+    "spanwise_cells": 1
+  },
+  "wave": {
+    "height_m": 0.5,
+    "wavelength_m": 20,
+    "water_depth_m": 24,
+    "U_m_s": 18,
+    "initialization": "Reuse actual inlet-generated W01a fields and fixed source wave profiles; no global reinitialization."
+  },
+  "first_dt_s": 0.0001,
+  "order": "SECOND_ORDER",
+  "inner": 10,
+  "CFL": {
+    "flow_max": 25,
+    "interface_max": 1,
+    "VOF_effective_max": 1,
+    "note": "Project screening for implicit URANS/VOF, not a universal explicit CFL stability rule. Same dt on all meshes; halve after failed pilots; always test dt/2."
+  },
+  "wall_yplus": {
+    "target": 1,
+    "local_exceedances": "Allowed by explicit user instruction; preserve spatial diagnostics and assess convergence."
+  },
+  "averaging": {
+    "initial_cycles": 6,
+    "discard_initial_cycles": 3,
+    "compare_complete_cycles": 3,
+    "extend_by_cycles": 3,
+    "max_cycles": 18,
+    "primary_metrics": [
+      "CD mean",
+      "CD first-harmonic amplitude",
+      "CL mean",
+      "CL first-harmonic amplitude"
+    ],
+    "max_adjacent_cycle_shift_pct": 0.2,
+    "nuisance_fraction_of_smallest_mesh_difference": 0.1
+  },
+  "controls": {
+    "source": "Same settled fine-grid checkpoint",
+    "cycles": 4,
+    "discard_cycles": 1,
+    "branches": [
+      "same dt, 10 inner",
+      "dt/2, 10 inner",
+      "same dt, 20 inner"
+    ]
+  },
+  "GCI": {
+    "effective_dimension": 2,
+    "safety_factor_three_grids": 1.25,
+    "oscillatory_or_unresolved": "Withhold standard monotone GCI; do not force an estimate.",
+    "acceptance": "Quantity-specific; controls and cycle drift must be small relative to spatial differences. Not experimental or 3D/spanwise validation."
+  },
+  "outputs": "Audit JSONs, simulation files, histories and GCI data only; no new report."
+}

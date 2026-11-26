@@ -1,0 +1,9 @@
+{
+  "source": "E:\\ntnu_mesh_optimization_20261030\\wave_surface_only\\zero_start_matrix_R2_coarse_continuation_20261031_4\\waves\\L20_H500_coarse\\wave_pilot_final.sim",
+  "source_sha256": "8e02d1713b1329471343aff2b9b2fe026ca8e470cbad9e14ecd2dfbf0236fb34",
+  "copy_sha256": "8e02d1713b1329471343aff2b9b2fe026ca8e470cbad9e14ecd2dfbf0236fb34",
+  "macro_sha256": "d480fc877b983f59c2c68ee654bf4d485dfd707e2bbd9dd1484cbd86391d6d8d",
+  "steps": 0,
+  "gpu": false,
+  "workers": 1
+}

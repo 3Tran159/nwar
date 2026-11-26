@@ -1,0 +1,11 @@
+{
+  "at": "2026-10-31T18:30:58.426865+01:00",
+  "phase": "waves",
+  "exit_code": 1,
+  "completed": {},
+  "source_unchanged": true,
+  "controller_reason": null,
+  "no_propagation_acceptance_claim": true,
+  "status": "failed",
+  "directory": "E:\\ntnu_mesh_optimization_20261030\\wave_surface_only\\zero_start_matrix_evening_20261031_182305_689cb9\\waves\\L20_H500_baseline"
+}

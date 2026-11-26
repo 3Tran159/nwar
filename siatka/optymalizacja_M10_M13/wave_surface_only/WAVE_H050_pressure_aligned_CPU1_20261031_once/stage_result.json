@@ -1,0 +1,10 @@
+{
+  "exit_code": 1,
+  "source_unchanged": true,
+  "controller_reason": null,
+  "completed": {},
+  "phase": "nofoil_pressure_aligned_H050_single_pilot",
+  "at": "2026-10-31T23:10:45.619293+01:00",
+  "wall_s": 364.7860070000024,
+  "timing": []
+}

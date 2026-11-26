@@ -1,0 +1,9 @@
+{
+  "at": "2026-10-31T22:57:30.842496+01:00",
+  "status": "compile_failed",
+  "original_macro_sha256": "537898ca5080ba19ba52cfa7bb570f69cff1a97c17caa2540e8b46a1f91de0ac",
+  "prepared_macro_sha256": "6da27a042c937d09faf376e7ed0ed25923ffb8e6914eed94eb39bf8269065cea",
+  "change": "only DOMAIN.top PressureProfile matches wave heavy-fluid hydrostatic pressure; rest same",
+  "err": "only\\wave_pressure_aligned_prepared_20261031\\WaveFromOwnCalmPressureAligned.java:134: error: cannot find symbol\n   PressureProfile topProfile=topPressure.getValues().get(PressureProfile.class);\n   ^\n  symbol:   class PressureProfile\n  location: class WaveFromOwnCalmPressureAligned\nE:\\ntnu_mesh_optimization_20261030\\wave_surface_only\\wave_pressure_aligned_prepared_20261031\\WaveFromOwnCalmPressureAligned.java:134: error: cannot find symbol\n   PressureProfile topProfile=topPressure.getValues().get(PressureProfile.class);\n                                                          ^\n  symbol:   class PressureProfile\n  location: class WaveFromOwnCalmPressureAligned\nNote: E:\\ntnu_mesh_optimization_20261030\\wave_surface_only\\wave_pressure_aligned_prepared_20261031\\WaveFromOwnCalmPressureAligned.java uses or overrides a deprecated API.\nNote: Recompile with -Xlint:deprecation for details.\n2 errors\n",
+  "no_solver_launched": true
+}

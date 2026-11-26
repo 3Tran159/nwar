@@ -1,0 +1,19 @@
+{
+  "sources": {
+    "G10_F": "C:\\Users\\ThinkPad\\Documents\\ChatGPT\\ntnu science\\mesh_study_20261030\\gci_w01a_20261030\\force_stabilization_20261029\\calm_settle_G10_F\\final.sim",
+    "G10_M": "C:\\Users\\ThinkPad\\Documents\\ChatGPT\\ntnu science\\mesh_study_20261030\\gci_w01a_20261030\\force_stabilization_20261029\\calm_pilot_G10_M_continued_r1\\final.sim",
+    "W01a": "C:\\Users\\ThinkPad\\Documents\\ChatGPT\\ntnu science\\mesh_study_20261030\\gci_w01a_20261030\\force_stabilization_20261029\\calm_pilot_W01a_continued_r1\\final.sim"
+  },
+  "start_times": {
+    "G10_F": 0.6012999999999988,
+    "G10_M": 0.591,
+    "W01a": 0.591
+  },
+  "dt_s": 0.0001,
+  "workers": 1,
+  "gpu": true,
+  "reinitialized": false,
+  "source_CPU_results_preserved": true,
+  "selected_wave_case_name": "C01",
+  "target_cells": 300000
+}

@@ -1,0 +1,10 @@
+{
+  "phase": "M13_foil_wave_R4_continuation",
+  "source": "E:\\ntnu_mesh_optimization_20261030\\M13_wave_direct_20261031\\M13_GPU_W20_H050_continuation_R3V_20261101\\wave_pilot_final.sim",
+  "source_sha256": "d438d7f97f06d1cf459f151adaa533513eb141626acb584624cbe5920b11148d",
+  "macro_sha256": "353804abb312313f109bf456f4b6d357cf7cd547f01d99334019ccd6d2edbb83",
+  "workers": 1,
+  "cpu_workers": 1,
+  "gpu": true,
+  "created": "2026-11-01T03:36:59.944887+01:00"
+}

@@ -1,0 +1,9 @@
+{
+  "pid": 28616,
+  "controller_pid": 25448,
+  "started_at": "2026-10-31T10:02:04.189606+01:00",
+  "source_hash": "fdc5d295ac806813dbc783f6ba30c9e626f2ee5c2f91b7825164e69660bc5d28",
+  "macro_hash": "0edeef06627cf3d536ba77ec5a9e7881e43513e84741858ddbc9f499586ff4b4",
+  "gpu": false,
+  "CPU_workers": 2
+}

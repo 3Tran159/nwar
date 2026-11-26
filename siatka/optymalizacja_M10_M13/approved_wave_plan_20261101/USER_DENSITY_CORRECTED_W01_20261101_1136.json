@@ -1,0 +1,56 @@
+{
+  "recorded_at": "2026-11-01T11:37:44.141405+01:00",
+  "kind": "explicit_user_authorization_addendum_not_a_solver_start",
+  "user_instruction": "okej to lec potem z w01 na skorygowanej gestosci, potem porownaj z c01, sprawdz czy gestosci sie zgadzaja i lec z kolejnymi falami",
+  "priority": "After the active Hnear0 control ends safely, prioritize a distinct density-corrected W01, comparison to an explicitly matched C01, then next informative foil-wave conditions. This supersedes the prior next-start ordering but not scientific or safety guards.",
+  "until_local": "2026-11-02T09:00:00+01:00",
+  "deviceId": "39039a8c-b8fc-4115-9fc5-c058b4b39f04",
+  "remote_tool_only": "Remote Desktop Commander; no Work/Codex or delegation",
+  "current_control_preserved": "E:\\ntnu_mesh_optimization_20261030\\M13_wave_direct_20261031\\M13_GPU_Hnear0_matched_control_20261101",
+  "current_observation": {
+    "process": {
+      "pid": 33856,
+      "controller_pid": 34760,
+      "workers": 1,
+      "gpu": true,
+      "at": "2026-11-01T11:02:15.638939+01:00",
+      "mask": 240
+    },
+    "progress": {
+      "step": 2400,
+      "t_s": 4.859199999999531,
+      "CL_hydro": 0.3159891066409754,
+      "CD_total": 0.006984766562060729,
+      "CFL": 17.422138978272507,
+      "water_m3": 38.38109895084308,
+      "max_speed_m_s": 22.155727619287926,
+      "target_height_m": 1e-06,
+      "arrival": "NEARZERO_CONTROL_NO_WAVE_ARRIVAL_CLAIM"
+    },
+    "completion_exists": false
+  },
+  "ordered_actions": [
+    "Do not change or duplicate active Hnear0. Confirm complete save, source hashes, final receipt, raw settling and owner exit/lock release before another solver.",
+    "Read native MATERIAL phase densities as well as Calm and FifthOrder wave-object densities and boundary bindings. Establish an explicitly matched C01 with water=1000 kg/m3 and air=1.2 kg/m3; do not infer matching material densities from object constants or report normalization.",
+    "Prepare a separate reviewed and compiled W01 density-corrected revision: M13 309441 cells, H=.5 m, wavelength20 m, dt=.0004 s, 10 inner, second-order. Set and read back water/air densities=1000/1.2 in both wave definitions and appropriate material properties on the NEW copy only. If material settings differ, document correction and compute a healthy matching calm rather than silently reuse an old baseline.",
+    "Use a verified healthy matched calm checkpoint and upstream-inlet wave ramp, never initialize a full wave field. Preserve original W01 R2/R3V/R4V .sim, histories, metadata and results; a corrected revision is not a missing W01 or an overwrite.",
+    "Compare corrected W01 to the specifically accepted C01 using raw exact-cycle integrals and four consecutive settled full cycles aligned by local x=-.5 m gauge, not force phases; assess mean CL/CD, amplitude, RMS, phase, Q and numerical health.",
+    "After basic checks pass, proceed autonomously in sequence H=.25 m/wavelength20 m, then H=.5 m/wavelength30 m; retain existing Godo priority before optional regional cases in campaign.json. Each NEW condition starts from its matching calm; audit period/ramp/domain/forcing/damping for its wavelength."
+  ],
+  "C01_gate": {
+    "current_policy": "E:\\ntnu_mesh_optimization_20261030\\wave_campaign_20261101\\C01_REFERENCE_POLICY_20261101.md",
+    "candidate_is_not_accepted": true,
+    "historical_mesh_calm_automatic_reference": false,
+    "Hnear0_automatic_reference_for_corrected_W01": false,
+    "required_evidence": "Native material and wave-object densities, mesh/geometry, U18, waterline z2, gravity, turbulence, pressure reference and boundary/forcing compatibility, dt/inner, normalization and single buoyancy correction; source hashes, actual saved solution and two primary settling passes.",
+    "settling": "Both CLhydro/CDtotal mean shift and within-window RMS <0.5% in adjacent complete0.2s windows, two checks0.2s apart after adaptation; components diagnostic.",
+    "if_not_matched": "Prepare and solve a distinct corrected calm C01 on a copied M13. Keep comparison_allowed:false until actual matched review and compatible_run_ids are recorded.",
+    "old_percent_claim": "Do not re-enable old -5.78% campaign claim without accepted reference compatibility."
+  },
+  "separate_time_step_sensitivity": "Do not simultaneously halve dt or change inner iterations with density correction. Previously approved0.2/0.4ms comparison remains a separate evidence-based control, not automatically completed or waived.",
+  "forcing_gate": "Inspect actual applicable forcing/damping near foil, flux/source and field finiteness. Invalid sentinel fields are not zeros; review native fields on a new copy without repeating failed whole-domain export. No falsified gate PASS.",
+  "no_nofoil_trials": true,
+  "safety": "OneGPU; no duplicate/process interference; own atomic locks and PID/start/role; STOP and source hashes absolute; verified preflight before one explicit run; RAM>=16GiB C>=15GiB E>=25GiB VRAM>=4000MiB plus license/thermal/I/O. Preserve legacy F: campaign_hold, HF, all original source/raw data, recovery budgets2 per stage/4 total; no system/license/driver/disk changes or bypasses. No new starts after deadline; do not kill healthy jobs by date.",
+  "shared_active_state_modified": false,
+  "solver_started_by_this_notice": false
+}

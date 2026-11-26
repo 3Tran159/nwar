@@ -1,0 +1,9 @@
+{
+  "at": "2026-10-31T22:58:23.110388+01:00",
+  "status": "javac_pass",
+  "class_exists": true,
+  "macro_sha256": "20f068db030ea4e67c09d0509605beb1fa035ebd587a96df9ac9c5f0b588b3ac",
+  "only_api_typename_corrected": "PressureProfile to StaticPressureProfile",
+  "prior_failure_receipt_preserved": true,
+  "errors": "Note: E:\\ntnu_mesh_optimization_20261030\\wave_surface_only\\wave_pressure_aligned_prepared_20261031\\WaveFromOwnCalmPressureAligned.java uses or overrides a deprecated API.\nNote: Recompile with -Xlint:deprecation for details.\n"
+}

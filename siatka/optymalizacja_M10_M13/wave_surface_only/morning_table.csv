@@ -1,0 +1,10 @@
+﻿wavelength_m,mesh,cells,dx_m,dz_m,lambda_over_dx,H_over_dz_for_H025,H_over_dz_for_H050,H_over_dz_for_H075,geometry_status,CFD_status,target_dt_s,wall_seconds_per_step_measured,wave_amplitude_error_pct_measured,wave_phase_error_deg_measured,reflection_coefficient_measured
+10.0,coarse,41200,0.1,0.05,100,,10.0,,independent_topology_audit_pass,not_run,0.001,,,,
+10.0,baseline,53200,0.1,0.025,100,,20.0,,independent_topology_audit_pass,not_run,0.001,,,,
+10.0,fine,77200,0.1,0.0125,100,,40.0,,independent_topology_audit_pass,not_run,0.001,,,,
+20.0,coarse,41200,0.2,0.05,100,5.0,10.0,15.0,independent_topology_audit_pass,not_run,0.001,,,,
+20.0,baseline,53200,0.2,0.025,100,10.0,20.0,30.0,independent_topology_audit_pass,not_run,0.001,,,,
+20.0,fine,77200,0.2,0.0125,100,20.0,40.0,60.0,independent_topology_audit_pass,not_run,0.001,,,,
+30.0,coarse,61800,0.2,0.05,150,5.0,10.0,15.0,independent_topology_audit_pass,not_run,0.001,,,,
+30.0,baseline,79800,0.2,0.025,150,10.0,20.0,30.0,independent_topology_audit_pass,not_run,0.001,,,,
+30.0,fine,115800,0.2,0.0125,150,20.0,40.0,60.0,independent_topology_audit_pass,not_run,0.001,,,,

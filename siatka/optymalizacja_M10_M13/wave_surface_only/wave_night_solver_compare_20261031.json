@@ -1,0 +1,363 @@
+{
+  "morning_CPU2_H05_dt1": {
+    "history_count": 501,
+    "time": "0.9000000000000007",
+    "water": {
+      "min": 38.3982903070719,
+      "max": 38.40000002092095,
+      "last": 38.398504609507214
+    },
+    "speed": {
+      "min": 18.000000000041055,
+      "max": 18.109495207454938,
+      "last": 18.109495207454938
+    },
+    "CFL": {
+      "min": 0.09000000000020053,
+      "max": 0.09382307746514076,
+      "last": 0.09382307746514076
+    },
+    "reported_wave_H": {
+      "min": 1e-06,
+      "max": 0.09993736336659752,
+      "last": 0.09993736336659752
+    },
+    "warns": {
+      "Non-finite value detected": 15000,
+      "Reversed flow": 4859,
+      "Connection reset": 0,
+      "A floating point error": 15000
+    },
+    "last_code": null,
+    "physical_receipt": {
+      "status": "target_reached",
+      "steps": 500,
+      "time_s": 0.9000000000000007,
+      "stage": "incident_wave_ramp_only; no acceptance; downstream arrival not yet established",
+      "calm_source_preserved": true,
+      "initialization_performed": false
+    },
+    "step_segments": [
+      [
+        "TimeStep  401: Time  4.010000e-01",
+        "          4010   8.920168e+05   7.795274e+05   1.909360e-03   5.273918e+06   1.449668e-07   1.631889e-07   2.122470e+02            nan            nan                      8.200000e-02                    nan ",
+        "A floating point error has occurred. The following error has been logged:"
+      ],
+      [
+        "TimeStep  404: Time  4.040000e-01",
+        "          4040   3.475469e+06   2.111009e+05   1.907583e-03   1.504554e+06   1.435639e-07   1.616845e-07   5.100574e+02            nan            nan                      7.500000e-02                    nan ",
+        "     Iteration     Continuity     X-momentum     Y-momentum     Z-momentum            Tke            Sdr          water    Fx_half (N)    Fz_half (N) Solver Iteration Elapsed Time (s) Maximum Velocity (m/s) "
+      ],
+      [
+        "TimeStep  405: Time  4.050000e-01",
+        "          4050   4.146573e+06   6.469556e+04   1.906991e-03   4.902218e+05   1.430892e-07   1.611912e-07   2.174683e+04            nan            nan                      8.800000e-02                    nan ",
+        "A floating point error has occurred. The following error has been logged:"
+      ],
+      [
+        "TimeStep  410: Time  4.100000e-01",
+        "          4100   8.150316e+06   3.188264e+05   1.904037e-03   2.116119e+06   1.409174e-07   1.587992e-07   2.088271e+04            nan            nan                      7.500000e-02                    nan ",
+        "A floating point error has occurred. The following error has been logged:"
+      ],
+      [
+        "TimeStep  415: Time  4.150000e-01",
+        "          4150   1.197357e+07   5.568522e+05   1.901091e-03   3.715229e+06   1.385498e-07   1.561077e-07   2.855101e+04            nan            nan                      6.900000e-02                    nan ",
+        "Reversed flow on  1 faces on fluid: DOMAIN.top"
+      ],
+      [
+        "TimeStep  418: Time  4.180000e-01",
+        "          4180   1.402338e+07   2.889402e+05   1.899328e-03   1.977596e+06   3.740175e-07   1.562982e-07   5.678989e+04            nan            nan                      7.000000e-02                    nan ",
+        "Reversed flow on  17 faces on fluid: DOMAIN.top"
+      ],
+      [
+        "TimeStep  419: Time  4.190000e-01",
+        "          4190   1.443803e+07   4.236194e+05   1.898741e-03   3.271792e+06   1.367575e-07   1.541660e-07   4.476809e+04            nan            nan                      9.900000e-02                    nan ",
+        "Reversed flow on  20 faces on fluid: DOMAIN.top"
+      ],
+      [
+        "TimeStep  420: Time  4.200000e-01",
+        "          4200   1.566434e+07   4.700509e+05   1.898155e-03   3.886452e+06   1.363116e-07   1.536705e-07   4.512149e+04            nan            nan                      7.000000e-02                    nan ",
+        "Reversed flow on  23 faces on fluid: DOMAIN.top"
+      ],
+      [
+        "TimeStep  450: Time  4.500000e-01",
+        "          4500   9.846183e+07   8.191019e+06   1.880643e-03   5.746612e+07   1.240632e-07   1.401949e-07   1.498135e+04            nan            nan                      7.200000e-02                    nan ",
+        "Reversed flow on  362 faces on fluid: DOMAIN.top"
+      ],
+      [
+        "TimeStep  500: Time  5.000000e-01",
+        "          5000   6.645913e+08   4.343267e+07   1.881857e-03   2.999331e+08   1.069399e-07   1.213069e-07   3.377558e+04            nan            nan                      7.100000e-02                    nan ",
+        "A floating point error has occurred. The following error has been logged:"
+      ],
+      [
+        "TimeStep  600: Time  6.000000e-01",
+        "          6000   3.358823e+09   9.523231e+07   1.798863e-03   6.098532e+08   8.168851e-08   9.870814e-08   1.247916e+07            nan            nan                      7.800000e-02                    nan ",
+        "A floating point error has occurred. The following error has been logged:"
+      ],
+      [
+        "TimeStep  900: Time  9.000000e-01",
+        "          9000   1.264579e+10   4.567812e+08   1.658849e-03   3.047309e+09   8.794485e-08   1.120508e-07   3.554820e+07            nan            nan                      6.700000e-02                    nan ",
+        "A floating point error has occurred. The following error has been logged:"
+      ]
+    ],
+    "source": {}
+  },
+  "evening_CPU1_H05_dt1": {
+    "history_count": 19,
+    "time": "0.4180000000000003",
+    "water": {
+      "min": 38.400000000005065,
+      "max": 38.40000001568626,
+      "last": 38.40000001568626
+    },
+    "speed": {
+      "min": 18.000000000041055,
+      "max": 18.000096312179185,
+      "last": 18.000096312179185
+    },
+    "CFL": {
+      "min": 0.09000000000020052,
+      "max": 0.09000258860130422,
+      "last": 0.09000258860130422
+    },
+    "reported_wave_H": {
+      "min": 1e-06,
+      "max": 0.00014027050145680835,
+      "last": 0.00014027050145680835
+    },
+    "warns": {
+      "Non-finite value detected": 587,
+      "Reversed flow": 50,
+      "Connection reset": 4,
+      "A floating point error": 587
+    },
+    "last_code": 1,
+    "physical_receipt": {},
+    "step_segments": [
+      [
+        "TimeStep  401: Time  4.010000e-01",
+        "          4010   8.910887e+05   7.835927e+05   1.909215e-03   5.290708e+06   1.449074e-07   1.631231e-07   1.168181e+02            nan            nan                      1.280000e-01                    nan ",
+        "A floating point error has occurred. The following error has been logged:"
+      ],
+      [
+        "TimeStep  404: Time  4.040000e-01",
+        "          4040   3.438848e+06   2.073547e+05   1.907452e-03   1.452724e+06   1.435049e-07   1.616244e-07   3.334991e+02            nan            nan                      1.300000e-01                    nan ",
+        "     Iteration     Continuity     X-momentum     Y-momentum     Z-momentum            Tke            Sdr          water    Fx_half (N)    Fz_half (N) Solver Iteration Elapsed Time (s) Maximum Velocity (m/s) "
+      ],
+      [
+        "TimeStep  405: Time  4.050000e-01",
+        "          4050   4.077231e+06   6.407545e+04   1.906860e-03   4.703555e+05   1.430311e-07   1.611325e-07   1.803584e+04            nan            nan                      1.220000e-01                    nan ",
+        "A floating point error has occurred. The following error has been logged:"
+      ],
+      [
+        "TimeStep  410: Time  4.100000e-01",
+        "          4100   8.129928e+06   3.175451e+05   1.903903e-03   2.109053e+06   1.408581e-07   1.587651e-07   2.034145e+04            nan            nan                      1.210000e-01                    nan ",
+        "     Iteration     Continuity     X-momentum     Y-momentum     Z-momentum            Tke            Sdr          water    Fx_half (N)    Fz_half (N) Solver Iteration Elapsed Time (s) Maximum Velocity (m/s) "
+      ],
+      [
+        "TimeStep  415: Time  4.150000e-01",
+        "          4150   1.181378e+07   2.776796e+05   1.900956e-03   1.707480e+06   1.384889e-07   1.560794e-07   9.290649e+02            nan            nan                      1.280000e-01                    nan ",
+        "A floating point error has occurred. The following error has been logged:"
+      ],
+      [
+        "TimeStep  418: Time  4.180000e-01",
+        "          4180   1.424659e+07   4.679156e+05   1.899192e-03   3.409622e+06   1.371359e-07   1.545834e-07   4.371384e+04            nan            nan                      1.290000e-01                    nan ",
+        "Reversed flow on  17 faces on fluid: DOMAIN.top"
+      ]
+    ],
+    "source": {
+      "created": "2026-10-31T18:23:05.411266+01:00",
+      "phase": "waves",
+      "source": "E:\\ntnu_mesh_optimization_20261030\\wave_surface_only\\WS_L20_H050_baseline_flatCalm_CPU2_20261031_075518_43108c\\calm_pilot_final.sim",
+      "source_sha256": "fdc5d295ac806813dbc783f6ba30c9e626f2ee5c2f91b7825164e69660bc5d28",
+      "macro_sha256": "537898ca5080ba19ba52cfa7bb570f69cff1a97c17caa2540e8b46a1f91de0ac",
+      "cpu_workers": 1,
+      "gpu": false,
+      "original_untouched": true
+    }
+  },
+  "evening_CPU1_H05_dt05": {
+    "history_count": 20,
+    "time": "0.4095000000000003",
+    "water": {
+      "min": 38.400000000005065,
+      "max": 38.40000000392781,
+      "last": 38.40000000392781
+    },
+    "speed": {
+      "min": 18.000000000041055,
+      "max": 18.000020075539567,
+      "last": 18.000020075539567
+    },
+    "CFL": {
+      "min": 0.04500000640734428,
+      "max": 0.09000000000020052,
+      "last": 0.04500013935534682
+    },
+    "reported_wave_H": {
+      "min": 1e-06,
+      "max": 3.97963111541814e-05,
+      "last": 3.97963111541814e-05
+    },
+    "warns": {
+      "Non-finite value detected": 588,
+      "Reversed flow": 2,
+      "Connection reset": 4,
+      "A floating point error": 588
+    },
+    "last_code": 1,
+    "physical_receipt": {},
+    "step_segments": [
+      [
+        "TimeStep  401: Time  4.005000e-01",
+        "          4010   4.207019e+05   1.106854e+06   1.519350e-03   7.456828e+06   1.093483e-07   1.212809e-07   5.643467e+01            nan            nan                      1.210000e-01                    nan ",
+        "A floating point error has occurred. The following error has been logged:"
+      ],
+      [
+        "TimeStep  404: Time  4.020000e-01",
+        "          4040   3.883850e+05   1.434421e+05   1.680926e-03   9.927821e+05   1.195156e-07   1.322906e-07   2.069975e+03            nan            nan                      1.170000e-01                    nan ",
+        "A floating point error has occurred. The following error has been logged:"
+      ],
+      [
+        "TimeStep  405: Time  4.025000e-01",
+        "          4050   5.059169e+05   6.823741e+04   1.680662e-03   4.879776e+05   1.193182e-07   1.320790e-07   7.534409e+01            nan            nan                      1.120000e-01                    nan ",
+        "A floating point error has occurred. The following error has been logged:"
+      ],
+      [
+        "TimeStep  410: Time  4.050000e-01",
+        "          4100   1.133184e+06   1.581561e+05   1.679354e-03   1.072269e+06   1.183380e-07   1.310306e-07   6.734630e+02            nan            nan                      1.130000e-01                    nan ",
+        "     Iteration     Continuity     X-momentum     Y-momentum     Z-momentum            Tke            Sdr          water    Fx_half (N)    Fz_half (N) Solver Iteration Elapsed Time (s) Maximum Velocity (m/s) "
+      ],
+      [
+        "TimeStep  415: Time  4.075000e-01",
+        "          4150   1.764727e+06   2.933918e+05   1.678051e-03   1.961580e+06   1.173788e-07   1.300086e-07   3.391885e+01            nan            nan                      1.080000e-01                    nan ",
+        "     Iteration     Continuity     X-momentum     Y-momentum     Z-momentum            Tke            Sdr          water    Fx_half (N)    Fz_half (N) Solver Iteration Elapsed Time (s) Maximum Velocity (m/s) "
+      ],
+      [
+        "TimeStep  418: Time  4.090000e-01",
+        "          4180   2.127598e+06   3.432652e+05   1.677270e-03   2.294161e+06   1.167997e-07   1.293859e-07   4.365052e+01            nan            nan                      1.160000e-01                    nan ",
+        "A floating point error has occurred. The following error has been logged:"
+      ],
+      [
+        "TimeStep  419: Time  4.095000e-01",
+        "          4190   2.232546e+06   3.582440e+05   1.677010e-03   2.400708e+06   1.166086e-07   1.291861e-07   4.303117e+01            nan            nan                      1.100000e-01                    nan ",
+        "A floating point error has occurred. The following error has been logged:"
+      ]
+    ],
+    "source": {
+      "phase": "waves",
+      "source": "E:\\ntnu_mesh_optimization_20261030\\wave_surface_only\\WS_L20_H050_baseline_flatCalm_CPU2_20261031_075518_43108c\\calm_pilot_final.sim",
+      "source_sha256": "fdc5d295ac806813dbc783f6ba30c9e626f2ee5c2f91b7825164e69660bc5d28",
+      "macro_sha256": "ab341d0da1ea82d4731d65dad16b758cad127e086ead2103e867cd652524ae53",
+      "workers": 1,
+      "cpu_workers": 1,
+      "gpu": false,
+      "created": "2026-10-31T18:32:16.548509+01:00"
+    }
+  },
+  "nearflat_CPU1_H00001_dt1": {
+    "history_count": 201,
+    "time": "0.6000000000000004",
+    "water": {
+      "min": 38.399999935896126,
+      "max": 38.40000000048652,
+      "last": 38.399999935896126
+    },
+    "speed": {
+      "min": 18.000000000041055,
+      "max": 18.000006704370435,
+      "last": 18.000006685208028
+    },
+    "CFL": {
+      "min": 0.09000000000020052,
+      "max": 0.09000012187274813,
+      "last": 0.09000012187274813
+    },
+    "reported_wave_H": {
+      "min": 1e-06,
+      "max": 4.365860974187804e-06,
+      "last": 4.365860974187804e-06
+    },
+    "warns": {
+      "Non-finite value detected": 6000,
+      "Reversed flow": 1937,
+      "Connection reset": 0,
+      "A floating point error": 6000
+    },
+    "last_code": 0,
+    "physical_receipt": {
+      "status": "target_reached",
+      "steps": 200,
+      "time_s": 0.6000000000000004,
+      "stage": "incident_wave_ramp_only; no acceptance; downstream arrival not yet established",
+      "calm_source_preserved": true,
+      "initialization_performed": false
+    },
+    "step_segments": [
+      [
+        "TimeStep  401: Time  4.010000e-01",
+        "          4010   6.232539e+05   5.480546e+05   1.909215e-03   3.700395e+06   1.449074e-07   1.631231e-07   8.166149e+01            nan            nan                      1.160000e-01                    nan ",
+        "A floating point error has occurred. The following error has been logged:"
+      ],
+      [
+        "TimeStep  404: Time  4.040000e-01",
+        "          4040   2.270406e+05   1.304212e+04   1.907452e-03   1.103969e+05   1.434828e-07   1.615579e-07   7.704507e+01            nan            nan                      1.150000e-01                    nan ",
+        "     Iteration     Continuity     X-momentum     Y-momentum     Z-momentum            Tke            Sdr          water    Fx_half (N)    Fz_half (N) Solver Iteration Elapsed Time (s) Maximum Velocity (m/s) "
+      ],
+      [
+        "TimeStep  405: Time  4.050000e-01",
+        "          4050   2.437983e+05   6.131146e+03   1.906860e-03   4.803400e+04   1.430107e-07   1.610393e-07   8.991934e+02            nan            nan                      1.210000e-01                    nan ",
+        "A floating point error has occurred. The following error has been logged:"
+      ],
+      [
+        "TimeStep  410: Time  4.100000e-01",
+        "          4100   6.855051e+04   4.225245e+03   1.903903e-03   2.989476e+04   1.407050e-07   1.585057e-07   7.970273e+00            nan            nan                      1.100000e-01                    nan ",
+        "A floating point error has occurred. The following error has been logged:"
+      ],
+      [
+        "TimeStep  415: Time  4.150000e-01",
+        "          4150   4.934100e+04   5.256911e+03   1.900956e-03   3.798730e+04   1.384471e-07   1.560235e-07   7.502734e+00            nan            nan                      1.110000e-01                    nan ",
+        "A floating point error has occurred. The following error has been logged:"
+      ],
+      [
+        "TimeStep  418: Time  4.180000e-01",
+        "          4180   4.824297e+04   4.743450e+03   1.899192e-03   3.378184e+04   1.371113e-07   1.545552e-07   1.212722e+01            nan            nan                      1.120000e-01                    nan ",
+        "A floating point error has occurred. The following error has been logged:"
+      ],
+      [
+        "TimeStep  419: Time  4.190000e-01",
+        "          4190   4.723405e+04   5.060893e+03   1.898604e-03   3.637360e+04   1.366740e-07   1.540739e-07   7.083058e+00            nan            nan                      1.130000e-01                    nan ",
+        "Reversed flow on  26 faces on fluid: DOMAIN.top"
+      ],
+      [
+        "TimeStep  420: Time  4.200000e-01",
+        "          4200   4.929385e+04   5.078573e+03   1.898017e-03   3.648151e+04   1.362400e-07   1.535966e-07   6.154103e+00            nan            nan                      1.100000e-01                    nan ",
+        "A floating point error has occurred. The following error has been logged:"
+      ],
+      [
+        "TimeStep  450: Time  4.500000e-01",
+        "          4500   9.510530e+04   6.509122e+03   1.880538e-03   4.575045e+04   1.240103e-07   1.401371e-07   1.102183e+01            nan            nan                      1.200000e-01                    nan ",
+        "A floating point error has occurred. The following error has been logged:"
+      ],
+      [
+        "TimeStep  500: Time  5.000000e-01",
+        "          5000   2.326758e+05   1.481340e+04   1.851852e-03   1.043624e+05   1.068934e-07   1.212560e-07   1.147352e+01            nan            nan                      1.050000e-01                    nan ",
+        "Reversed flow on  350 faces on fluid: DOMAIN.top"
+      ],
+      [
+        "TimeStep  600: Time  6.000000e-01",
+        "          6000   6.525893e+05   2.332135e+04   1.795510e-03   1.530033e+05   8.149295e-08   9.312028e-08   3.095430e+03            nan            nan                      1.210000e-01                    nan ",
+        "Saving: E:\\ntnu_mesh_optimization_20261030\\wave_surface_only\\wave_nearflat_inlet_CPU1_20261031_once\\checkpoint_t0.600.sim... complete (60.52MB in 0.131s)."
+      ]
+    ],
+    "source": {
+      "phase": "nearflat_inlet_boundary_diagnostic_only",
+      "source": "E:\\ntnu_mesh_optimization_20261030\\wave_surface_only\\WS_L20_H050_baseline_flatCalm_CPU2_20261031_075518_43108c\\calm_pilot_final.sim",
+      "source_sha256": "fdc5d295ac806813dbc783f6ba30c9e626f2ee5c2f91b7825164e69660bc5d28",
+      "macro_sha256": "537898ca5080ba19ba52cfa7bb570f69cff1a97c17caa2540e8b46a1f91de0ac",
+      "workers": 1,
+      "cpu_workers": 1,
+      "gpu": false,
+      "created": "2026-10-31T21:27:13.600422+01:00"
+    }
+  }
+}

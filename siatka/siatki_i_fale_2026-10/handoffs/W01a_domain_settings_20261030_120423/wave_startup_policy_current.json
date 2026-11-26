@@ -1,0 +1,17 @@
+{
+  "updated_at": "2026-10-30T12:01:09.491557+01:00",
+  "status": "conditional_pending_W01a_wave_validation",
+  "user_instruction": "If W01a remains stable, generate every following wave from the inlet after establishing calm flow.",
+  "candidate": "W01a",
+  "initial_stage": "brief calm startup only",
+  "wave_stage": "inlet_generated_FifthOrder_with_verified_front_and_smooth_ramp",
+  "do_not_initialize_full_domain_with_wave": true,
+  "apply_to_all_later_waves_only_after_candidate_passes": true,
+  "acceptance": "Physical/source/resource guards pass and complete arrived-wave cycles repeat; calm settling alone does not validate wave startup.",
+  "wave_clock": "Define actual activation and measured arrival; exclude pre-arrival and ramp cycles from repeatability",
+  "halfdt_r3": "prepared_only_not_launched_latest_user_prioritizes_new_inlet_startup",
+  "formal_force_accuracy_admitted": false,
+  "require_calm_force_settling": false,
+  "reason": "Latest explicit user override: flow expected to settle during wave travel; start inlet wave without waiting for force stabilization.",
+  "immediate_wave_authorization": "w01a_immediate_wave_authorization.json"
+}

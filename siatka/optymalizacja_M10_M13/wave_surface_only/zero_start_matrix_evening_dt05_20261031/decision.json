@@ -1,0 +1,12 @@
+{
+  "at": "2026-10-31T18:32:16.459360+01:00",
+  "old_attempt": "E:\\ntnu_mesh_optimization_20261030\\wave_surface_only\\zero_start_matrix_evening_20261031_182305_689cb9\\waves\\L20_H500_baseline",
+  "only_numerical_change": "dt 0.001 to 0.0005 s",
+  "same_mesh_cells": 53200,
+  "same_CPU_workers": 1,
+  "same_inner": 10,
+  "same_calm_source": "E:\\ntnu_mesh_optimization_20261030\\wave_surface_only\\WS_L20_H050_baseline_flatCalm_CPU2_20261031_075518_43108c\\calm_pilot_final.sim",
+  "steps": 1600,
+  "purpose": "Bounded timestep diagnostic; not full propagation validation",
+  "original_wave_hold_preserved": true
+}

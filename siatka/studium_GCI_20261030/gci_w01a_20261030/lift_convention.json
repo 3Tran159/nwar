@@ -1,0 +1,15 @@
+{
+  "id": "hydrodynamic_lift_v1",
+  "quantity": "CL",
+  "formula": "CL = CL_total - buoyancy_N / qS_N",
+  "buoyancy_N": 22.718189111947265,
+  "qS_N": 3855.6,
+  "CL_offset": 0.005892257783988813,
+  "rho_kg_m3": 1000,
+  "gravity_m_s2": 9.81,
+  "span_m": 0.02,
+  "displaced_volume_m3": 0.00231581948134019,
+  "scope": "Fully submerged fixed foil in calm water; common nominal geometry correction for every M-series mesh",
+  "evidence": "F:/ntnu/mesh_screening_20261028/force_stabilization_20261029/build_dashboard_before_24m_wave_scope.py",
+  "user_instruction": "Exclude buoyancy from CL, including settling and mesh GCI. Raw CL_total retained in source histories."
+}

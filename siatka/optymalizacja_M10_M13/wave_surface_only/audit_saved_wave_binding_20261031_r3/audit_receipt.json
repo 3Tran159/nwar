@@ -1,0 +1,11 @@
+{
+  "at": "2026-10-31T14:46:05.471479+01:00",
+  "exit_code": 0,
+  "source_unmodified": true,
+  "data": {
+    "found_audit_complete": true,
+    "error_count": 0,
+    "saved_t": 2.507
+  },
+  "no_solver_steps": true
+}

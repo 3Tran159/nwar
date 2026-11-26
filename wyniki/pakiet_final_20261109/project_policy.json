@@ -1,0 +1,37 @@
+{
+  "id": "quasi2d_five_cycles_discard_first_20261103",
+  "scope": "Trends and qualitative foil response with accepted M13 cell-size controls and one immutable C01 reference per campaign",
+  "expanded_mesh_policy": "PRE W04: two consecutive stable CLhydro/CD checks below 0.5% in adjacent 0.2 s windows. Until midnight seek original C01 compatibility within 0.5%; from midnight the user permits stable PRE to become the new C01 and requires rerunning W01-W07. Unstable PRE continues settling; physics and stability thresholds remain unchanged.",
+  "authority": "User 2026-11-03: globally record five complete wave cycles, exclude the first from analysis including earlier waves; evaluate cycles 2–5. All numerical thresholds unchanged.",
+  "required": [
+    "accepted_C01_lineage",
+    "same_M13_configuration",
+    "healthy_saved_run",
+    "five_recorded_cycles_and_four_repeatable_cycles_2_to_5"
+  ],
+  "repeatability": {
+    "mean_spread_max": 0.01,
+    "amplitude_spread_max": 0.08,
+    "phase_rms_max": 0.05
+  },
+  "mesh_review": "The existing M10–M13 comparison and accepted M13 support this stage; no repeat mesh study.",
+  "Q_definition": "Q_CD = mean(CD_wave over complete measured cycles 2–5; cycle 1 excluded) - accepted mean(CD_C01)",
+  "force_difference_definition": "delta_D_N = Q_CD * 3855.6 N",
+  "negative_Q": "Drag reduction in the selected configuration",
+  "future_nonblocking": [
+    "forcing_and_reflection_quantification",
+    "time_step_sensitivity",
+    "formal_uncertainty",
+    "mass_flux_closure"
+  ],
+  "formal_quantitative_validation_required": false,
+  "cycle_policy_id": "five_measured_cycles_discard_first_20261103",
+  "target_complete_cycles": 5,
+  "discard_first_cycles": 1,
+  "analysis_cycle_numbers": [
+    2,
+    3,
+    4,
+    5
+  ]
+}

@@ -1,0 +1,519 @@
+{
+  "M04": {
+    "topology": {
+      "cells": 138468,
+      "cells_with_one_source_and_target_face": 138468,
+      "invalid_cells": [],
+      "single_layer_topology": true,
+      "node_y_min_m": 0.01,
+      "node_y_max_m": 0.03,
+      "source_nodes": 252664,
+      "paired_nodes": 252664,
+      "max_target_source_xz_displacement_m": 0.0,
+      "y_plane_error_m": 0.0,
+      "foil_edges": 616,
+      "foil_perimeter_m": 2.420223699392122,
+      "area_fraction_any_quad_layers": 0.9983943260756422,
+      "area_fraction_at_least_15_quad_layers": 0.9819574864992633,
+      "layer_histogram": {
+        "40": 604,
+        "4": 2,
+        "2": 2,
+        "1": 6,
+        "0": 2
+      },
+      "first_thickness_min_m": 2.990014076313917e-06,
+      "first_thickness_max_m": 3.0001610524504642e-06,
+      "method": "CGNS connectivity: every volume cell must touch both span planes; prism coverage inferred by following consecutive quadrilateral cells normal to each foil edge, area weighted."
+    },
+    "definition": {
+      "base_m": 0.2,
+      "foil_target_m": 0.004,
+      "foil_min_m": 0.0004000000000000001,
+      "global_min_m": 0.0005,
+      "near_foil_m": 0.0125,
+      "free_surface_m": 0.04,
+      "macro": "F:\\ntnu\\mesh_screening_20261028\\force_stabilization_20261029\\MeshQ2DM04.java",
+      "macro_sha256": "f19e9820779cb62f5a28dc950052ad13ef185ca526a64a53d9bbb4a94c2375f3",
+      "first_layer_um": 3,
+      "layers": 40,
+      "total_prism_mm": 15.459999999999999,
+      "surface_growth": 1.2,
+      "near_foil_box": "x \u22120.6\u20263; z \u22120.6\u20260.6",
+      "surface_box": "x \u221211.9\u202630.94; z 1.6\u20262.4",
+      "span_mm": 20,
+      "span_layers": 1,
+      "foil_edges": 616,
+      "topology_source": "F:\\ntnu\\mesh_screening_20261028\\quasi2d_012_20261029\\M04\\topology_audit.json"
+    },
+    "restart": {
+      "final.sim": {
+        "path": "F:\\ntnu\\mesh_screening_20261028\\force_stabilization_20261029\\temporal_order_20261029\\T04_M04_SO_dt1ms_inner10_r1\\final.sim",
+        "exists": true,
+        "bytes": 202246193
+      },
+      "history.csv": {
+        "path": "F:\\ntnu\\mesh_screening_20261028\\force_stabilization_20261029\\temporal_order_20261029\\T04_M04_SO_dt1ms_inner10_r1\\history.csv",
+        "exists": true,
+        "bytes": 165860
+      },
+      "setup.json": {
+        "path": "F:\\ntnu\\mesh_screening_20261028\\force_stabilization_20261029\\temporal_order_20261029\\T04_M04_SO_dt1ms_inner10_r1\\setup.json",
+        "exists": true,
+        "bytes": 1065,
+        "data": {
+          "cells": 138468,
+          "start_time_s": 1.64199999999993,
+          "target_time_s": 2.24199999999993,
+          "dt_s": 0.001,
+          "order": "SECOND_ORDER",
+          "inner_iterations": 10,
+          "gpu_count": 1,
+          "rho": 1000.0,
+          "current": "[18.0, 0.0, 0.0]",
+          "wind": "[18.0, 0.0, 0.0]",
+          "waterline": "[0.0, 0.0, 2.0]",
+          "boundaries": [
+            "DOMAIN.bottom: star.common.SymmetryBoundary",
+            "DOMAIN.inlet: star.common.InletBoundary",
+            "DOMAIN.outlet: star.common.PressureBoundary",
+            "DOMAIN.top: star.common.PressureBoundary",
+            "HF_012_wall: star.common.WallBoundary",
+            "Q2D_span_source: star.common.SymmetryBoundary",
+            "Q2D_span_target: star.common.SymmetryBoundary"
+          ],
+          "reference_area_m2": 0.0238,
+          "span_m": 0.02,
+          "models": "[Three Dimensional, Solution Interpolation, Multiphase, Multiphase Interaction, Volume of Fluid (VOF), Segregated Flow, Gradients, Implicit Unsteady, VOF Waves, VOF Wave Zone Distance, Gravity, Turbulent, Reynolds-Averaged Navier-Stokes, K-Omega Turbulence, SST (Menter) K-Omega, Wall Distance, All y+ Wall Treatment, Cell Quality Remediation]",
+          "purpose": "Continuation without resetting solution; stabilization screen, not validation"
+        }
+      },
+      "completed.json": {
+        "path": "F:\\ntnu\\mesh_screening_20261028\\force_stabilization_20261029\\temporal_order_20261029\\T04_M04_SO_dt1ms_inner10_r1\\completed.json",
+        "exists": true,
+        "bytes": 100,
+        "data": {
+          "status": "target_reached",
+          "time_s": 2.241999999999864,
+          "steps": 600,
+          "solver_wall_s": 658.5969048000001
+        }
+      },
+      "history_header": [
+        "wall_seconds",
+        "step",
+        "iteration",
+        "physical_time_s",
+        "dt_s",
+        "Fx_slice_N",
+        "Fz_slice_N",
+        "pressure_drag_N",
+        "viscous_drag_N",
+        "CD",
+        "CL_total",
+        "max_velocity_m_s",
+        "max_CFL",
+        "interface_max_CFL",
+        "mean_yplus",
+        "min_yplus",
+        "max_yplus"
+      ],
+      "history_last": {
+        "wall_seconds": "651.6880883",
+        "step": "600",
+        "iteration": "38840",
+        "physical_time_s": "2.241999999999864",
+        "dt_s": "0.001",
+        "Fx_slice_N": "27.945246992319237",
+        "Fz_slice_N": "1230.5018548220953",
+        "pressure_drag_N": "7.948379081054526",
+        "viscous_drag_N": "19.99686791126471",
+        "CD": "0.007247963220333861",
+        "CL_total": "0.3191466580615456",
+        "max_velocity_m_s": "22.219251972262832",
+        "max_CFL": "27.098129045016318",
+        "interface_max_CFL": "1.4011868540323202",
+        "mean_yplus": "1.4087747614260004",
+        "min_yplus": "0.1819339662060956",
+        "max_yplus": "293.8890379716307"
+      }
+    }
+  },
+  "M06": {
+    "topology": {
+      "cells": 251605,
+      "cells_with_one_source_and_target_face": 251605,
+      "invalid_cells": [],
+      "single_layer_topology": true,
+      "node_y_min_m": 0.01,
+      "node_y_max_m": 0.03,
+      "source_nodes": 465939,
+      "paired_nodes": 465939,
+      "max_target_source_xz_displacement_m": 0.0,
+      "y_plane_error_m": 0.0,
+      "foil_edges": 856,
+      "foil_perimeter_m": 2.4202471996937516,
+      "area_fraction_any_quad_layers": 0.9988296604199052,
+      "area_fraction_at_least_15_quad_layers": 0.9870391818075643,
+      "layer_histogram": {
+        "44": 835,
+        "45": 9,
+        "4": 2,
+        "2": 2,
+        "1": 6,
+        "0": 2
+      },
+      "first_thickness_min_m": 2.1363506667070764e-06,
+      "first_thickness_max_m": 2.142967529056238e-06,
+      "method": "CGNS connectivity: every volume cell must touch both span planes; prism coverage inferred by following consecutive quadrilateral cells normal to each foil edge, area weighted."
+    },
+    "definition": {
+      "base_m": 0.14285714285714288,
+      "foil_target_m": 0.0028571428571428576,
+      "foil_min_m": 0.0002857142857142858,
+      "global_min_m": 0.0003571428571428572,
+      "near_foil_m": 0.00892857142857143,
+      "free_surface_m": 0.028571428571428577,
+      "macro": "F:\\ntnu\\mesh_screening_20261028\\force_stabilization_20261029\\MeshRawM06.java",
+      "macro_sha256": "94fa016567ce765432fde7c10f24ab34e3f27cc887aeed7b8ee27c8b6bd9adf4",
+      "first_layer_um": 2.142857142857143,
+      "layers": 44,
+      "total_prism_mm": 15.459999999999999,
+      "surface_growth": 1.2,
+      "near_foil_box": "x \u22120.6\u20263; z \u22120.6\u20260.6",
+      "surface_box": "x \u221211.9\u202630.94; z 1.6\u20262.4",
+      "span_mm": 20,
+      "span_layers": 1,
+      "foil_edges": 856,
+      "topology_source": "F:\\ntnu\\mesh_screening_20261028\\quasi2d_012_20261029\\M06\\topology_audit.json"
+    },
+    "restart": {
+      "final.sim": {
+        "path": "F:\\ntnu\\mesh_screening_20261028\\force_stabilization_20261029\\M06_until_settled_r1\\final.sim",
+        "exists": true,
+        "bytes": 318707644
+      },
+      "history.csv": {
+        "path": "F:\\ntnu\\mesh_screening_20261028\\force_stabilization_20261029\\M06_until_settled_r1\\history.csv",
+        "exists": true,
+        "bytes": 443471
+      },
+      "setup.json": {
+        "path": "F:\\ntnu\\mesh_screening_20261028\\force_stabilization_20261029\\M06_until_settled_r1\\setup.json",
+        "exists": true,
+        "bytes": 1039,
+        "data": {
+          "cells": 251605,
+          "start_time_s": 0.0,
+          "target_time_s": 10.0,
+          "dt_s": 0.001,
+          "order": "FIRST_ORDER",
+          "inner_iterations": 20,
+          "gpu_count": 1,
+          "rho": 1000.0,
+          "current": "[18.0, 0.0, 0.0]",
+          "wind": "[18.0, 0.0, 0.0]",
+          "waterline": "[0.0, 0.0, 2.0]",
+          "boundaries": [
+            "DOMAIN.bottom: star.common.SymmetryBoundary",
+            "DOMAIN.inlet: star.common.InletBoundary",
+            "DOMAIN.outlet: star.common.PressureBoundary",
+            "DOMAIN.top: star.common.PressureBoundary",
+            "HF_012_wall: star.common.WallBoundary",
+            "Q2D_span_source: star.common.SymmetryBoundary",
+            "Q2D_span_target: star.common.SymmetryBoundary"
+          ],
+          "reference_area_m2": 0.0238,
+          "span_m": 0.02,
+          "models": "[Three Dimensional, Solution Interpolation, Multiphase, Multiphase Interaction, Volume of Fluid (VOF), Segregated Flow, Gradients, Implicit Unsteady, VOF Waves, VOF Wave Zone Distance, Gravity, Turbulent, Reynolds-Averaged Navier-Stokes, K-Omega Turbulence, SST (Menter) K-Omega, Wall Distance, All y+ Wall Treatment, Cell Quality Remediation]",
+          "purpose": "Continuation without resetting solution; stabilization screen, not validation"
+        }
+      },
+      "completed.json": {
+        "path": "F:\\ntnu\\mesh_screening_20261028\\force_stabilization_20261029\\M06_until_settled_r1\\completed.json",
+        "exists": true,
+        "bytes": 93,
+        "data": {
+          "time_s": 1.5999999999999346,
+          "steps": 1600,
+          "solver_wall_s": 2819.8209215,
+          "status": "stabilized"
+        }
+      },
+      "history_header": [
+        "wall_seconds",
+        "step",
+        "iteration",
+        "physical_time_s",
+        "dt_s",
+        "Fx_slice_N",
+        "Fz_slice_N",
+        "pressure_drag_N",
+        "viscous_drag_N",
+        "CD",
+        "CL_total",
+        "max_velocity_m_s",
+        "max_CFL",
+        "interface_max_CFL",
+        "mean_yplus",
+        "min_yplus",
+        "max_yplus"
+      ],
+      "history_last": {
+        "wall_seconds": "2813.532619299",
+        "step": "1600",
+        "iteration": "32000",
+        "physical_time_s": "1.5999999999999346",
+        "dt_s": "0.001",
+        "Fx_slice_N": "28.3794782376048",
+        "Fz_slice_N": "1210.0448659018227",
+        "pressure_drag_N": "8.063559002766153",
+        "viscous_drag_N": "20.31591923483865",
+        "CD": "0.007360586740741985",
+        "CL_total": "0.3138408719529574",
+        "max_velocity_m_s": "22.18913141421711",
+        "max_CFL": "43.76903700187169",
+        "interface_max_CFL": "2.7251539834007796",
+        "mean_yplus": "0.9771790768016624",
+        "min_yplus": "0.10738773018081975",
+        "max_yplus": "252.44361616881147"
+      }
+    }
+  },
+  "M07": {
+    "topology": {
+      "cells": 481635,
+      "cells_with_one_source_and_target_face": 481635,
+      "invalid_cells": [],
+      "single_layer_topology": true,
+      "node_y_min_m": 0.01,
+      "node_y_max_m": 0.03,
+      "source_nodes": 906492,
+      "paired_nodes": 906492,
+      "max_target_source_xz_displacement_m": 0.0,
+      "y_plane_error_m": 0.0,
+      "foil_edges": 1192,
+      "foil_perimeter_m": 2.4202644655141707,
+      "area_fraction_any_quad_layers": 0.9992085181477239,
+      "area_fraction_at_least_15_quad_layers": 0.9909455285082223,
+      "layer_histogram": {
+        "48": 1164,
+        "49": 14,
+        "47": 2,
+        "3": 2,
+        "2": 2,
+        "1": 6,
+        "0": 2
+      },
+      "first_thickness_min_m": 1.5260105030907456e-06,
+      "first_thickness_max_m": 1.5306913041062129e-06,
+      "method": "CGNS connectivity: every volume cell must touch both span planes; prism coverage inferred by following consecutive quadrilateral cells normal to each foil edge, area weighted."
+    },
+    "definition": {
+      "base_m": 0.10204081632653061,
+      "foil_target_m": 0.0020408163265306124,
+      "foil_min_m": 0.00020408163265306123,
+      "global_min_m": 0.00025510204081632655,
+      "near_foil_m": 0.006377551020408163,
+      "free_surface_m": 0.020408163265306124,
+      "macro": "F:\\ntnu\\mesh_screening_20261028\\force_stabilization_20261029\\MeshRawM07.java",
+      "macro_sha256": "e21cf9e8d2f5acfb332d426a4b477bb8fe44ae00dabc5c6a227c74949745c18c",
+      "first_layer_um": 1.530612244897959,
+      "layers": 48,
+      "total_prism_mm": 15.459999999999999,
+      "surface_growth": 1.2,
+      "near_foil_box": "x \u22120.6\u20263; z \u22120.6\u20260.6",
+      "surface_box": "x \u221211.9\u202630.94; z 1.6\u20262.4",
+      "span_mm": 20,
+      "span_layers": 1,
+      "foil_edges": 1192,
+      "topology_source": "F:\\ntnu\\mesh_screening_20261028\\quasi2d_012_20261029\\M07\\topology_audit.json"
+    },
+    "restart": {
+      "final.sim": {
+        "path": "F:\\ntnu\\mesh_screening_20261028\\force_stabilization_20261029\\configured_mesh_20261029\\M07_SO1ms_inner10_r1\\final.sim",
+        "exists": true,
+        "bytes": 667319964
+      },
+      "history.csv": {
+        "path": "F:\\ntnu\\mesh_screening_20261028\\force_stabilization_20261029\\configured_mesh_20261029\\M07_SO1ms_inner10_r1\\history.csv",
+        "exists": true,
+        "bytes": 110264
+      },
+      "setup.json": {
+        "path": "F:\\ntnu\\mesh_screening_20261028\\force_stabilization_20261029\\configured_mesh_20261029\\M07_SO1ms_inner10_r1\\setup.json",
+        "exists": true,
+        "bytes": 1055,
+        "data": {
+          "cells": 481635,
+          "start_time_s": 1.6399999999999302,
+          "target_time_s": 10.0,
+          "dt_s": 0.001,
+          "order": "SECOND_ORDER",
+          "inner_iterations": 10,
+          "gpu_count": 1,
+          "rho": 1000.0,
+          "current": "[18.0, 0.0, 0.0]",
+          "wind": "[18.0, 0.0, 0.0]",
+          "waterline": "[0.0, 0.0, 2.0]",
+          "boundaries": [
+            "DOMAIN.bottom: star.common.SymmetryBoundary",
+            "DOMAIN.inlet: star.common.InletBoundary",
+            "DOMAIN.outlet: star.common.PressureBoundary",
+            "DOMAIN.top: star.common.PressureBoundary",
+            "HF_012_wall: star.common.WallBoundary",
+            "Q2D_span_source: star.common.SymmetryBoundary",
+            "Q2D_span_target: star.common.SymmetryBoundary"
+          ],
+          "reference_area_m2": 0.0238,
+          "span_m": 0.02,
+          "models": "[Three Dimensional, Solution Interpolation, Multiphase, Multiphase Interaction, Volume of Fluid (VOF), Segregated Flow, Gradients, Implicit Unsteady, VOF Waves, VOF Wave Zone Distance, Gravity, Turbulent, Reynolds-Averaged Navier-Stokes, K-Omega Turbulence, SST (Menter) K-Omega, Wall Distance, All y+ Wall Treatment, Cell Quality Remediation]",
+          "purpose": "Continuation without resetting solution; stabilization screen, not validation"
+        }
+      },
+      "completed.json": {
+        "path": "F:\\ntnu\\mesh_screening_20261028\\force_stabilization_20261029\\configured_mesh_20261029\\M07_SO1ms_inner10_r1\\completed.json",
+        "exists": true,
+        "bytes": 91,
+        "data": {
+          "status": "stabilized",
+          "time_s": 2.0399999999998863,
+          "steps": 400,
+          "solver_wall_s": 648.2893097
+        }
+      },
+      "history_header": [
+        "wall_seconds",
+        "step",
+        "iteration",
+        "physical_time_s",
+        "dt_s",
+        "Fx_slice_N",
+        "Fz_slice_N",
+        "pressure_drag_N",
+        "viscous_drag_N",
+        "CD",
+        "CL_total",
+        "max_velocity_m_s",
+        "max_CFL",
+        "interface_max_CFL",
+        "mean_yplus",
+        "min_yplus",
+        "max_yplus"
+      ],
+      "history_last": {
+        "wall_seconds": "635.5971258000001",
+        "step": "400",
+        "iteration": "36800",
+        "physical_time_s": "2.0399999999998863",
+        "dt_s": "0.001",
+        "Fx_slice_N": "28.61053601938521",
+        "Fz_slice_N": "1213.2176427548347",
+        "pressure_drag_N": "7.871237587704034",
+        "viscous_drag_N": "20.739298431681178",
+        "CD": "0.007420514581228657",
+        "CL_total": "0.31466377289003905",
+        "max_velocity_m_s": "23.880689537963107",
+        "max_CFL": "47.69873561334935",
+        "interface_max_CFL": "4.0980863045382",
+        "mean_yplus": "0.8203148033821538",
+        "min_yplus": "0.12653283150353695",
+        "max_yplus": "220.08546179775556"
+      }
+    }
+  },
+  "M09": {
+    "restart": {
+      "final.sim": {
+        "path": "F:\\ntnu\\mesh_screening_20261028\\force_stabilization_20261029\\matched_endpoint_20261029\\M09_SO_common_t2040_r1\\final.sim",
+        "exists": true,
+        "bytes": 300209912
+      },
+      "history.csv": {
+        "path": "F:\\ntnu\\mesh_screening_20261028\\force_stabilization_20261029\\matched_endpoint_20261029\\M09_SO_common_t2040_r1\\history.csv",
+        "exists": true,
+        "bytes": 110764
+      },
+      "setup.json": {
+        "path": "F:\\ntnu\\mesh_screening_20261028\\force_stabilization_20261029\\matched_endpoint_20261029\\M09_SO_common_t2040_r1\\setup.json",
+        "exists": true,
+        "bytes": 1055,
+        "data": {
+          "cells": 214908,
+          "start_time_s": 1.6399999999999302,
+          "target_time_s": 2.04,
+          "dt_s": 0.001,
+          "order": "SECOND_ORDER",
+          "inner_iterations": 10,
+          "gpu_count": 1,
+          "rho": 1000.0,
+          "current": "[18.0, 0.0, 0.0]",
+          "wind": "[18.0, 0.0, 0.0]",
+          "waterline": "[0.0, 0.0, 2.0]",
+          "boundaries": [
+            "DOMAIN.bottom: star.common.SymmetryBoundary",
+            "DOMAIN.inlet: star.common.InletBoundary",
+            "DOMAIN.outlet: star.common.PressureBoundary",
+            "DOMAIN.top: star.common.PressureBoundary",
+            "HF_012_wall: star.common.WallBoundary",
+            "Q2D_span_source: star.common.SymmetryBoundary",
+            "Q2D_span_target: star.common.SymmetryBoundary"
+          ],
+          "reference_area_m2": 0.0238,
+          "span_m": 0.02,
+          "models": "[Three Dimensional, Solution Interpolation, Multiphase, Multiphase Interaction, Volume of Fluid (VOF), Segregated Flow, Gradients, Implicit Unsteady, VOF Waves, VOF Wave Zone Distance, Gravity, Turbulent, Reynolds-Averaged Navier-Stokes, K-Omega Turbulence, SST (Menter) K-Omega, Wall Distance, All y+ Wall Treatment, Cell Quality Remediation]",
+          "purpose": "Continuation without resetting solution; stabilization screen, not validation"
+        }
+      },
+      "completed.json": {
+        "path": "F:\\ntnu\\mesh_screening_20261028\\force_stabilization_20261029\\matched_endpoint_20261029\\M09_SO_common_t2040_r1\\completed.json",
+        "exists": true,
+        "bytes": 102,
+        "data": {
+          "steps": 400,
+          "solver_wall_s": 482.31922430000003,
+          "status": "target_reached",
+          "time_s": 2.0399999999998863
+        }
+      },
+      "history_header": [
+        "wall_seconds",
+        "step",
+        "iteration",
+        "physical_time_s",
+        "dt_s",
+        "Fx_slice_N",
+        "Fz_slice_N",
+        "pressure_drag_N",
+        "viscous_drag_N",
+        "CD",
+        "CL_total",
+        "max_velocity_m_s",
+        "max_CFL",
+        "interface_max_CFL",
+        "mean_yplus",
+        "min_yplus",
+        "max_yplus"
+      ],
+      "history_last": {
+        "wall_seconds": "476.39169840000005",
+        "step": "400",
+        "iteration": "22200",
+        "physical_time_s": "2.0399999999998863",
+        "dt_s": "0.001",
+        "Fx_slice_N": "28.755330149569005",
+        "Fz_slice_N": "1211.071388263376",
+        "pressure_drag_N": "8.004935764921193",
+        "viscous_drag_N": "20.750394384647812",
+        "CD": "0.007458068821861449",
+        "CL_total": "0.31410711387679635",
+        "max_velocity_m_s": "22.191047441342345",
+        "max_CFL": "43.762086483261726",
+        "interface_max_CFL": "2.107118277760013",
+        "mean_yplus": "0.9392744689879439",
+        "min_yplus": "0.10898236936811334",
+        "max_yplus": "253.58352475045365"
+      }
+    }
+  }
+}

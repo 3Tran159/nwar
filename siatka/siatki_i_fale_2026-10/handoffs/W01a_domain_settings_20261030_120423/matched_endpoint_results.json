@@ -1,0 +1,162 @@
+{
+  "updated_at": "2026-10-29T23:14:53.745447+01:00",
+  "target_s": 2.04,
+  "window": [
+    1.84,
+    2.04
+  ],
+  "results": [
+    {
+      "mesh": "M07",
+      "id": "M07_SO1ms_inner10_r1",
+      "cells": 481635,
+      "order": "SECOND_ORDER",
+      "dt_s": 0.001,
+      "inner_iterations": 10,
+      "status": "matched_endpoint_review",
+      "window": [
+        1.84,
+        2.04
+      ],
+      "means": {
+        "CD": 0.007430510092766686,
+        "CL_total": 0.31447585900023883,
+        "pressure_drag_N": 7.908932914415404,
+        "viscous_drag_N": 20.740141799255834
+      },
+      "adjacent_mean_change_pct": {
+        "CD": -0.2448722402298429,
+        "CL_total": 0.11187928568798329
+      },
+      "settling_check_pass": true,
+      "source_unchanged": true,
+      "all_saved_fields_finite": true,
+      "phase_bounds": [
+        0.0,
+        1.0
+      ],
+      "last_interface_CFL": 4.0980863045382,
+      "source_sim": "F:\\ntnu\\mesh_screening_20261028\\force_stabilization_20261029\\configured_mesh_20261029\\M07_SO1ms_inner10_r1\\final.sim",
+      "history_sources": [
+        "F:\\ntnu\\mesh_screening_20261028\\force_stabilization_20261029\\configured_mesh_20261029\\M07_SO1ms_inner10_r1\\history.csv"
+      ],
+      "combined_history": "F:\\ntnu\\mesh_screening_20261028\\force_stabilization_20261029\\configured_mesh_20261029\\M07_SO1ms_inner10_r1\\history.csv",
+      "reused_accepted_field": true,
+      "force_component_sum_max_error_N": 3.552713678800501e-15
+    },
+    {
+      "mesh": "M09",
+      "id": "M09_SO_common_t2040_r1",
+      "cells": 214908,
+      "order": "SECOND_ORDER",
+      "dt_s": 0.001,
+      "inner_iterations": 10,
+      "status": "matched_endpoint_review",
+      "window": [
+        1.84,
+        2.04
+      ],
+      "means": {
+        "CD": 0.0074651881466775176,
+        "CL_total": 0.31395932517814296,
+        "pressure_drag_N": 8.031930539582895,
+        "viscous_drag_N": 20.750848878746943
+      },
+      "adjacent_mean_change_pct": {
+        "CD": -0.22587556539099574,
+        "CL_total": 0.1107010140942967
+      },
+      "settling_check_pass": true,
+      "source_unchanged": true,
+      "all_saved_fields_finite": true,
+      "phase_bounds": [
+        0.0,
+        1.0
+      ],
+      "last_interface_CFL": 2.107118277760013,
+      "source_sim": "F:\\ntnu\\mesh_screening_20261028\\force_stabilization_20261029\\matched_endpoint_20261029\\M09_SO_common_t2040_r1\\final.sim",
+      "history_sources": [
+        "F:\\ntnu\\mesh_screening_20261028\\force_stabilization_20261029\\configured_mesh_20261029\\M09_SO1ms_inner10_r1\\history.csv",
+        "F:\\ntnu\\mesh_screening_20261028\\force_stabilization_20261029\\matched_endpoint_20261029\\M09_SO_common_t2040_r1\\history.csv"
+      ],
+      "combined_history": "F:\\ntnu\\mesh_screening_20261028\\force_stabilization_20261029\\matched_endpoint_20261029\\M09_SO_common_t2040_r1\\matched_history.csv",
+      "reused_accepted_field": false,
+      "force_component_sum_max_error_N": 3.552713678800501e-15
+    },
+    {
+      "mesh": "M08",
+      "id": "M08_SO_common_t2040_r1",
+      "cells": 254989,
+      "order": "SECOND_ORDER",
+      "dt_s": 0.001,
+      "inner_iterations": 10,
+      "status": "matched_endpoint_review",
+      "window": [
+        1.84,
+        2.04
+      ],
+      "means": {
+        "CD": 0.007467097750437271,
+        "CL_total": 0.31390678968439906,
+        "pressure_drag_N": 8.039606166804456,
+        "viscous_drag_N": 20.75053591978149
+      },
+      "adjacent_mean_change_pct": {
+        "CD": -0.18908539787035047,
+        "CL_total": 0.08668435017487239
+      },
+      "settling_check_pass": true,
+      "source_unchanged": true,
+      "all_saved_fields_finite": true,
+      "phase_bounds": [
+        0.0,
+        1.0
+      ],
+      "last_interface_CFL": 2.725153967705839,
+      "source_sim": "F:\\ntnu\\mesh_screening_20261028\\force_stabilization_20261029\\matched_endpoint_20261029\\M08_SO_common_t2040_r1\\final.sim",
+      "history_sources": [
+        "F:\\ntnu\\mesh_screening_20261028\\force_stabilization_20261029\\configured_mesh_20261029\\M08_SO1ms_inner10_r1\\history.csv",
+        "F:\\ntnu\\mesh_screening_20261028\\force_stabilization_20261029\\matched_endpoint_20261029\\M08_SO_common_t2040_r1\\history.csv"
+      ],
+      "combined_history": "F:\\ntnu\\mesh_screening_20261028\\force_stabilization_20261029\\matched_endpoint_20261029\\M08_SO_common_t2040_r1\\matched_history.csv",
+      "reused_accepted_field": false,
+      "force_component_sum_max_error_N": 3.552713678800501e-15
+    }
+  ],
+  "pairs": [
+    {
+      "candidate": "M09",
+      "reference": "M07",
+      "difference_pct": {
+        "CD": 0.46669816039398243,
+        "CL_total": -0.16425229705644426,
+        "pressure_drag_N": 1.5551734538461741,
+        "viscous_drag_N": 0.0516249097751733
+      },
+      "both_force_coefficients_within_1pct": true
+    },
+    {
+      "candidate": "M09",
+      "reference": "M08",
+      "difference_pct": {
+        "CD": -0.02557357387804068,
+        "CL_total": 0.016736017018529083,
+        "pressure_drag_N": -0.09547267692357199,
+        "viscous_drag_N": 0.0015081970251846946
+      },
+      "both_force_coefficients_within_1pct": true
+    },
+    {
+      "candidate": "M08",
+      "reference": "M07",
+      "difference_pct": {
+        "CD": 0.4923976579508529,
+        "CL_total": -0.18095802890845883,
+        "pressure_drag_N": 1.6522235528243892,
+        "viscous_drag_N": 0.050115956902617456
+      },
+      "both_force_coefficients_within_1pct": true
+    }
+  ],
+  "interpretation": "Same SO1ms10 settings and same physical windows; source histories joined only across continuous identical-setting checkpoints. Geometry/inner/conservation and selected-mesh timestep reviews remain; no automatic wave admission."
+}

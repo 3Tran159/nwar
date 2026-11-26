@@ -1,0 +1,11 @@
+{
+  "created": "2026-10-31T13:10:52.012114+01:00",
+  "phase": "calm",
+  "source": "E:\\ntnu_mesh_optimization_20261030\\wave_surface_only\\WS_L20_H050_baseline_flatCalm_CPU2_20261031_075518_43108c\\input.sim",
+  "source_sha256": "0b422d8c395f985212c056ed5434a92551cc1ded79a178539b3782ce123a59f0",
+  "macro": "E:\\ntnu_mesh_optimization_20261030\\wave_surface_only\\CalmZeroPerMesh_20261031.java",
+  "macro_sha256": "fbffa72a2eb0c3612e8020870e7906a3b0eb0a67146aeeca7158365e43f48df0",
+  "cpu_workers": 2,
+  "gpu": false,
+  "original_untouched": true
+}

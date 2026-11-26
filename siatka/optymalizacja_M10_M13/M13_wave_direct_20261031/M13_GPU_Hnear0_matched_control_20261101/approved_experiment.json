@@ -1,0 +1,19 @@
+{
+  "checked_at": "2026-11-01T11:02:14.951360+01:00",
+  "source": "E:\\ntnu_mesh_optimization_20261030\\M13_farfield15_20261031\\M13_GPU_calm_dt0004\\final.sim",
+  "source_sha256": "9c4fa61e6696b8fd845ab62ef486647542ab3caf361b3c985411bcd49ace6fdf",
+  "macro_sha256": "9e743ed94de318d02d9bd4135767b1f9a1940adda2c0d620cc55c42c49b089e2",
+  "cells": 309441,
+  "GPU": 1,
+  "dt_s": 0.0004,
+  "inner": 10,
+  "H_m": 1e-06,
+  "lambda_m": 20,
+  "gpu_free_mib": 11316,
+  "gpu_temperature_C": 47,
+  "max_steps": 10000,
+  "max_added_physical_s": 4.0,
+  "max_wall_s": 10500,
+  "review_status_preserved": "INCONCLUSIVE_NOT_ACCEPTED",
+  "purpose": "Matched near-zero wave BC control from saved M13 calm; no whole-domain reset; only wave height differs from M13 incident-wave setup"
+}

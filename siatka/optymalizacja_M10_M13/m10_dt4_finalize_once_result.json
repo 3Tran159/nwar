@@ -1,0 +1,8 @@
+{
+  "at": "2026-10-31T16:58:01.214996+01:00",
+  "status": "decision_process_completed",
+  "choice_control_exit_code": 0,
+  "stdout": "{\"at\": \"2026-10-31T16:58:01.205779+01:00\", \"choice\": \"dt0004\", \"why\": \"Matched 0.2/0.4ms pilots pass with interface CFL <=0.95\", \"control_result\": {\"message\": \"Queue resumed: M10, then M10. M12 remains saved.\", \"pid\": 1512}, \"original_sim_files_untouched\": true, \"original_held_wave_untouched\": true, \"not_final_timestep_validation\": true}\n",
+  "stderr": "",
+  "source_checkpoints_untouched": true
+}

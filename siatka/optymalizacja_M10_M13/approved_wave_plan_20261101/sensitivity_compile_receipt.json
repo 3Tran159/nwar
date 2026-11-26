@@ -1,0 +1,15 @@
+{
+  "at": "2026-11-01T10:03:16.950391+01:00",
+  "status": "javac_pass",
+  "macros": {
+    "M13CalmDt02.java": "db3be7f0c1edee45446b54e0c384550d43a1052743f6824a39600574173906de",
+    "M13WaveDt02.java": "88bd8617ad02c228e9a5f2adc5012e082c3a062cc2046dc758da99770f09195e"
+  },
+  "source_calm_sha256": "6e1e78ad501d1becaa62f8bd60be461623c76a5274218b9d483324f9fcd39aeb",
+  "source_wave_sha256": "353804abb312313f109bf456f4b6d357cf7cd547f01d99334019ccd6d2edbb83",
+  "sole_numerical_change": "dt0.4ms to0.2ms; same309441cell M13,physics,BC,second-order,10inner",
+  "primary_calm_stopping_rule": "already approved CL/CD only; component diagnostics retained",
+  "wave_discard": "one planning period after dt change, then inspect cycle drift; not automatic certification",
+  "runner_not_yet_launched": true,
+  "stderr": "Note: Some input files use or override a deprecated API.\nNote: Recompile with -Xlint:deprecation for details.\n"
+}

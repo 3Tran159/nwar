@@ -1,0 +1,75 @@
+{
+  "at": "2026-11-01T10:47:18+01:00",
+  "status": "INCONCLUSIVE_NOT_ACCEPTED",
+  "ready_for_matched_sensitivity": false,
+  "sources_unchanged": true,
+  "forcing_at_foil_excluded_or_quantified": false,
+  "source_wave_r4v": {
+    "path": "E:\\ntnu_mesh_optimization_20261030\\M13_wave_direct_20261031\\M13_GPU_W20_H050_continuation_R4V_20261101\\wave_pilot_final.sim",
+    "sha256": "64a8be30fc7fe53aabafd8e5b3ec6cb88b7cae57b4199c8396047a722edf4672"
+  },
+  "calm_reference": {
+    "path": "E:\\ntnu_mesh_optimization_20261030\\M13_farfield15_20261031\\M13_GPU_calm_dt0004\\final.sim",
+    "setup_rho_kg_m3": 1000,
+    "CL_hydrodynamic": true,
+    "dt_s": 0.0004
+  },
+  "observed_wave_configuration": {
+    "solver_steps_during_audit": 0,
+    "cells": 309441,
+    "wave_model": "FifthOrderVofWave",
+    "H_m": 0.5,
+    "lambda_m": 20,
+    "period_native_s": 0.8472673206891129,
+    "period_ramp_estimate_s": 0.8470269354565476,
+    "waterline_z_m": 2,
+    "gravity_z_m_s2": -9.8100004196167,
+    "flow_x_m_s": 18,
+    "wave_object_heavy_density_kg_m3": 997.561,
+    "wave_object_light_density_kg_m3": 1.18415,
+    "inherited_calm_heavy_density_kg_m3": 1000,
+    "inherited_calm_light_density_kg_m3": 1.2,
+    "top_and_outlet_pressure_function": "Hydrostatic Pressure of Heavy Fluid of Calm",
+    "region_zone_option": "FORCING_DAMPING",
+    "forcing_length_boundary_m": 20,
+    "damping_length_boundary_m": 20,
+    "forcing_boundary": "DOMAIN.inlet",
+    "damping_boundary": "DOMAIN.outlet",
+    "momentum_user_source_option": "NONE",
+    "domain_cell_center_x_range_m": [
+      -34.90043103448277,
+      44.900985915492974
+    ],
+    "conditional_inlet_zone_estimate_x_m": [
+      -35,
+      -15
+    ],
+    "conditional_outlet_zone_estimate_x_m": [
+      25,
+      45
+    ]
+  },
+  "spatial_validation": {
+    "csv_rows": 309441,
+    "nonphysical_sentinel": "1.7976931348623157e+308",
+    "valid_values_each_for_all_5_forcing_fields": 0,
+    "invalid_values_each_for_all_5_forcing_fields": 309441,
+    "voxel_force_source_resolved": false,
+    "meaning": "Conditional geometric estimates are NOT direct proof that wave-source forcing vanishes near foil.",
+    "coordinate_velocity_pressure_alpha_fields_exported": true,
+    "field_error": "Cannot evaluate field function Hydrostatic Pressure of Heavy Fluid of Calm; velocity wave function GetFieldFunctionValue also unavailable"
+  },
+  "audit_execution": {
+    "wave_configuration_json_saved": true,
+    "wave_csv_exported": true,
+    "controller_reason": "wall_budget",
+    "remote_connection_reset": true,
+    "solver_exit_code_after_controlled_cleanup": 4294967295,
+    "zero_time_steps": true,
+    "calm_audit_started": false,
+    "original_wave_source_hash_unchanged": true,
+    "original_calm_source_unchanged": true
+  },
+  "scientific_decision": "Do NOT assert ~5.78% CD reduction validated. Do NOT start matched dt sensitivity or new H/lambda until physical wave-zone forcing and calm-wave BC differences are resolved. A matched H0 control is scientifically motivated by density and pressure-function differences; prepare separately with all guards, not automatically.",
+  "next_review": "Use genuinely different limited diagnostic focusing on physical spatial forcing/source and calm comparison, or quantify effective BC mismatch using new H0 control; avoid repeating failed full 309441-cell zero-step export."
+}

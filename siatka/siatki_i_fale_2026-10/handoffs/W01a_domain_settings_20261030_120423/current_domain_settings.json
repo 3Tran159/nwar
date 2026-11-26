@@ -1,0 +1,320 @@
+{
+  "exported_at": "2026-10-30T12:04:23.140439+01:00",
+  "purpose": "Exact current W01a domain handover for independent mesh-convergence agent",
+  "status": "Wave activation pending; current saved fields are brief calm startup, NOT settled baseline",
+  "case": "E:\\ntnu\\quasi2d_waves_20261029\\W01a_W20L4_M10_calm_start_r1",
+  "domain": {
+    "x_m": [
+      -35,
+      45
+    ],
+    "y_m": [
+      0.01,
+      0.03
+    ],
+    "z_m": [
+      -22,
+      8
+    ],
+    "length_m": 80,
+    "height_m": 30,
+    "span_m": 0.02,
+    "span_cells": 1,
+    "waterline_z_m": 2,
+    "water_depth_m": 24,
+    "air_height_m": 6,
+    "volume_fluid_m3": 47.997684231839266,
+    "cells": 317277,
+    "foil_source_edges": 856,
+    "foil_bounds_xz_m": [
+      [
+        -0.0003685843239392502,
+        -0.04214490729867749
+      ],
+      [
+        1.1900000000000004,
+        0.10091477404404608
+      ]
+    ],
+    "foil_position_and_angle": "Unchanged relative to M09; authoritative coordinates supplied. No new foil rotation or translation.",
+    "foil_reference_submergence_m": 2
+  },
+  "mesh_controls": {
+    "id": "M10_FS020_r1",
+    "mesh_number": 10,
+    "family": "M09_derived_wave_grid",
+    "reference": "M09",
+    "linear_refinement": 1.4,
+    "outer_base_m": 0.25,
+    "first_layer_um": 1.530612244897959,
+    "layers": 48,
+    "total_prism_m": 0.01546,
+    "free_surface_m": 0.02,
+    "protected_middle_size_m": 0.14285714285714288,
+    "protected_middle_xz_m": [
+      -11.9,
+      30.94,
+      -3,
+      3.2
+    ],
+    "purpose": "Wave FS sensitivity: change only nominal free-surface control0.0285714to0.020m; preserve M09 foil/near-foil/prism/outer controls. Regenerated actual edges must be audited. Extend to matched4lambda domain after build; requires its own pairedcalm/wave, no accuracyclaim.",
+    "base_m": 0.25,
+    "foil_target_m": 0.0028571428571428576,
+    "foil_min_m": 0.00028571428571428574,
+    "global_min_m": 0.0003571428571428572,
+    "near_foil_m": 0.00892857142857143
+  },
+  "remote_strips": [
+    {
+      "side": "inlet",
+      "old_x_m": -11.9,
+      "new_x_m": -35.0,
+      "columns": 116,
+      "max_dx_m": 0.19913793103448277,
+      "boundary_vertical_segments": 187
+    },
+    {
+      "side": "outlet",
+      "old_x_m": 30.940000000000005,
+      "new_x_m": 45.0,
+      "columns": 71,
+      "max_dx_m": 0.19802816901408443,
+      "boundary_vertical_segments": 186
+    }
+  ],
+  "remote_resolution_note": "Horizontaldx<=0.2m; verticalrowsinheritedfromM10 source. These remote strips are anisotropic, NOT isotropic20mm cells.",
+  "boundary_audit": [
+    {
+      "name": "DOMAIN.bottom",
+      "type": "WallBoundary",
+      "area_m2": 1.5999999999999979,
+      "z_m": -22.0
+    },
+    {
+      "name": "DOMAIN.inlet",
+      "type": "InletBoundary",
+      "area_m2": 0.6000000000000006,
+      "x_m": -35.0
+    },
+    {
+      "name": "DOMAIN.outlet",
+      "type": "PressureBoundary",
+      "area_m2": 0.5999999999999993,
+      "x_m": 45.0
+    },
+    {
+      "name": "DOMAIN.top",
+      "type": "PressureBoundary",
+      "area_m2": 1.5999999999999979,
+      "z_m": 8.0
+    },
+    {
+      "name": "HF_012_wall",
+      "type": "WallBoundary",
+      "area_m2": 0.04840494399387508
+    },
+    {
+      "name": "Q2D_span_source",
+      "type": "SymmetryBoundary",
+      "area_m2": 2399.8842115908765
+    },
+    {
+      "name": "Q2D_span_target",
+      "type": "SymmetryBoundary",
+      "area_m2": 2399.8842115908765
+    }
+  ],
+  "solver": {
+    "temporal_order": "SECOND_ORDER",
+    "main_dt_s": 0.001,
+    "main_inner": 10,
+    "guarded_startup_dt_s": 0.0005,
+    "guarded_startup_steps": 40,
+    "guarded_startup_inner": 50,
+    "pressure_AMG_relative_tolerance": 0.01,
+    "VOF_AMG_relative_tolerance": 0.1,
+    "max_linear_cycles": 30,
+    "absolute_epsilon": 0,
+    "speed_guard_m_s": 50
+  },
+  "flow": {
+    "U_m_s": 18,
+    "wind_m_s": 18,
+    "current_vector_m_s": [
+      18,
+      0,
+      0
+    ],
+    "wind_vector_m_s": [
+      18,
+      0,
+      0
+    ]
+  },
+  "boundary_profiles": {
+    "initial_pressure": "HydrostaticPressureWave0",
+    "outlet_pressure": "HydrostaticPressureWave0",
+    "forcing_wave": "Calm",
+    "initial_phase": "VolumeFractionHeavyFluidWave0",
+    "initial_velocity": "VelocityWave0",
+    "outlet_phase": "VolumeFractionHeavyFluidWave0"
+  },
+  "boundary_conditions": {
+    "inlet": "Velocity inlet, component profiles; currently Calm, planned FifthOrder wave generation",
+    "outlet": "Pressure outlet, flat hydrostatic pressure and phase; ENVIRONMENTAL backflow,BOUNDARY_NORMAL,SPECIFIED phase",
+    "top": "Pressure outlet, flat hydrostatic pressure and phase; STATIC,EXTRAPOLATED direction,SPECIFIED phase",
+    "bottom": "SLIP wall",
+    "foil": "NO_SLIP wall",
+    "span": "Symmetry on y=.01 and y=.03"
+  },
+  "zones": {
+    "inlet_forcing_x_m": [
+      -35,
+      -15
+    ],
+    "unforced_core_x_m": [
+      -15,
+      25
+    ],
+    "outlet_damping_x_m": [
+      25,
+      45
+    ],
+    "forcing_length_m": 20,
+    "damping_length_m": 20,
+    "current_target": "Calm",
+    "planned_target": "FifthOrderVofWave",
+    "only_inlet_forcing_and_outlet_damping_flags": true
+  },
+  "requested_wave": {
+    "case": "W01a",
+    "height_crest_to_trough_m": 0.5,
+    "wavelength_m": 20,
+    "domain_wavelengths": 4,
+    "model": "FifthOrderVofWave",
+    "startup": "Generate from upstream/inlet without global wave reinitialization. No force-settling wait per latestuser.",
+    "smooth_ramp": "Runtime audit inprogress; exactduration/expressionnotyetadmitted",
+    "actual_wave_active": false
+  },
+  "coefficients": {
+    "reference_dynamic_pressure_times_area_N": 3855.6,
+    "reference_area_m2": 0.0238,
+    "normalization": "Same20mm slice force normalization as priorcohort;CD=Fx/3855.6,CL=Fz/3855.6"
+  },
+  "gauges_x_m": [
+    -10,
+    -5,
+    2.5,
+    5,
+    10,
+    15,
+    20
+  ],
+  "quality": {
+    "cell_count": 317277,
+    "mesh_time_s": 0,
+    "NegativeVolumeCells": 0,
+    "UnclosedCells": 0,
+    "DegeneratedFeCells": 0,
+    "min_cell_quality": 0.07094186540769823,
+    "min_volume_change": 0.004255828981421002,
+    "min_face_validity": 1.0,
+    "max_skewness_angle_deg": 45.04069652540024,
+    "diagnostic_CellQuality_below_0.01": 0.0,
+    "diagnostic_VolumeChange_below_0.01": 2.0,
+    "diagnostic_SkewnessAngle_above_80.0": 0.0,
+    "centroid_y_min_m": 0.01999999999999999,
+    "centroid_y_max_m": 0.020000000000000014,
+    "centroid_y_range_m": 2.42861286636753e-17
+  },
+  "topology": {
+    "cells": 317277,
+    "cells_with_one_source_and_target_face": 317277,
+    "invalid_cells": [],
+    "single_layer_topology": true,
+    "node_y_min_m": 0.01,
+    "node_y_max_m": 0.03,
+    "source_nodes": 559195,
+    "paired_nodes": 559195,
+    "max_target_source_xz_displacement_m": 0.0,
+    "y_plane_error_m": 0.0,
+    "foil_edges": 856,
+    "foil_perimeter_m": 2.420247199693756,
+    "area_fraction_any_quad_layers": 0.9988296604199051,
+    "area_fraction_at_least_15_quad_layers": 0.987039181807564,
+    "layer_histogram": {
+      "48": 835,
+      "49": 9,
+      "3": 2,
+      "2": 2,
+      "1": 6,
+      "0": 2
+    },
+    "first_thickness_min_m": 1.5260233597707663e-06,
+    "first_thickness_max_m": 1.5307210708864613e-06,
+    "method": "CGNS connectivity: every volume cell must touch both span planes; prism coverage inferred by following consecutive quadrilateral cells normal to each foil edge, area weighted."
+  },
+  "comparison_policy": "Old M09/M08/M07 matched-window calm results remain valid for their own geometry/settings only. Do not mix new M10long-domain/currentBCs with the oldfamily as a mesh-convergence sequence. Keep domain/BCs/solver/timewindow/startup identical within a new sequence.",
+  "changes_from_original_M09": [
+    {
+      "item": "Horizontal domain",
+      "old": [
+        -11.9,
+        30.94
+      ],
+      "new": [
+        -35,
+        45
+      ],
+      "reason": "Original wave scope requires4 wavelengths forlambda20:80m. Remote inlet/outlet strips appended."
+    },
+    {
+      "item": "Vertical domain",
+      "old": [
+        -22,
+        8
+      ],
+      "new": [
+        -22,
+        8
+      ],
+      "reason": "UNCHANGED.24mwater+6mair withwaterlinez2; historical16m is superseded."
+    },
+    {
+      "item": "Mesh family/cells",
+      "old": "M09 short214908",
+      "new": "M10 FS020 short282379;80mextended317277",
+      "reason": "Refinedfree-surfacegridplusremoteextension; notanotheracceptedmemberofoldcalmcohort."
+    },
+    {
+      "item": "Nominal free-surface control [m]",
+      "old": 0.028571428571428574,
+      "new": 0.02,
+      "reason": "Wavefree-surfaceresolutioncandidate; requiresownwavegrid/timeaccuracychecks."
+    },
+    {
+      "item": "Foil/prism controls",
+      "old": "SameasexportedM09controls",
+      "new": "Preserved856foiledgesand48prism layers",
+      "reason": "Independentgeometryreviewpreservedfoil/prismstopology/coordinates."
+    },
+    {
+      "item": "Bed boundary",
+      "old": "Symmetry",
+      "new": "Slip wall",
+      "reason": "InstalledSiemensVOFwaveguidelines recommend slipwall/wavevelocity; fixeddepthretained."
+    },
+    {
+      "item": "Outlet backflow pressure",
+      "old": "Static in historical setup",
+      "new": "Environmental",
+      "reason": "Controlledwaveoutletstabilityrecovery; currentcalmandwavepairedconditionsmatch."
+    },
+    {
+      "item": "Pressure AMG relative tolerance",
+      "old": 0.1,
+      "new": 0.01,
+      "reason": "Currentexploratorywaveconfiguration; SO1ms10inner unchanged afterguardedstartup."
+    }
+  ]
+}

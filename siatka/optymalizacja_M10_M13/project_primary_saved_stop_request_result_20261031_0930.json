@@ -1,0 +1,12 @@
+{
+  "at": "2026-10-31T09:32:17.204348+01:00",
+  "event": "M12_gentle_saved_stop_requested",
+  "id": "11ba16ae504e43ddbf22b5ec5a5e30ba",
+  "endpoint_acknowledged": true,
+  "control_marker_owned": true,
+  "pause_id": "aecf7a38fa604e3a9ceaa18d7999de9a",
+  "local_status": "saving",
+  "message": "Save requested at completed physical step; not yet certified saved",
+  "solver_killed": false,
+  "raw_legacy_status_unchanged": true
+}

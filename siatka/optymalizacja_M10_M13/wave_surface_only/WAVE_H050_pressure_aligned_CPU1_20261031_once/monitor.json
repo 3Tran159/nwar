@@ -1,0 +1,11 @@
+{
+  "at": "2026-10-31T23:10:42.581607+01:00",
+  "phase": "nofoil_pressure_aligned_H050_single_pilot",
+  "status": "running",
+  "reason": null,
+  "pid": 31404,
+  "last_step": "18",
+  "time_s": "0.4180000000000003",
+  "elapsed_wall_s": 361.74831759999506,
+  "main_timing": []
+}

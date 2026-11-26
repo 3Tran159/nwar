@@ -1,0 +1,20 @@
+{
+  "at": "2026-10-31T16:10:17.840697+01:00",
+  "status": "completed_resource_measurement_not_wave_validation",
+  "source_preserved": true,
+  "source": "8e02d1713b1329471343aff2b9b2fe026ca8e470cbad9e14ecd2dfbf0236fb34",
+  "after_t_s": 5.6230000000002125,
+  "cpu1_s_per_step": 1.3603528608333335,
+  "prior_cpu2_s_per_step": 0.8418947283333333,
+  "cpu1_to_cpu2_time_ratio": 1.615822994314707,
+  "main_M11_slowdown_windows_pct": [
+    9.079752348681126,
+    10.690023841753394,
+    8.797555710840577
+  ],
+  "main_M11_slowdown_limit_pct": 15,
+  "main_M11_changed": false,
+  "original_hold_active": true,
+  "all_120_steps_finished": true,
+  "caution": "Resource pilot only; scientifically unvalidated no-foil case; no second solver."
+}

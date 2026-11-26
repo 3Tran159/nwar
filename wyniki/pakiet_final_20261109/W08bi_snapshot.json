@@ -1,0 +1,88 @@
+{
+  "case": "W08",
+  "display_id": "W08bi",
+  "id": "e57f1bc384744e84",
+  "time_s": 25.679999999993505,
+  "diagnostic_only": true,
+  "final": true,
+  "project_accepted": false,
+  "mean_window_s": [
+    17.139827773672188,
+    25.679999999993505
+  ],
+  "beat_period_s": 2.8467240754404384,
+  "beat_period_count": 3,
+  "components": [
+    {
+      "baseline": "W01",
+      "H_m": 0.5,
+      "lambda_m": 20.0,
+      "phase_deg": 0
+    },
+    {
+      "baseline": "W06",
+      "H_m": 1.0,
+      "lambda_m": 30.0,
+      "phase_deg": 0
+    }
+  ],
+  "reference_id": "C01_original",
+  "snapshot_sha256": "7f7299edca1be465b81e2be20c3a5d69bcdb53b85b0bfa167d90a35631c199cb",
+  "captured_at": "2026-11-06T16:02:52.425500+01:00",
+  "generated_at": "2026-11-09T22:05:43.896984+01:00",
+  "CL_wave": 0.31959138098864026,
+  "CD_wave": 0.005532232599393134,
+  "L_wave_N": 1232.2165285398014,
+  "D_wave_N": 21.330076010220168,
+  "delta_CL": 0.003931876037420123,
+  "delta_CD": -0.0014700843123173404,
+  "delta_L_N": 15.159741249877028,
+  "delta_D_N": -5.668057074570737,
+  "lift_change_pct": 1.2456067299566123,
+  "drag_change_pct": -20.994255627859594,
+  "quasi_steady": {
+    "cfd": {
+      "delta_L_N": 15.15974124987702,
+      "delta_D_N": -5.668057074570737
+    },
+    "nominal": {
+      "delta_L_N": -9.62980766964078,
+      "delta_D_N": -10.166972467072645,
+      "tilt_D_N": -10.30688246865089,
+      "polar_D_N": 0.139910001578244,
+      "residual_L_N": 24.7895489195178,
+      "residual_D_N": 4.498915392501908
+    },
+    "probe": {
+      "delta_L_N": -9.387433404563506,
+      "delta_D_N": -9.730523108400801,
+      "tilt_D_N": -9.864261049536566,
+      "polar_D_N": 0.1337379411357647,
+      "residual_L_N": 24.547174654440525,
+      "residual_D_N": 4.062466033830064
+    },
+    "mean_window_s": [
+      17.139827773672188,
+      25.679999999993505
+    ],
+    "U_m_s": 18.0,
+    "depth_m": 2.0,
+    "water_depth_m": 24.0,
+    "area_m2": 0.0238,
+    "chord_m": 1.19,
+    "alpha_trim_deg": -0.087830503258875,
+    "polar_calm_D_N": 26.34308124377039,
+    "measured_component_heights_m": [
+      0.4753840767255729,
+      0.9855068648961914
+    ],
+    "probe_fit_r2": 0.9924207336195546,
+    "polar_members": [
+      "polar_negative.txt",
+      "polar_positive.txt"
+    ],
+    "polar_archive_sha256": "a94ec30ecf544f267113626d20b5b3a6e7fe3ea27f458221ad59186c053c1f0f",
+    "run_id": "e57f1bc384744e84",
+    "fitted_to_CFD_forces": false
+  }
+}

@@ -1,0 +1,710 @@
+{
+  "case_count": 14,
+  "reference_x_m": 0.0,
+  "cycles_per_case": 4,
+  "cases": [
+    {
+      "case": "W01",
+      "display_id": "W01",
+      "run": "W01",
+      "H_m": 0.5,
+      "lambda_m": 20,
+      "color": "#0072B2",
+      "line_style": "-",
+      "alignment": {
+        "method": "measured_wave_propagation",
+        "calibration_upstream_x_m": -10.0,
+        "calibration_downstream_x_m": -6.0,
+        "propagation_speed_m_s": 23.639949344412425,
+        "measured_delay_s": 0.16920510030388225,
+        "calibration_window_s": [
+          9.309920530830306,
+          12.699200000009101
+        ],
+        "fits": [
+          {
+            "phase_rad": -1.64895556971385,
+            "fundamental_R2": 0.9979717240017442,
+            "amplitude_m": 0.24818085425201739
+          },
+          {
+            "phase_rad": -2.9036729924547915,
+            "fundamental_R2": 0.9980798193879467,
+            "amplitude_m": 0.24743156102077776
+          }
+        ],
+        "period_s": 0.8473198672946989,
+        "source_probe_x_m": -6.0,
+        "target_x_m": 0.0,
+        "time_shift_s": 0.2538076504558234,
+        "phase_shift_deg": 107.83501920688182,
+        "estimated": true,
+        "force_shift_s": 0.0,
+        "force_data_used_for_alignment": false,
+        "reconstruction": "Phase-preserving propagation extrapolation of the measured wave; no force fitting or amplitude rescaling.",
+        "assumption": "Measured propagation speed remains applicable between the source probe and target position; local wave distortion is not reconstructed."
+      },
+      "windows_s": [
+        [
+          9.118799047411875,
+          9.966038849586052
+        ],
+        [
+          9.966038849586052,
+          10.813453257460683
+        ],
+        [
+          10.813453257460683,
+          11.661000403909577
+        ],
+        [
+          11.661000403909577,
+          12.50807851659067
+        ]
+      ]
+    },
+    {
+      "case": "W02",
+      "display_id": "W02",
+      "run": "15328fc0079a4001",
+      "H_m": 0.25,
+      "lambda_m": 20,
+      "color": "#D55E00",
+      "line_style": [
+        0,
+        [
+          5,
+          2
+        ]
+      ],
+      "alignment": {
+        "method": "measured_wave_propagation",
+        "calibration_upstream_x_m": -6.0,
+        "calibration_downstream_x_m": -0.5,
+        "propagation_speed_m_s": 23.819564232402083,
+        "measured_delay_s": 0.23090262887841895,
+        "calibration_window_s": [
+          9.18195040137226,
+          12.571200000008831
+        ],
+        "fits": [
+          {
+            "phase_rad": 2.3842782069426254,
+            "fundamental_R2": 0.9985932767248524,
+            "amplitude_m": 0.12503940241710182
+          },
+          {
+            "phase_rad": 0.6720360566546645,
+            "fundamental_R2": 0.9989741160672072,
+            "amplitude_m": 0.12560627338677213
+          }
+        ],
+        "period_s": 0.8473123996591427,
+        "source_probe_x_m": -0.5,
+        "target_x_m": 0.0,
+        "time_shift_s": 0.02099114807985627,
+        "phase_shift_deg": 8.91856806508227,
+        "estimated": true,
+        "force_shift_s": 0.0,
+        "force_data_used_for_alignment": false,
+        "reconstruction": "Phase-preserving propagation extrapolation of the measured wave; no force fitting or amplitude rescaling.",
+        "assumption": "Measured propagation speed remains applicable between the source probe and target position; local wave distortion is not reconstructed.",
+        "partial_direct_history": true,
+        "direct_history_range_s": [
+          12.227200000008105,
+          12.571200000008831
+        ],
+        "note": "The x = 0 probe was added during a continuation. The full legacy probe history is translated consistently for this display; partial direct measurements are not spliced into it. Acceptance uses its original fixed probe."
+      },
+      "windows_s": [
+        [
+          9.120006688223791,
+          9.96706484615885
+        ],
+        [
+          9.96706484615885,
+          10.814257137606182
+        ],
+        [
+          10.814257137606182,
+          11.661462746523245
+        ],
+        [
+          11.661462746523245,
+          12.509256286860362
+        ]
+      ]
+    },
+    {
+      "case": "W03",
+      "display_id": "W03",
+      "run": "b752ad76fa01426c",
+      "H_m": 0.5,
+      "lambda_m": 30,
+      "color": "#009E73",
+      "line_style": [
+        0,
+        [
+          5,
+          1.5,
+          1,
+          1.5
+        ]
+      ],
+      "alignment": {
+        "method": "wavelength_period_estimate",
+        "propagation_speed_m_s": 24.85282210088918,
+        "note": "The x = 0 probe was added during a continuation. The full legacy probe history is translated consistently for this display; partial direct measurements are not spliced into it. Acceptance uses its original fixed probe.",
+        "source_probe_x_m": -0.5,
+        "target_x_m": 0.0,
+        "time_shift_s": 0.020118439586871345,
+        "phase_shift_deg": 5.999999999999999,
+        "estimated": true,
+        "force_shift_s": 0.0,
+        "force_data_used_for_alignment": false,
+        "reconstruction": "Phase-preserving propagation extrapolation of the measured wave; no force fitting or amplitude rescaling.",
+        "assumption": "Measured propagation speed remains applicable between the source probe and target position; local wave distortion is not reconstructed.",
+        "partial_direct_history": true,
+        "direct_history_range_s": [
+          14.444000000012784,
+          15.500000000015012
+        ]
+      },
+      "windows_s": [
+        [
+          10.570483403433501,
+          11.777818263775668
+        ],
+        [
+          11.777818263775668,
+          12.98519184579168
+        ],
+        [
+          12.98519184579168,
+          14.192258736338522
+        ],
+        [
+          14.192258736338522,
+          15.398908904282624
+        ]
+      ]
+    },
+    {
+      "case": "W04",
+      "display_id": "W04",
+      "run": "f27930fe5b8e4797",
+      "H_m": 1.5,
+      "lambda_m": 38.99857691441418,
+      "color": "#CC79A7",
+      "line_style": [
+        0,
+        [
+          1.2,
+          1.5
+        ]
+      ],
+      "alignment": {
+        "method": "direct_measurement",
+        "source_probe_x_m": 0.0,
+        "target_x_m": 0.0,
+        "time_shift_s": 0.0,
+        "phase_shift_deg": 0.0,
+        "estimated": false,
+        "force_shift_s": 0.0,
+        "force_data_used_for_alignment": false
+      },
+      "windows_s": [
+        [
+          13.228964179371323,
+          14.736699352918786
+        ],
+        [
+          14.736699352918786,
+          16.244770942097617
+        ],
+        [
+          16.244770942097617,
+          17.753428952179178
+        ],
+        [
+          17.753428952179178,
+          19.26151908173808
+        ]
+      ]
+    },
+    {
+      "case": "W04c",
+      "display_id": "W04c",
+      "run": "GLHF_W04c_2823f5c9c95244d3",
+      "H_m": 1.5,
+      "lambda_m": 20,
+      "color": "#8C564B",
+      "line_style": [
+        0,
+        [
+          4,
+          1
+        ]
+      ],
+      "alignment": {
+        "method": "direct_measurement",
+        "source_probe_x_m": 0.0,
+        "target_x_m": 0.0,
+        "time_shift_s": 0.0,
+        "phase_shift_deg": 0.0,
+        "estimated": false,
+        "force_shift_s": 0.0,
+        "force_data_used_for_alignment": false
+      },
+      "windows_s": [
+        [
+          11.615281498055795,
+          12.45842744604836
+        ],
+        [
+          12.45842744604836,
+          13.300982271400157
+        ],
+        [
+          13.300982271400157,
+          14.143248768893852
+        ],
+        [
+          14.143248768893852,
+          14.985909295192881
+        ]
+      ]
+    },
+    {
+      "case": "W04e",
+      "display_id": "W04e",
+      "run": "449524f35ca14e94",
+      "H_m": 1.5,
+      "lambda_m": 15,
+      "color": "#9467BD",
+      "line_style": [
+        0,
+        [
+          5,
+          1,
+          1,
+          1
+        ]
+      ],
+      "alignment": {
+        "method": "direct_measurement",
+        "source_probe_x_m": 0.0,
+        "target_x_m": 0.0,
+        "time_shift_s": 0.0,
+        "phase_shift_deg": 0.0,
+        "estimated": false,
+        "force_shift_s": 0.0,
+        "force_data_used_for_alignment": false
+      },
+      "windows_s": [
+        [
+          10.922688895549022,
+          11.572995159986787
+        ],
+        [
+          11.572995159986787,
+          12.223370263034282
+        ],
+        [
+          12.223370263034282,
+          12.872848275130961
+        ],
+        [
+          12.872848275130961,
+          13.523835665308761
+        ]
+      ]
+    },
+    {
+      "case": "W04f",
+      "display_id": "W04f",
+      "run": "e6c80520ab75475f",
+      "H_m": 1.5,
+      "lambda_m": 30.0,
+      "color": "#D62728",
+      "line_style": [
+        0,
+        [
+          3,
+          1,
+          1,
+          1
+        ]
+      ],
+      "alignment": {
+        "method": "direct_measurement",
+        "source_probe_x_m": 0.0,
+        "target_x_m": 0.0,
+        "time_shift_s": 0.0,
+        "phase_shift_deg": 0.0,
+        "estimated": false,
+        "force_shift_s": 0.0,
+        "force_data_used_for_alignment": false
+      },
+      "windows_s": [
+        [
+          12.96759791289449,
+          14.17153380622301
+        ],
+        [
+          14.17153380622301,
+          15.375136123493812
+        ],
+        [
+          15.375136123493812,
+          16.578709417040773
+        ],
+        [
+          16.578709417040773,
+          17.782214079890736
+        ]
+      ]
+    },
+    {
+      "case": "W04g",
+      "display_id": "W04g",
+      "run": "5b6233b816454423",
+      "H_m": 1.5,
+      "lambda_m": 25.0,
+      "color": "#17A0A0",
+      "line_style": [
+        0,
+        [
+          7,
+          1
+        ]
+      ],
+      "alignment": {
+        "method": "direct_measurement",
+        "source_probe_x_m": 0.0,
+        "target_x_m": 0.0,
+        "time_shift_s": 0.0,
+        "phase_shift_deg": 0.0,
+        "estimated": false,
+        "force_shift_s": 0.0,
+        "force_data_used_for_alignment": false
+      },
+      "windows_s": [
+        [
+          12.091409190457941,
+          13.118009448195215
+        ],
+        [
+          13.118009448195215,
+          14.144155601459264
+        ],
+        [
+          14.144155601459264,
+          15.17077531057371
+        ],
+        [
+          15.17077531057371,
+          16.196840459268753
+        ]
+      ]
+    },
+    {
+      "case": "W04h",
+      "display_id": "W04h",
+      "run": "ccf935c0343b46aa",
+      "H_m": 0.75,
+      "lambda_m": 15.0,
+      "color": "#BC8D22",
+      "line_style": [
+        0,
+        [
+          2,
+          1
+        ]
+      ],
+      "alignment": {
+        "method": "direct_measurement",
+        "source_probe_x_m": 0.0,
+        "target_x_m": 0.0,
+        "time_shift_s": 0.0,
+        "phase_shift_deg": 0.0,
+        "estimated": false,
+        "force_shift_s": 0.0,
+        "force_data_used_for_alignment": false
+      },
+      "windows_s": [
+        [
+          10.989004840500572,
+          11.64596132647964
+        ],
+        [
+          11.64596132647964,
+          12.300918077065889
+        ],
+        [
+          12.300918077065889,
+          12.956234929494315
+        ],
+        [
+          12.956234929494315,
+          13.610920717289176
+        ]
+      ]
+    },
+    {
+      "case": "W04i",
+      "display_id": "W04i",
+      "run": "GLHF_W04i_b41303a7f1ff49a1",
+      "H_m": 1.0,
+      "lambda_m": 15.0,
+      "color": "#7B4173",
+      "line_style": [
+        0,
+        [
+          6,
+          1,
+          2,
+          1
+        ]
+      ],
+      "alignment": {
+        "method": "direct_measurement",
+        "source_probe_x_m": 0.0,
+        "target_x_m": 0.0,
+        "time_shift_s": 0.0,
+        "phase_shift_deg": 0.0,
+        "estimated": false,
+        "force_shift_s": 0.0,
+        "force_data_used_for_alignment": false
+      },
+      "windows_s": [
+        [
+          10.970970133722082,
+          11.628085528497207
+        ],
+        [
+          11.628085528497207,
+          12.281081687314007
+        ],
+        [
+          12.281081687314007,
+          12.934897271690936
+        ],
+        [
+          12.934897271690936,
+          13.58867770594122
+        ]
+      ]
+    },
+    {
+      "case": "W04j",
+      "display_id": "W04j",
+      "run": "GLHF_W04j_247f1af9cf594fc6",
+      "H_m": 0.5,
+      "lambda_m": 15.0,
+      "color": "#4B6F38",
+      "line_style": [
+        0,
+        [
+          2,
+          1,
+          1,
+          1
+        ]
+      ],
+      "alignment": {
+        "method": "direct_measurement",
+        "source_probe_x_m": 0.0,
+        "target_x_m": 0.0,
+        "time_shift_s": 0.0,
+        "phase_shift_deg": 0.0,
+        "estimated": false,
+        "force_shift_s": 0.0,
+        "force_data_used_for_alignment": false
+      },
+      "windows_s": [
+        [
+          11.002683562423808,
+          11.659839549115993
+        ],
+        [
+          11.659839549115993,
+          12.3154404893222
+        ],
+        [
+          12.3154404893222,
+          12.971467534446846
+        ],
+        [
+          12.971467534446846,
+          13.627014935515575
+        ]
+      ]
+    },
+    {
+      "case": "W05",
+      "display_id": "W05",
+      "run": "GLHF_W05_2ddb611d46d5d518ee3a",
+      "H_m": 1.0,
+      "lambda_m": 20.0,
+      "color": "#E69F00",
+      "line_style": [
+        0,
+        [
+          7,
+          2,
+          2,
+          2
+        ]
+      ],
+      "alignment": {
+        "method": "direct_measurement",
+        "source_probe_x_m": 0.0,
+        "target_x_m": 0.0,
+        "time_shift_s": 0.0,
+        "phase_shift_deg": 0.0,
+        "estimated": false,
+        "force_shift_s": 0.0,
+        "force_data_used_for_alignment": false
+      },
+      "windows_s": [
+        [
+          11.646434366451468,
+          12.49290838808094
+        ],
+        [
+          12.49290838808094,
+          13.338226505071193
+        ],
+        [
+          13.338226505071193,
+          14.183670367070224
+        ],
+        [
+          14.183670367070224,
+          15.02839277913839
+        ]
+      ]
+    },
+    {
+      "case": "W06",
+      "display_id": "W06",
+      "run": "bab83be48d334af5",
+      "H_m": 1.0,
+      "lambda_m": 30.0,
+      "color": "#56B4E9",
+      "line_style": [
+        0,
+        [
+          3,
+          1.5
+        ]
+      ],
+      "alignment": {
+        "method": "direct_measurement",
+        "source_probe_x_m": 0.0,
+        "target_x_m": 0.0,
+        "time_shift_s": 0.0,
+        "phase_shift_deg": 0.0,
+        "estimated": false,
+        "force_shift_s": 0.0,
+        "force_data_used_for_alignment": false
+      },
+      "windows_s": [
+        [
+          12.984557814019196,
+          14.191134706443092
+        ],
+        [
+          14.191134706443092,
+          15.395926420504876
+        ],
+        [
+          15.395926420504876,
+          16.601909733337376
+        ],
+        [
+          16.601909733337376,
+          17.807491056025558
+        ]
+      ]
+    },
+    {
+      "case": "W07",
+      "display_id": "W07",
+      "run": "GLHF_W07_64cb3dde745454c2de6a",
+      "H_m": 1.0,
+      "lambda_m": 40.0,
+      "color": "#555555",
+      "line_style": [
+        0,
+        [
+          6,
+          1.5,
+          1,
+          1.5,
+          1,
+          1.5
+        ]
+      ],
+      "alignment": {
+        "method": "direct_measurement",
+        "source_probe_x_m": 0.0,
+        "target_x_m": 0.0,
+        "time_shift_s": 0.0,
+        "phase_shift_deg": 0.0,
+        "estimated": false,
+        "force_shift_s": 0.0,
+        "force_data_used_for_alignment": false
+      },
+      "windows_s": [
+        [
+          13.523119055527545,
+          15.066034404267084
+        ],
+        [
+          15.066034404267084,
+          16.609360601134913
+        ],
+        [
+          16.609360601134913,
+          18.15267596637618
+        ],
+        [
+          18.15267596637618,
+          19.69511157894946
+        ]
+      ]
+    }
+  ],
+  "excluded": [],
+  "phase_reference": "sin(phi), a dimensionless harmonic phase guide; not a shared measured wave height",
+  "force_units": "N",
+  "loop_wave_units": "m",
+  "force_normalization": "Fixed accepted C01 subtracted; wave-cycle mean offsets retained",
+  "force_reference": "C01",
+  "force_phase_shift_applied": false,
+  "files": {
+    "preview": "force_wave_comparison.png",
+    "png": "force_wave_comparison_600dpi.png",
+    "svg": "force_wave_comparison.svg",
+    "pdf": "force_wave_comparison.pdf",
+    "csv": "force_wave_comparison.csv",
+    "caption": "force_wave_comparison_caption.txt",
+    "evidence": "force_wave_comparison.json",
+    "interactive": "force_wave_comparison_interactive.html"
+  },
+  "C01": {
+    "name": "C01",
+    "reference_id": "C01_original",
+    "CL": 0.31565950495122014,
+    "CD": 0.007002316911710474,
+    "L_N": 1217.0567872899244,
+    "D_N": 26.998133084790904,
+    "coefficient_denominator_N": 3855.6,
+    "checkpoint_sha256": "9af4857b948e0494088b5421f8ede100e66344fc2631cc00030406640d7cc295",
+    "lift_convention": "hydrodynamic_lift_v1"
+  },
+  "caption": "Phase-averaged foil response relative to accepted C01 (W01, W02, W03, W04, W04c, W04e, W04f, W04g, W04h, W04i, W04j, W05, W06, W07). Panels (a,c) show vertical and horizontal force differences in fixed domain axes from C01 versus wave phase at x = 0; panels (b,d) show the corresponding force–surface-elevation loops. Each curve is the mean of the complete response cycles 2–5, excluding cycle 1, after subtracting the same fixed C01 force from every sample. Horizontal zero lines denote C01. Wave-cycle mean force offsets are retained. C01 buoyancy-corrected vertical force is 1217.0568 N and horizontal force is 26.9981 N. Force differences are in newtons; surface elevations are measured from each cycle mean in metres, with no amplitude normalization. Phase zero is the upward crossing of the wave reference level at x = 0. The grey dashed sin(phi) curves are dimensionless phase guides; they do not represent one physical wave height shared by all cases. Loop coordinates use each case’s wave signal. Circles and squares mark the measured-wave crest and trough; arrows indicate increasing time. Where the direct x = 0 history is incomplete, the wave signal is propagated from upstream probes. Travel time is calibrated from a probe pair where available and otherwise estimated from wavelength and period. Forces are not shifted or fitted to the wave. These results describe trends in the selected quasi-2D M13 configuration.",
+  "width_mm": 180.0
+}

@@ -1,0 +1,52 @@
+<!doctype html>
+<html lang="pl">
+<head><meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1">
+<title>NTNU CFD Visual Gallery | Hydrofoil</title>
+<style>
+:root{color-scheme:dark;--bg:#09111d;--surface:#132235;--border:#263a52;--text:#f0f6fd;--muted:#9fb0c8}
+*{box-sizing:border-box}body{margin:0;font-family:Segoe UI,Arial,sans-serif;background:radial-gradient(ellipse at 20% -10%,#15314b,transparent 50%),var(--bg);color:var(--text)}
+header{padding:32px max(25px,5vw) 20px;display:flex;justify-content:space-between;gap:12px;align-items:end}
+h1{font-size:clamp(26px,4vw,40px);letter-spacing:-1px;line-height:1.08;margin:6px 0}h2{font-size:21px;margin:4px 0 14px}
+p{margin:6px 0;color:var(--muted)}.tag{color:#7cd8e4;letter-spacing:1.8px;text-transform:uppercase;font-size:11px;font-weight:750}
+button,select{border:1px solid var(--border);background:#1d3147;color:var(--text);padding:11px 15px;border-radius:10px;font-size:14px;cursor:pointer}
+.controls{display:flex;align-items:center;gap:9px;flex-wrap:wrap;padding:0 max(25px,5vw) 20px}
+.note{background:var(--surface);border:1px solid var(--border);border-radius:12px;margin:0 max(25px,5vw) 24px;padding:16px 18px;font-size:13px;color:var(--muted)}
+section{padding:2px max(25px,5vw) 26px}section[hidden]{display:none}.grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(315px,1fr));gap:17px}
+figure{margin:0;background:var(--surface);border:1px solid var(--border);border-radius:12px;overflow:hidden}
+figure:hover{border-color:#4a84af}figure img{width:100%;height:auto;aspect-ratio:16/9;object-fit:contain;background:#0d1723;display:block}
+figure figcaption{display:flex;justify-content:space-between;padding:12px 14px;gap:10px;font-size:13px}figcaption small{font-size:11px;color:var(--muted)}
+.missing{display:flex;justify-content:center;align-items:center;aspect-ratio:16/9;color:#99a9bf;background:repeating-linear-gradient(-45deg,#102033,#102033 10px,#12253a 10px,#12253a 20px)}
+footer{padding:20px max(25px,5vw) 38px;color:var(--muted);font-size:12px}
+</style></head>
+<body>
+<header><div><div class="tag">NTNU • Marine Technology • STAR-CCM+ 2602</div><h1>Hydrofoil CFD gallery</h1><p>5 wizualizacji × 4 warianty siatki • 29.10.2026</p></div><div class="tag">5 mm vertical seeding</div></header>
+<div class="controls"><label for="case">Przypadek:</label><select id="case"><option value="all">Wszystkie</option><option>D001</option><option>D002</option><option>D003</option><option>D004</option></select><button onclick="location.reload()">Odśwież obrazy</button></div>
+<div class="note"><strong>Interpretacja:</strong> Obrazy pokazują wczesną fazę inicjalizacji CFD, nie ustalony opływ. Linie startują na x = −1,5 m, wzdłuż y = 0…5,5 m (60 punktów) i na 11 poziomach z = 0…0,05 m co 0,005 m. Kolorowanie prędkością nie oznacza trajektorii cząstek w przepływie nieustalonym.</div>
+<div id="container"></div>
+<footer>Wyniki i dane źródłowe: E:\\ntnu_cfd_night_20261028\\D001…D004. Obrazy i logi: ten folder.</footer>
+<script>
+const cases=['D001','D002','D003','D004'];
+const views=[
+ ['NTNU_5mm_Streamlines','Streamlines • Velocity magnitude','11 poziomów Z, 60 seedów na linii'],
+ ['NTNU_5mm_Vortices_Q','Vortices • Q-criterion','Izopowierzchnia Q, kolorowana prędkością'],
+ ['NTNU_5mm_Foil_Pressure','Pressure • Hydrofoil','Rozkład ciśnienia na powierzchni płata'],
+ ['NTNU_5mm_Water_Surface','Free surface • Elevation','VOF water = 0,5, kolorowanie wysokością Z'],
+ ['NTNU_5mm_Velocity_Section','Velocity • Section','Rozkład prędkości w przekroju']
+];
+const root=document.getElementById('container');
+for(const c of cases){
+ let sec=document.createElement('section');sec.dataset.case=c;
+ sec.innerHTML='<h2>'+c+'</h2>'; let grid=document.createElement('div');grid.className='grid';
+ for(const [id,title,subtitle] of views){
+  const path=c+'_'+id+'.png';let fig=document.createElement('figure');
+  let link=document.createElement('a');link.href=path;link.target='_blank';
+  let img=document.createElement('img');img.loading='lazy';img.src=path;img.alt=title+' '+c;
+  img.onerror=()=>{link.replaceWith(Object.assign(document.createElement('div'),{className:'missing',textContent:'Nie wyeksportowano obrazu'}));};
+  link.appendChild(img);fig.appendChild(link);
+  let cap=document.createElement('figcaption');cap.innerHTML='<strong>'+title+'</strong><small>'+subtitle+'</small>';
+  fig.appendChild(cap);grid.appendChild(fig);
+ }
+ sec.appendChild(grid);root.appendChild(sec);
+}
+document.getElementById('case').addEventListener('change',e=>{for(const s of root.querySelectorAll('section'))s.hidden=e.target.value!=='all'&&e.target.value!==s.dataset.case});
+</script></body></html>

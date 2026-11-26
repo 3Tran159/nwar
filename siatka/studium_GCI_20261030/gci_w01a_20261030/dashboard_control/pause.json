@@ -1,0 +1,9 @@
+{
+  "id": "aecf7a38fa604e3a9ceaa18d7999de9a",
+  "state": "pause_requested",
+  "requested_at": "2026-10-31T09:32:17.198725+01:00",
+  "directory": "C:\\Users\\ThinkPad\\Documents\\ChatGPT\\ntnu science\\mesh_study_20261030\\gci_w01a_20261030\\force_stabilization_20261029\\calm_settle_G10_F_GPU_live_r2_resume_20261030_173420_4854e1",
+  "job": "calm_settle_G10_F_GPU_live_r2_resume_20261030_173420_4854e1",
+  "controller_pid": 19040,
+  "star_pid": 1996
+}

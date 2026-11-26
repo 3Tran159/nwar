@@ -1,0 +1,10 @@
+{
+  "exit_code": 4294967295,
+  "source_unchanged": true,
+  "controller_reason": "wall_budget",
+  "completed": {},
+  "phase": "zero_step_M13_forcing_wave_R4V",
+  "at": "2026-11-01T10:45:41.347133+01:00",
+  "wall_s": 2792.651235199999,
+  "timing": []
+}

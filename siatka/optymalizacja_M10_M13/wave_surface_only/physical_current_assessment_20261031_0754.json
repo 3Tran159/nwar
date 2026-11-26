@@ -1,0 +1,18 @@
+﻿{
+    "at":  "2026-10-31T07:55:01.5483352+01:00",
+    "event":  "independent_nofoil_flat_calm_numeric_pass_but_invalid_physical_throughflow",
+    "source_folder":  "E:\\ntnu_mesh_optimization_20261030\\wave_surface_only\\WS_L20_H050_baseline_flatCalm_CPU2_20261031_074419_5622b5",
+    "solver_steps":  400,
+    "dt_s":  0.001,
+    "physical_time_s":  0.4,
+    "actual_max_velocity_m_s":  9.5814559085502068E-12,
+    "intended_current_m_s":  18,
+    "water_volume_m3":  38.399999999993952,
+    "wave_activated":  false,
+    "interface_cfl":  "unavailable_empty_threshold",
+    "source_unchanged":  true,
+    "M12_unchanged":  true,
+    "performance_pass":  true,
+    "physical_acceptance":  false,
+    "next":  "New independently guarded CPU2 flat calm candidate sets Current/Wind=18 and validates t0 velocity; no inlet-wave launch until verified calm."
+}

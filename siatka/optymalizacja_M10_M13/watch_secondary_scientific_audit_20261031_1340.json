@@ -1,0 +1,81 @@
+{
+  "timestamp": "2026-10-31T13:41:55.238765+01:00",
+  "M11": {
+    "t_last_s": 2.072199999999837,
+    "windows": [
+      [
+        1.6721999999998371,
+        1.872199999999837
+      ],
+      [
+        1.872199999999837,
+        2.072199999999837
+      ]
+    ],
+    "rows": [
+      1000,
+      1001
+    ],
+    "left": {
+      "CL": {
+        "mean": 0.3070377445021517,
+        "within_rms_pct": 0.10288598649985084
+      },
+      "CD": {
+        "mean": 0.0075741484349378775,
+        "within_rms_pct": 0.24598383162494156
+      },
+      "pressure_drag_N": {
+        "mean": 7.9664702230320055,
+        "within_rms_pct": 0.8605177825496442
+      },
+      "viscous_drag_N": {
+        "mean": 21.23641648271448,
+        "within_rms_pct": 0.015453126790810796
+      }
+    },
+    "right": {
+      "CL": {
+        "mean": 0.3080538032276668,
+        "within_rms_pct": 0.08876291984885619
+      },
+      "CD": {
+        "mean": 0.007515039857862781,
+        "within_rms_pct": 0.20859440632330514
+      },
+      "pressure_drag_N": {
+        "mean": 7.7485320189768006,
+        "within_rms_pct": 0.7474989806472064
+      },
+      "viscous_drag_N": {
+        "mean": 21.226455656998944,
+        "within_rms_pct": 0.011872517681833342
+      }
+    },
+    "mean_change_pct": {
+      "CL": 0.3298315797010829,
+      "CD": 0.7865371068292176
+    },
+    "project_primary_two_window_provisional_pass": false,
+    "component_diagnostic_pct_of_CD": {
+      "pressure": 0.7521597817137495,
+      "viscous": 0.03437732511545978,
+      "sum_abs": 0.7865371068292093,
+      "opposing_changes": false
+    },
+    "not_formal_two_consecutive_checks": true
+  },
+  "wave": {
+    "recent_measured_s_per_step": 0.866509858585859,
+    "planned_steps": 2200,
+    "remaining_steps": 1067,
+    "steps_completed": 1133,
+    "current_elapsed_wall_s": 974.9455350000001,
+    "macro_budget_wall_s": 1800,
+    "projected_total_wall_s_at_recent_rate": 1899.5115541111118,
+    "scientifically_accepted": false,
+    "height_column": "wave.getWaveHeight().getValue() = prescribed inlet-wave height, not probe-measured amplitude",
+    "residual_warning": "STAR normalized continuity residual ~1e10; reference may be nearly zero from flat-water initialization, so large normalized values alone do not establish divergence. Inspect absolute equations/inner convergence before quantitative claims.",
+    "actual_propagation": "Not yet demonstrated at x=0 by meaningful periodic probe amplitude; gauge time series needed."
+  }
+}

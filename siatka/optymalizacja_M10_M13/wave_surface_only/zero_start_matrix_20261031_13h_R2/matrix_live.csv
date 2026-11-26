@@ -1,0 +1,13 @@
+case,lambda_m,H_m,mesh,cells,status,steps,time_s,max_CFL,max_abs_eta_m
+L20_H500_coarse,20,0.5,coarse,41200,wall_budget,2107,2.506999999999835,0.10489319221528001,0.2598174581777464
+L20_H500_baseline,20,0.5,baseline,53200,not_started,0,,,
+L20_H500_fine,20,0.5,fine,77200,not_started,0,,,
+L30_H500_coarse,30,0.5,coarse,61800,not_started,0,,,
+L30_H500_baseline,30,0.5,baseline,79800,not_started,0,,,
+L30_H500_fine,30,0.5,fine,115800,not_started,0,,,
+L20_H250_coarse,20,0.25,coarse,41200,not_started,0,,,
+L20_H250_baseline,20,0.25,baseline,53200,not_started,0,,,
+L20_H250_fine,20,0.25,fine,77200,not_started,0,,,
+L20_H750_coarse,20,0.75,coarse,41200,not_started,0,,,
+L20_H750_baseline,20,0.75,baseline,53200,not_started,0,,,
+L20_H750_fine,20,0.75,fine,77200,not_started,0,,,

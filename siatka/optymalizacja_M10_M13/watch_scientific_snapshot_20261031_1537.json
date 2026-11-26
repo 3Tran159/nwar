@@ -1,0 +1,123 @@
+{
+  "at": "2026-10-31T15:40:21.955725+01:00",
+  "runbook_hash_ok": true,
+  "STOP_ALL": false,
+  "campaign_hold": true,
+  "ram_available_GiB": 37.7,
+  "C_free_GiB": 53.08,
+  "E_free_GiB": 219.42,
+  "gpu_query": [
+    "81, 54, 8634, 0x0000000000000004"
+  ],
+  "M11": {
+    "steps": 12550,
+    "t_s": 3.115199999999722,
+    "dt_s": 0.0002,
+    "CL_instant": 0.3124888757376304,
+    "CD_instant": 0.007273404578892704,
+    "alive": true,
+    "previous_window": {
+      "CL": {
+        "mean": 0.3115248041679654,
+        "rms_pct": 0.06552138927616971
+      },
+      "CD": {
+        "mean": 0.007323818328534762,
+        "rms_pct": 0.1459784748370996
+      }
+    },
+    "latest_window": {
+      "CL": {
+        "mean": 0.3121855705013057,
+        "rms_pct": 0.05724436166130071
+      },
+      "CD": {
+        "mean": 0.007289289503251442,
+        "rms_pct": 0.12836327377484294
+      }
+    },
+    "mean_shift_pct": {
+      "CL": 0.21210713384607338,
+      "CD": -0.4714593362971642
+    },
+    "component_delta_over_totalCD_pct": {
+      "pressure": 0.4632486055615346,
+      "viscous": 0.010443998743964006,
+      "sum_moduli": 0.4736926043054986,
+      "opposite_signs": false
+    },
+    "one_diagnostic_pair_pass": true,
+    "two_successive_formal_checks_verified": false
+  },
+  "M12": {
+    "saved_paused": true,
+    "last_t_s": 3.3314000000026542,
+    "CL_instant": 0.31105375680025343,
+    "CD_instant": 0.0072843331881356135
+  },
+  "R4": {
+    "owner_pid": 20864,
+    "owner_alive": true,
+    "star_pid": 15572,
+    "star_alive": true,
+    "owner_pid_match": true,
+    "dt_s": 0.001,
+    "source_t_s": 4.50699999999984,
+    "reinitialized": false,
+    "progress": {
+      "stage": "nofoil_upstream_inlet_wave_ramp",
+      "steps": 210,
+      "time_s": 4.71699999999991,
+      "max_speed_m_s": 18.560087106628433,
+      "max_CFL": 0.10710662681021782,
+      "interface_CFL": 0.10221752456108113,
+      "water_volume_m3": 38.41189280791108,
+      "max_abs_gauge_eta_m": 0.28447166684069813,
+      "wave_height_m": 0.5,
+      "expected_wave_height_m": 0.5,
+      "wave_period_s": 0.8472673206891129,
+      "wall_s": 185.4918773
+    },
+    "monitor": {
+      "at": "2026-10-31T15:40:20.590010+01:00",
+      "steps": 217,
+      "main_windows": [
+        {
+          "start": 12433,
+          "end": 12462,
+          "median_s": 1.4400147999986075,
+          "slowdown_pct": 11.547443041177363
+        },
+        {
+          "start": 12463,
+          "end": 12492,
+          "median_s": 1.4147155999999086,
+          "slowdown_pct": 9.587698550464507
+        },
+        {
+          "start": 12493,
+          "end": 12522,
+          "median_s": 1.4123429999999644,
+          "slowdown_pct": 9.403910534290283
+        }
+      ],
+      "baseline_M11_s_per_step": 1.2909437999999973,
+      "reason": null,
+      "elapsed_wall_s": 331.83,
+      "io_bytes": 179362513
+    },
+    "source_identity": {
+      "created": "2026-10-31T15:34:48.752664+01:00",
+      "phase": "waves",
+      "source": "E:\\ntnu_mesh_optimization_20261030\\wave_surface_only\\zero_start_matrix_R2_coarse_continuation_20261031_3\\waves\\L20_H500_coarse\\wave_pilot_final.sim",
+      "source_sha256": "fd1283e8c03c14b98ccc8f4976826aa8f7a468f76642aa4c6c6bae16723b4399",
+      "macro": "E:\\ntnu_mesh_optimization_20261030\\wave_surface_only\\zero_start_matrix_R2_coarse_continuation_20261031_4\\ContinueWaveOnlySavedR4.java",
+      "macro_sha256": "857f6db56bbe90f4e7083c7698d5d43fd2c2234ca914b25dbb521df21232d55e",
+      "cpu_workers": 2,
+      "gpu": false,
+      "original_untouched": true
+    },
+    "slowdown_exceeds_twice": false,
+    "not_wave_accepted": true
+  }
+}

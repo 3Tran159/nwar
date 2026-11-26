@@ -1,0 +1,15 @@
+{
+  "relative_force_differences": {
+    "CD": 0.0,
+    "CL_total": 0.0,
+    "pressure_drag_N": 0.0,
+    "viscous_drag_N": 0.0
+  },
+  "timing": {
+    "old_last_step_s": 5.6828964010000025,
+    "new_last_step_s": 5.303611799999999
+  },
+  "physics_unchanged_within_1e-7": true,
+  "steps": 3,
+  "gpu": false
+}

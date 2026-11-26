@@ -1,0 +1,10 @@
+{
+  "phase": "isolated_M13_gpu_foil_wave_pilot",
+  "source": "E:\\ntnu_mesh_optimization_20261030\\M13_farfield15_20261031\\M13_GPU_calm_dt0004\\final.sim",
+  "source_sha256": "9c4fa61e6696b8fd845ab62ef486647542ab3caf361b3c985411bcd49ace6fdf",
+  "macro_sha256": "616ae2931a04b0e2d0aa9c20449684d03c126da5d5683a6b462cda22d950eea8",
+  "workers": 1,
+  "cpu_workers": 1,
+  "gpu": true,
+  "created": "2026-10-31T23:29:58.041588+01:00"
+}

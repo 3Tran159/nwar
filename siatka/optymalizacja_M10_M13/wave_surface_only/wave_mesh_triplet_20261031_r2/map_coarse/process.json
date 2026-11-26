@@ -1,0 +1,7 @@
+{
+  "pid": 10656,
+  "controller_pid": 13472,
+  "started_at": "2026-10-31T11:25:47.402444+01:00",
+  "cpu_workers": 2,
+  "gpu": false
+}

@@ -1,0 +1,49 @@
+{
+  "at_local": "2026-11-01T01:37:03+01:00",
+  "scope": "read_only_hourly_M13_R3V_watch",
+  "device": "THINKPAD-LUCJAN",
+  "source": "E:\\ntnu_mesh_optimization_20261030\\M13_wave_direct_20261031\\M13_GPU_W20_H050_continuation_R3V_20261101",
+  "runbook_sha256_verified": true,
+  "process_identity": {
+    "controller_pid": 24364,
+    "frontend_pid": 34564,
+    "start_local": "2026-10-31T23:49:33+01:00",
+    "same_as_original_R3V": true
+  },
+  "real_progress": {
+    "previous_step_013607": 7214,
+    "step": 7273,
+    "t_s": 7.288399999999263,
+    "CL_hydrodynamic": 0.319204680265719,
+    "CD_total": 0.006081277912327039,
+    "bulk_CFL": 17.229541612467877,
+    "max_speed_m_s": 21.763630517055333,
+    "water_volume_m3": 38.41600019827958,
+    "alpha_min": 0,
+    "alpha_max": 1
+  },
+  "last_checkpoint": "checkpoint_t7.1792.sim",
+  "frame": {
+    "time_s": 7.231199999999269,
+    "interface_CFL": 0.8645776974042558,
+    "sha256_from_metadata": "6cc7410b501cd21a3aef1dc064854a63b9bed0a1b26dc78f80c483e2537d5783"
+  },
+  "science": {
+    "full_wave_propagation_validated": false,
+    "full_post_arrival_periods_confirmed": 0,
+    "calm_reference": "not_certified_in_this_watch",
+    "remark": "Conservative detector analysis starts after estimated ramp plus travel, at approximately t=7.054s, less than one further period in available trace; raw phase validation still pending."
+  },
+  "safety": {
+    "STOP_E": false,
+    "STOP_F": false,
+    "held_C01_W01_W08": true,
+    "free_C_GiB": 53.4483,
+    "free_E_GiB": 198.6041,
+    "free_GPU_MiB": 9467,
+    "GPU_util_pct": 49,
+    "extra_solver_starts": 0,
+    "solver_modified": false
+  },
+  "outcome": "Healthy steps and checkpoints; no intervention justified. Keep existing controller running and historical hold intact."
+}

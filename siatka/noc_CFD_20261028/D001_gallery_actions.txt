@@ -1,0 +1,14 @@
+Case=D001 source=E:\ntnu_cfd_night_20261028\D001\checkpoint.sim iter=400 t=2.0E-4
+StreamPart count=11, line interval=0.005m, horizontal resolution=60
+SCENE NTNU_5mm_Streamlines 1 tubes=0.002m 11 seed lines
+SCENE NTNU_5mm_Water_Surface 1 iso=Isosurface
+SCENE NTNU_5mm_Foil_Pressure 1
+SCENE NTNU_5mm_Vortices_Q 1 iso=NTNU_QCriterion_200
+SCENE NTNU_5mm_Velocity_Section 1
+SAVED E:\ntnu_cfd_night_20261028\D001\checkpoint_visualisation_5mm.sim size=11573963322
+PNG E:\ntnu_cfd_night_20261028\visualisations_20261029\D001_NTNU_5mm_Streamlines.png bytes=1064759
+PNG E:\ntnu_cfd_night_20261028\visualisations_20261029\D001_NTNU_5mm_Water_Surface.png bytes=119720
+PNG E:\ntnu_cfd_night_20261028\visualisations_20261029\D001_NTNU_5mm_Foil_Pressure.png bytes=64054
+PNG E:\ntnu_cfd_night_20261028\visualisations_20261029\D001_NTNU_5mm_Vortices_Q.png bytes=52536
+PNG E:\ntnu_cfd_night_20261028\visualisations_20261029\D001_NTNU_5mm_Velocity_Section.png bytes=44201
+DONE D001 scenes=5

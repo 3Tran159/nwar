@@ -1,0 +1,111 @@
+{
+  "version": "wave-surface-separate-screen-v1",
+  "created_at": "2026-10-30T21:55:14.042136+01:00",
+  "user_authorization": "Where resources permit, examine wave-only free-surface refinement without foil and later combine the wave refinement with the independently supported hydrofoil near-field mesh.",
+  "purpose": "Find minimally adequate resolution to transport incident waves, isolating free-surface discretization error from foil near-wall and prism-grid error.",
+  "wave_startup_reference": "plan.json wave_handoff.staged_wave_start applies to every propagation-only pilot: begin with stabilized flat water, then generate wave from upstream x_min, not entire-domain initial wave.",
+  "baseline": {
+    "foil": false,
+    "U_m_s": 18.0,
+    "depth_m": 24.0,
+    "waterline_z_m": 2.0,
+    "x_m": [
+      -35.0,
+      45.0
+    ],
+    "z_m": [
+      -22.0,
+      8.0
+    ],
+    "span_m": 0.02,
+    "lambda_m": 20.0,
+    "H_m": 0.5,
+    "x_resolution_m": 0.2,
+    "near_surface_z_band_m": [
+      1.25,
+      2.75
+    ],
+    "initial_wave_field": "flat",
+    "wave_fifth_order_for_propagation": true,
+    "preferred_wave_dt_s": 0.001,
+    "temporal_sensitivity_dt_s": 0.0005
+  },
+  "grid_candidates": [
+    {
+      "name": "FS_coarse",
+      "dz_at_free_surface_m": 0.05,
+      "cells_per_H_at_0.5m": 10,
+      "purpose": "Coarse reference"
+    },
+    {
+      "name": "FS_baseline",
+      "dz_at_free_surface_m": 0.025,
+      "cells_per_H_at_0.5m": 20,
+      "purpose": "Retained previously built 53.2k-cell no-foil geometry, subject to transport review"
+    },
+    {
+      "name": "FS_fine",
+      "dz_at_free_surface_m": 0.0125,
+      "cells_per_H_at_0.5m": 40,
+      "purpose": "Fine reference"
+    }
+  ],
+  "only_one_parameter_changes": "For the primary spatial comparison hold temporal step dt=0.001 s fixed along with model, forcing, domain and x-spacing, varying only free-surface dz. On the selected representative grid only, perform a separate matched temporal sensitivity 0.001 vs 0.0005 s; do not mix the tests in the same spatial-convergence comparison.",
+  "geometry_only_when_M12_busy": true,
+  "do_not_run_solver_concurrently_with_M12": false,
+  "do_not_touch_C_or_F_originals": true,
+  "all_new_outputs_under": "E:\\ntnu_mesh_optimization_20261030\\wave_surface_only",
+  "waves_hold": "User hold on original C01/waves remains. Do not begin wave propagation runs without verifying scope/authorization and no conflicting solver; geometry-only meshing is independent and does not lift hold.",
+  "prior_failure_note": "Earlier 53.2k-cell wave-no-foil run stopped near t=0.704s on stability guard with downstream boundary backflow; exclude such failed runs from wave propagation accuracy claims. Diagnose before deciding any full propagation run.",
+  "validation_gates": [
+    "CGNS geometry, 1 span cell, section area/volume, ordered spacing, no negative volume/invalid faces",
+    "Boundary topology and consistent inlet/outlet, flat initial water before wave phase",
+    "Free-surface wave height/period/phase progression and transmission to the foil station",
+    "Finite CFL/VOF, realistic reflection/damping, credible mass/volume conservation, no unexplained growing disturbances",
+    "Compare equal physical time windows and gauge phases; measured runtime and cell count per candidate"
+  ],
+  "integration": "After enough evidence, retain accepted vertical near-surface resolution and combine with accepted foil/prism/nearfield mesh, using independent audit of prism coverage/topology/free-surface transition and final short joined-grid CFD sanity check. Neither separate part proves full coupled mesh independence.",
+  "priority": "Do not delay main mesh selection or launch of first meaningful wave cases for a costly full three-level wave GCI; use spare resources for lightweight evidence and be honest about uncertainty.",
+  "execution_status": "geometry_independent_audit_pass_no_solver_started",
+  "updated_at": "2026-10-31T06:45:41.749362+01:00",
+  "timestep_priority": {
+    "user_priority": "Aim for dt=0.001 s in practical W01/W02 and other foil-in-wave runs; dt=0.0001 s M12 is a conservative calm-water mesh-screen setting and must not become a default production wave timestep.",
+    "wave_production_target_dt_s": 0.001,
+    "wave_temporal_check_dt_s": 0.0005,
+    "fine_diagnostic_only_dt_s": 0.0001,
+    "selection_rule": "Choose the least expensive (mesh,dt,VOF substepping,inner convergence) combination with stable finite free-surface transport and sufficiently insensitive wave probes/force results. Neither grid size nor the earlier calm-water dt alone proves a viable 1 ms foil simulation.",
+    "test_sequence": [
+      "Use a common 1 ms physical step, same time order, 10 inner iterations and identical inlet/initial forcing, boundary/sponge conditions and probes across wave-only surface-mesh candidates. BEGIN with stabilized calm water, THEN inject wave upstream and allow propagation; never start with a domain filled by a wave.",
+      "Repeat a short matched segment at 0.5 ms on a chosen candidate, using identical physical windows and compare gauge amplitude, phase, reflection, and where available force response. Probe half-step only if its cost is justified and bounded.",
+      "If 1 ms triggers a guard, identify the local cause: advection/interface CFL, local foil cell size, pressure/VOF solver convergence, backflow near outlet or numerical startup. Do not assume refinement fixes a CFL failure; it can worsen time-step constraints.",
+      "When preparing joined foil+wave mesh, preserve supported near-foil/prism and wave surface resolutions, check transition and validity, then perform short calm-to-wave pilot at 1 ms with full guards. If 1 ms cannot pass, prefer an evidence-supported 0.5 ms rather than relaxing safety or corrupting scientific agreement.",
+      "0.1 ms is optional targeted diagnostic or independently supported fallback, not the default for all long waves."
+    ],
+    "prior_evidence": {
+      "calm_M12_dt_s": 0.0001,
+      "historic_W01_with_foil_dt_s": 0.001,
+      "historic_W01_problem": "Earlier foil-wave continuation at dt=1 ms had interface CFL around 4.58 and later numerical air jet; no-foil 1 ms run encountered outlet backflow and 50 m/s guard at t=0.704 s. Neither is evidence that simply refining a surface mesh makes 1 ms stable.",
+      "initial_wave_period_s_approx": 0.847,
+      "physical_steps_per_period_at_1ms_approx": 847
+    },
+    "research_limitations": "1 ms temporal accuracy and robust VOF/force convergence remain hypotheses to test; do not claim validated until short matched check passes.",
+    "resource_safety": "Bounded separate CPU trial may coexist with M12 only after measured slowdown pilot passes; target waves dt=0.001 s, calm first, then inlet wave. Do not use second GPU or touch old held C01/foil-wave.",
+    "changes_to_active_solver": false
+  },
+  "geometry_manifest": "E:\\ntnu_mesh_optimization_20261030\\wave_surface_only\\geometry_manifest.json",
+  "geometry_validation": {
+    "topology_geometry_pass": true,
+    "audit_file": "E:\\ntnu_mesh_optimization_20261030\\wave_surface_only\\independent_geometry_audit.json",
+    "baseline_hdf5_datasets_identical_to_reference": true,
+    "baseline_binary_SHA_different_not_dataset_content": true,
+    "reference_equivalence_file": "E:\\ntnu_mesh_optimization_20261030\\wave_surface_only\\baseline_dataset_equivalence.json",
+    "validated_scope": "CGNS face connectivity, BC identifiers, numerical node positions, free-surface band, nonnegative analytic cell volume and one span layer; no STAR-CCM+ mesh importer acceptance or wave propagation tested",
+    "case_cells": {
+      "FS_coarse": 41200,
+      "FS_baseline": 53200,
+      "FS_fine": 77200
+    },
+    "next": "No solver while M12/M11/M10 active. After resources and hold check, ensure no-foil calm checkpoint then inlet wave propagation at 0.001 s, plus bounded temporal 0.0005 s comparison; do not assume 1 ms physical accuracy or full wave GCI."
+  },
+  "parallel_policy_reference": "parent plan.json parallel_execution; maximum one CPU auxiliary with M12 protection"
+}

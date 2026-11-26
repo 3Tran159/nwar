@@ -1,0 +1,88 @@
+{
+  "at": "2026-10-31T13:52:09.079842+01:00",
+  "source_M11": "E:\\ntnu_mesh_optimization_20261030\\M11_G10_M_GPU_queue_20261031_105607_91db08\\history.csv",
+  "source_M12": "C:\\Users\\ThinkPad\\Documents\\ChatGPT\\ntnu science\\mesh_study_20261030\\gci_w01a_20261030\\force_stabilization_20261029\\calm_settle_G10_F_GPU_live_r2_resume_20261030_173420_4854e1\\history.csv",
+  "last_M11_time_s": 2.1577999999998276,
+  "last_M12_time_s": 3.3314000000026542,
+  "M11_last_instant": {
+    "CL": 0.30888795691478094,
+    "CD": 0.00746770243239973,
+    "step": 7763.0
+  },
+  "M12_last_instant": {
+    "CL": 0.31105375680025343,
+    "CD": 0.0072843331881356135,
+    "step": 24414.0
+  },
+  "instant_diff_M11_minus_M12_pct": {
+    "CL": -0.6962783242844051,
+    "CD": 2.5173099517575626
+  },
+  "M11_prev_0p2s": {
+    "n": 1001,
+    "first_s": 1.7577999999998715,
+    "last_s": 1.9577999999998494,
+    "CL": 0.30749117732751474,
+    "CD": 0.007547561425464603,
+    "pressure_drag_N": 7.868555913102426,
+    "viscous_drag_N": 21.231821918918904,
+    "CL_RMS_pct": 0.09608223064247445,
+    "CD_RMS_pct": 0.22810476779743002
+  },
+  "M11_last_0p2s": {
+    "n": 1001,
+    "first_s": 1.9577999999998494,
+    "last_s": 2.1577999999998276,
+    "CL": 0.3084481364104251,
+    "CD": 0.007492552442041543,
+    "pressure_drag_N": 7.6654023232374575,
+    "viscous_drag_N": 21.222882872297916,
+    "CL_RMS_pct": 0.08402958714688134,
+    "CD_RMS_pct": 0.19620498024043032
+  },
+  "M12_last_0p2s": {
+    "n": 2001,
+    "first_s": 3.131400000002232,
+    "last_s": 3.3314000000026542,
+    "CL": 0.3107853733233243,
+    "CD": 0.007298305265058546,
+    "pressure_drag_N": 6.653979413292984,
+    "viscous_drag_N": 21.48536636666675,
+    "CL_RMS_pct": 0.0508947447183978,
+    "CD_RMS_pct": 0.11305158311950488
+  },
+  "M12_matched_M11_time_0p2s": {
+    "n": 2001,
+    "first_s": 1.9577999999998494,
+    "last_s": 2.1578000000001776,
+    "CL": 0.3065418099548683,
+    "CD": 0.007527299826272645,
+    "pressure_drag_N": 7.511674950249554,
+    "viscous_drag_N": 21.510582259927258,
+    "CL_RMS_pct": 0.0823413555910038,
+    "CD_RMS_pct": 0.19102925896099912
+  },
+  "M11_recent_vs_M12_settled_last_0p2s_pct": {
+    "CL": -0.75204212087151,
+    "CD": 2.661538123281537
+  },
+  "M11_vs_M12_same_physical_window_0p2s_pct": {
+    "CL": 0.6218813857194583,
+    "CD": -0.46161817694339025
+  },
+  "M11_settling_0p2s": {
+    "CL_mean_shift_pct": 0.3112151350902259,
+    "CD_mean_shift_pct": -0.7288312121245699,
+    "prev_CL_RMS_pct": 0.09608223064247445,
+    "recent_CL_RMS_pct": 0.08402958714688134,
+    "prev_CD_RMS_pct": 0.22810476779743002,
+    "recent_CD_RMS_pct": 0.19620498024043032,
+    "abs_pressure_delta_over_total_CD_pct": 0.7032386605500758,
+    "abs_viscous_delta_over_total_CD_pct": 0.030943500316762587,
+    "sum_abs_components_over_CD_pct": 0.7341821608668384,
+    "opposing_signs": false
+  },
+  "M11_step_dt_s": 0.00019999999999997797,
+  "M12_step_dt_s": 0.00010000000000021103,
+  "limitations": "M11 still evolving; different dt and unequal history. Comparisons are diagnostic not formal cross-mesh agreement or GCI. CL already hydro corrected in CSV."
+}

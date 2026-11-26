@@ -1,0 +1,11 @@
+{
+  "created": "2026-10-31T13:23:21.623135+01:00",
+  "phase": "waves",
+  "source": "E:\\ntnu_mesh_optimization_20261030\\wave_surface_only\\zero_start_matrix_20261031_13h_R2\\calm\\L20_coarse\\calm_pilot_final.sim",
+  "source_sha256": "3ea77ee64a338c2ee16fa29620976eb6b203e520e7fe88657f62885186c0f85b",
+  "macro": "E:\\ntnu_mesh_optimization_20261030\\wave_surface_only\\WaveFromOwnCalm_20261031.java",
+  "macro_sha256": "537898ca5080ba19ba52cfa7bb570f69cff1a97c17caa2540e8b46a1f91de0ac",
+  "cpu_workers": 2,
+  "gpu": false,
+  "original_untouched": true
+}

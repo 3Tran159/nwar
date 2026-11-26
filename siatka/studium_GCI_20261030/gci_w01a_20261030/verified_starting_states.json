@@ -1,0 +1,19 @@
+{
+  "source_checkpoint_time_s": 0.5870000000000004,
+  "sources": {
+    "W01a": "E:\\ntnu\\quasi2d_waves_20261029\\W01a_W20L4_M10_calm_start_r1\\final.sim",
+    "G10_M": "C:\\Users\\ThinkPad\\Documents\\ChatGPT\\ntnu science\\mesh_study_20261030\\gci_w01a_20261030\\mapped_G10_M\\mapped.sim",
+    "G10_F": "C:\\Users\\ThinkPad\\Documents\\ChatGPT\\ntnu science\\mesh_study_20261030\\gci_w01a_20261030\\mapped_G10_F\\mapped.sim"
+  },
+  "mesh_cells": {
+    "W01a": 317277,
+    "G10_M": 595285,
+    "G10_F": 1154199
+  },
+  "domain_x_m": [
+    -35,
+    45
+  ],
+  "original_checkpoint_unchanged": true,
+  "status": "calm_geometry_and_mapping_verified"
+}

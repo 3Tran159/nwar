@@ -1,0 +1,5 @@
+{
+  "at": "2026-10-31T15:51:33.148374+01:00",
+  "error_type": "RuntimeError",
+  "reason": "Safe auxiliary stop: M11_slowdown_two_windows_over_15pct"
+}

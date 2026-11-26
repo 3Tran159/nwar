@@ -1,0 +1,120 @@
+{
+  "at": "2026-11-01T07:32:07.268114+01:00",
+  "type": "read_only_completed_M13_wave_review",
+  "source": "E:\\ntnu_mesh_optimization_20261030\\M13_wave_direct_20261031\\M13_GPU_W20_H050_continuation_R4V_20261101",
+  "source_final_sim_bytes": 544280864,
+  "source_final_sim_sha256": "64a8be30fc7fe53aabafd8e5b3ec6cb88b7cae57b4199c8396047a722edf4672",
+  "receipt": {
+    "exit_code": 0,
+    "source_unchanged": true,
+    "controller_reason": null,
+    "completed": {
+      "status": "target_reached",
+      "steps": 12000,
+      "propagation_validated": false,
+      "time_s": 13.979200000011803,
+      "periodic_forces_validated": false,
+      "global_initialization": false
+    },
+    "phase": "M13_foil_wave_R4_continuation",
+    "at": "2026-11-01T06:34:18.991421+01:00",
+    "wall_s": 10639.039637199996,
+    "timing": []
+  },
+  "last": {
+    "time": 13.979200000011803,
+    "CL": 0.28918643628179647,
+    "CD": 0.007479212614924199,
+    "CFL": 17.328046106296984,
+    "water": 38.41726867899542,
+    "step": 12000.0,
+    "inlet_H": 0.5
+  },
+  "phase_cycles_count": 7,
+  "phase_cycles_method": "Consecutive upward crossings of one upstream surface gauge; forces are not phase-fitted.",
+  "cycle_status": "four_cycles_available_diagnostic_only",
+  "analysis_not_before_s": 7.054375334575275,
+  "last_four_complete_periods": [
+    {
+      "number": 4,
+      "start": 9.928564996364855,
+      "end": 10.775359586726514,
+      "T": 0.8467945903616592,
+      "CL_mean": 0.3181358888865043,
+      "CD_mean": 0.006667234419631801,
+      "CL_ptp": 0.1030165860430175,
+      "CD_ptp": 0.004665274618062671,
+      "CL_mean_delta": null,
+      "CD_mean_delta": null,
+      "CL_cycle_RMS_abs": null,
+      "CD_cycle_RMS_abs": null
+    },
+    {
+      "number": 5,
+      "start": 10.775359586726514,
+      "end": 11.622565545305918,
+      "T": 0.8472059585794032,
+      "CL_mean": 0.3181970287453511,
+      "CD_mean": 0.0066639269028410915,
+      "CL_ptp": 0.10300801444437685,
+      "CD_ptp": 0.004658143447252631,
+      "CL_mean_delta": 6.113985884681483e-05,
+      "CD_mean_delta": -3.307516790709321e-06,
+      "CL_cycle_RMS_abs": 9.449415586748356e-05,
+      "CD_cycle_RMS_abs": 5.03836953490768e-06
+    },
+    {
+      "number": 6,
+      "start": 11.622565545305918,
+      "end": 12.469949230198692,
+      "T": 0.8473836848927743,
+      "CL_mean": 0.31823377195852415,
+      "CD_mean": 0.006661995855611545,
+      "CL_ptp": 0.10301725205075102,
+      "CD_ptp": 0.004659655347773183,
+      "CL_mean_delta": 3.674321317304052e-05,
+      "CD_mean_delta": -1.9310472295468173e-06,
+      "CL_cycle_RMS_abs": 5.0646253028134445e-05,
+      "CD_cycle_RMS_abs": 2.8021725694864057e-06
+    },
+    {
+      "number": 7,
+      "start": 12.469949230198692,
+      "end": 13.31733761495712,
+      "T": 0.8473883847584283,
+      "CL_mean": 0.31827285127731064,
+      "CD_mean": 0.006659445616554258,
+      "CL_ptp": 0.1030156618315019,
+      "CD_ptp": 0.00466071250058217,
+      "CL_mean_delta": 3.907931878649462e-05,
+      "CD_mean_delta": -2.550239057286588e-06,
+      "CL_cycle_RMS_abs": 3.9060269008104355e-05,
+      "CD_cycle_RMS_abs": 2.370174777984114e-06
+    }
+  ],
+  "lineage": [
+    "M13_GPU_W20_H050_pilot_20261031_r2",
+    "M13_GPU_W20_H050_continuation_R3V_20261101",
+    "M13_GPU_W20_H050_continuation_R4V_20261101"
+  ],
+  "frame": {
+    "time_s": 13.939200000011718,
+    "sha256": "bba5d2a69c43f016832a21f8d95949b785f9f34a6c77b303589acc7d9e200529",
+    "interface_CFL": 1.9006252422345349,
+    "verified_bytes": true
+  },
+  "calm_reference": {
+    "CL": 0.31435149741930424,
+    "CD": 0.007071965956387301,
+    "window": [
+      3.6991999999996357,
+      3.899199999999636
+    ],
+    "source": "M13 calm last 0.2 s; separate saved source, same dt"
+  },
+  "wave_arrival_physically_confirmed": false,
+  "periodic_forces_validated": false,
+  "20_cycles_verified": false,
+  "new_solver_started": false,
+  "interpretation": "Estimated arrival/ramp and gauge threshold define diagnostic periods, not formal propagation/periodic validation."
+}

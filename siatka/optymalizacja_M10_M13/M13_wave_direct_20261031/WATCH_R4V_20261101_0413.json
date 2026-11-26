@@ -1,0 +1,84 @@
+{
+  "at": "2026-11-01T04:13:41.362112+01:00",
+  "kind": "read_only_hourly_M13_R4V_health_and_cycles",
+  "source_chain": [
+    "M13_GPU_W20_H050_pilot_20261031_r2",
+    "M13_GPU_W20_H050_continuation_R3V_20261101",
+    "M13_GPU_W20_H050_continuation_R4V_20261101"
+  ],
+  "case": "E:\\ntnu_mesh_optimization_20261030\\M13_wave_direct_20261031\\M13_GPU_W20_H050_continuation_R4V_20261101",
+  "solver_pid": 34072,
+  "controller_pid": 4080,
+  "last_step": 2345.0,
+  "physical_time_s": 10.117200000003653,
+  "CL_hydro": 0.36128269903673055,
+  "CD_total": 0.005189827337568606,
+  "metrics": {
+    "max_speed_m_s": 22.514871047610093,
+    "alpha_min": 0.0,
+    "alpha_max": 1.0,
+    "p_min_Pa": -70059.33047030427,
+    "p_max_Pa": 236967.33609981093,
+    "water_volume_m3": 38.40402443183784,
+    "max_CFL": 17.41622549083935
+  },
+  "volume_change_pct": -0.0032512639238194,
+  "cycles": {
+    "full_detected": 3,
+    "minimum_for_overlay": 4,
+    "minimum_for_repeatability": 20,
+    "phase_gauge_x_m": -0.5,
+    "status": "awaiting_four_full_cycles",
+    "not_before_s": 7.054375334575275,
+    "overlays": [
+      {
+        "number": 1,
+        "start": 7.379723305905535,
+        "end": 8.228216816870871,
+        "T": 0.8484935109653362,
+        "CL_mean": 0.31843934209212493,
+        "CD_mean": 0.006646521194501812,
+        "CL_ptp": 0.10362492034624499,
+        "CD_ptp": 0.004718586637429549,
+        "CL_cycle_RMS_abs": null,
+        "CD_cycle_RMS_abs": null
+      },
+      {
+        "number": 2,
+        "start": 8.228216816870871,
+        "end": 9.07466422401014,
+        "T": 0.8464474071392694,
+        "CL_mean": 0.3179882138708855,
+        "CD_mean": 0.006675283880567915,
+        "CL_ptp": 0.103033230975841,
+        "CD_ptp": 0.004653017681773463,
+        "CL_cycle_RMS_abs": 0.0005290182177823394,
+        "CD_cycle_RMS_abs": 3.8610833894497614e-05
+      },
+      {
+        "number": 3,
+        "start": 9.07466422401014,
+        "end": 9.921648288517337,
+        "T": 0.8469840645071969,
+        "CL_mean": 0.31809556643711584,
+        "CD_mean": 0.006669450462262397,
+        "CL_ptp": 0.10300748848856667,
+        "CD_ptp": 0.004654410858271755,
+        "CL_cycle_RMS_abs": 0.0001691956685964879,
+        "CD_cycle_RMS_abs": 9.030838059172672e-06
+      }
+    ]
+  },
+  "native_frame": {
+    "time_s": 10.075200000003564,
+    "sha_matches": true,
+    "interface_CFL": 1.7930066121422386,
+    "generated_at": "2026-11-01T04:12:10.198833400+01:00"
+  },
+  "live_history_records": 2347,
+  "wave_propagation_validated": false,
+  "periodic_force_accepted": false,
+  "original_source_untouched": true,
+  "simulation_changes_by_watch": false,
+  "meaning": "Only three actual post-ramp measured cycles: promising repeatability but insufficient for 4-overlay and 20-cycle acceptance. Interface CFL at last frame transiently >1; monitor, do not stop a healthy solver."
+}

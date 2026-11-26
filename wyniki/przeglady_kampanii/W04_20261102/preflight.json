@@ -1,0 +1,9 @@
+{
+  "at": "2026-11-02T10:43:25.800358+01:00",
+  "source": "E:\\ntnu_mesh_optimization_20261030\\clean_c01_campaign_20261101\\C01_warm_M13_steady_rho1000_air1p2_20261101\\final.sim",
+  "source_sha256": "9af4857b948e0494088b5421f8ede100e66344fc2631cc00030406640d7cc295",
+  "macro_sha256": "931ce10354fa5bd074f919a909b6f374b519b9b91db1d9f7f38874894c3b5bcc",
+  "steps": 0,
+  "CPU_workers": 1,
+  "GPU": 0
+}

@@ -1,0 +1,66 @@
+{
+  "authorized": true,
+  "at": "2026-11-05T10:13:49.653165+01:00",
+  "authority": "User replaced W08bi with W01 plus W06, with fresh start from accepted PRE.",
+  "components": [
+    {
+      "baseline": "W01",
+      "H_m": 0.5,
+      "lambda_m": 20.0,
+      "phase_deg": 0
+    },
+    {
+      "baseline": "W06",
+      "H_m": 1.0,
+      "lambda_m": 30.0,
+      "phase_deg": 0
+    }
+  ],
+  "night_deadline": "2026-11-04T08:00:00+01:00",
+  "diagnostic_only": true,
+  "compiled": true,
+  "theory": "Native first-order superposition; explicit model-order difference from fifth-order regular baselines",
+  "stop_definition": "Five planned beat-envelope windows after startup and slow-component transit; first excluded from diagnostic summaries; no regular five-cycle acceptance",
+  "versions": [
+    {
+      "build": "21.02.007",
+      "passed": true,
+      "messages": "Note: C:\\Users\\ThinkPad\\Documents\\ChatGPT\\ntnu science\\nwar_automation\\NwarBichromatic.java uses or overrides a deprecated API.\nNote: Recompile with -Xlint:deprecation for details.\n"
+    },
+    {
+      "build": "21.04.009",
+      "passed": true,
+      "messages": "Note: C:\\Users\\ThinkPad\\Documents\\ChatGPT\\ntnu science\\nwar_automation\\NwarBichromatic.java uses or overrides a deprecated API.\nNote: Recompile with -Xlint:deprecation for details.\n"
+    }
+  ],
+  "native_tested": false,
+  "macro_sha256": "47cfda21a5ed97fc6ce01dd1b23f37827358220704b311b7f1e21ecd5e6b3f19",
+  "nominal_duration_s": 19.87980735634307,
+  "supersedes_job": "aae86f081c854470",
+  "surface_elevation_limit_m": null,
+  "surface_limit_updated_at": "2026-11-05T16:49:37.652672+01:00",
+  "compiled_at": "2026-11-08T20:21:01.618343+01:00",
+  "wake_history": {
+    "enabled": true,
+    "compiled": [
+      {
+        "build": "21.02.007",
+        "passed": true
+      },
+      {
+        "build": "21.04.009",
+        "passed": true
+      }
+    ],
+    "native_recording_verified": true,
+    "description": "Compressed wake.simh on a clipped midspan section after startup and propagation.",
+    "native_qa": "E:\\ntnu_mesh_optimization_20261030\\nwar_automation_20261102\\wake_history_native_qa_20261106\\cpu_snapshot\\wake_native_test.txt"
+  },
+  "surface_magnitude_limit_enabled": false,
+  "surface_rule_verification": "E:\\ntnu_mesh_optimization_20261030\\nwar_automation_20261102\\qa\\thinkpad_surface_rule_20261107\\compile.json",
+  "custom_wavelength_range_m": [
+    15,
+    40
+  ],
+  "custom_range_verification": "C:\\Users\\ThinkPad\\Documents\\ChatGPT\\ntnu science\\nwar_automation\\qa\\custom_15m_20261108\\compile.json"
+}

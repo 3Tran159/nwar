@@ -1,0 +1,32 @@
+{
+  "at": "2026-10-31T23:29:57.007176+01:00",
+  "project": "M13 calm->upstream inlet wave H0.5 lambda20",
+  "candidate_cells": 309441,
+  "source": "E:\\ntnu_mesh_optimization_20261030\\M13_farfield15_20261031\\M13_GPU_calm_dt0004\\final.sim",
+  "source_sha256": "9c4fa61e6696b8fd845ab62ef486647542ab3caf361b3c985411bcd49ace6fdf",
+  "macro": "E:\\ntnu_mesh_optimization_20261030\\M13_wave_direct_20261031\\M13InletWavePilotR2.java",
+  "macro_sha256": "616ae2931a04b0e2d0aa9c20449684d03c126da5d5683a6b462cda22d950eea8",
+  "time_s": 3.899199999999636,
+  "gpu_free_mib": 11321,
+  "gpu_util_pct": 4,
+  "unknown_active_star": [],
+  "old_failed_cpu_wave_orphans": [
+    30288,
+    3520,
+    6932
+  ],
+  "legacy_hold_active": true,
+  "source_untouched": true,
+  "no_full_wave_claim": true,
+  "pilot_dt_s": 0.0004,
+  "steps": 1200,
+  "processor": "1 GPU, 1 worker",
+  "outputs_E_only": true,
+  "source_safety": "calm M13 source untouched",
+  "wave_only_blocker_acknowledged": "This exploratory pilot skips no-foil wave acceptance by explicit later user order",
+  "wave_setup": "M13 flat field, inlet FifthOrder ramp, no whole-domain reinitialization",
+  "foil_force_stat_status": "Pre-arrival reference provisional only",
+  "numerics": "dt=.0004s, 10inner, second-order, bounded 1200 steps, stop on numerical guard",
+  "old_campaign_hold": "unchanged on F:",
+  "scientific_validation": "NOT YET ACCEPTED"
+}

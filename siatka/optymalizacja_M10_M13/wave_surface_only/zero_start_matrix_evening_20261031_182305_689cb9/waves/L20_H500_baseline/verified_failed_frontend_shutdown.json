@@ -1,0 +1,10 @@
+{
+  "at": "2026-10-31T18:30:57.897700+01:00",
+  "reason": "Confirmed lost STAR server after non-finite numerical failure; no further history, no save in progress",
+  "verified_failed_client_pid": 27088,
+  "source_unchanged": true,
+  "last_saved_history_time_s": 0.418,
+  "last_step": 18,
+  "M13_untouched": true,
+  "taskkill_returncode": 0
+}

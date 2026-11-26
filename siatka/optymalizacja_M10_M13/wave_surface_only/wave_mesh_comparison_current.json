@@ -1,0 +1,8 @@
+{
+  "status": "needs_review_no_auto_retry",
+  "at": "2026-10-31T11:36:26.606717+01:00",
+  "directory": "E:\\ntnu_mesh_optimization_20261030\\wave_surface_only\\wave_mesh_triplet_20261031_r2",
+  "error_type": "RuntimeError",
+  "reason": "Stage failure wave_coarse exit=1",
+  "token": "2ad0c80f776b43c6beed3bc79d110989"
+}

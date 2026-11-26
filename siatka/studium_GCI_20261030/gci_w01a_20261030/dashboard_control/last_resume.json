@@ -1,0 +1,6 @@
+{
+  "status": "pause_save_finished",
+  "error": "Owned GPU job stopped or failed calm_settle_G10_F_GPU_live_r2_resume_20261030_173420_4854e1",
+  "at": "2026-10-31T09:32:41.717094+01:00",
+  "request": "C:\\Users\\ThinkPad\\Documents\\ChatGPT\\ntnu science\\mesh_study_20261030\\gci_w01a_20261030\\dashboard_control\\resume_330ed8472bf745b99e703cab6c38caad.json"
+}

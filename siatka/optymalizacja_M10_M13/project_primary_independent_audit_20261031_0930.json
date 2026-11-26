@@ -1,0 +1,82 @@
+{
+  "review_at_local": "2026-10-31T09:31:30.632045+01:00",
+  "decision": "PROJECT PRIMARY CL/CD SETTLED; LEGACY FOUR-COMPONENT TEST NOT PASSED; do not call this ITTC or GCI acceptance",
+  "runbook_sha_verified": true,
+  "control_source_hashes_verified": {
+    "mesh_study_control.py": true,
+    "test_mesh_study_control.py": true,
+    "gpu_calm_study_live.py": true,
+    "ContinueCalmGPULive.java": true,
+    "cpu_study.py": true,
+    "calm_analysis.py": true,
+    "wave_analysis.py": true
+  },
+  "source_sim_sha_verified": true,
+  "physical_time_s": 3.3295000000026502,
+  "last_step": 24395,
+  "n_raw": 24395,
+  "formal_checks": {
+    "3.0013": {
+      "CL": {
+        "mean": 0.3098037543098608,
+        "shift_pct": 0.21901062244690614,
+        "rms_previous_pct": 0.06648257996615127,
+        "rms_latest_pct": 0.05995192307674094,
+        "pass": true
+      },
+      "CD": {
+        "mean": 0.007349877064161134,
+        "shift_pct": 0.48895329850240943,
+        "rms_previous_pct": 0.14840371933361376,
+        "rms_latest_pct": 0.13306114243207254,
+        "pass": true
+      },
+      "component_pressure_pct_of_total_CD": 0.4772266830654683,
+      "component_viscous_pct_of_total_CD": 0.011726615436793642,
+      "sum_abs_components_pct_of_total_CD": 0.48895329850226193,
+      "component_opposing_drift": false,
+      "raw_samples_previous": 2000,
+      "raw_samples_recent": 2000,
+      "legacy_four_way": false
+    },
+    "3.2013": {
+      "CL": {
+        "mean": 0.31041660384878117,
+        "shift_pct": 0.19742807933654466,
+        "rms_previous_pct": 0.05995192307674094,
+        "rms_latest_pct": 0.05446879853533557,
+        "pass": true
+      },
+      "CD": {
+        "mean": 0.0073176240339776445,
+        "shift_pct": 0.44075823018141463,
+        "rms_previous_pct": 0.13306114243207254,
+        "rms_latest_pct": 0.1215057748537579,
+        "pass": true
+      },
+      "component_pressure_pct_of_total_CD": 0.4307104914706995,
+      "component_viscous_pct_of_total_CD": 0.010047738710700267,
+      "sum_abs_components_pct_of_total_CD": 0.44075823018139976,
+      "component_opposing_drift": false,
+      "raw_samples_previous": 2000,
+      "raw_samples_recent": 2000,
+      "legacy_four_way": false
+    }
+  },
+  "consecutive_primary_checks": 2,
+  "guards": {
+    "water_volume_range_pct_0p45s": 0.004904571285917411,
+    "water_volume_m3": 38.35757259525556,
+    "net_outward_mass_kg_s": -10.916675866392914,
+    "max_bulk_CFL_0p45s": 8.890939344572953,
+    "max_interface_CFL_0p45s": 0.953828687305892,
+    "max_velocity_m_s_0p45s": 22.147637609034337,
+    "configured_dt_s": 0.0001,
+    "stop_markers": false,
+    "M12_controller_pid": 19040,
+    "M12_solver_pid": 1996
+  },
+  "approved_stop_route": "only pretested same-origin /api/mesh-study/pause, generation checked, local token",
+  "study_receipt_status": "passed 16 isolated tests; earlier real pause+saved final verified; no live test in receipt",
+  "solver_changed": false
+}

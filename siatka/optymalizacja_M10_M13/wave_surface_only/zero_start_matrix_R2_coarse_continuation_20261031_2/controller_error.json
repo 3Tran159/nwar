@@ -1,0 +1,5 @@
+{
+  "at": "2026-10-31T14:40:37.383539+01:00",
+  "error_type": "RuntimeError",
+  "reason": "Stage failed/unsafe waves/L20_H500_coarse, no retry"
+}

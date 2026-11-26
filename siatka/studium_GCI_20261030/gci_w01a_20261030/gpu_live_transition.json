@@ -1,0 +1,8 @@
+{
+  "source_case": "C:\\Users\\ThinkPad\\Documents\\ChatGPT\\ntnu science\\mesh_study_20261030\\gci_w01a_20261030\\force_stabilization_20261029\\calm_settle_G10_F_GPU_r1",
+  "controller_pid": 10064,
+  "launcher_pid": 33476,
+  "requested_at": "2026-10-30T15:15:00.983717+01:00",
+  "purpose": "Save and continue same fields; add live velocity preview and hydrodynamic CL settling",
+  "physics_unchanged": true
+}

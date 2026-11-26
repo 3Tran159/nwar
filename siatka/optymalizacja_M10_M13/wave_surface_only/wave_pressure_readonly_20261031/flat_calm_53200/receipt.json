@@ -1,0 +1,19 @@
+{
+  "case": "flat_calm_53200",
+  "exit_code": 0,
+  "observed_complete": true,
+  "source_hash_unchanged": true,
+  "source_copy_hash_unchanged": true,
+  "results": {
+    "PRESSURE_AUDIT_START": "time=0.4000000000000003",
+    "PRESSURE_AUDIT_P_MIN": "-66.83080070213771",
+    "PRESSURE_AUDIT_P_MAX": "233820.50376821306",
+    "PRESSURE_AUDIT_V_MIN": "17.99999999998683",
+    "PRESSURE_AUDIT_V_MAX": "18.000000000041055",
+    "PRESSURE_AUDIT_WATERFRACTION_MIN": "0.0",
+    "PRESSURE_AUDIT_WATERFRACTION_MAX": "1.0",
+    "PRESSURE_AUDIT_COMPLETE_NO_STEPS_NO_SAVE": "Design"
+  },
+  "no_solver_steps": true,
+  "time": "2026-10-31T22:55:54.319778+01:00"
+}

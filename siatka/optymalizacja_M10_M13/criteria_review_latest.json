@@ -1,0 +1,146 @@
+{
+  "read_at": "2026-10-31T06:48:13.404177+01:00",
+  "time_s": 2.927500000001802,
+  "step": 20375.0,
+  "instantaneous": {
+    "CL": 0.30989020565235476,
+    "CD": 0.007345323461280123,
+    "CDp": 0.0017717572263178487,
+    "CDv": 0.005573566234962276
+  },
+  "median_300_step_s": 2.3260878500041144,
+  "formal": {
+    "formal_t_s": 2.8013000000015356,
+    "pressure_own_pct": 2.116154484312283,
+    "pressure_fraction_pct": 24.523780452380873,
+    "pressure_drift_of_total_pct": 0.518961079765957,
+    "viscous_drift_of_total_pct": 0.014142735767930924,
+    "own_pressure_threshold_equivalent_total_pct": 0.12261890226190438,
+    "total_to_pressure_ratio": 4.077674736738706
+  },
+  "rolling_windows": {
+    "0.2": {
+      "CL": {
+        "mean_old": 0.30886005448336806,
+        "mean_new": 0.3095614933635194,
+        "mean_shift_own_pct": 0.22659112815676874,
+        "rms_old_own_pct": 0.06790212388193674,
+        "rms_new_own_pct": 0.06246046596670609,
+        "absolute_shift": 0.0007014388801513394,
+        "shift_total_CD_pct": null
+      },
+      "CD": {
+        "mean_old": 0.007399955437125585,
+        "mean_new": 0.00736265603889355,
+        "mean_shift_own_pct": 0.5066024819711616,
+        "rms_old_own_pct": 0.15122740432629805,
+        "rms_new_own_pct": 0.138763484489593,
+        "absolute_shift": -3.729939823203434e-05,
+        "shift_total_CD_pct": 0.5066024819711616
+      },
+      "CDp": {
+        "mean_old": 0.0018250533756121383,
+        "mean_new": 0.001788687579776829,
+        "mean_shift_own_pct": 2.033099365504994,
+        "rms_old_own_pct": 0.5967924805312727,
+        "rms_new_own_pct": 0.5578006305904298,
+        "absolute_shift": -3.636579583530934e-05,
+        "shift_total_CD_pct": 0.49392224277768026
+      },
+      "CDv": {
+        "mean_old": 0.005574902061513447,
+        "mean_new": 0.0055739684591167215,
+        "mean_shift_own_pct": 0.016749330455902222,
+        "rms_old_own_pct": 0.0053632184134288444,
+        "rms_new_own_pct": 0.004294555287341563,
+        "absolute_shift": -9.336023967252208e-07,
+        "shift_total_CD_pct": 0.012680239193484329
+      },
+      "component_sum_modulus_total_pct": 0.5066024819711646
+    },
+    "0.5": {
+      "CL": {
+        "mean_old": 0.3070489632826625,
+        "mean_new": 0.3090280286740963,
+        "mean_shift_own_pct": 0.6404161460450943,
+        "rms_old_own_pct": 0.2004662344634232,
+        "rms_new_own_pct": 0.1672655622054277,
+        "absolute_shift": 0.0019790653914337764,
+        "shift_total_CD_pct": null
+      },
+      "CD": {
+        "mean_old": 0.007498830783030151,
+        "mean_new": 0.007391029176390067,
+        "mean_shift_own_pct": 1.4585466254746469,
+        "rms_old_own_pct": 0.46118013255246326,
+        "rms_new_own_pct": 0.3719952291122845,
+        "absolute_shift": -0.0001078016066400839,
+        "shift_total_CD_pct": 1.4585466254746469
+      },
+      "CDp": {
+        "mean_old": 0.001920828717912784,
+        "mean_new": 0.0018163407468579004,
+        "mean_shift_own_pct": 5.752663493104912,
+        "rms_old_own_pct": 1.7338051404537804,
+        "rms_new_own_pct": 1.4750014330831684,
+        "absolute_shift": -0.00010448797105488353,
+        "shift_total_CD_pct": 1.4137134161053013
+      },
+      "CDv": {
+        "mean_old": 0.0055780020651173675,
+        "mean_new": 0.005574688429532167,
+        "mean_shift_own_pct": 0.05944073156889331,
+        "rms_old_own_pct": 0.022971949136950262,
+        "rms_new_own_pct": 0.012620394911361268,
+        "absolute_shift": -3.3136355852003696e-06,
+        "shift_total_CD_pct": 0.044833209369345484
+      },
+      "component_sum_modulus_total_pct": 1.4585466254746469
+    },
+    "1.0": {
+      "CL": {
+        "mean_old": 0.30199613498794625,
+        "mean_new": 0.3080384959783794,
+        "mean_shift_own_pct": 1.9615603469435359,
+        "rms_old_own_pct": 1.0254271011004394,
+        "rms_new_own_pct": 0.3704543001883424,
+        "absolute_shift": 0.006042360990433149,
+        "shift_total_CD_pct": null
+      },
+      "CD": {
+        "mean_old": 0.007773467094603362,
+        "mean_new": 0.0074449299797101085,
+        "mean_shift_own_pct": 4.412897311171834,
+        "rms_old_own_pct": 2.0276718491282963,
+        "rms_new_own_pct": 0.8368078834570386,
+        "absolute_shift": -0.00032853711489325317,
+        "shift_total_CD_pct": 4.412897311171834
+      },
+      "CDp": {
+        "mean_old": 0.002185257810302097,
+        "mean_new": 0.0018685847323853422,
+        "mean_shift_own_pct": 16.947215313726005,
+        "rms_old_own_pct": 6.993094292071399,
+        "rms_new_own_pct": 3.2300499796020183,
+        "absolute_shift": -0.0003166730779167548,
+        "shift_total_CD_pct": 4.253540043758551
+      },
+      "CDv": {
+        "mean_old": 0.005588209284301266,
+        "mean_new": 0.005576345247324767,
+        "mean_shift_own_pct": 0.21275650000670784,
+        "rms_old_own_pct": 0.087056757244174,
+        "rms_new_own_pct": 0.035019669359395135,
+        "absolute_shift": -1.1864036976498571e-05,
+        "shift_total_CD_pct": 0.15935726741328646
+      },
+      "component_sum_modulus_total_pct": 4.412897311171837
+    }
+  },
+  "caution": "Window shifts are NOT a bound on remaining asymptotic error. This is diagnostic only; original controller and acceptance flags unchanged.",
+  "reference_sources": [
+    "https://www.ittc.info/media/11950/75-03-01-01.pdf",
+    "https://www.ittc.info/media/11958/75-03-02-03.pdf",
+    "https://www.ittc.info/media/11960/75-03-02-04.pdf"
+  ]
+}

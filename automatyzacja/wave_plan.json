@@ -1,0 +1,10 @@
+{
+  "updated": "2026-11-02",
+  "reference": "Original accepted C01 for all Q values",
+  "authority": "User: W05=1m/20m, W06=1m/30m; on 2026-11-02 change W07 to 1m/40m and continue W04-W07 after the PRE W04 gate.",
+  "cases": {
+    "W05": {"H": 1.0, "L": 20.0, "title": "Height series · 1 m / 20 m", "ready": false, "blocker": "Awaiting the wider wave band and PRE W04 calm gate."},
+    "W06": {"H": 1.0, "L": 30.0, "title": "Height series · 1 m / 30 m", "ready": false, "blocker": "Awaiting the wider wave band and PRE W04 calm gate."},
+    "W07": {"H": 1.0, "L": 40.0, "title": "Length series · 1 m / 40 m", "ready": false, "blocker": "Awaiting the expanded-domain PRE W04 calm/C01 gate."}
+  }
+}

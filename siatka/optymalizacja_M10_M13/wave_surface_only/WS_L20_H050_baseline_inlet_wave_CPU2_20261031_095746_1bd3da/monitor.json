@@ -1,0 +1,15 @@
+{
+  "status": "loading_wave",
+  "at": "2026-10-31T09:57:46.914836+01:00",
+  "directory": "E:\\ntnu_mesh_optimization_20261030\\wave_surface_only\\WS_L20_H050_baseline_inlet_wave_CPU2_20261031_095746_1bd3da",
+  "controller_pid": 17940,
+  "auxiliary_pid": 30432,
+  "auxiliary_steps": 0,
+  "auxiliary_time_s": null,
+  "wave_height_m": null,
+  "max_abs_eta_m": null,
+  "max_CFL": null,
+  "interface_CFL": null,
+  "reason": null,
+  "source_calm_verified": true
+}

@@ -1,0 +1,17 @@
+W08bi / kontynuacja na GLHF / STAR-CCM+ 2606
+
+1. Na GLHF rozpakuj ZIP wewnatrz aktywnego folderu NWAR, tam gdzie sa katalogi
+   app i runtime oraz plik Start NWAR.cmd. W srodku pojawi sie nowy podfolder
+   NWAR_GLHF_W08bi_Resume_2606_v3.
+2. W tym podfolderze kliknij dwa razy Resume W08bi.cmd. Okno pokaze rezultat.
+3. Na otwartym dashboardzie sprawdz, czy czas fizyczny rosnie od 10.6000 s.
+
+Patch podmienia tylko potrzebne pliki aplikacji w aktywnym workspace i zachowuje
+ich kopie. Uzywa istniejacego dashboardu, kolejki oraz wynikow W05 i W07.
+Jesli GLHF nadal liczy, kolejka jest zajeta lub aktywny jest PAUSE/STOP, skrypt
+wypisze HOLD. Zachowaj ten komunikat. Kolejne klikniecie nie dubluje W08bi.
+
+W01 (H = 0.50 m, lambda = 20 m) + W06 (H = 1.00 m, lambda = 30 m).
+Limit sond +/-1.5 m, jeden GPU. Cel diagnostyczny t = ok. 25.6798 s.
+Paczka zawiera checkpoint i historie do tego samego kroku. Po nowym bledzie
+solver pozostaje w HOLD, z logami i zapisami do sprawdzenia.

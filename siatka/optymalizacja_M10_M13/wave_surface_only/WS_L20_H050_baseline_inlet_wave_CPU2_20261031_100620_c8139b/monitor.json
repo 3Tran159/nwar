@@ -1,0 +1,15 @@
+{
+  "status": "stop_requested",
+  "at": "2026-10-31T10:08:44.169823+01:00",
+  "directory": "E:\\ntnu_mesh_optimization_20261030\\wave_surface_only\\WS_L20_H050_baseline_inlet_wave_CPU2_20261031_100620_c8139b",
+  "controller_pid": 20180,
+  "auxiliary_pid": 10144,
+  "auxiliary_steps": 0,
+  "auxiliary_time_s": 0.4000000000000003,
+  "wave_height_m": 1e-06,
+  "max_abs_eta_m": 4.39825953435502e-12,
+  "max_CFL": 0.09000000000020053,
+  "interface_CFL": "NOT_AVAILABLE_EMPTY_THRESHOLD",
+  "reason": "another_STAR_solver_started",
+  "source_calm_verified": true
+}

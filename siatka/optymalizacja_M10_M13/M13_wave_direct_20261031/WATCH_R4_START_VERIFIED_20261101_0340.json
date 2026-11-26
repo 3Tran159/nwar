@@ -1,0 +1,23 @@
+{
+  "at": "2026-11-01T03:40:12+01:00",
+  "event": "M13_R4V_healthy_bounded_continuation_started_and_steps_verified",
+  "directory": "E:\\ntnu_mesh_optimization_20261030\\M13_wave_direct_20261031\\M13_GPU_W20_H050_continuation_R4V_20261101",
+  "source": "E:\\ntnu_mesh_optimization_20261030\\M13_wave_direct_20261031\\M13_GPU_W20_H050_continuation_R3V_20261101\\wave_pilot_final.sim",
+  "source_sha256": "d438d7f97f06d1cf459f151adaa533513eb141626acb584624cbe5920b11148d",
+  "macro_sha256": "353804abb312313f109bf456f4b6d357cf7cd547f01d99334019ccd6d2edbb83",
+  "recorded_step": 32,
+  "physical_time_s": 9.1920000000017,
+  "dt_s": 0.0004,
+  "workers": 1,
+  "gpu": 1,
+  "max_steps": 12000,
+  "max_wall_s": 14000,
+  "preflight_pass": true,
+  "original_R3V_preserved": true,
+  "no_reinitialization": true,
+  "old_C01_hold_preserved": true,
+  "scientific_accepted": false,
+  "reason": "R3V reached planned 12000 steps and saved checkpoint, only two complete phase-aligned force cycles; continuation necessary to assess four-cycle repeatability before morning report",
+  "method": "isolated copy and class-name-only cloned R3V macro, same wave BC, dt, inner iterations and physical guards",
+  "notes": "Starts from t=9.1792 after source validated; wave propagation and force periodicity not yet accepted. Do not duplicate or launch M14/M15."
+}

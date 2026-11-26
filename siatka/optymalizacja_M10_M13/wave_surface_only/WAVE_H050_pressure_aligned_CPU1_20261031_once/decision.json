@@ -1,0 +1,19 @@
+{
+  "at": "2026-10-31T23:04:40.740422+01:00",
+  "purpose": "single H0.5, lambda20, 1ms no-foil wave startup test",
+  "one_numerical_change": "matching top pressure outlet wave hydrostatic pressure",
+  "hypothesis": "calm-wave pressure BC mismatch causes initial residual shock",
+  "source_sha256": "fdc5d295ac806813dbc783f6ba30c9e626f2ee5c2f91b7825164e69660bc5d28",
+  "source": "E:\\ntnu_mesh_optimization_20261030\\wave_surface_only\\WS_L20_H050_baseline_flatCalm_CPU2_20261031_075518_43108c\\calm_pilot_final.sim",
+  "macro_sha256": "20f068db030ea4e67c09d0509605beb1fa035ebd587a96df9ac9c5f0b588b3ac",
+  "mesh_cells": 53200,
+  "CPU": 1,
+  "GPU": 0,
+  "dt_s": 0.001,
+  "inner": 10,
+  "steps": 500,
+  "max_wall_s": 1600,
+  "no_automatic_retry": true,
+  "scientifically_validated": false,
+  "foil_wave_hold_preserved": true
+}

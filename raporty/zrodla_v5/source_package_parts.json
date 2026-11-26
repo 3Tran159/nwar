@@ -1,0 +1,98 @@
+{
+  "[Content_Types].xml": {
+    "bytes": 2044,
+    "sha256": "ecbe3f7dfd70530319fed457805e79a3df0cc177119a7d97bacbb25f516c7adb"
+  },
+  "_rels/.rels": {
+    "bytes": 734,
+    "sha256": "a9ae57efe9186f07d48303bcac5d54c7e359bf3f503939c03ad2954e5c59a5c4"
+  },
+  "docProps/core.xml": {
+    "bytes": 821,
+    "sha256": "3018c331c548c61e64d029990aa998ec1968e46da8ee4184a6d15e721a039b7f"
+  },
+  "docProps/app.xml": {
+    "bytes": 1132,
+    "sha256": "be664981c3141cddfc59362beb287ebf20d0773660e2dd6faac5968a5930a081"
+  },
+  "word/document.xml": {
+    "bytes": 480222,
+    "sha256": "eb81bf9e456ecc569b40edda923d69b901eb9feef375b87449e75b43769e0125"
+  },
+  "word/_rels/document.xml.rels": {
+    "bytes": 4729,
+    "sha256": "80150ff8f7f130d3d2a4459104ed1d868e0f4c66aab1d3e20083ad1c380a7a26"
+  },
+  "word/styles.xml": {
+    "bytes": 349501,
+    "sha256": "daf4292fb38fb6a23d24c111d0bfce8a95575f5bb0a588e194e110ca41a345ee"
+  },
+  "word/stylesWithEffects.xml": {
+    "bytes": 438131,
+    "sha256": "463ae0928cf0d84775dbf8cf18d6c3029f6707c81bf590f6d6dd8757a5e93f15"
+  },
+  "word/settings.xml": {
+    "bytes": 2535,
+    "sha256": "51a0d348fe85965c66e4748a03c3c0d055d78455514f03cb121c334af7d73689"
+  },
+  "word/webSettings.xml": {
+    "bytes": 438,
+    "sha256": "349d36de7434d09f86987ff671d8814964a0588c1e630c06e562cda7e75e9f95"
+  },
+  "word/fontTable.xml": {
+    "bytes": 2811,
+    "sha256": "79385fb7f60247507ecaffc292e9ebd52ea0657b8634f629ba6fccc54011d6bb"
+  },
+  "word/theme/theme1.xml": {
+    "bytes": 10939,
+    "sha256": "e3a8ab7db9ca7afca56f5f2820a56e8b660016c647773555b060b0a02ac76941"
+  },
+  "customXml/item1.xml": {
+    "bytes": 262,
+    "sha256": "a86086ffc5d8e83ebd6c71a55d1d2efaa31b137977f5f3a752366e1023612144"
+  },
+  "customXml/_rels/item1.xml.rels": {
+    "bytes": 295,
+    "sha256": "1ca6c9a64edcebe24ee703a54403611b322d96da33371779e742d2d3f7ed7a6c"
+  },
+  "customXml/itemProps1.xml": {
+    "bytes": 354,
+    "sha256": "c542307b13ec29a8b546217bb37936ab4822e044b265d2952985ec3d6afed24e"
+  },
+  "word/numbering.xml": {
+    "bytes": 5513,
+    "sha256": "70976f19cbcd896e51890859fe6ecb3467a5a7ad0c040160fedc5a1993cb09ce"
+  },
+  "word/header1.xml": {
+    "bytes": 1425,
+    "sha256": "7f08d1d555747f82ee7046e75683ca200ce8b5f6a8de708ea748d305a8fb4eb0"
+  },
+  "word/footer1.xml": {
+    "bytes": 1435,
+    "sha256": "366cdca15573081a6dfd7563a5827252bc97300656d84b10d2c88916bc2b5f37"
+  },
+  "word/media/image1.png": {
+    "bytes": 158690,
+    "sha256": "e84267b665e8a615b07a4973666cee76982ed3eedf72dd9939ea3c8a78280d82"
+  },
+  "word/media/image2.png": {
+    "bytes": 152990,
+    "sha256": "2af480668a09d90e6591a5fd731a7ff17a46df9801a0591dd371f2d83a387f58"
+  },
+  "word/media/image3.png": {
+    "bytes": 106747,
+    "sha256": "e75deda87ac4e0589ef8c6b2289f9796246301c3f263fd1af2bf8b18dd393914"
+  },
+  "word/media/image4.png": {
+    "bytes": 222992,
+    "sha256": "43318eae0cb3c18b46b5b717b3996480949ed8797bb56d28e413a823243e76f7"
+  },
+  "word/media/image5.png": {
+    "bytes": 212655,
+    "sha256": "32c5eed46fb501516257eaf326340b4167f6ec425d3785ba0648f0521f67dd16"
+  },
+  "docProps/thumbnail.jpeg": {
+    "bytes": 8324,
+    "sha256": "96367138dc44ce09bf2c8f0f8e49348a1478d2c5c0af69bbc2bbc38b63cdcead"
+  }
+}

@@ -1,0 +1,31 @@
+{
+  "started": "2026-10-31T11:21:58.411462+01:00",
+  "runbook_SHA": "b3d24d5a5e0dec25035465fa5ad464069965e042c04ab1df4cfcacaf52450845",
+  "matrix": [
+    [
+      "coarse",
+      41200,
+      0.05
+    ],
+    [
+      "baseline",
+      53200,
+      0.025
+    ],
+    [
+      "fine",
+      77200,
+      0.0125
+    ]
+  ],
+  "source_calm": "E:\\ntnu_mesh_optimization_20261030\\wave_surface_only\\WS_L20_H050_baseline_flatCalm_CPU2_20261031_075518_43108c\\calm_pilot_final.sim",
+  "source_calm_sha256": "fdc5d295ac806813dbc783f6ba30c9e626f2ee5c2f91b7825164e69660bc5d28",
+  "M11_main": "E:\\ntnu_mesh_optimization_20261030\\M11_G10_M_GPU_queue_20261031_105607_91db08",
+  "M11_baseline_s_per_step": 1.2909437999999973,
+  "CPU_workers": 2,
+  "priority": "BELOW_NORMAL",
+  "wave_control_scope": "separate no-foil only",
+  "C01_hold_unchanged": true,
+  "HF_untouched": true,
+  "do_not_conclude_wave_GCI": true
+}

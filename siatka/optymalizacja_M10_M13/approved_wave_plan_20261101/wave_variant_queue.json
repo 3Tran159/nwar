@@ -1,0 +1,19 @@
+{
+  "created_for": "Explicit user-approved M13 follow-up until 2026-11-02T09:00:00+01:00",
+  "state": "queued_not_started",
+  "execution": "sequential_only_one_GPU_with_owned_locks",
+  "base_mesh": "M13, 309441 cells, preserve foil/prisms/wake",
+  "prerequisites": ["corrected cycle analysis", "reviewed real forcing/damping extent and calm-wave equivalence", "paired dt0.2ms sensitivity and scientific decision on Q"],
+  "production_dt": "Choose from sensitivity evidence; do not automatically use dt0.2ms for every variant if dt0.4ms is adequate",
+  "cases": [
+    {"id": "M13_H025_L20", "order": 1, "H_m": 0.25, "lambda_m": 20.0, "status": "awaiting_basic_controls", "purpose": "Amplitude scaling and separation of actual wave effect from a BC offset", "initial_state": "own appropriate healthy calm M13 copy, upstream wave injection only", "small_amplitude_scaling": "hypothesis, not acceptance threshold"},
+    {"id": "M13_H050_L30", "order": 2, "H_m": 0.5, "lambda_m": 30.0, "status": "awaiting_basic_controls_and_L20_review", "purpose": "Encounter-frequency and foil-depth response", "initial_state": "own appropriate healthy calm M13 copy, upstream wave injection only", "extra_gate": "Review wave resolution, forcing/damping extent and correct wavelength/current period before starting"}
+  ],
+  "four_cycles": "Compare four complete settled wave periods using one fixed incident phase probe; do not phase-fit force histories",
+  "twenty_cycles": "Diagnostic ceiling for unresolved repeatability, NOT compulsory minimum",
+  "no_automatic_legacy_campaign_release": true,
+  "no_blanket_simulation_rebuild": true,
+  "active_flap": "outside this stage",
+  "all_new_outputs": "E:\\ntnu_mesh_optimization_20261030",
+  "claims": "Queued cases are not solver starts or completed results"
+}

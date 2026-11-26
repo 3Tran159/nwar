@@ -1,0 +1,11 @@
+{
+  "at": "2026-11-01T03:36:40.434110+01:00",
+  "status": "javac_pass",
+  "source": "E:\\ntnu_mesh_optimization_20261030\\M13_wave_direct_20261031\\M13ContinueWaveR3Visual.java",
+  "source_sha256": "157ff1c078c57690f890000992c7e5954840415a3f5fdd8bb925063513c51e06",
+  "new_macro": "E:\\ntnu_mesh_optimization_20261030\\M13_wave_direct_20261031\\M13ContinueWaveR4Visual.java",
+  "new_sha256": "353804abb312313f109bf456f4b6d357cf7cd547f01d99334019ccd6d2edbb83",
+  "compiler_stderr": "Note: E:\\ntnu_mesh_optimization_20261030\\M13_wave_direct_20261031\\M13ContinueWaveR4Visual.java uses or overrides a deprecated API.\nNote: Recompile with -Xlint:deprecation for details.\n",
+  "start_run": false,
+  "scope": "One class-name change from R3V; same BC/VOF/wave/dt/inner steps/guards, new independent R4 output, no initial field reset."
+}

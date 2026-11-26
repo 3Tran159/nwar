@@ -1,0 +1,10 @@
+{
+  "exit_code": 1,
+  "source_unchanged": true,
+  "controller_reason": null,
+  "completed": {},
+  "phase": "isolated_M13_gpu_foil_wave_pilot",
+  "at": "2026-10-31T23:28:39.120688+01:00",
+  "wall_s": 150.3469713999948,
+  "timing": []
+}

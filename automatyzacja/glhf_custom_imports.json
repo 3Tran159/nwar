@@ -1,0 +1,25 @@
+{
+  "bundles": [
+    {
+      "folder": "H:\\NTNU_RESEARCH_ARCHIVE\\NWAR_SIM_FINALS\\W04c",
+      "manifest_sha256": "092dde59fe96ea58e8a8237c11e2a59ef09e20659600dbaa566f4c2407968b18",
+      "case_id": "W04c"
+    },
+    {
+      "folder": "H:\\NTNU_RESEARCH_ARCHIVE\\NWAR_SIM_FINALS\\W04f",
+      "manifest_sha256": "3f86d265f809601ff2eb4a18d98423a493ce9d027eeca95fe96a6f6e893523cf",
+      "case_id": "W04f"
+    },
+    {
+      "folder": "H:\\NTNU_RESEARCH_ARCHIVE\\NWAR_SIM_FINALS\\W04i",
+      "manifest_sha256": "723bad740648567876feb707e22de17f281561aaab2172602f669c88156930bd",
+      "case_id": "W04i"
+    },
+    {
+      "folder": "H:\\NTNU_RESEARCH_ARCHIVE\\NWAR_SIM_FINALS\\W04j",
+      "manifest_sha256": "4d2bac78b71f6233713b2aae2cb820be925cea51029656950a81824c6e05e050",
+      "case_id": "W04j"
+    }
+  ],
+  "updated_at": "2026-11-09T22:00:14.883320+01:00"
+}

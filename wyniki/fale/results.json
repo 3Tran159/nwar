@@ -1,0 +1,106 @@
+{
+  "accepted_cases": 14,
+  "C01": {
+    "Fx_N": 26.998133084790904,
+    "Fz_buoyancy_corrected_N": 1217.0567872899244,
+    "Fz_over_Fx": 45.07929431518877
+  },
+  "geometry": {
+    "chord_m": 1.1903708234772334,
+    "reference_chord_m": 1.19,
+    "span_m": 0.02,
+    "trim_chord_deg": -0.11113183229621015,
+    "nominal_depth_m": 2.0,
+    "h_over_c": 1.680148707070735,
+    "quarter_chord_depth_m": 1.9982683540275283
+  },
+  "fits": {
+    "theta_squared_origin": {
+      "slope_N_per_rad2": -5655.14193788801,
+      "RMSE_N": 1.169457989426259,
+      "R2": 0.8495854839075454
+    },
+    "QS": {
+      "RMSE_N": 6.304414230974832,
+      "R2": -3.371293647840786
+    },
+    "Sears": {
+      "RMSE_N": 0.8180556677999808,
+      "R2": 0.9263985761021225
+    },
+    "wavy_flow": {
+      "RMSE_N": 0.9345376157356473,
+      "R2": 0.9039463054814337
+    },
+    "theta_squared_old12": {
+      "slope_N_per_rad2": -5660.97622956785,
+      "RMSE_N": 1.236605224273299,
+      "R2": 0.8388922275585995
+    }
+  },
+  "model_cycle_holdout": {
+    "constant_scale_no_delay": {
+      "delay_s": 0.0,
+      "RMSE_N": 8.390130449646968,
+      "R2": 0.6774507354260515
+    },
+    "measured_scale_no_delay": {
+      "delay_s": 0.0,
+      "RMSE_N": 9.189163199968009,
+      "R2": 0.6130894616668021
+    },
+    "wave_phase_delay": {
+      "delay_s": 0.039001222514336104,
+      "RMSE_N": 4.2441909124663875,
+      "R2": 0.9174630432685981
+    },
+    "advection_delay": {
+      "delay_s": 0.049979523093114486,
+      "RMSE_N": 2.6803615275434,
+      "R2": 0.9670810949840339
+    }
+  },
+  "full_fit": {
+    "Cparallel_coefficients_ascending": [
+      0.009738727581468584,
+      0.0029881056638795434,
+      0.0004130243881533915
+    ],
+    "Cnormal_coefficients_ascending": [
+      0.24760472775722966,
+      0.055974151952356666
+    ],
+    "mean_probe_alpha_deg": 1.5215789992633555,
+    "model_rigid_mean_Fx_N": 22.067347985465343,
+    "model_rigid_mean_Fz_N": 1226.4269396093202,
+    "RMSE_N": 2.680098037259644,
+    "R2": 0.9670875667865868
+  },
+  "load_match": {
+    "projected_force_slope": 0.05106194085291708,
+    "parallel_only_slope": 0.07583865027358243,
+    "scope": "W04e rigid-wave regression sensitivity transferred to each case; not a steady trim polar"
+  },
+  "matching_support": {
+    "alpha_tolerance_deg": 0.05,
+    "speed_tolerance_m_s": 0.05,
+    "min_phase_separation_deg": 30,
+    "opposite_branch_phase_points_with_match": 0,
+    "phase_points_tested": 120
+  },
+  "grid_comparison_force_N": 1.1411845424744116,
+  "grid_comparison_scope": "Calm cases differ in mesh, time step and residual settling; not a grid uncertainty bound",
+  "timing": {
+    "case": "W04f",
+    "wall_s": 15834.766000000003,
+    "steps": 11613,
+    "seconds_per_step": 1.3635379316283478,
+    "reference_cells": 572176,
+    "basis": "Observed continuation includes setup/output overhead. Proxies assume linear cell scaling and unchanged per-step convergence; CPU-only runtime is unavailable."
+  },
+  "beat_s": 2.846803028481451,
+  "theory_basis": "QS=-qS*pi*theta^2; S=C*(J0-iJ1)+iJ1; W1=(1-ReC)*J1(ksp)+ImC*J0(ksp); W2=ReC*J0(ksp)+ImC*J1(ksp); fixed-foil wave thrust=-qS*pi*theta^2*(W1^2+W2^2)",
+  "CI_basis": "Student t(3)*sample SD/sqrt(4) around equal-weight cycle mean; nominal 95% only under independent normal cycle errors; excludes serial correlation, calm-reference error and numerical bias",
+  "source_audit_sha256": "8075dfcba290d4dc15b58f11aacdbe1f2093edb41c043dc70d3b6df06ce922f8",
+  "solver_started": false
+}

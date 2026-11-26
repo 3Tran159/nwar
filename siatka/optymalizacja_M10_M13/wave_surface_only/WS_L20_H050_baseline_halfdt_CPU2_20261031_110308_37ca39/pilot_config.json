@@ -1,0 +1,14 @@
+{
+  "dt_s": 0.0005,
+  "steps": 400,
+  "target_time_s": 0.6,
+  "primary_M11": "E:\\ntnu_mesh_optimization_20261030\\M11_G10_M_GPU_queue_20261031_105607_91db08",
+  "baseline_M11_steps": 210,
+  "baseline_median_wall_s_per_step": 1.2909437999999973,
+  "CPU_workers": 2,
+  "priority": "BELOW_NORMAL",
+  "affinity_mask": 3145728,
+  "affinity_CPU20_21": true,
+  "gpu_used": false,
+  "source_unchanged": true
+}

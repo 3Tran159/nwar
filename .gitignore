@@ -1,0 +1,17 @@
+*.sim
+*.simh
+*.sim~
+*.cgns
+*.CGNS
+*.zip
+*.stl
+*.STL
+*.mat
+*.npz
+profile/
+render_*/
+__pycache__/
+*.pyc
+.mplconfig/
+*.lock
+*.log.tmp

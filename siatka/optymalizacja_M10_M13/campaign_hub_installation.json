@@ -1,0 +1,10 @@
+{
+  "activated_at": "2026-10-31T17:28:19.661723+01:00",
+  "backup": "E:\\ntnu_mesh_optimization_20261030\\campaign_hub_backup\\20261031_172819",
+  "before_sha256": "1f210c93be69bf2b0f8c12fb97d2968f89f622456b6082cec2b8071b50560ab7",
+  "installed_sha256": "54b20ae1cec3613aa002d48f8daa766acfe6e74b4c4518ea684d2d1cea3eb9fe",
+  "catalog": "E:\\ntnu_mesh_optimization_20261030\\results_catalog",
+  "solver_files_changed": false,
+  "queue_controls_preserved": true,
+  "legacy_view": "/archive_runs/legacy_dashboard.html"
+}

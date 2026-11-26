@@ -1,0 +1,49 @@
+{
+  "status": "loading_calm",
+  "at": "2026-10-31T07:42:41.205299+01:00",
+  "directory": "E:\\ntnu_mesh_optimization_20261030\\wave_surface_only\\WS_L20_H050_baseline_flatCalm_CPU2_20261031_074006_dfd92e",
+  "controller_pid": 2804,
+  "auxiliary_pid": 8352,
+  "owned_auxiliary_pids": [
+    3384,
+    6812,
+    7032,
+    8352,
+    9388,
+    13368,
+    15040,
+    15252,
+    16008,
+    16092,
+    18820,
+    23796,
+    26468,
+    28000,
+    31160
+  ],
+  "M12_job": "calm_settle_G10_F_GPU_live_r2_resume_20261030_173420_4854e1",
+  "M12_baseline_s_per_step": 2.3507779000028677,
+  "M12_last_time_s": 3.0648000000020916,
+  "auxiliary_steps": 0,
+  "auxiliary_time_s": null,
+  "free_RAM_GiB": 37.70331573486328,
+  "reason": null,
+  "timing_windows": [
+    {
+      "at": "2026-10-31T07:41:18.636703+01:00",
+      "main_steps": 31,
+      "main_time_s": 3.0614000000020845,
+      "median_s_per_step": 2.357177549998596,
+      "slowdown_fraction": 0.0027223541601784085,
+      "excess_windows": 0
+    },
+    {
+      "at": "2026-10-31T07:42:36.076629+01:00",
+      "main_steps": 32,
+      "main_time_s": 3.064600000002091,
+      "median_s_per_step": 2.360993399997824,
+      "slowdown_fraction": 0.0043455827940801495,
+      "excess_windows": 0
+    }
+  ]
+}

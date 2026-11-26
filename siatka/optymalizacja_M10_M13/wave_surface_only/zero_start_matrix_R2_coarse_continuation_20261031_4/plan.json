@@ -1,0 +1,21 @@
+{
+  "at": "2026-10-31T15:34:48.595228+01:00",
+  "source": "E:\\ntnu_mesh_optimization_20261030\\wave_surface_only\\zero_start_matrix_R2_coarse_continuation_20261031_3\\waves\\L20_H500_coarse\\wave_pilot_final.sim",
+  "source_sha256": "fd1283e8c03c14b98ccc8f4976826aa8f7a468f76642aa4c6c6bae16723b4399",
+  "start_physical_s": 4.50699999999984,
+  "physical_dt_s": 0.001,
+  "planned_additional_steps": 2000,
+  "lambda_m": 20,
+  "H_m": 0.5,
+  "mesh_cells": 41200,
+  "main_M11": "E:\\ntnu_mesh_optimization_20261030\\M11_G10_M_GPU_queue_20261031_105607_91db08",
+  "main_baseline_s_per_step": 1.2909437999999973,
+  "continuation_no_reinitialization": true,
+  "one_auxiliary_CPU2_below_normal": true,
+  "scientific_acceptance_automatic": false,
+  "owned_locks": [
+    "E:\\ntnu_mesh_optimization_20261030\\parallel_cpu_20261031\\auxiliary.lock",
+    "E:\\ntnu_mesh_optimization_20261030\\wave_surface_only\\wave_inlet.lock",
+    "E:\\ntnu_mesh_optimization_20261030\\wave_surface_only\\wave_mesh_comparison.lock"
+  ]
+}

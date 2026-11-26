@@ -1,0 +1,62 @@
+{
+  "id": "nwar-night-20261102_original",
+  "enabled": true,
+  "reference_mode": "original",
+  "reference_id": "C01_original",
+  "sequence": [
+    "W04",
+    "W02",
+    "W03",
+    "W06"
+  ],
+  "stop_kind": "five_cycles",
+  "scope_jobs_to_campaign": true,
+  "allow_approved_cpu": true,
+  "authority": "User: W04 finished; first add one cycle each to W02/W03 from saved fields (four retained cycles 2–5), then W06 five cycles; optional W08 only if sufficient night time.",
+  "accepted_pre": "E:\\ntnu_mesh_optimization_20261030\\nwar_automation_20261102\\PRE_W04_20261102\\calm_global_resume_20261102_232341\\final.sim",
+  "accepted_pre_sha256": "d86beded68b41f5e6ce324a93cea39177dbe93fff516af10d33a71761528b85a",
+  "preserve_checkpoints_scenes_and_history": true,
+  "archive": "C:\\Users\\ThinkPad\\Documents\\ChatGPT\\ntnu science\\nwar_automation\\campaign_archives\\nwar-night-20261102\\manifest.json",
+  "cycle_policy_id": "five_measured_cycles_discard_first_20261103",
+  "target_complete_cycles": 5,
+  "discard_first_cycles": 1,
+  "analysis_cycle_numbers": [
+    2,
+    3,
+    4,
+    5
+  ],
+  "route_authorization": "user_20261103_W02_W03_before_W06",
+  "continuation_sources": {
+    "W02": {
+      "checkpoint": "E:\\ntnu_mesh_optimization_20261030\\nwar_automation_20261102\\runs\\W02_20261102_094416_8e2e45\\wave_pilot_final.sim",
+      "sha256": "5caf48ab678176912d56bbcefd4ff7192680a8c588e7b96b9331945f8ffeebdd",
+      "time_s": 12.227200000008105,
+      "parent_id": "8e2e4553a39d43cb",
+      "source_folder": "E:\\ntnu_mesh_optimization_20261030\\nwar_automation_20261102\\runs\\W02_20261102_094416_8e2e45",
+      "health_ok": true,
+      "recorded_cycles": 4,
+      "analyzed_cycles": [
+        2,
+        3,
+        4
+      ],
+      "raw_files_preserved": true
+    },
+    "W03": {
+      "checkpoint": "E:\\ntnu_mesh_optimization_20261030\\clean_c01_campaign_20261101\\night_wave_queue_20261101\\W03_resume_plus1_v2_20261102_0841\\wave_pilot_extended_final.sim",
+      "sha256": "06a02c129f931e5fb70e1559a5831e077f27f4e20b365813f0dc8d4e256a13db",
+      "time_s": 14.444000000012784,
+      "parent_id": null,
+      "source_folder": "E:\\ntnu_mesh_optimization_20261030\\clean_c01_campaign_20261101\\night_wave_queue_20261101\\W03_resume_plus1_v2_20261102_0841",
+      "health_ok": true,
+      "recorded_cycles": 4,
+      "analyzed_cycles": [
+        2,
+        3,
+        4
+      ],
+      "raw_files_preserved": true
+    }
+  }
+}

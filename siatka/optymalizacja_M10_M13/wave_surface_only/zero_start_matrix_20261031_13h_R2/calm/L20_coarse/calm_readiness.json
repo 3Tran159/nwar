@@ -1,0 +1,10 @@
+{
+  "at": "2026-10-31T13:23:21.504657+01:00",
+  "pass_for_bounded_wave_trial": true,
+  "scientific_long_term_settling_certified": false,
+  "source_field_transfer": false,
+  "last20_continuity_residual_median": 0.64653245,
+  "water_volume_m3": 38.399999999994705,
+  "calm_gauge_mean_delta_m": 7.55759091672126e-16,
+  "max_last_gauge_abs_m": 5.115907697472721e-13
+}

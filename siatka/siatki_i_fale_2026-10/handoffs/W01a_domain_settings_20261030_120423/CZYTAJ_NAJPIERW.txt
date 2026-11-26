@@ -1,0 +1,15 @@
+W01a - AKTUALNA DOMENA I USTAWIENIA DLA AGENTA OD ZBIEZNOSCI
+Eksport: 2026-10-30T12:04:23.140439+01:00
+Domena: x=-35..45m (80m), z=-22..8m (30m), y=.01...03m (20mm;1komorka).
+Woda24m, powietrze6m, lustroz=2m, predkosc18m/s. Polozenie/katplata niezmienione; geometria jest w dolaczonym natywnym CGNS.
+Aktualnasiatka M10_FS020,317277komorek. To282379komorek siatki krotkiej plus34898komorek pasowzdalnych.
+Przy powierzchni nominalnie20mm zamiast28.5714mm wM09. Przedluzenia dx<=.2m; nie20mmizotropowo. Plat i48warstwpryzmatycznych zachowane.
+Aktualne BC: wlotpredkosciowy, wylotcisnieniowyEnvironmental, goraStatic, dnoslip, platno-slip, oba boki symetrii.
+Strefy: forcing[-35,-15], rdzen[-15,25], damping[25,45]m.
+CzasowoSO1ms/10inner, pressureAMG.01. Pelnyopis i audyty wcurrent_domain_settings.json.
+W01a: H=.5m,lambda20m,FifthOrder; fala ma powstawac od wlotu po krotkim rozruchu, BEZ czekania na ustalenie sil. Mechanizmrampsprawdzany. Aktualniejeszczebrakwprowadzonejfali.
+WAZNE: wynikiM09/M08/M07 sprzedzmian sa historycznymtestemspokojnejwody. Dla aktualnejzbieznosci trzeba utrzymacidentycznedomeny,BC,solver,oknaczasowe,rozruch. NieporownywacichautomatycznieznowaM10jakojednegociagu.
+Plikmesh_star_export.CGNS pochodzi zniezaleznegoeksportuSTAR poimport/audyciejakosci. SHA256wsource_manifest.json.
+Stanobliczen(nietemplatka): E:\ntnu\quasi2d_waves_20261029\W01a_W20L4_M10_calm_start_r1\final.sim
+Sprawdzcompleted.json; stanjestpo krotkimcalmrozruchu,niewalidowanykoncowowynik.
+Oryginalnepliki niezmienione. Szczegolowelokalnesciezkiwhashmanifest.

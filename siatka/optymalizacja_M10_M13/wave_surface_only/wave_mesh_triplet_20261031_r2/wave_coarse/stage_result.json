@@ -1,0 +1,37 @@
+{
+  "stage": "wave_coarse",
+  "at": "2026-10-31T11:36:26.570915+01:00",
+  "exit_code": 1,
+  "completed": {},
+  "source_unchanged": true,
+  "stop_reason": null,
+  "receipt_present": false,
+  "receipt_bytes": 0,
+  "monitor": {
+    "at": "2026-10-31T11:36:23.561788+01:00",
+    "step": 0,
+    "main_windows": [
+      {
+        "start": 1596,
+        "end": 1625,
+        "median_s": 1.2949376000001394,
+        "slowdown_pct": 0.30937055510411593
+      },
+      {
+        "start": 1626,
+        "end": 1655,
+        "median_s": 1.288817999999992,
+        "slowdown_pct": -0.16467022034617473
+      },
+      {
+        "start": 1656,
+        "end": 1685,
+        "median_s": 1.3142240000001948,
+        "slowdown_pct": 1.8033472874804835
+      }
+    ],
+    "baseline_M11_s_per_step": 1.2909437999999973,
+    "io_bytes": 50324009,
+    "stop_reason": null
+  }
+}

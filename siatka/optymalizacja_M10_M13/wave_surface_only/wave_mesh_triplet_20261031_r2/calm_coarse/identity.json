@@ -1,0 +1,10 @@
+{
+  "source": "E:\\ntnu_mesh_optimization_20261030\\wave_surface_only\\wave_mesh_triplet_20261031_r2\\map_coarse\\mapped.sim",
+  "source_sha256": "4e40fdd7365fbf6df03569ce3dbfd900aed8072f6dac3d237fc75ede49645529",
+  "macro": "E:\\ntnu_mesh_optimization_20261030\\wave_surface_only\\ContinueMappedNoFoilFlat.java",
+  "macro_sha256": "fb588d5d26bdebd4be1e22c287fb6378069cee60ee3fb5a19a93ec0288e6d9fe",
+  "at": "2026-10-31T11:28:17.849454+01:00",
+  "stage": "calm_coarse",
+  "inputs_copied": true,
+  "secondary_GPU_used": false
+}

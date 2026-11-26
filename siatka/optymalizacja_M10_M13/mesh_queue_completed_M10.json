@@ -1,0 +1,30 @@
+{
+  "stage": "M10",
+  "output": "E:\\ntnu_mesh_optimization_20261030\\M10_W01a_GPU_queue_20261031_165802_aef11e",
+  "done": {
+    "time_s": 3.297999999999702,
+    "status": "stopped_by_marker",
+    "solver_wall_s": 4949.4913971000005,
+    "steps": 5934
+  },
+  "project_primary_pass": true,
+  "two_primary_checks": {
+    "criterion": "project primary CL/CD only (not legacy 4-way, not ITTC)",
+    "checks_s": [
+      3.0959999999997243,
+      3.2959999999997023
+    ],
+    "CL_shift_pct": 0.18608574430856653,
+    "CD_shift_pct": 0.4281670416285513,
+    "CL_rms_pct": 0.05045777231402409,
+    "CD_rms_pct": 0.1172110591533032,
+    "CDp_abs_shift_vs_totalCD_pct": 0.41857595869072406,
+    "CDv_abs_shift_vs_totalCD_pct": 0.009591082937775622,
+    "sum_abs_components_vs_totalCD_pct": 0.42816704162849967,
+    "opposing_sign": false,
+    "raw_independently_recomputed": true
+  },
+  "stop_reason": "project_primary_two_passes",
+  "at": "2026-10-31T18:23:02.265810+01:00",
+  "source_preserved": true
+}

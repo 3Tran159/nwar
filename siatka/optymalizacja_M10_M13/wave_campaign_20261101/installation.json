@@ -1,0 +1,16 @@
+{
+  "at": "2026-11-01T11:07:08.736004+01:00",
+  "installed": true,
+  "before_sha256": "385cf95874af74418b56726de208f8c307cef1d4762a8cf85accca8196fafae9",
+  "after_sha256": "328c9d60f039842d89ecca6b5131f4c22b508772a9d0411b54902c53ed714f6c",
+  "backup": "E:\\ntnu_mesh_optimization_20261030\\wave_campaign_20261101\\backup\\campaign_hub_20261101_110708.py",
+  "source_simulations_changed": false,
+  "solver_macros_changed": false,
+  "old_comparison_and_gallery_preserved": true,
+  "alias_C01": "accepted M13 calm",
+  "alias_W01": "M13 H0.5 lambda20 lineage R2/R3V/R4V",
+  "active_ids": [
+    "T01"
+  ],
+  "next_wave": "W02"
+}

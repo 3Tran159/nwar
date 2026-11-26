@@ -1,0 +1,17 @@
+{
+  "exit_code": 0,
+  "source_unchanged": true,
+  "controller_reason": null,
+  "completed": {
+    "status": "target_reached",
+    "steps": 200,
+    "time_s": 0.6000000000000004,
+    "stage": "incident_wave_ramp_only; no acceptance; downstream arrival not yet established",
+    "calm_source_preserved": true,
+    "initialization_performed": false
+  },
+  "phase": "nearflat_inlet_boundary_diagnostic_only",
+  "at": "2026-10-31T21:34:46.915425+01:00",
+  "wall_s": 453.3088141000044,
+  "timing": []
+}

@@ -1,0 +1,19 @@
+{
+  "case": "coarse_wave_41200",
+  "exit_code": 0,
+  "observed_complete": true,
+  "source_hash_unchanged": true,
+  "source_copy_hash_unchanged": true,
+  "results": {
+    "PRESSURE_AUDIT_START": "time=5.503000000000172",
+    "PRESSURE_AUDIT_P_MIN": "-68.15872660315317",
+    "PRESSURE_AUDIT_P_MAX": "233993.21716024994",
+    "PRESSURE_AUDIT_V_MIN": "17.26119882356536",
+    "PRESSURE_AUDIT_V_MAX": "18.63020327332225",
+    "PRESSURE_AUDIT_WATERFRACTION_MIN": "0.0",
+    "PRESSURE_AUDIT_WATERFRACTION_MAX": "1.0",
+    "PRESSURE_AUDIT_COMPLETE_NO_STEPS_NO_SAVE": "Design"
+  },
+  "no_solver_steps": true,
+  "time": "2026-10-31T22:58:11.336078+01:00"
+}

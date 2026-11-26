@@ -1,0 +1,18 @@
+{
+    "at":  "2026-11-01T11:42:41.8629361+01:00",
+    "event":  "explicit_user_cancel_T01_start_clean_C01_then_wave_from_settled_checkpoint",
+    "user_instruction":  "to pierdol to liczenie teraz , startujemy na czysto, najpierw puszczaj c01 na jednej gestosci az sie cl ustabilizuje, potem fale jako kontynucja chcekpoint ustabilizowanego c01",
+    "water_kg_m3":  1000,
+    "air_kg_m3":  1.2,
+    "preserve_M13_mesh":  true,
+    "fresh_C01_fields_and_history":  true,
+    "wave_only_after_C01_primary_settled_saved":  true,
+    "stop_scope":  "E:\\ntnu_mesh_optimization_20261030\\M13_wave_direct_20261031\\M13_GPU_Hnear0_matched_control_20261101",
+    "controller_pid":  34760,
+    "frontend_pid":  33856,
+    "stop_method":  "Existing macro STOP marker; keeps raw history and completed earlier checkpoints; existing macro throws on STOP and does not save final state",
+    "latest_verified_checkpoint":  "E:\\ntnu_mesh_optimization_20261030\\M13_wave_direct_20261031\\M13_GPU_Hnear0_matched_control_20261101\\checkpoint_t4.6992.sim",
+    "not_numerical_failure":  true,
+    "old_sources_untouched":  true,
+    "deadline":  "2026-11-02T09:00:00+01:00"
+}

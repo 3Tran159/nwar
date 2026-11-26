@@ -1,0 +1,10 @@
+{
+  "phase": "zero_step_M13_forcing_wave_R4V",
+  "source": "E:\\ntnu_mesh_optimization_20261030\\M13_wave_direct_20261031\\M13_GPU_W20_H050_continuation_R4V_20261101\\wave_pilot_final.sim",
+  "source_sha256": "64a8be30fc7fe53aabafd8e5b3ec6cb88b7cae57b4199c8396047a722edf4672",
+  "macro_sha256": "f7232102b22e906d789c16990cb8c462c3669552a9d41dfb5ed2591dc116aba9",
+  "workers": 1,
+  "cpu_workers": 1,
+  "gpu": false,
+  "created": "2026-11-01T09:59:08.695462+01:00"
+}

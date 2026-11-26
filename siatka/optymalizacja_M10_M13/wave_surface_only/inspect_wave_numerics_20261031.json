@@ -1,0 +1,977 @@
+{
+  "flat_CPU2": {
+    "step_timeline": [
+      [
+        400,
+        {
+          "cont": 0.4330309,
+          "mx": 0.9744546,
+          "my": 0.001909954,
+          "mz": 3.402263,
+          "tke": 1.454433e-07,
+          "sdr": 1.63712e-07,
+          "water": 0.03289218
+        }
+      ]
+    ],
+    "max_residuals_post_0p4": {
+      "cont": {
+        "min": 0.4330309,
+        "max": 0.4330309,
+        "last": 0.4330309
+      },
+      "mx": {
+        "min": 0.9744546,
+        "max": 0.9744546,
+        "last": 0.9744546
+      },
+      "my": {
+        "min": 0.001909954,
+        "max": 0.001909954,
+        "last": 0.001909954
+      },
+      "mz": {
+        "min": 3.402263,
+        "max": 3.402263,
+        "last": 3.402263
+      },
+      "water": {
+        "min": 0.03289218,
+        "max": 0.03289218,
+        "last": 0.03289218
+      }
+    },
+    "gauges": {
+      "-20.0": {
+        "last": [
+          0.4000000000000003,
+          -5.115907697472721e-13
+        ],
+        "peak": 5.115907697472721e-13,
+        "count": 41
+      },
+      "-10.0": {
+        "last": [
+          0.4000000000000003,
+          -5.080380560684716e-13
+        ],
+        "peak": 5.080380560684716e-13,
+        "count": 41
+      },
+      "0.0": {
+        "last": [
+          0.4000000000000003,
+          -5.009326287108706e-13
+        ],
+        "peak": 5.009326287108706e-13,
+        "count": 41
+      },
+      "10.0": {
+        "last": [
+          0.4000000000000003,
+          -4.938272013532696e-13
+        ],
+        "peak": 4.938272013532696e-13,
+        "count": 41
+      },
+      "20.0": {
+        "last": [
+          0.4000000000000003,
+          -4.938272013532696e-13
+        ],
+        "peak": 4.938272013532696e-13,
+        "count": 41
+      }
+    },
+    "history_last": {
+      "time_s": "0.4000000000000003",
+      "step": "400",
+      "wall_s": "454.4057229",
+      "max_speed_m_s": "18.000000000041055",
+      "max_CFL": "0.09000000000020053",
+      "interface_CFL": "NaN",
+      "water_volume_m3": "38.39999999999376"
+    },
+    "history_count": 401,
+    "error_tail": [
+      "A floating point error has occurred. The following error has been logged:",
+      "A floating point error has occurred. The following error has been logged:",
+      "A floating point error has occurred. The following error has been logged:",
+      "A floating point error has occurred. The following error has been logged:",
+      "A floating point error has occurred. The following error has been logged:",
+      "A floating point error has occurred. The following error has been logged:",
+      "A floating point error has occurred. The following error has been logged:",
+      "A floating point error has occurred. The following error has been logged:",
+      "A floating point error has occurred. The following error has been logged:",
+      "A floating point error has occurred. The following error has been logged:",
+      "A floating point error has occurred. The following error has been logged:",
+      "A floating point error has occurred. The following error has been logged:",
+      "A floating point error has occurred. The following error has been logged:",
+      "TimeStep  400: Time  4.000000e-01",
+      "Server process exited with code : 0"
+    ],
+    "star_sha256": "bcb92af50a4f37b33c8669a442b70dbe2e4cec8e8341bb966405628c48f45c59"
+  },
+  "wave_CPU2_H05_dt1": {
+    "step_timeline": [
+      [
+        401,
+        {
+          "cont": 1925107.0,
+          "mx": 265411.5,
+          "my": 0.003708932,
+          "mz": 1917008.0,
+          "tke": 6.924331e-07,
+          "sdr": 7.764738e-07,
+          "water": 188.321
+        }
+      ],
+      [
+        402,
+        {
+          "cont": 2874138.0,
+          "mx": 271051.3,
+          "my": 0.003707781,
+          "mz": 1884108.0,
+          "tke": 6.901628e-07,
+          "sdr": 7.739975e-07,
+          "water": 301.8428
+        }
+      ],
+      [
+        405,
+        {
+          "cont": 5278691.0,
+          "mx": 37572.21,
+          "my": 0.003704331,
+          "mz": 368235.6,
+          "tke": 6.833899e-07,
+          "sdr": 7.665992e-07,
+          "water": 4701.207
+        }
+      ],
+      [
+        410,
+        {
+          "cont": 9920742.0,
+          "mx": 313767.6,
+          "my": 0.003698595,
+          "mz": 2003494.0,
+          "tke": 6.723742e-07,
+          "sdr": 7.545576e-07,
+          "water": 711.9275
+        }
+      ],
+      [
+        418,
+        {
+          "cont": 16267330.0,
+          "mx": 298728.6,
+          "my": 0.003689451,
+          "mz": 2599831.0,
+          "tke": 6.552106e-07,
+          "sdr": 7.357881e-07,
+          "water": 59903.72
+        }
+      ],
+      [
+        419,
+        {
+          "cont": 17668930.0,
+          "mx": 330352.3,
+          "my": 0.003688311,
+          "mz": 2975995.0,
+          "tke": 6.531173e-07,
+          "sdr": 7.334963e-07,
+          "water": 70246.75
+        }
+      ],
+      [
+        420,
+        {
+          "cont": 18848770.0,
+          "mx": 159616.7,
+          "my": 0.003687171,
+          "mz": 2456747.0,
+          "tke": 6.510267e-07,
+          "sdr": 7.312138e-07,
+          "water": 8954.22
+        }
+      ],
+      [
+        500,
+        {
+          "cont": 740298500.0,
+          "mx": 48259880.0,
+          "my": 0.003597346,
+          "mz": 335040900.0,
+          "tke": 5.107267e-07,
+          "sdr": 5.774179e-07,
+          "water": 40558.14
+        }
+      ],
+      [
+        600,
+        {
+          "cont": 3598776000.0,
+          "mx": 121829200.0,
+          "my": 0.003491724,
+          "mz": 809361600.0,
+          "tke": 3.893672e-07,
+          "sdr": 4.447622e-07,
+          "water": 13021440.0
+        }
+      ],
+      [
+        900,
+        {
+          "cont": 12645790000.0,
+          "mx": 456781200.0,
+          "my": 0.001658849,
+          "mz": 3047309000.0,
+          "tke": 8.794485e-08,
+          "sdr": 1.120508e-07,
+          "water": 35548200.0
+        }
+      ]
+    ],
+    "max_residuals_post_0p4": {
+      "cont": {
+        "min": 1925107.0,
+        "max": 13744280000.0,
+        "last": 12645790000.0
+      },
+      "mx": {
+        "min": 37572.21,
+        "max": 758919800.0,
+        "last": 456781200.0
+      },
+      "my": {
+        "min": 0.001658849,
+        "max": 0.003708932,
+        "last": 0.001658849
+      },
+      "mz": {
+        "min": 368235.6,
+        "max": 5533524000.0,
+        "last": 3047309000.0
+      },
+      "water": {
+        "min": 188.321,
+        "max": 35548200.0,
+        "last": 35548200.0
+      }
+    },
+    "gauges": {
+      "-34.0": {
+        "last": [
+          0.9000000000000007,
+          0.0027727076659260774
+        ],
+        "peak": 0.016185955648850836,
+        "count": 101
+      },
+      "-25.0": {
+        "last": [
+          0.9000000000000007,
+          -0.008070170554191236
+        ],
+        "peak": 0.008070170554191236,
+        "count": 101
+      },
+      "-15.0": {
+        "last": [
+          0.9000000000000007,
+          0.0015284885455102426
+        ],
+        "peak": 0.0015284885455102426,
+        "count": 101
+      },
+      "-10.0": {
+        "last": [
+          0.9000000000000007,
+          -0.0001335608816575018
+        ],
+        "peak": 0.0001335608816575018,
+        "count": 101
+      },
+      "0.0": {
+        "last": [
+          0.9000000000000007,
+          -2.0374896717356705e-05
+        ],
+        "peak": 2.284295956656024e-05,
+        "count": 101
+      },
+      "10.0": {
+        "last": [
+          0.9000000000000007,
+          -1.0071239337605675e-05
+        ],
+        "peak": 1.112914943135479e-05,
+        "count": 101
+      },
+      "20.0": {
+        "last": [
+          0.9000000000000007,
+          -5.220494955437971e-06
+        ],
+        "peak": 5.6847364895418195e-06,
+        "count": 101
+      },
+      "40.0": {
+        "last": [
+          0.9000000000000007,
+          -9.084767498279689e-07
+        ],
+        "peak": 9.245769163612749e-07,
+        "count": 101
+      }
+    },
+    "history_last": {
+      "time_s": "0.9000000000000007",
+      "step": "500",
+      "wall_s": "462.7877816",
+      "max_speed_m_s": "18.109495207454938",
+      "max_CFL": "0.09382307746514076",
+      "interface_CFL": "0.09333699030271549",
+      "water_volume_m3": "38.398504609507214",
+      "target_height_m": "0.09993736336659752",
+      "actual_wave_height_m": "0.09993736336659752",
+      "period_s": "0.8478625927235593"
+    },
+    "history_count": 501,
+    "error_tail": [
+      "A floating point error has occurred. The following error has been logged:",
+      "TimeStep  900: Time  9.000000e-01",
+      "A floating point error has occurred. The following error has been logged:",
+      "A floating point error has occurred. The following error has been logged:",
+      "A floating point error has occurred. The following error has been logged:",
+      "A floating point error has occurred. The following error has been logged:",
+      "A floating point error has occurred. The following error has been logged:",
+      "A floating point error has occurred. The following error has been logged:",
+      "A floating point error has occurred. The following error has been logged:",
+      "A floating point error has occurred. The following error has been logged:",
+      "A floating point error has occurred. The following error has been logged:",
+      "A floating point error has occurred. The following error has been logged:",
+      "A floating point error has occurred. The following error has been logged:",
+      "A floating point error has occurred. The following error has been logged:",
+      "Server process exited with code : 0"
+    ],
+    "star_sha256": "a3f066f24dcdff01b7f22b26a0cfef81a519fe254382091c3440553d9ca2a522"
+  },
+  "wave_CPU1_H05_dt1": {
+    "step_timeline": [
+      [
+        401,
+        {
+          "cont": 1932562.0,
+          "mx": 273110.7,
+          "my": 0.003708701,
+          "mz": 1860295.0,
+          "tke": 6.92182e-07,
+          "sdr": 7.761987e-07,
+          "water": 271.9565
+        }
+      ],
+      [
+        402,
+        {
+          "cont": 2840244.0,
+          "mx": 230192.2,
+          "my": 0.003707557,
+          "mz": 1503442.0,
+          "tke": 6.899133e-07,
+          "sdr": 7.737171e-07,
+          "water": 17683.54
+        }
+      ],
+      [
+        405,
+        {
+          "cont": 5269923.0,
+          "mx": 39540.66,
+          "my": 0.003704106,
+          "mz": 344405.9,
+          "tke": 6.831419e-07,
+          "sdr": 7.663257e-07,
+          "water": 703.3481
+        }
+      ],
+      [
+        410,
+        {
+          "cont": 9910538.0,
+          "mx": 318271.0,
+          "my": 0.003698365,
+          "mz": 2052007.0,
+          "tke": 6.721301e-07,
+          "sdr": 7.542883e-07,
+          "water": 641.9411
+        }
+      ],
+      [
+        418,
+        {
+          "cont": 16558070.0,
+          "mx": 298359.9,
+          "my": 0.003689217,
+          "mz": 2657834.0,
+          "tke": 6.549672e-07,
+          "sdr": 7.355196e-07,
+          "water": 1697.07
+        }
+      ]
+    ],
+    "max_residuals_post_0p4": {
+      "cont": {
+        "min": 1932562.0,
+        "max": 16558070.0,
+        "last": 16558070.0
+      },
+      "mx": {
+        "min": 39540.66,
+        "max": 555374.9,
+        "last": 298359.9
+      },
+      "my": {
+        "min": 0.003689217,
+        "max": 0.003708701,
+        "last": 0.003689217
+      },
+      "mz": {
+        "min": 344405.9,
+        "max": 3710592.0,
+        "last": 2657834.0
+      },
+      "water": {
+        "min": 266.5543,
+        "max": 55724.63,
+        "last": 1697.07
+      }
+    },
+    "gauges": {
+      "-34.0": {
+        "last": [
+          0.4150000000000003,
+          1.813428696095798e-08
+        ],
+        "peak": 1.813428696095798e-08,
+        "count": 4
+      },
+      "-25.0": {
+        "last": [
+          0.4150000000000003,
+          1.0302397157602172e-08
+        ],
+        "peak": 1.0302397157602172e-08,
+        "count": 4
+      },
+      "-15.0": {
+        "last": [
+          0.4150000000000003,
+          5.667892821747955e-10
+        ],
+        "peak": 5.667892821747955e-10,
+        "count": 4
+      },
+      "-10.0": {
+        "last": [
+          0.4150000000000003,
+          4.794209473857336e-10
+        ],
+        "peak": 4.794209473857336e-10,
+        "count": 4
+      },
+      "0.0": {
+        "last": [
+          0.4150000000000003,
+          2.52359910746236e-10
+        ],
+        "peak": 2.52359910746236e-10,
+        "count": 4
+      },
+      "10.0": {
+        "last": [
+          0.4150000000000003,
+          1.2990142295166152e-10
+        ],
+        "peak": 1.2990142295166152e-10,
+        "count": 4
+      },
+      "20.0": {
+        "last": [
+          0.4150000000000003,
+          6.556533094226324e-11
+        ],
+        "peak": 6.556533094226324e-11,
+        "count": 4
+      },
+      "40.0": {
+        "last": [
+          0.4150000000000003,
+          8.37019342725398e-12
+        ],
+        "peak": 8.37019342725398e-12,
+        "count": 4
+      }
+    },
+    "history_last": {
+      "time_s": "0.4180000000000003",
+      "step": "18",
+      "wall_s": "27.926879000000003",
+      "max_speed_m_s": "18.000096312179185",
+      "max_CFL": "0.09000258860130422",
+      "interface_CFL": "NaN",
+      "water_volume_m3": "38.40000001568626",
+      "target_height_m": "1.4027050145680835E-4",
+      "actual_wave_height_m": "1.4027050145680835E-4",
+      "period_s": "0.847887343282388"
+    },
+    "history_count": 19,
+    "error_tail": [
+      "A floating point error has occurred. The following error has been logged:",
+      "A floating point error has occurred. The following error has been logged:",
+      "A floating point error has occurred. The following error has been logged:",
+      "A floating point error has occurred. The following error has been logged:",
+      "A floating point error has occurred. The following error has been logged:",
+      "A floating point error has occurred. The following error has been logged:",
+      "A floating point error has occurred. The following error has been logged:",
+      "A floating point error has occurred. The following error has been logged:",
+      "A floating point error has occurred. The following error has been logged:",
+      "A floating point error has occurred. The following error has been logged:",
+      "A floating point error has occurred. The following error has been logged:",
+      "A floating point error has occurred. The following error has been logged:",
+      "A floating point error has occurred. The following error has been logged:",
+      "A floating point error has occurred. The following error has been logged:",
+      "java.lang.RuntimeException: error: java.net.SocketException: Connection reset"
+    ],
+    "star_sha256": "cf140cd5bc8b15c4d171792b09a2d349f0c4452ffa480bb0e7963a2cbd73981c"
+  },
+  "wave_CPU1_H05_dt05": {
+    "step_timeline": [
+      [
+        401,
+        {
+          "cont": 499192.1,
+          "mx": 1102603.0,
+          "my": 0.003313719,
+          "mz": 7421378.0,
+          "tke": 5.867801e-07,
+          "sdr": 6.481252e-07,
+          "water": 80.35604
+        }
+      ],
+      [
+        402,
+        {
+          "cont": 413321.5,
+          "mx": 192284.2,
+          "my": 0.003313171,
+          "mz": 1391885.0,
+          "tke": 5.858085e-07,
+          "sdr": 6.470874e-07,
+          "water": 115.0811
+        }
+      ],
+      [
+        405,
+        {
+          "cont": 731239.5,
+          "mx": 15598.96,
+          "my": 0.003311607,
+          "mz": 138252.9,
+          "tke": 5.829078e-07,
+          "sdr": 6.439895e-07,
+          "water": 175.1182
+        }
+      ],
+      [
+        410,
+        {
+          "cont": 1411097.0,
+          "mx": 220378.8,
+          "my": 0.003309033,
+          "mz": 1489860.0,
+          "tke": 5.781185e-07,
+          "sdr": 6.388716e-07,
+          "water": 255.5833
+        }
+      ],
+      [
+        418,
+        {
+          "cont": 2440091.0,
+          "mx": 405000.5,
+          "my": 0.003304927,
+          "mz": 2716507.0,
+          "tke": 5.705746e-07,
+          "sdr": 6.308102e-07,
+          "water": 84.75302
+        }
+      ],
+      [
+        419,
+        {
+          "cont": 3551470.0,
+          "mx": 843006.6,
+          "my": 0.04984251,
+          "mz": 9778588.0,
+          "tke": 0.0003265848,
+          "sdr": 0.0003582377,
+          "water": 17501.47
+        }
+      ]
+    ],
+    "max_residuals_post_0p4": {
+      "cont": {
+        "min": 413321.5,
+        "max": 3551470.0,
+        "last": 3551470.0
+      },
+      "mx": {
+        "min": 15598.96,
+        "max": 1102603.0,
+        "last": 843006.6
+      },
+      "my": {
+        "min": 0.003304927,
+        "max": 0.04984251,
+        "last": 0.04984251
+      },
+      "mz": {
+        "min": 138252.9,
+        "max": 9778588.0,
+        "last": 9778588.0
+      },
+      "water": {
+        "min": 40.18059,
+        "max": 17501.47,
+        "last": 17501.47
+      }
+    },
+    "gauges": {
+      "-34.0": {
+        "last": [
+          0.4075000000000003,
+          4.235264583485332e-09
+        ],
+        "peak": 4.235264583485332e-09,
+        "count": 4
+      },
+      "-25.0": {
+        "last": [
+          0.4075000000000003,
+          1.0350866830322047e-09
+        ],
+        "peak": 1.0350866830322047e-09,
+        "count": 4
+      },
+      "-15.0": {
+        "last": [
+          0.4075000000000003,
+          1.2593659448612016e-10
+        ],
+        "peak": 1.2593659448612016e-10,
+        "count": 4
+      },
+      "-10.0": {
+        "last": [
+          0.4075000000000003,
+          9.100986630983243e-11
+        ],
+        "peak": 9.100986630983243e-11,
+        "count": 4
+      },
+      "0.0": {
+        "last": [
+          0.4075000000000003,
+          4.5563552930616424e-11
+        ],
+        "peak": 4.5563552930616424e-11,
+        "count": 4
+      },
+      "10.0": {
+        "last": [
+          0.4075000000000003,
+          2.3071322630130453e-11
+        ],
+        "peak": 2.3071322630130453e-11,
+        "count": 4
+      },
+      "20.0": {
+        "last": [
+          0.4075000000000003,
+          1.141842176366481e-11
+        ],
+        "peak": 1.141842176366481e-11,
+        "count": 4
+      },
+      "40.0": {
+        "last": [
+          0.4075000000000003,
+          1.0835776720341528e-12
+        ],
+        "peak": 1.0835776720341528e-12,
+        "count": 4
+      }
+    },
+    "history_last": {
+      "time_s": "0.4095000000000003",
+      "step": "19",
+      "wall_s": "25.9808282",
+      "max_speed_m_s": "18.000020075539567",
+      "max_CFL": "0.04500013935534682",
+      "interface_CFL": "NaN",
+      "water_volume_m3": "38.40000000392781",
+      "target_height_m": "3.97963111541814E-5",
+      "actual_wave_height_m": "3.97963111541814E-5",
+      "period_s": "0.8478873433272217"
+    },
+    "history_count": 20,
+    "error_tail": [
+      "A floating point error has occurred. The following error has been logged:",
+      "A floating point error has occurred. The following error has been logged:",
+      "A floating point error has occurred. The following error has been logged:",
+      "A floating point error has occurred. The following error has been logged:",
+      "A floating point error has occurred. The following error has been logged:",
+      "A floating point error has occurred. The following error has been logged:",
+      "A floating point error has occurred. The following error has been logged:",
+      "A floating point error has occurred. The following error has been logged:",
+      "A floating point error has occurred. The following error has been logged:",
+      "A floating point error has occurred. The following error has been logged:",
+      "A floating point error has occurred. The following error has been logged:",
+      "A floating point error has occurred. The following error has been logged:",
+      "A floating point error has occurred. The following error has been logged:",
+      "java.lang.RuntimeException: error: java.net.SocketException: Connection reset",
+      "Server process exited with code : 0"
+    ],
+    "star_sha256": "b7cb51560fe4107b191971c2fd8b5042b76285c552cbccd5a009b94827ad4be0"
+  },
+  "nearflat_CPU1_dt1": {
+    "step_timeline": [
+      [
+        401,
+        {
+          "cont": 653433.7,
+          "mx": 719837.3,
+          "my": 0.003708702,
+          "mz": 4848026.0,
+          "tke": 6.921823e-07,
+          "sdr": 7.761869e-07,
+          "water": 105.5916
+        }
+      ],
+      [
+        402,
+        {
+          "cont": 240277.4,
+          "mx": 59115.35,
+          "my": 0.003707557,
+          "mz": 530808.0,
+          "tke": 6.899077e-07,
+          "sdr": 7.737029e-07,
+          "water": 13.99085
+        }
+      ],
+      [
+        405,
+        {
+          "cont": 120119.7,
+          "mx": 4207.498,
+          "my": 0.003704106,
+          "mz": 34719.11,
+          "tke": 6.831402e-07,
+          "sdr": 7.66311e-07,
+          "water": 360.3488
+        }
+      ],
+      [
+        410,
+        {
+          "cont": 83744.35,
+          "mx": 5255.087,
+          "my": 0.003698365,
+          "mz": 40784.2,
+          "tke": 6.721166e-07,
+          "sdr": 7.542655e-07,
+          "water": 40.59287
+        }
+      ],
+      [
+        418,
+        {
+          "cont": 56514.59,
+          "mx": 5040.384,
+          "my": 0.003689217,
+          "mz": 37702.63,
+          "tke": 6.549642e-07,
+          "sdr": 7.355154e-07,
+          "water": 38.70569
+        }
+      ],
+      [
+        419,
+        {
+          "cont": 57948.64,
+          "mx": 5381.683,
+          "my": 0.003688076,
+          "mz": 40497.79,
+          "tke": 6.528711e-07,
+          "sdr": 7.332269e-07,
+          "water": 6.943416
+        }
+      ],
+      [
+        420,
+        {
+          "cont": 60704.66,
+          "mx": 5418.775,
+          "my": 0.003686936,
+          "mz": 40765.79,
+          "tke": 6.507888e-07,
+          "sdr": 7.309506e-07,
+          "water": 60.25116
+        }
+      ],
+      [
+        500,
+        {
+          "cont": 257764.6,
+          "mx": 10792.48,
+          "my": 0.003597265,
+          "mz": 70075.59,
+          "tke": 5.105365e-07,
+          "sdr": 5.772063e-07,
+          "water": 839.8766
+        }
+      ],
+      [
+        600,
+        {
+          "cont": 652589.3,
+          "mx": 23321.35,
+          "my": 0.00179551,
+          "mz": 153003.3,
+          "tke": 8.149295e-08,
+          "sdr": 9.312028e-08,
+          "water": 3095.43
+        }
+      ]
+    ],
+    "max_residuals_post_0p4": {
+      "cont": {
+        "min": 55889.26,
+        "max": 716818.4,
+        "last": 652589.3
+      },
+      "mx": {
+        "min": 4207.498,
+        "max": 719837.3,
+        "last": 23321.35
+      },
+      "my": {
+        "min": 0.00179551,
+        "max": 0.003708702,
+        "last": 0.00179551
+      },
+      "mz": {
+        "min": 33495.36,
+        "max": 4848026.0,
+        "last": 153003.3
+      },
+      "water": {
+        "min": 5.497364,
+        "max": 3095.43,
+        "last": 3095.43
+      }
+    },
+    "gauges": {
+      "-34.0": {
+        "last": [
+          0.6000000000000004,
+          -1.1135222095504105e-06
+        ],
+        "peak": 1.1135222095504105e-06,
+        "count": 41
+      },
+      "-25.0": {
+        "last": [
+          0.6000000000000004,
+          6.806402907955089e-08
+        ],
+        "peak": 6.806402907955089e-08,
+        "count": 41
+      },
+      "-15.0": {
+        "last": [
+          0.6000000000000004,
+          -1.665565463326857e-08
+        ],
+        "peak": 1.665565463326857e-08,
+        "count": 41
+      },
+      "-10.0": {
+        "last": [
+          0.6000000000000004,
+          -2.8927686912538775e-09
+        ],
+        "peak": 2.8927686912538775e-09,
+        "count": 41
+      },
+      "0.0": {
+        "last": [
+          0.6000000000000004,
+          -8.736193990444008e-10
+        ],
+        "peak": 8.736193990444008e-10,
+        "count": 41
+      },
+      "10.0": {
+        "last": [
+          0.6000000000000004,
+          -4.0164849224311183e-10
+        ],
+        "peak": 4.0164849224311183e-10,
+        "count": 41
+      },
+      "20.0": {
+        "last": [
+          0.6000000000000004,
+          -1.9837642639686237e-10
+        ],
+        "peak": 1.9837642639686237e-10,
+        "count": 41
+      },
+      "40.0": {
+        "last": [
+          0.6000000000000004,
+          -2.773958840407431e-11
+        ],
+        "peak": 2.773958840407431e-11,
+        "count": 41
+      }
+    },
+    "history_last": {
+      "time_s": "0.6000000000000004",
+      "step": "200",
+      "wall_s": "270.71485720000004",
+      "max_speed_m_s": "18.000006685208028",
+      "max_CFL": "0.09000012187274813",
+      "interface_CFL": "NaN",
+      "water_volume_m3": "38.399999935896126",
+      "target_height_m": "4.365860974187804E-6",
+      "actual_wave_height_m": "4.365860974187804E-6",
+      "period_s": "0.847887343331099"
+    },
+    "history_count": 201,
+    "error_tail": [
+      "TimeStep  597: Time  5.970000e-01",
+      "TimeStep  598: Time  5.980000e-01",
+      "TimeStep  599: Time  5.990000e-01",
+      "TimeStep  600: Time  6.000000e-01",
+      "Server process exited with code : 0"
+    ],
+    "star_sha256": "8a843e1c8d27615461a49a80940443c618074957bdaff9625e5efad81fecc672"
+  }
+}

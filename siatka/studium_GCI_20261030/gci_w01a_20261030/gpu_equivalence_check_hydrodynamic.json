@@ -1,0 +1,35 @@
+{
+  "pass_check": true,
+  "threshold_pct": 0.05,
+  "threshold_purpose": "Project hardware-equivalence screen, ten times tighter than force settling; not a mesh uncertainty estimate",
+  "matched_steps": 20,
+  "quantities": {
+    "CD": {
+      "max_relative_difference_pct": 0.010357513098694282,
+      "pass": true
+    },
+    "CL": {
+      "max_relative_difference_pct": 0.002265909812099207,
+      "pass": true
+    },
+    "CD_pressure": {
+      "max_relative_difference_pct": 0.03245466554499537,
+      "pass": true
+    },
+    "CD_viscous": {
+      "max_relative_difference_pct": 0.0024312750185605542,
+      "pass": true
+    }
+  },
+  "cpu_seconds_per_step": 13.408370699999992,
+  "gpu_seconds_per_step": 2.2639700000000005,
+  "speedup": 5.92250369925396,
+  "dt_s": 0.0001,
+  "inner": 10,
+  "source": "C:\\Users\\ThinkPad\\Documents\\ChatGPT\\ntnu science\\mesh_study_20261030\\gci_w01a_20261030\\force_stabilization_20261029\\calm_pilot_G10_F_continued_r1\\final.sim",
+  "cpu_case": "C:\\Users\\ThinkPad\\Documents\\ChatGPT\\ntnu science\\mesh_study_20261030\\gci_w01a_20261030\\force_stabilization_20261029\\calm_settle_G10_F",
+  "gpu_case": "C:\\Users\\ThinkPad\\Documents\\ChatGPT\\ntnu science\\mesh_study_20261030\\gci_w01a_20261030\\force_stabilization_20261029\\calm_hardware_equivalence_G10_F_GPU_r1",
+  "scope": "same fine mesh, same saved fields, same physics, timestep and inner iterations",
+  "gpu": true,
+  "lift_convention": "hydrodynamic_lift_v1"
+}

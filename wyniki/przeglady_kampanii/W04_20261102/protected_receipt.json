@@ -1,0 +1,85 @@
+{
+  "passed": true,
+  "gates": {
+    "one_cell_span": true,
+    "paired_planes": true,
+    "expanded_bounds": true,
+    "expanded_fluid_area": true,
+    "foil_geometry_preserved": true,
+    "first_layer_preserved": true,
+    "prism_coverage_preserved": true,
+    "protected_wall_grading": true,
+    "core_expanded_wave_resolution": true,
+    "inlet_expanded_wave_resolution": true,
+    "inlet_unchanged_max_dx": true,
+    "outlet_expanded_wave_resolution": true,
+    "outlet_unchanged_max_dx": true
+  },
+  "original_mesh_sha256": "4ea5e7a7585d83cb4c5c555bf354d56739f54e15f36d60343d113a770adad121",
+  "mesh_sha256": "7434e619f12de75ee9fff645b1303d81d55e4981bd5b9b7e79773793f2b38eed",
+  "cells": 572176,
+  "first_layer_ratio": 1.0000000000000002,
+  "original_prism_coverage": 0.9870391818075642,
+  "new_prism_coverage": 0.9870391818075643,
+  "wall_grading_ratios": [
+    1.0,
+    1.0,
+    1.0,
+    1.0,
+    1.0,
+    1.0
+  ],
+  "original_band": {
+    "core": {
+      "cells": 76869,
+      "dx_median": 0.02172790780593914,
+      "dz_median": 0.020182875633015573,
+      "dz_p95": 0.027606126645952765,
+      "dx_max": 0.03394654863755875,
+      "dz_max": 0.032852314165915164
+    },
+    "inlet": {
+      "cells": 450,
+      "dx_median": 0.1991379310344854,
+      "dz_median": 0.01996711743723978,
+      "dz_p95": 0.020156680943712146,
+      "dx_max": 0.1991379310344854,
+      "dz_max": 0.02020081628889514
+    },
+    "outlet": {
+      "cells": 1830,
+      "dx_median": 0.19802816901408704,
+      "dz_median": 0.02001504508749896,
+      "dz_p95": 0.02023146560558331,
+      "dx_max": 0.19802816901408704,
+      "dz_max": 0.02023480247273568
+    }
+  },
+  "expanded_band": {
+    "core": {
+      "cells": 215667,
+      "dx_median": 0.022240274612677524,
+      "dz_median": 0.020332934964863325,
+      "dz_p95": 0.02813193867251904,
+      "dx_max": 0.033747546872339385,
+      "dz_max": 0.03295226075798929
+    },
+    "inlet": {
+      "cells": 15725,
+      "dx_median": 0.19965635738831367,
+      "dz_median": 0.01998800276164303,
+      "dz_p95": 0.020122094757818232,
+      "dx_max": 0.19965635738832077,
+      "dz_max": 0.02020758046064408
+    },
+    "outlet": {
+      "cells": 24166,
+      "dx_median": 0.19952702702703107,
+      "dz_median": 0.01997859583584649,
+      "dz_p95": 0.020180705477118366,
+      "dx_max": 0.19952702702704528,
+      "dz_max": 0.020219958172138064
+    }
+  },
+  "scope": "Geometry, protected foil layers and wave-envelope resolution; original C01 remains the reference."
+}

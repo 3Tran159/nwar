@@ -1,0 +1,480 @@
+{
+  "id": "b752ad76fa01426c",
+  "case_id": "W03",
+  "generated_at": "2026-11-09T22:03:35.603450+01:00",
+  "run_verification": "passed",
+  "project_accepted": true,
+  "qualitative_NWAR_accepted": true,
+  "scientific_NWAR_accepted": false,
+  "policy_id": "quasi2d_five_cycles_discard_first_20261103",
+  "scope": "Trends and qualitative foil response with accepted M13 cell-size controls and one immutable C01 reference per campaign",
+  "smoke": 0,
+  "checks": [
+    {
+      "id": "solver",
+      "title": "Solver completion",
+      "status": "passed",
+      "criterion": "Clean exit or independently verified native target completion; final checkpoint saved, no macro error.",
+      "values": {
+        "exit_code": 0,
+        "native_completion_verified": false,
+        "stop_reason": "five_cycles_repeated",
+        "macro_error": {}
+      },
+      "evidence_files": [
+        "E:\\ntnu_mesh_optimization_20261030\\nwar_automation_20261102\\runs\\W03_20261103_211415_b752ad\\stage_result.json",
+        "E:\\ntnu_mesh_optimization_20261030\\nwar_automation_20261102\\runs\\W03_20261103_211415_b752ad\\completed.json"
+      ],
+      "group": "run"
+    },
+    {
+      "id": "checkpoint",
+      "title": "Checkpoint integrity",
+      "status": "passed",
+      "criterion": "SHA-256 matches the receipt; the first external checkpoint review records its fingerprint after a clean solver exit.",
+      "values": {
+        "actual_sha256": "9fe595bac3565cea64cb098cb48e1a8bf6670daad2937479574143efe1d83cea",
+        "expected_sha256": "9fe595bac3565cea64cb098cb48e1a8bf6670daad2937479574143efe1d83cea",
+        "bytes": 549254859,
+        "first_external_snapshot": false
+      },
+      "evidence_files": [
+        "E:\\ntnu_mesh_optimization_20261030\\nwar_automation_20261102\\runs\\W03_20261103_211415_b752ad\\wave_pilot_final.sim",
+        "E:\\ntnu_mesh_optimization_20261030\\nwar_automation_20261102\\runs\\W03_20261103_211415_b752ad\\final_integrity.json"
+      ],
+      "group": "run"
+    },
+    {
+      "id": "source",
+      "title": "Unchanged source checkpoint",
+      "status": "passed",
+      "criterion": "The source checkpoint retains its approved SHA-256 before and after calculation.",
+      "values": {
+        "expected_sha256": "06a02c129f931e5fb70e1559a5831e077f27f4e20b365813f0dc8d4e256a13db",
+        "actual_sha256": "06a02c129f931e5fb70e1559a5831e077f27f4e20b365813f0dc8d4e256a13db",
+        "source_unchanged": true
+      },
+      "evidence_files": [
+        "E:\\ntnu_mesh_optimization_20261030\\clean_c01_campaign_20261101\\night_wave_queue_20261101\\W03_resume_plus1_v2_20261102_0841\\wave_pilot_extended_final.sim",
+        "E:\\ntnu_mesh_optimization_20261030\\nwar_automation_20261102\\runs\\W03_20261103_211415_b752ad\\stage_result.json"
+      ],
+      "group": "run"
+    },
+    {
+      "id": "c01_lineage",
+      "title": "Accepted C01 reference and source provenance",
+      "status": "passed",
+      "criterion": "Verified saved calm reference and source chain; historical original C01 remains unchanged.",
+      "values": {
+        "reference_id": "C01_original",
+        "C01_sha256": "9af4857b948e0494088b5421f8ede100e66344fc2631cc00030406640d7cc295",
+        "original_C01_sha256": "9af4857b948e0494088b5421f8ede100e66344fc2631cc00030406640d7cc295",
+        "links": [
+          {
+            "folder": "E:\\ntnu_mesh_optimization_20261030\\clean_c01_campaign_20261101\\night_wave_queue_20261101\\W03_rho1000_air1p2_from_C01_20261101",
+            "source": "E:\\ntnu_mesh_optimization_20261030\\clean_c01_campaign_20261101\\C01_warm_M13_steady_rho1000_air1p2_20261101\\final.sim",
+            "expected_sha256": "9af4857b948e0494088b5421f8ede100e66344fc2631cc00030406640d7cc295",
+            "actual_sha256": "9af4857b948e0494088b5421f8ede100e66344fc2631cc00030406640d7cc295",
+            "ok": true
+          },
+          {
+            "folder": "E:\\ntnu_mesh_optimization_20261030\\clean_c01_campaign_20261101\\night_wave_queue_20261101\\W03_resume_plus1_v2_20261102_0841",
+            "source": "E:\\ntnu_mesh_optimization_20261030\\clean_c01_campaign_20261101\\night_wave_queue_20261101\\W03_rho1000_air1p2_from_C01_20261101\\wave_pilot_final.sim",
+            "expected_sha256": "dc14f5fc47bca1fd181979ed28e3d944227a098fd21c815d5a0c74ba55d6abff",
+            "actual_sha256": "dc14f5fc47bca1fd181979ed28e3d944227a098fd21c815d5a0c74ba55d6abff",
+            "ok": true
+          },
+          {
+            "folder": "E:\\ntnu_mesh_optimization_20261030\\nwar_automation_20261102\\runs\\W03_20261103_211415_b752ad",
+            "source": "E:\\ntnu_mesh_optimization_20261030\\clean_c01_campaign_20261101\\night_wave_queue_20261101\\W03_resume_plus1_v2_20261102_0841\\wave_pilot_extended_final.sim",
+            "expected_sha256": "06a02c129f931e5fb70e1559a5831e077f27f4e20b365813f0dc8d4e256a13db",
+            "actual_sha256": "06a02c129f931e5fb70e1559a5831e077f27f4e20b365813f0dc8d4e256a13db",
+            "ok": true
+          }
+        ]
+      },
+      "evidence_files": [
+        "E:\\ntnu_mesh_optimization_20261030\\clean_c01_campaign_20261101\\night_wave_queue_20261101\\W03_rho1000_air1p2_from_C01_20261101\\source_identity.json",
+        "E:\\ntnu_mesh_optimization_20261030\\clean_c01_campaign_20261101\\night_wave_queue_20261101\\W03_resume_plus1_v2_20261102_0841\\source_identity.json",
+        "E:\\ntnu_mesh_optimization_20261030\\nwar_automation_20261102\\runs\\W03_20261103_211415_b752ad\\source_identity.json",
+        "E:\\ntnu_mesh_optimization_20261030\\clean_c01_campaign_20261101\\C01_warm_M13_steady_rho1000_air1p2_20261101\\C01_final_acceptance_20261101.json"
+      ],
+      "group": "run"
+    },
+    {
+      "id": "mesh_prior",
+      "title": "M13 mesh reviewed before C01",
+      "status": "passed",
+      "criterion": "The prior M10–M13 review and accepted M13 mesh remain valid. A new mesh study is not required at this stage.",
+      "values": {
+        "previous_mesh_review": [
+          {
+            "mesh": "M10",
+            "cells": 317277,
+            "dt_s": 0.0004,
+            "accepted": true
+          },
+          {
+            "mesh": "M11",
+            "cells": 595285,
+            "dt_s": 0.0002,
+            "accepted": true
+          },
+          {
+            "mesh": "M12",
+            "cells": 1154199,
+            "dt_s": 0.0001,
+            "accepted": true
+          },
+          {
+            "mesh": "M13",
+            "cells": 309441,
+            "dt_s": 0.0004,
+            "accepted": true
+          }
+        ]
+      },
+      "evidence_files": [
+        "E:\\ntnu_mesh_optimization_20261030\\results_catalog\\mesh_comparison.json"
+      ],
+      "group": "run"
+    },
+    {
+      "id": "config",
+      "title": "Mesh, wave and time step",
+      "status": "passed",
+      "criterion": "Reviewed M13 profile: 309441 cells; Δt=0.0004 s; H and λ match the selected wave; no global initialization.",
+      "values": {
+        "cells": 309441,
+        "dt_s": 0.0004,
+        "H_m": 0.5,
+        "lambda_m": 30.0,
+        "requested_H_m": 0.5,
+        "requested_lambda_m": 30,
+        "global_initialization": false,
+        "mesh_profile": null
+      },
+      "evidence_files": [
+        "E:\\ntnu_mesh_optimization_20261030\\clean_c01_campaign_20261101\\night_wave_queue_20261101\\W03_rho1000_air1p2_from_C01_20261101\\wave_setup_audit.json",
+        "E:\\ntnu_mesh_optimization_20261030\\nwar_automation_20261102\\runs\\W03_20261103_211415_b752ad\\wave_setup_audit.json"
+      ],
+      "group": "run"
+    },
+    {
+      "id": "density",
+      "title": "Material, C01 and wave densities",
+      "status": "passed",
+      "criterion": "Water 1000 kg/m³ and air 1.2 kg/m³ in all three settings.",
+      "values": {
+        "material_and_calm": {
+          "water_material_density": 1000.0,
+          "air_material_density": 1.2,
+          "Calm_heavy": 1000.0,
+          "Calm_light": 1.2,
+          "source_fields_preserved": true,
+          "source_time_s": 14.444000000012784
+        },
+        "wave": {
+          "source_material_and_Calm_verified": true,
+          "FifthOrder_water_rho": 1000.0,
+          "FifthOrder_air_rho": 1.2
+        }
+      },
+      "evidence_files": [
+        "E:\\ntnu_mesh_optimization_20261030\\clean_c01_campaign_20261101\\night_wave_queue_20261101\\W03_rho1000_air1p2_from_C01_20261101\\native_C01_rho_readback.json",
+        "E:\\ntnu_mesh_optimization_20261030\\clean_c01_campaign_20261101\\night_wave_queue_20261101\\W03_rho1000_air1p2_from_C01_20261101\\wave_density_audit.json",
+        "E:\\ntnu_mesh_optimization_20261030\\nwar_automation_20261102\\runs\\W03_20261103_211415_b752ad\\native_C01_rho_readback.json",
+        "E:\\ntnu_mesh_optimization_20261030\\nwar_automation_20261102\\runs\\W03_20261103_211415_b752ad\\wave_density_audit.json"
+      ],
+      "group": "run"
+    },
+    {
+      "id": "continuity",
+      "title": "Time continuity and checkpoint endpoint",
+      "status": "passed",
+      "criterion": "Positive 0.0004 s time step throughout the joined history; final time matches the saved checkpoint.",
+      "values": {
+        "samples": 27005,
+        "dt_min": 0.0003999999997841286,
+        "dt_max": 0.000400000001000933,
+        "history_end_s": 15.500800000015014,
+        "checkpoint_end_s": 15.500800000015014,
+        "segments": [
+          {
+            "path": "E:\\ntnu_mesh_optimization_20261030\\clean_c01_campaign_20261101\\night_wave_queue_20261101\\W03_rho1000_air1p2_from_C01_20261101\\history.csv",
+            "sha256": "f5214118ec58037ab96c0f3f1ba83d854788b01766b22f956f68b337c599a043",
+            "snapshot_bytes": 6184386,
+            "hash_basis": "CSV bytes consumed by this analysis snapshot",
+            "samples": 21901
+          },
+          {
+            "path": "E:\\ntnu_mesh_optimization_20261030\\clean_c01_campaign_20261101\\night_wave_queue_20261101\\W03_resume_plus1_v2_20261102_0841\\history.csv",
+            "sha256": "e74fcfb46c434998c2762c8bd536eda6d994cb37029a7a77fb69b2929aa37075",
+            "snapshot_bytes": 601963,
+            "hash_basis": "CSV bytes consumed by this analysis snapshot",
+            "samples": 2462
+          },
+          {
+            "path": "E:\\ntnu_mesh_optimization_20261030\\nwar_automation_20261102\\runs\\W03_20261103_211415_b752ad\\history.csv",
+            "sha256": "65153fe624442a5ade154ed712744e56b538f69026f62b828ac08eb5738035d4",
+            "snapshot_bytes": 735923,
+            "hash_basis": "CSV bytes consumed by this analysis snapshot",
+            "samples": 2642
+          }
+        ]
+      },
+      "evidence_files": [
+        "E:\\ntnu_mesh_optimization_20261030\\clean_c01_campaign_20261101\\night_wave_queue_20261101\\W03_rho1000_air1p2_from_C01_20261101\\history.csv",
+        "E:\\ntnu_mesh_optimization_20261030\\clean_c01_campaign_20261101\\night_wave_queue_20261101\\W03_resume_plus1_v2_20261102_0841\\history.csv",
+        "E:\\ntnu_mesh_optimization_20261030\\nwar_automation_20261102\\runs\\W03_20261103_211415_b752ad\\history.csv",
+        "E:\\ntnu_mesh_optimization_20261030\\nwar_automation_20261102\\runs\\W03_20261103_211415_b752ad\\completed.json"
+      ],
+      "group": "run"
+    },
+    {
+      "id": "normalization",
+      "title": "CL and CD normalization",
+      "status": "passed",
+      "criterion": "CD=Fx/3855.6; CL_hydro=(Fz−22.718189111947265)/3855.6.",
+      "values": {
+        "CD_total_max_error": 4.999993474807951e-13,
+        "CL_hydrodynamic_max_error": 4.99933427988708e-13
+      },
+      "evidence_files": [
+        "E:\\ntnu_mesh_optimization_20261030\\clean_c01_campaign_20261101\\night_wave_queue_20261101\\W03_rho1000_air1p2_from_C01_20261101\\history.csv",
+        "E:\\ntnu_mesh_optimization_20261030\\clean_c01_campaign_20261101\\night_wave_queue_20261101\\W03_resume_plus1_v2_20261102_0841\\history.csv",
+        "E:\\ntnu_mesh_optimization_20261030\\nwar_automation_20261102\\runs\\W03_20261103_211415_b752ad\\history.csv"
+      ],
+      "group": "run"
+    },
+    {
+      "id": "health",
+      "title": "Numerical health and VOF",
+      "status": "passed",
+      "criterion": "CFL≤25; interface CFL≤2.2; speed≤50 m/s; α in [−10⁻⁵,1+10⁻⁵]; |p|≤10⁷ Pa; water-volume change≤0.8 m³; no NaN/Inf.",
+      "values": {
+        "ok": true,
+        "checks": {
+          "max_CFL": {
+            "ok": true,
+            "min": 17.164293015586534,
+            "max": 17.65752074446943
+          },
+          "interface_CFL": {
+            "ok": true,
+            "min": 0.759358642502337,
+            "max": 1.9307514205715237
+          },
+          "max_speed_m_s": {
+            "ok": true,
+            "min": 21.731718695258888,
+            "max": 29.407103901
+          },
+          "alpha_min": {
+            "ok": true,
+            "min": 0.0,
+            "max": 0.0
+          },
+          "alpha_max": {
+            "ok": true,
+            "min": 1.0,
+            "max": 1.0
+          },
+          "p_min_Pa": {
+            "ok": true,
+            "min": -70159.24329629878,
+            "max": -63879.87223495052
+          },
+          "p_max_Pa": {
+            "ok": true,
+            "min": 236605.27944105674,
+            "max": 237204.03343773
+          },
+          "water_inventory": {
+            "ok": true,
+            "change_m3": 0.017739480686579157,
+            "note": "Volume change does not replace mass-flux closure."
+          },
+          "CL_hydrodynamic": {
+            "ok": true
+          },
+          "CD_total": {
+            "ok": true
+          },
+          "Fx_N": {
+            "ok": true
+          },
+          "Fz_N": {
+            "ok": true
+          }
+        }
+      },
+      "evidence_files": [
+        "E:\\ntnu_mesh_optimization_20261030\\clean_c01_campaign_20261101\\night_wave_queue_20261101\\W03_rho1000_air1p2_from_C01_20261101\\history.csv",
+        "E:\\ntnu_mesh_optimization_20261030\\clean_c01_campaign_20261101\\night_wave_queue_20261101\\W03_resume_plus1_v2_20261102_0841\\history.csv",
+        "E:\\ntnu_mesh_optimization_20261030\\nwar_automation_20261102\\runs\\W03_20261103_211415_b752ad\\history.csv"
+      ],
+      "group": "run"
+    },
+    {
+      "id": "cycles",
+      "title": "Five measured cycles; evaluate cycles 2–5",
+      "status": "passed",
+      "criterion": "Record 5 complete measured cycles. Exclude cycle 1 by position; retain cycles 2–5 without force-based selection.",
+      "values": {
+        "count": 5,
+        "analyzed_count": 4,
+        "discarded_cycle_numbers": [
+          1
+        ],
+        "analyzed_cycle_numbers": [
+          2,
+          3,
+          4,
+          5
+        ],
+        "cycle_policy_id": "five_measured_cycles_discard_first_20261103",
+        "phase_probe_x_m": -0.5,
+        "phase_method": "Crossings of the fixed probe level at x=-0.5 m; no force phase fitting",
+        "analysis_not_before_s": 8.502992010782995,
+        "phase_level": 0.16507854971626612,
+        "period_measured_s": 1.2071063752122808,
+        "window": [
+          10.55036496384663,
+          15.378790464695753
+        ]
+      },
+      "evidence_files": [
+        "E:\\ntnu_mesh_optimization_20261030\\clean_c01_campaign_20261101\\night_wave_queue_20261101\\W03_rho1000_air1p2_from_C01_20261101\\gauges.csv",
+        "E:\\ntnu_mesh_optimization_20261030\\clean_c01_campaign_20261101\\night_wave_queue_20261101\\W03_resume_plus1_v2_20261102_0841\\gauges.csv",
+        "E:\\ntnu_mesh_optimization_20261030\\nwar_automation_20261102\\runs\\W03_20261103_211415_b752ad\\gauges.csv"
+      ],
+      "group": "run"
+    },
+    {
+      "id": "repeatability",
+      "title": "Force and wave repeatability",
+      "status": "passed",
+      "criterion": "Cycles 2–5: CL/CD mean spread<1%, amplitude spread<8%, phase RMS<5%; measured height 80–120% of H; probe level and drift within project limits.",
+      "values": {
+        "metrics": {
+          "CL": {
+            "mean_spread": 5.1295479295412627e-05,
+            "amplitude_spread": 0.00018354960914845845,
+            "phase_RMS": 0.000109440325555422,
+            "passed": true
+          },
+          "CD": {
+            "mean_spread": 0.00010462313690187409,
+            "amplitude_spread": 0.00039879130883005177,
+            "phase_RMS": 0.00025227546025241256,
+            "passed": true
+          }
+        },
+        "gauge_repeatable": true,
+        "last_cycles": [
+          {
+            "number": 2,
+            "start": 10.55036496384663,
+            "end": 11.757699824188796,
+            "CL_mean": 0.3183165157822241,
+            "CD_mean": 0.006597910563053882,
+            "H_measured": 0.49360225186099527,
+            "eta_mean": 0.15892064827746344
+          },
+          {
+            "number": 3,
+            "start": 11.757699824188796,
+            "end": 12.965073406204809,
+            "CL_mean": 0.3183391624085104,
+            "CD_mean": 0.00659683729497148,
+            "H_measured": 0.493547280049782,
+            "eta_mean": 0.15894053032639993
+          },
+          {
+            "number": 4,
+            "start": 12.965073406204809,
+            "end": 14.17214029675165,
+            "CL_mean": 0.318339647861476,
+            "CD_mean": 0.006596812666412867,
+            "H_measured": 0.4934475362179803,
+            "eta_mean": 0.15897843738875017
+          },
+          {
+            "number": 5,
+            "start": 14.17214029675165,
+            "end": 15.378790464695753,
+            "CL_mean": 0.3183360532200876,
+            "CD_mean": 0.0065973208402296,
+            "H_measured": 0.4936053379193064,
+            "eta_mean": 0.1590143881225262
+          }
+        ]
+      },
+      "evidence_files": [
+        "E:\\ntnu_mesh_optimization_20261030\\clean_c01_campaign_20261101\\night_wave_queue_20261101\\W03_rho1000_air1p2_from_C01_20261101\\gauges.csv",
+        "E:\\ntnu_mesh_optimization_20261030\\clean_c01_campaign_20261101\\night_wave_queue_20261101\\W03_resume_plus1_v2_20261102_0841\\gauges.csv",
+        "E:\\ntnu_mesh_optimization_20261030\\nwar_automation_20261102\\runs\\W03_20261103_211415_b752ad\\gauges.csv",
+        "E:\\ntnu_mesh_optimization_20261030\\clean_c01_campaign_20261101\\night_wave_queue_20261101\\W03_rho1000_air1p2_from_C01_20261101\\history.csv",
+        "E:\\ntnu_mesh_optimization_20261030\\clean_c01_campaign_20261101\\night_wave_queue_20261101\\W03_resume_plus1_v2_20261102_0841\\history.csv",
+        "E:\\ntnu_mesh_optimization_20261030\\nwar_automation_20261102\\runs\\W03_20261103_211415_b752ad\\history.csv"
+      ],
+      "group": "run"
+    },
+    {
+      "id": "forcing",
+      "title": "Forcing near the foil and reflections",
+      "status": "future",
+      "criterion": "Direct verified export of wave forcing and quantitative reflection assessment.",
+      "values": {
+        "reason": "Outside current stage criteria. Does not block acceptance or Q."
+      },
+      "evidence_files": [],
+      "group": "future"
+    },
+    {
+      "id": "time_convergence",
+      "title": "Time-step convergence of ΔCD",
+      "status": "future",
+      "criterion": "Matched calm/wave pair at a smaller Δt, using the same phase boundaries.",
+      "values": {
+        "reason": "Outside current stage criteria. Does not block acceptance or Q."
+      },
+      "evidence_files": [],
+      "group": "future"
+    },
+    {
+      "id": "formal_uncertainty",
+      "title": "Quantitative uncertainty assessment",
+      "status": "future",
+      "criterion": "Optional future work after the trend analysis; the existing mesh review remains accepted.",
+      "values": {
+        "reason": "Outside current stage criteria. Does not block acceptance or Q."
+      },
+      "evidence_files": [],
+      "group": "future"
+    },
+    {
+      "id": "mass_closure",
+      "title": "Mass-flux closure",
+      "status": "future",
+      "criterion": "Reconcile mass change with integrated boundary fluxes; water inventory alone is insufficient.",
+      "values": {
+        "reason": "Outside current stage criteria. Does not block acceptance or Q."
+      },
+      "evidence_files": [],
+      "group": "future"
+    }
+  ],
+  "counts": {
+    "passed": 12,
+    "failed": 0,
+    "pending": 0,
+    "future": 4
+  },
+  "required_counts": {
+    "passed": 12,
+    "failed": 0,
+    "pending": 0
+  }
+}

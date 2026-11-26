@@ -1,0 +1,11 @@
+{
+  "status": "pause_save_finished",
+  "pid": 19040,
+  "updated_at": "2026-10-31T09:32:41.719100+01:00",
+  "scope": "calm_water_only",
+  "workers": 1,
+  "gpu": true,
+  "gpu_count": 1,
+  "GPU_wave_untouched": true,
+  "error": "Owned GPU job stopped or failed calm_settle_G10_F_GPU_live_r2_resume_20261030_173420_4854e1"
+}

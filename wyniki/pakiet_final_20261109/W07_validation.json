@@ -1,0 +1,190 @@
+{
+  "id": "GLHF_W07_64cb3dde745454c2de6a",
+  "case_id": "W07",
+  "generated_at": "2026-11-05T16:42:18.306005+01:00",
+  "project_accepted": true,
+  "run_verification": "passed",
+  "verification_kind": "glhf_verified_final_save",
+  "scope": "Transferred STAR-CCM+ final save, independently checked against joined force and probe histories",
+  "native_controller_exit_verified": true,
+  "policy_id": "quasi2d_five_cycles_discard_first_20261103",
+  "manifest_sha256": "64cb3dde745454c2de6a145fdac792cdeaf11e535b6ef35ec1c3a35a2b47717d",
+  "checkpoint": "E:\\ntnu_mesh_optimization_20261030\\nwar_automation_20261102\\glhf_imports\\GLHF_W07_64cb3dde745454c2de6a\\checkpoint\\latest.sim",
+  "checkpoint_sha256": "fd11f54de94c929478ff7385f2f3c1564f18f537b81f32adee1de8af331c979c",
+  "checkpoint_bytes": 885067117,
+  "checkpoint_mtime_ns": 1793893334659478400,
+  "time_s": 19.831200000007136,
+  "checks": [
+    {
+      "id": "checkpoint",
+      "title": "Native SIM and force-history endpoint agree",
+      "values": {
+        "actual_sha256": "fd11f54de94c929478ff7385f2f3c1564f18f537b81f32adee1de8af331c979c",
+        "native": {
+          "time_s": 19.831200000007136,
+          "step": 49578,
+          "iteration": 495780,
+          "release": "21.04.009",
+          "mpi": "Np=1",
+          "wave_numbers": [
+            0.15707963267948966
+          ],
+          "time_steps": [
+            0.0004
+          ],
+          "scene_count": 30,
+          "state_offset": 876187711
+        }
+      },
+      "status": "passed",
+      "group": "run",
+      "criterion": "Native SIM and force-history endpoint agree",
+      "evidence_files": [
+        "E:\\ntnu_mesh_optimization_20261030\\nwar_automation_20261102\\glhf_imports\\GLHF_W07_64cb3dde745454c2de6a\\manifest.json",
+        "E:\\ntnu_mesh_optimization_20261030\\nwar_automation_20261102\\glhf_imports\\GLHF_W07_64cb3dde745454c2de6a\\checkpoint\\latest.sim"
+      ]
+    },
+    {
+      "id": "configuration",
+      "title": "W07 configuration, original C01 and PRE lineage verified",
+      "values": {
+        "height_m": 1.0,
+        "wavelength_m": 40.0,
+        "C01_sha256": "9af4857b948e0494088b5421f8ede100e66344fc2631cc00030406640d7cc295",
+        "PRE_sha256": "d86beded68b41f5e6ce324a93cea39177dbe93fff516af10d33a71761528b85a",
+        "segments": 2
+      },
+      "status": "passed",
+      "group": "run",
+      "criterion": "W07 configuration, original C01 and PRE lineage verified",
+      "evidence_files": [
+        "E:\\ntnu_mesh_optimization_20261030\\nwar_automation_20261102\\glhf_imports\\GLHF_W07_64cb3dde745454c2de6a\\manifest.json",
+        "E:\\ntnu_mesh_optimization_20261030\\nwar_automation_20261102\\glhf_imports\\GLHF_W07_64cb3dde745454c2de6a\\checkpoint\\latest.sim"
+      ]
+    },
+    {
+      "id": "health",
+      "title": "Joined history passes numerical and coefficient checks",
+      "values": {
+        "ok": true,
+        "checks": {
+          "max_CFL": {
+            "ok": true,
+            "min": 16.851255340829752,
+            "max": 17.86202355232305
+          },
+          "interface_CFL": {
+            "ok": true,
+            "min": 0.7516916011888801,
+            "max": 1.9054065655913999
+          },
+          "max_speed_m_s": {
+            "ok": true,
+            "min": 21.332706813498856,
+            "max": 35.19346576577402
+          },
+          "alpha_min": {
+            "ok": true,
+            "min": 0.0,
+            "max": 0.0
+          },
+          "alpha_max": {
+            "ok": true,
+            "min": 1.0,
+            "max": 1.0
+          },
+          "p_min_Pa": {
+            "ok": true,
+            "min": -72458.21036881671,
+            "max": -60730.03605768108
+          },
+          "p_max_Pa": {
+            "ok": true,
+            "min": 236809.24933203473,
+            "max": 237866.98221937654
+          },
+          "water_inventory": {
+            "ok": true,
+            "change_m3": 0.01131362843284478,
+            "note": "Volume change does not replace mass-flux closure."
+          },
+          "CL_hydrodynamic": {
+            "ok": true
+          },
+          "CD_total": {
+            "ok": true
+          },
+          "Fx_N": {
+            "ok": true
+          },
+          "Fz_N": {
+            "ok": true
+          }
+        }
+      },
+      "status": "passed",
+      "group": "run",
+      "criterion": "Joined history passes numerical and coefficient checks",
+      "evidence_files": [
+        "E:\\ntnu_mesh_optimization_20261030\\nwar_automation_20261102\\glhf_imports\\GLHF_W07_64cb3dde745454c2de6a\\manifest.json",
+        "E:\\ntnu_mesh_optimization_20261030\\nwar_automation_20261102\\glhf_imports\\GLHF_W07_64cb3dde745454c2de6a\\checkpoint\\latest.sim"
+      ]
+    },
+    {
+      "id": "repeatability",
+      "title": "Five measured cycles with repeatability of cycles 2–5",
+      "values": {
+        "count": 5,
+        "analyzed_cycle_numbers": [
+          2,
+          3,
+          4,
+          5
+        ],
+        "metrics": {
+          "CL": {
+            "mean_spread": 0.0008479269893438134,
+            "amplitude_spread": 0.0010316129588712458,
+            "phase_RMS": 0.0008523559634052328,
+            "passed": true
+          },
+          "CD": {
+            "mean_spread": 0.002813025150693365,
+            "amplitude_spread": 0.0012496666328796779,
+            "phase_RMS": 0.002795809458872503,
+            "passed": true
+          }
+        }
+      },
+      "status": "passed",
+      "group": "run",
+      "criterion": "Five measured cycles with repeatability of cycles 2–5",
+      "evidence_files": [
+        "E:\\ntnu_mesh_optimization_20261030\\nwar_automation_20261102\\glhf_imports\\GLHF_W07_64cb3dde745454c2de6a\\manifest.json",
+        "E:\\ntnu_mesh_optimization_20261030\\nwar_automation_20261102\\glhf_imports\\GLHF_W07_64cb3dde745454c2de6a\\checkpoint\\latest.sim"
+      ]
+    },
+    {
+      "id": "solver",
+      "title": "Exported GLHF solver and validation receipts passed",
+      "values": {
+        "exit_code": 0,
+        "original_run_id": "118630c6a2d84bfe",
+        "source_unchanged": true
+      },
+      "status": "passed",
+      "group": "run",
+      "criterion": "Exported GLHF solver and validation receipts passed",
+      "evidence_files": [
+        "E:\\ntnu_mesh_optimization_20261030\\nwar_automation_20261102\\glhf_imports\\GLHF_W07_64cb3dde745454c2de6a\\manifest.json",
+        "E:\\ntnu_mesh_optimization_20261030\\nwar_automation_20261102\\glhf_imports\\GLHF_W07_64cb3dde745454c2de6a\\checkpoint\\latest.sim"
+      ]
+    }
+  ],
+  "counts": {
+    "passed": 5,
+    "failed": 0,
+    "pending": 0,
+    "future": 0
+  }
+}

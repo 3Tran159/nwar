@@ -1,0 +1,26 @@
+{
+  "pass_check": true,
+  "steps": 5,
+  "source_time_s": 0.587,
+  "dt_s": 0.0002,
+  "calm_audit": {
+    "VOF_AMG_tolerance": 0.1,
+    "reinitialized": false,
+    "pressure_AMG_tolerance": 0.01,
+    "start_time_s": 0.5870000000000004,
+    "incident_wave_height_m": 0,
+    "source_wave": "Calm",
+    "GPU_count": 0,
+    "type": "FlatVofWave"
+  },
+  "flow_diagnostics": {
+    "max_CFL": 8.819047784649426,
+    "interface_CFL": 0.44625714579062453,
+    "effective_VOF_CFL": 0.44625714579062453,
+    "max_yplus": 254.01469836527377,
+    "time_s": 0.5880000000000003
+  },
+  "workers": 8,
+  "gpu": false,
+  "purpose": "Execution and restart check only; not a convergence result"
+}

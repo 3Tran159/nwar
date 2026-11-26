@@ -1,0 +1,17 @@
+{
+  "at": "2026-11-01T11:40:09.226282+01:00",
+  "event": "W01_density1000_air1p2_pending_revision_registered",
+  "revision": "W01-rho1000-air1p2",
+  "target_water_kg_m3": 1000.0,
+  "target_air_kg_m3": 1.2,
+  "solver_started": false,
+  "active_T01_unchanged": true,
+  "old_W01_source_runs_preserved": [
+    "E:\\ntnu_mesh_optimization_20261030\\M13_wave_direct_20261031\\M13_GPU_W20_H050_pilot_20261031_r2",
+    "E:\\ntnu_mesh_optimization_20261030\\M13_wave_direct_20261031\\M13_GPU_W20_H050_continuation_R3V_20261101",
+    "E:\\ntnu_mesh_optimization_20261030\\M13_wave_direct_20261031\\M13_GPU_W20_H050_continuation_R4V_20261101"
+  ],
+  "reference_gate_unchanged": true,
+  "backup": "E:\\ntnu_mesh_optimization_20261030\\wave_campaign_20261101\\density_revision_backup_20261101_114009",
+  "authorization": "E:\\ntnu_mesh_optimization_20261030\\approved_wave_plan_20261101\\USER_DENSITY_CORRECTED_W01_20261101_1136.json"
+}

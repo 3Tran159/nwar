@@ -1,0 +1,41 @@
+{
+  "at_local": "2026-10-31T22:55+01:00",
+  "status": "wave_only_coarse_kinematic_evidence_but_pressure_unresolved",
+  "source_audits": [
+    "E:\\ntnu_mesh_optimization_20261030\\wave_surface_only\\wave_night_solver_compare_20261031.json",
+    "E:\\ntnu_mesh_optimization_20261030\\wave_surface_only\\inspect_wave_numerics_20261031.json",
+    "E:\\ntnu_mesh_optimization_20261030\\wave_surface_only\\wave_coarse_physics_audit_20261031.json"
+  ],
+  "findings": {
+    "FS_coarse_cells": 41200,
+    "scenario": {
+      "H_m": 0.5,
+      "lambda_m": 20,
+      "U_m_s": 18
+    },
+    "stages": "R3 verified saved to t4.507; R4 verified saved to t5.503 and stopped due resource/primary-slowdown guard, not wave acceptance",
+    "harmonic_gauge_height_m": {
+      "x_minus10": 0.5112,
+      "x_0": 0.5214,
+      "x_10": 0.5281,
+      "x_20": 0.5307
+    },
+    "phase_error_10m_segments_rad": [
+      0.018,
+      0.04,
+      -0.109
+    ],
+    "t_fit_start_s": 3.6,
+    "t_end_s": 5.503,
+    "model_T_s": 0.8472673206891129,
+    "water_max_relative_deviation_pct": 0.049,
+    "max_CFL": 0.1948,
+    "critical": "Coarse R4 continuity residual last ~2.438e11, water residual ~5.452e6, and legacy force/max-velocity monitor nonfinites. At present cannot validate converged pressure field for foil-wave forces.",
+    "baseline_CPU2": "500 steps until t0.9 with incomplete wave ramp, same huge residual (continuity ~1.2646e10)",
+    "baseline_CPU1": "H0.5 dt1ms and dt0.5ms both failed near 18-19 steps with server connection reset",
+    "nearflat_CPU1": "H0.0001 completed 200 steps but with residual ~6.53e5, not a validation"
+  },
+  "current_safe_action": "One READ-ONLY pressure/velocity/VOF field audit on copied flat calm and coarse wave .sim is running or pending; controller path E:\\ntnu_mesh_optimization_20261030\\wave_surface_only\\run_wave_pressure_readonly_20261031.py; process and lock under wave_pressure_readonly_20261031. Do not duplicate. Zero solver steps, no save in STAR.",
+  "selection": "Provisional FS_coarse for wave kinematics only, NOT accepted for pressure/force response. Retain M13 accepted calm candidate. No joined foil-wave or W01/W02 until numerical guard and holds are resolved.",
+  "guard": "Existing C01 and HF holds untouched; no production solver was started in this analytical pass. Deadline 2026-11-01 09:00+01:00 for specifically authorized nightly wave-only work only."
+}

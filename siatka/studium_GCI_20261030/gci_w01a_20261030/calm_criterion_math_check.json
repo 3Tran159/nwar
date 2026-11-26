@@ -1,0 +1,11 @@
+{
+  "pass_check": true,
+  "results": {
+    "constant": true,
+    "small": true,
+    "component_oscillation": false,
+    "slow_drift": false,
+    "zero": false
+  },
+  "criterion": "Four individual coefficients; cancellation in total CD cannot hide unstable pressure/shear"
+}

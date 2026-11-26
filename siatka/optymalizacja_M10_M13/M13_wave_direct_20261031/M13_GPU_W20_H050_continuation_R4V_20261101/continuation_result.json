@@ -1,0 +1,34 @@
+{
+  "status": "saved_exploratory",
+  "at": "2026-11-01T06:34:19.033432+01:00",
+  "source_unchanged": true,
+  "completed": {
+    "status": "target_reached",
+    "steps": 12000,
+    "propagation_validated": false,
+    "time_s": 13.979200000011803,
+    "periodic_forces_validated": false,
+    "global_initialization": false
+  },
+  "latest_force_history_row": {
+    "time_s": "13.979200000011803",
+    "step": "12000",
+    "wall_s": "10484.3137375",
+    "CL_hydrodynamic": "0.28918643628179647",
+    "CD_total": "0.007479212614924199",
+    "Fx_N": "28.836852158101742",
+    "Fz_N": "1137.7054128400418",
+    "Fx_pressure_N": "8.65301697158709",
+    "Fx_viscous_N": "20.183835186514653",
+    "max_CFL": "17.328046106296984",
+    "max_speed_m_s": "21.742766972954026",
+    "water_volume_m3": "38.41726867899542",
+    "alpha_min": "0.0",
+    "alpha_max": "1.0",
+    "p_min_Pa": "-64177.97365130845",
+    "p_max_Pa": "236908.5208519139",
+    "target_H_m": "0.5"
+  },
+  "wave_propagation_validated": false,
+  "force_cycles_validated": false
+}

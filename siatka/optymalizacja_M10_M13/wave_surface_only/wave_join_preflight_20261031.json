@@ -1,0 +1,91 @@
+{
+  "at_local": "2026-10-31T22:57+01:00",
+  "purpose": "Read-only preflight for joining separately evaluated no-foil wave settings to the accepted M13 foil mesh; NOT permission to start solver",
+  "foil_M13": {
+    "status": "saved_project_primary_accepted",
+    "root": "E:\\ntnu_mesh_optimization_20261030\\M13_farfield15_20261031\\M13_GPU_calm_dt0004",
+    "saved_final_sim": "E:\\ntnu_mesh_optimization_20261030\\M13_farfield15_20261031\\M13_GPU_calm_dt0004\\final.sim",
+    "final_time_s": 3.8992,
+    "cell_count": 309441,
+    "free_surface_target_dz_m": 0.02,
+    "near_foil_target_m": 0.00892857142857143,
+    "wall_prism_total_m": 0.01546,
+    "prism_layer_count": 48,
+    "prism_coverage_fraction": 0.9870391818075642,
+    "geometry_x_m": [
+      -35,
+      45
+    ],
+    "geometry_z_m": [
+      -22,
+      8
+    ],
+    "span_m": 0.02,
+    "geom_audit_pass": true,
+    "protected_region_pass": true,
+    "mapping_audit_pass": true,
+    "calm_dt_s": 0.0004,
+    "calm_inner": 10
+  },
+  "nofoil_wave": {
+    "FS_coarse": {
+      "dz_m": 0.05,
+      "cell_count": 41200,
+      "observed_H_at_x0_x10_x20_m": [
+        0.5214,
+        0.5281,
+        0.5307
+      ],
+      "mass_deviation_pct": 0.049,
+      "max_CFL": 0.1948,
+      "phase_error_abs_max_rad": 0.109
+    },
+    "FS_baseline": {
+      "dz_m": 0.025,
+      "cell_count": 53200,
+      "observed_stable_long_propagation": false
+    },
+    "FS_fine": {
+      "dz_m": 0.0125,
+      "cell_count": 77200,
+      "observed_stable_long_propagation": false
+    },
+    "geometry_x_m": [
+      -35,
+      45
+    ],
+    "geometry_z_m": [
+      -22,
+      8
+    ],
+    "span_m": 0.02,
+    "pressure_residuals_unresolved": true
+  },
+  "important": "M13 and no-foil wave-only geometry box and span align. M13 already has a tighter absolute free-surface target (0.02 m) than the provisionally credible wave-only coarse (0.05 m). No blind remeshing of an already accepted foil mesh; measure actual z-band/wake region and run a fresh foil+wave pilot only after wave-only solver pressure integrity is established.",
+  "pilot_must_use": {
+    "new_disposable_copy_of_M13_final": true,
+    "t0_must_equal_actual_saved_time_not_0p4": true,
+    "calm_field_preexisting": true,
+    "upstream_inlet_wave_generation_only": true,
+    "wave_model": "FifthOrderVofWave",
+    "no_reinitialize": true,
+    "audits": [
+      "mesh free-surface actual z resolution",
+      "prism integrity/wake",
+      "VOF interface",
+      "pressure max/min and iterative convergence",
+      "wave source/inlet forcing",
+      "interface CFL",
+      "mass",
+      "hydrodynamic CL and total CD",
+      "healthy checkpoint"
+    ],
+    "before_release": [
+      "wave-only pressure stability understood",
+      "original campaign hold verified released by authorized workflow",
+      "no HF interference",
+      "resources and active ownership check"
+    ]
+  },
+  "current_status": "geometry compatibility preliminary only; no joined foil+wave solver started"
+}

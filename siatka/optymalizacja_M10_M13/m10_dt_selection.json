@@ -1,0 +1,32 @@
+{
+  "approved_for_continuation_pilot": true,
+  "status": "M10_dt2_allowed_for_exploratory_settling_NOT_final_temporal_validation",
+  "at": "2026-10-31T16:25:05.411937+01:00",
+  "source_dt_s": 0.0001,
+  "candidate_dt_s": 0.0002,
+  "pilot_checkpoint_time_s": 0.6051999999999984,
+  "directory": "E:\\ntnu_mesh_optimization_20261030\\M10_W01a_dt0002_GPU_pilot_20261031_162106_a9e382",
+  "final_sim_sha256": "73cdad60a47b4188f223ad2c247392103b9e5cb1eb43a4b46f06185b3f00d52b",
+  "pilot_CFL_guard_pass": true,
+  "force_short_pilot_guard_pass": true,
+  "comparison_force_error_last20_pct": {
+    "CL": 0.0006409618680640406,
+    "CD": 0.002125538638711897
+  },
+  "max_abs_force_error_pct": {
+    "CL": 0.0008420252357192917,
+    "CD": 0.0022716038606256077
+  },
+  "physical_guard_CFL": {
+    "interface": 0.4462007190648344,
+    "bulk": 8.818319250034717
+  },
+  "original_M10_dt0001_saved_unmodified": true,
+  "original_M11_M12_untouched": true,
+  "source_original_preserved": true,
+  "full_matched_endpoint_temporal_control_required": true,
+  "new_worker_sha256": "f84b298279f342151842ae756c18238c0f68b94684520ae7d6c43de0d4efebbe",
+  "new_controller_sha256": "b0ae58c6bc3000f799c9da489e156d5ab13875eff9604e6226cb29733418618e",
+  "original_worker_sha256": "af59dd82911db3e7e5f879c93462be4ef9ad93872f86ff3e8b4dce2ddb947637",
+  "no_original_worker_edit": true
+}

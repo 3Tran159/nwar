@@ -1,0 +1,28 @@
+{
+  "at": "2026-10-31T21:34:46.916765+01:00",
+  "diagnostic_complete": true,
+  "not_wave_propagation_validation": true,
+  "completed": {
+    "status": "target_reached",
+    "steps": 200,
+    "time_s": 0.6000000000000004,
+    "stage": "incident_wave_ramp_only; no acceptance; downstream arrival not yet established",
+    "calm_source_preserved": true,
+    "initialization_performed": false
+  },
+  "history_rows": 201,
+  "last_measured": {
+    "time_s": "0.6000000000000004",
+    "step": "200",
+    "wall_s": "270.71485720000004",
+    "max_speed_m_s": "18.000006685208028",
+    "max_CFL": "0.09000012187274813",
+    "interface_CFL": "NaN",
+    "water_volume_m3": "38.399999935896126",
+    "target_height_m": "4.365860974187804E-6",
+    "actual_wave_height_m": "4.365860974187804E-6",
+    "period_s": "0.847887343331099"
+  },
+  "source_unchanged": true,
+  "output": "E:\\ntnu_mesh_optimization_20261030\\wave_surface_only\\wave_nearflat_inlet_CPU1_20261031_once"
+}

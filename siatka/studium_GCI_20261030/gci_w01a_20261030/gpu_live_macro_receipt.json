@@ -1,0 +1,10 @@
+{
+  "status": "javac_passed",
+  "GPU_macro_sha256": "6e1e78ad501d1becaa62f8bd60be461623c76a5274218b9d483324f9fcd39aeb",
+  "changes": [
+    "Hydrodynamic CL for settling; raw CL_total retained",
+    "Read-only saved-step native velocity image every 120 wall seconds",
+    "Reuse prior matching force history"
+  ],
+  "physics_unchanged": true
+}

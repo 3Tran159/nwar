@@ -1,0 +1,36 @@
+Stan przekazania — 30.10.2026
+
+Dashboard na komputerze: http://127.0.0.1:8771/ — zakładka Mesh assessment.
+Telefon: https://ntnu-cfd-live-291026.serkieza.chatgpt.site
+
+Obliczenia działają jako osobny lokalny proces, niezależnie od czatu. Komputer musi pozostać włączony. Nie uruchamiaj drugiego sterownika tej samej kampanii.
+
+Teraz: M12 (1 154 199 komórek), spokojna woda W01a, GPU. Kontynuacja zapisanych pól; bez inicjalizacji. M11 = 595 285, M10 = 317 277 komórek. Celem jest najlżejsza uzasadniona siatka, około 300 tys. komórek.
+
+CL = CL_total − 22.718189111947265 / 3855.6. Wykresy, stabilizacja i GCI używają CL bez wyporu; surowe historie pozostają zachowane. CD rozdzielone na pressure i viscous. Próg: zmiana średnich i RMS <0,5% w dwóch sąsiednich oknach 0,2 s, potwierdzone dwukrotnie.
+
+Sterownik sam wykona:
+1. Stabilizację M12, następnie M11 i M10.
+2. Porównanie siatek i ocenę, czy trend oraz pozostała zmienność pozwalają na GCI.
+3. Jeśli trend jest rozstrzygalny: kontrole dt/2 i podwojonej liczby iteracji, ze wspólnego zapisanego stanu i z przebiegiem odniesienia.
+4. Zapis wyników GCI albo konkretnego powodu wymagającego dalszej oceny.
+
+Po zakończeniu / przy needs_review:
+- Sprawdź rzeczywiste procesy i najnowsze historie, nie tylko dawny status JSON.
+- Oceń wszystkie cztery współczynniki oraz wpływ kroku czasu i iteracji. Nie uznawaj samej stabilnej krzywej za weryfikację siatki.
+- Wybierz najlżejszą uzasadnioną siatkę; w razie potrzeby zaplanuj odchudzanie i kolejne Mxx. Wybrana siatka stanie się podstawą przyszłego C01.
+- Nie nadpisuj istniejącego C01 i nie uruchamiaj automatycznie fal. GCI dotyczy tylko spokojnej wody.
+
+Pliki do wznowienia pracy:
+C:\Users\ThinkPad\Documents\ChatGPT\ntnu science\mesh_study_20261030\gci_w01a_20261030\gpu_study_state.json
+C:\Users\ThinkPad\Documents\ChatGPT\ntnu science\mesh_study_20261030\gci_w01a_20261030\gpu_calm_study_live.py
+C:\Users\ThinkPad\Documents\ChatGPT\ntnu science\mesh_study_20261030\gci_w01a_20261030\gpu_live_stdout.log
+C:\Users\ThinkPad\Documents\ChatGPT\ntnu science\mesh_study_20261030\gci_w01a_20261030\gpu_live_stderr.log
+C:\Users\ThinkPad\Documents\ChatGPT\ntnu science\mesh_study_20261030\gci_w01a_20261030\lift_convention.json
+C:\Users\ThinkPad\Documents\ChatGPT\ntnu science\mesh_study_20261030\gci_w01a_20261030\mesh_selection_policy.json
+C:\Users\ThinkPad\Documents\ChatGPT\ntnu science\mesh_study_20261030\gci_w01a_20261030\gci_results.json (powstanie po ocenie)
+
+Bieżący przebieg: force_stabilization_20261029\calm_settle_G10_F_GPU_live_r2.
+Po przerwaniu używaj ostatniego potwierdzonego checkpointu/final.sim i nowego katalogu kontynuacji; nie odpalaj ponownie niezmienionego sterownika na istniejących katalogach.
+
+Dashboard: źródło produkcyjne C:\Users\ThinkPad\Documents\ChatGPT\ntnu science\mobile-dashboard; lokalny serwer F:\ntnu\mesh_screening_20261028\force_stabilization_20261029\manual_control_server.py. Aktualizacja danych nie powinna zmieniać miejsca przewinięcia ani wybranej zakładki.

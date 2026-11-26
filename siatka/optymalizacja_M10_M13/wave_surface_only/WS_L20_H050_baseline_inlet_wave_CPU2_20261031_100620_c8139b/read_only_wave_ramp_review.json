@@ -1,0 +1,68 @@
+{
+  "schema": "read_only_wave_ramp_quality_v1",
+  "sampled_at": "2026-10-31T10:08:02.969182+01:00",
+  "run_path": "E:\\ntnu_mesh_optimization_20261030\\wave_surface_only\\WS_L20_H050_baseline_inlet_wave_CPU2_20261031_100620_c8139b",
+  "phase": "inlet_wave_ramp_from_computed_flat_calm",
+  "source_time_s": 0.4,
+  "target_dt_s": 0.001,
+  "n_history_samples": 0,
+  "n_gauge_samples": 0,
+  "last_step": null,
+  "last_physical_time_s": null,
+  "completed_status": "not_yet_completed",
+  "exit_code": null,
+  "max_speed_m_s": {
+    "n": 0,
+    "min": null,
+    "max": null,
+    "mean": null
+  },
+  "bulk_CFL": {
+    "n": 0,
+    "min": null,
+    "max": null,
+    "mean": null
+  },
+  "interface_CFL_valid": {
+    "n": 0,
+    "min": null,
+    "max": null,
+    "mean": null
+  },
+  "interface_CFL_unavailable_samples": 0,
+  "water_volume_m3": {
+    "n": 0,
+    "min": null,
+    "max": null,
+    "mean": null
+  },
+  "water_volume_range_pct": null,
+  "nominal_H_m": {
+    "n": 0,
+    "min": null,
+    "max": null,
+    "mean": null
+  },
+  "evaluated_H_m": {
+    "n": 0,
+    "min": null,
+    "max": null,
+    "mean": null
+  },
+  "max_abs_evaluated_height_difference_m": null,
+  "wave_period_s_after_first_step": {
+    "n": 0,
+    "min": null,
+    "max": null,
+    "mean": null
+  },
+  "raw_surface_probe_statistics": {},
+  "measured_probe_wave_disturbance": false,
+  "wave_height_envelope_complete": false,
+  "propagation_accuracy_accepted": false,
+  "mesh_convergence_accepted": false,
+  "reflection_evaluated": false,
+  "phase_speed_evaluated": false,
+  "ramp_startup_must_be_excluded_from_amplitude_or_phase_accuracy": true,
+  "disclaimer": "Source is raw solver history and probes only; no guessed phase, reflection, damping or full-height wave. Empty interface threshold yields unavailable CFL, not zero. Station arrival needs actual full-height time-series evidence."
+}

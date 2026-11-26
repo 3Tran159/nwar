@@ -1,0 +1,68 @@
+{
+  "passed": true,
+  "gates": {
+    "NegativeVolumeCells": true,
+    "UnclosedCells": true,
+    "DegeneratedFeCells": true,
+    "min_quality": true,
+    "face_validity": true,
+    "one_cell_span": true,
+    "original_preserved": true
+  },
+  "metrics": {
+    "cell_count": 572176,
+    "mesh_time_s": 0,
+    "NegativeVolumeCells": 0,
+    "UnclosedCells": 0,
+    "DegeneratedFeCells": 0,
+    "min_cell_quality": 0.07094186540771746,
+    "min_volume_change": 0.004255828981447531,
+    "min_face_validity": 1.0,
+    "max_skewness_angle_deg": 42.52044633635534,
+    "diagnostic_CellQuality_below_0.01": 0.0,
+    "diagnostic_VolumeChange_below_0.01": 2.0,
+    "diagnostic_SkewnessAngle_above_80.0": 0.0,
+    "centroid_y_min_m": 0.01999999999999999,
+    "centroid_y_max_m": 0.02000000000000001,
+    "centroid_y_range_m": 2.0816681711721685e-17
+  },
+  "cells": 572176,
+  "mesh_sha256": "7434e619f12de75ee9fff645b1303d81d55e4981bd5b9b7e79773793f2b38eed",
+  "design": {
+    "id": "M13_W04",
+    "case": "W04",
+    "at": "2026-11-02T10:50:45.981356+01:00",
+    "H_m": 1.5,
+    "lambda_m": 38.99857691441418,
+    "free_surface_target_m": 0.02,
+    "free_surface_z_m": [
+      1.0,
+      3.0
+    ],
+    "original_free_surface_z_m": [
+      1.6,
+      2.4
+    ],
+    "x_bounds_m": [
+      -70.0,
+      90.0
+    ],
+    "original_x_bounds_m": [
+      -35.0,
+      45.0
+    ],
+    "extension_dx_max_m": 0.2,
+    "forcing_length_m": 40.0,
+    "damping_length_m": 40.0,
+    "forcing_end_x_m": -30.0,
+    "damping_start_x_m": 50.0,
+    "span_m": 0.02,
+    "prism_layers": 48,
+    "prism_first_m": 1.530612244897959e-06,
+    "original_C01": "E:\\ntnu_mesh_optimization_20261030\\clean_c01_campaign_20261101\\C01_warm_M13_steady_rho1000_air1p2_20261101\\final.sim",
+    "original_C01_sha256": "9af4857b948e0494088b5421f8ede100e66344fc2631cc00030406640d7cc295",
+    "reference_policy": "One original C01. Wave allowed only after adjacent 0.2 s calm windows are stable below 0.5% and both means agree with original C01 within 0.5%.",
+    "no_new_Q_reference": true,
+    "no_cell_stretching": true
+  }
+}

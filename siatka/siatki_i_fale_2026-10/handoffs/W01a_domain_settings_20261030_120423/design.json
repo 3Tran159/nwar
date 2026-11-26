@@ -1,0 +1,25 @@
+{
+  "id": "M10_FS020_r1",
+  "mesh_number": 10,
+  "family": "M09_derived_wave_grid",
+  "reference": "M09",
+  "linear_refinement": 1.4,
+  "outer_base_m": 0.25,
+  "first_layer_um": 1.530612244897959,
+  "layers": 48,
+  "total_prism_m": 0.01546,
+  "free_surface_m": 0.02,
+  "protected_middle_size_m": 0.14285714285714288,
+  "protected_middle_xz_m": [
+    -11.9,
+    30.94,
+    -3,
+    3.2
+  ],
+  "purpose": "Wave FS sensitivity: change only nominal free-surface control0.0285714to0.020m; preserve M09 foil/near-foil/prism/outer controls. Regenerated actual edges must be audited. Extend to matched4lambda domain after build; requires its own pairedcalm/wave, no accuracyclaim.",
+  "base_m": 0.25,
+  "foil_target_m": 0.0028571428571428576,
+  "foil_min_m": 0.00028571428571428574,
+  "global_min_m": 0.0003571428571428572,
+  "near_foil_m": 0.00892857142857143
+}

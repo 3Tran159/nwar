@@ -1,0 +1,144 @@
+{
+  "time_local": "2026-10-31T21:40:36.858472+01:00",
+  "scope": "Offline CSV only. No process or source files modified. CL column is ALREADY buoyancy-adjusted.",
+  "rule": "abs relative difference <=5% separately CL and total CD, reference M12; matched-window requirement and unequal dt caveat",
+  "samples": {
+    "M10": {
+      "t_first": 0.9247999999999632,
+      "t_last": 3.297999999999702,
+      "dt_last": 0.0004,
+      "rows": 5934,
+      "last_0p2": {
+        "n": 501,
+        "first_t": 3.097999999999724,
+        "last_t": 3.297999999999702,
+        "CL": 0.3129361695042765,
+        "CD": 0.007146895008219445,
+        "pressure_drag_N": 6.882158130496716,
+        "viscous_drag_N": 20.67341026319418
+      },
+      "cost": {
+        "median_s_per_step_last600": 0.8642674499997156,
+        "mean_s_per_step_last600": 0.8643418308333336,
+        "mean_wall_per_physical_second_last600": 2160.854577083572
+      }
+    },
+    "M11": {
+      "t_first": 0.6053999999999984,
+      "t_last": 3.3935999999996915,
+      "dt_last": 0.0002,
+      "rows": 13942,
+      "last_0p2": {
+        "n": 1001,
+        "first_t": 3.1935999999997136,
+        "last_t": 3.3935999999996915,
+        "CL": 0.31297801786276513,
+        "CD": 0.007247895273585061,
+        "pressure_drag_N": 6.74898877041763,
+        "viscous_drag_N": 21.195996246416932
+      },
+      "cost": {
+        "median_s_per_step_last600": 1.3670343500016315,
+        "mean_s_per_step_last600": 1.3748397898333315,
+        "mean_wall_per_physical_second_last600": 6874.198949167414
+      }
+    },
+    "M12": {
+      "t_first": 0.890099999999967,
+      "t_last": 3.3314000000026542,
+      "dt_last": 0.0001,
+      "rows": 24414,
+      "last_0p2": {
+        "n": 2001,
+        "first_t": 3.131400000002232,
+        "last_t": 3.3314000000026542,
+        "CL": 0.3107853733233243,
+        "CD": 0.007298305265058546,
+        "pressure_drag_N": 6.653979413292984,
+        "viscous_drag_N": 21.48536636666675
+      },
+      "cost": {
+        "median_s_per_step_last600": 2.422994499997003,
+        "mean_s_per_step_last600": 2.4289772209999985,
+        "mean_wall_per_physical_second_last600": 24289.772209948726
+      }
+    },
+    "M13": {
+      "t_first": 3.298399999999702,
+      "t_last": 3.899199999999636,
+      "dt_last": 0.0004,
+      "rows": 1503,
+      "last_0p2": {
+        "n": 501,
+        "first_t": 3.699199999999658,
+        "last_t": 3.899199999999636,
+        "CL": 0.31435149741930424,
+        "CD": 0.007071965956387301,
+        "pressure_drag_N": 6.599621323788521,
+        "viscous_drag_N": 20.66705061765836
+      },
+      "cost": {
+        "median_s_per_step_last600": 0.826992300000029,
+        "mean_s_per_step_last600": 0.8318281808333332,
+        "mean_wall_per_physical_second_last600": 2079.570452083562
+      }
+    }
+  },
+  "matched_M10_M11_M12_3p098_to_3p298": {
+    "M10": {
+      "n": 501,
+      "first_t": 3.097999999999724,
+      "last_t": 3.297999999999702,
+      "CL": 0.3129361695042765,
+      "CD": 0.007146895008219445,
+      "pressure_drag_N": 6.882158130496716,
+      "viscous_drag_N": 20.67341026319418
+    },
+    "M11": {
+      "n": 1001,
+      "first_t": 3.097999999999724,
+      "last_t": 3.297999999999702,
+      "CL": 0.312721924211629,
+      "CD": 0.007261256029356987,
+      "pressure_drag_N": 6.799403219997526,
+      "viscous_drag_N": 21.197095526791276
+    },
+    "M12": {
+      "n": 2001,
+      "first_t": 3.0980000000021617,
+      "last_t": 3.2980000000025838,
+      "CL": 0.31069307043049915,
+      "CD": 0.007303127367353602,
+      "pressure_drag_N": 6.672166057643334,
+      "viscous_drag_N": 21.485771819925215
+    }
+  },
+  "comparisons": {
+    "M10_M12_matched_window": {
+      "CL_pct": 0.7219662384710723,
+      "CD_pct": -2.1392528334168937
+    },
+    "M11_M12_matched_window": {
+      "CL_pct": 0.6530090221576579,
+      "CD_pct": -0.5733343524007006
+    },
+    "M10_M12_distinct_last_windows_PROVISIONAL": {
+      "CL_pct": 0.6920519321591767,
+      "CD_pct": -2.0745947359038786
+    },
+    "M11_M12_distinct_last_windows_PROVISIONAL": {
+      "CL_pct": 0.70551728866588,
+      "CD_pct": -0.690708180087074
+    },
+    "M13_M12_distinct_last_windows_PROVISIONAL": {
+      "CL_pct": 1.1474555761251892,
+      "CD_pct": -3.1012584490658357
+    }
+  },
+  "overlap_M13_M12_s": 0.03300000000295222,
+  "overlap_M13_M10_s": 0,
+  "honesty": "No 0.2 s common raw-data window exists between M13 and M12/M10; M13 vs M12 relative deviations remain provisional, not strict 5% matched-window certification. dt M10=.4ms, M11=.2ms, M12=.1ms.",
+  "M13_cells": 309441,
+  "M10_cells": 317277,
+  "M13_cell_reduction_vs_M10_pct": 2.469766166472831
+}

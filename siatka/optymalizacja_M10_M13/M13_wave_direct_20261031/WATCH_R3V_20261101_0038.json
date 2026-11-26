@@ -1,0 +1,48 @@
+﻿{
+    "observed_at":  "2026-11-01T00:39:41.6050347+01:00",
+    "source":  "E:\\ntnu_mesh_optimization_20261030\\M13_wave_direct_20261031\\M13_GPU_W20_H050_continuation_R3V_20261101",
+    "status":  "running",
+    "frontend_pid":  34564,
+    "frontend_identity_verified":  true,
+    "controller_pid":  24364,
+    "controller_alive":  true,
+    "latest_step":  3305,
+    "latest_time_s":  5.7011999999994378,
+    "CL_hydrodynamic":  0.32486062923750558,
+    "CD_total":  0.00655959211266994,
+    "CFL_bulk":  17.394936795964369,
+    "VOF_min":  0,
+    "VOF_max":  1,
+    "water_m3":  38.394148921880237,
+    "native_frame_t_s":  5.699199999999438,
+    "native_frame_interface_CFL":  0.9161414578850962,
+    "last_checkpoint_t_s":  5.5792,
+    "complete_postarrival_cycles_verified":  0,
+    "period_start_estimate_not_before_s":  7.054,
+    "wave_arrival_validated":  false,
+    "foil_wave_scientifically_accepted":  false,
+    "locks":  [
+                  {
+                      "name":  "m13_wave_gpu.lock",
+                      "owner_pid":  24364
+                  },
+                  {
+                      "name":  "M13_wave_direct_20261031\\M13_wave_gpu_pilot.lock",
+                      "owner_pid":  24364
+                  },
+                  {
+                      "name":  "wave_surface_only\\wave_inlet.lock",
+                      "owner_pid":  24364
+                  }
+              ],
+    "legacy_hold_active":  true,
+    "stop_present":  false,
+    "disk_free_gib":  {
+                          "C":  53.41,
+                          "E":  198.15
+                      },
+    "gpu":  "9467, 42",
+    "solver_started_by_watch":  false,
+    "source_and_active_solver_modified":  false,
+    "note":  "Nonzero prewave foil-local gauge at calm t3.8992; gauge elevation alone cannot establish incident-wave arrival. Existing cycle algorithm waits for ramp+estimated travel."
+}

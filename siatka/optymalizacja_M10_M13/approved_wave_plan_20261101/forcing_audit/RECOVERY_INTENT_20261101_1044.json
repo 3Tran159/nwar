@@ -1,0 +1,38 @@
+{
+  "event": "owned_zero_step_audit_stall_cleanup_intent",
+  "observed_at": "2026-11-01T10:44:23+01:00",
+  "device": "THINKPAD-LUCJAN",
+  "audit_controller": {
+    "pid": 8196,
+    "start": "2026-11-01T09:59:07+01:00"
+  },
+  "frontend": {
+    "pid": 34760,
+    "start": "2026-11-01T09:59:08+01:00",
+    "parent_pid": 8196
+  },
+  "native_server": {
+    "pid": 12440,
+    "start": "2026-11-01T10:00:59+01:00",
+    "star_log_rank0_match": true
+  },
+  "stop_created": "2026-11-01T10:14:19+01:00",
+  "stop_elapsed_minutes_at_read": 30,
+  "evidence": [
+    "zero-step audit.json written",
+    "star.log Connection reset after audit completion; last write 10:08:34",
+    "forcing_and_fields.csv last write 10:08:27",
+    "frontend CPU unchanged within measurement resolution in 57s",
+    "native CPU unchanged within measurement resolution in 57s",
+    "own audit locks pid8196 with matching start",
+    "R4V original stage_result exit0 source_unchanged and saved t13.9792"
+  ],
+  "hypothesis": "auditor launcher and rank0 server orphaned after remote connection reset; zero solver steps, no save I/O",
+  "intended_actions": [
+    "force terminate only audit native server PID12440 if still same identity and inactive",
+    "observe whether frontend/controller exit cleanly",
+    "only if still stuck, terminate audit frontend PID34760 under same identity and unchanged I/O",
+    "never remove others' locks or start solver while any audit process/locks remain"
+  ],
+  "safety": "Budget 900s reached, STOP present >10min, healthy original R4V checkpoint, no active file writes. Do not alter source, dashboard, queues or license."
+}

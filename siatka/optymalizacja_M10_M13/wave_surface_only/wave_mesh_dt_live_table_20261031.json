@@ -1,0 +1,90 @@
+{
+  "at": "2026-10-31T11:06:04.049015+01:00",
+  "records": [
+    {
+      "mesh": "FS_coarse",
+      "cells": 41200,
+      "near_surface_dz_m": 0.05,
+      "dt_s": 0.001,
+      "geometry_topology_audited": true,
+      "actual_wave_steps": 0,
+      "time_s": null,
+      "measured_interface_CFL": null,
+      "measured_max_CFL": null,
+      "measured_max_abs_gauge_eta_m": null,
+      "status": "not_run_geometry_only",
+      "full_wave_validated": false
+    },
+    {
+      "mesh": "FS_coarse",
+      "cells": 41200,
+      "near_surface_dz_m": 0.05,
+      "dt_s": 0.0005,
+      "geometry_topology_audited": true,
+      "actual_wave_steps": 0,
+      "time_s": null,
+      "measured_interface_CFL": null,
+      "measured_max_CFL": null,
+      "measured_max_abs_gauge_eta_m": null,
+      "status": "not_run_geometry_only",
+      "full_wave_validated": false
+    },
+    {
+      "mesh": "FS_baseline",
+      "cells": 53200,
+      "near_surface_dz_m": 0.025,
+      "dt_s": 0.001,
+      "geometry_topology_audited": true,
+      "actual_wave_steps": 500,
+      "time_s": 0.9000000000000007,
+      "measured_interface_CFL": 0.09333699030271549,
+      "measured_max_CFL": 0.09382307746514076,
+      "measured_max_abs_gauge_eta_m": 0.008070170554191236,
+      "status": "bounded_startup_completed_not_full_wave",
+      "full_wave_validated": false
+    },
+    {
+      "mesh": "FS_baseline",
+      "cells": 53200,
+      "near_surface_dz_m": 0.025,
+      "dt_s": 0.0005,
+      "geometry_topology_audited": true,
+      "actual_wave_steps": 21,
+      "time_s": 0.4100000000000003,
+      "measured_interface_CFL": "NOT_AVAILABLE_EMPTY_THRESHOLD",
+      "measured_max_CFL": 0.0450001640014989,
+      "measured_max_abs_gauge_eta_m": 8.078167468283937e-09,
+      "status": "active_unfinished",
+      "full_wave_validated": false
+    },
+    {
+      "mesh": "FS_fine",
+      "cells": 77200,
+      "near_surface_dz_m": 0.0125,
+      "dt_s": 0.001,
+      "geometry_topology_audited": true,
+      "actual_wave_steps": 0,
+      "time_s": null,
+      "measured_interface_CFL": null,
+      "measured_max_CFL": null,
+      "measured_max_abs_gauge_eta_m": null,
+      "status": "not_run_geometry_only",
+      "full_wave_validated": false
+    },
+    {
+      "mesh": "FS_fine",
+      "cells": 77200,
+      "near_surface_dz_m": 0.0125,
+      "dt_s": 0.0005,
+      "geometry_topology_audited": true,
+      "actual_wave_steps": 0,
+      "time_s": null,
+      "measured_interface_CFL": null,
+      "measured_max_CFL": null,
+      "measured_max_abs_gauge_eta_m": null,
+      "status": "not_run_geometry_only",
+      "full_wave_validated": false
+    }
+  ],
+  "remarks": "Measured only. Same physical windows/phase not yet validated; grid geometry audit is not CFD convergence."
+}

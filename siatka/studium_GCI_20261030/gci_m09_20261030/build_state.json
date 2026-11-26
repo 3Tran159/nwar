@@ -1,0 +1,21 @@
+{
+  "status": "meshing",
+  "pid": 38172,
+  "updated_at": "2026-10-30T12:01:55.629125+01:00",
+  "mesh": "G09_F",
+  "design": {
+    "id": "G09_F",
+    "layers": 94,
+    "linear_refinement_vs_M09": 1.9583333333333333,
+    "first_layer_m": 7.519683883165456e-07,
+    "prism_growth": 1.0822995820933912,
+    "total_prism_m": 0.01546,
+    "base_m": 0.12765957446808512,
+    "foil_target_m": 0.0014589665653495444,
+    "foil_min_m": 0.00014589665653495443,
+    "global_min_m": 0.00018237082066869305,
+    "near_foil_m": 0.004559270516717326,
+    "free_surface_m": 0.014589665653495443,
+    "protected_middle_m": 0.07294832826747721
+  }
+}

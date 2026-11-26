@@ -1,0 +1,21 @@
+{
+  "at_local": "2026-11-01T01:37:59+01:00",
+  "scope": "own_remote_monitor_helper_only",
+  "reason": "Read-only PowerShell/CIM inspection from this watch stayed active and consumed CPU after no output.",
+  "owned_process": {
+    "pid": 25108,
+    "start_local": "2026-11-01T01:35:57+01:00",
+    "name": "powershell.exe"
+  },
+  "action": "Terminated only own read-only monitoring session via Remote Desktop Commander force_terminate.",
+  "verified": {
+    "monitor_helper_pid_absent": true,
+    "M13_controller_pid": 24364,
+    "STAR_frontend_pid": 34564,
+    "real_M13_step_after": 7335,
+    "real_M13_physical_time_s": 7.31319999999926,
+    "solver_unchanged": true,
+    "solver_progress_confirmed": true
+  },
+  "other_processes_touched": false
+}

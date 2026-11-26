@@ -1,0 +1,10 @@
+{
+  "token": "aef11ef5334647e9a12e70a5f2d6632d",
+  "status": "done",
+  "stage": "M10",
+  "stage_index": 2,
+  "directory": null,
+  "controller_pid": 1512,
+  "at": "2026-10-31T18:23:02.269815+01:00",
+  "reason": "M11_M10_project_primary_saved"
+}

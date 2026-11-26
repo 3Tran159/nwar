@@ -1,0 +1,27 @@
+{
+  "cells": 317277,
+  "cells_with_one_source_and_target_face": 317277,
+  "invalid_cells": [],
+  "single_layer_topology": true,
+  "node_y_min_m": 0.01,
+  "node_y_max_m": 0.03,
+  "source_nodes": 559195,
+  "paired_nodes": 559195,
+  "max_target_source_xz_displacement_m": 0.0,
+  "y_plane_error_m": 0.0,
+  "foil_edges": 856,
+  "foil_perimeter_m": 2.420247199693756,
+  "area_fraction_any_quad_layers": 0.9988296604199051,
+  "area_fraction_at_least_15_quad_layers": 0.987039181807564,
+  "layer_histogram": {
+    "48": 835,
+    "49": 9,
+    "3": 2,
+    "2": 2,
+    "1": 6,
+    "0": 2
+  },
+  "first_thickness_min_m": 1.5260233597707663e-06,
+  "first_thickness_max_m": 1.5307210708864613e-06,
+  "method": "CGNS connectivity: every volume cell must touch both span planes; prism coverage inferred by following consecutive quadrilateral cells normal to each foil edge, area weighted."
+}

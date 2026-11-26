@@ -1,0 +1,67 @@
+{
+  "-15.0": {
+    "crest_times_s": [
+      10.02,
+      11.496,
+      13.0008
+    ],
+    "crest_elevations_m": [
+      0.6895,
+      0.8386,
+      0.8667
+    ],
+    "period_intervals_s": [
+      1.476,
+      1.5048
+    ],
+    "mean_period_s": 1.4904000000031452
+  },
+  "-0.5": {
+    "crest_times_s": [
+      10.476,
+      12.0328,
+      13.5568
+    ],
+    "crest_elevations_m": [
+      0.8657,
+      1.0596,
+      1.0122
+    ],
+    "period_intervals_s": [
+      1.5568,
+      1.524
+    ],
+    "mean_period_s": 1.5404000000032507
+  },
+  "0.0": {
+    "crest_times_s": [
+      10.496,
+      12.0568,
+      13.5808
+    ],
+    "crest_elevations_m": [
+      0.8791,
+      1.068,
+      1.0187
+    ],
+    "period_intervals_s": [
+      1.5608,
+      1.524
+    ],
+    "mean_period_s": 1.542400000003255
+  },
+  "5.0": {
+    "crest_times_s": [
+      10.72,
+      12.2568
+    ],
+    "crest_elevations_m": [
+      0.9102,
+      1.0405
+    ],
+    "period_intervals_s": [
+      1.5368
+    ],
+    "mean_period_s": 1.5368000000032431
+  }
+}

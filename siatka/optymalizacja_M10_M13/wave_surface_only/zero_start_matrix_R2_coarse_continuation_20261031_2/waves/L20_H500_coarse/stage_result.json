@@ -1,0 +1,36 @@
+{
+  "at": "2026-10-31T14:40:37.342716+01:00",
+  "phase": "waves",
+  "exit_code": 1,
+  "completed": {},
+  "source_unchanged": true,
+  "controller_reason": null,
+  "monitor": {
+    "at": "2026-10-31T14:40:31.336989+01:00",
+    "steps": 0,
+    "main_windows": [
+      {
+        "start": 9850,
+        "end": 9879,
+        "median_s": 1.341713100000561,
+        "slowdown_pct": 3.93272735812078
+      },
+      {
+        "start": 9880,
+        "end": 9909,
+        "median_s": 1.2951881000008143,
+        "slowdown_pct": 0.32877496300125486
+      },
+      {
+        "start": 9910,
+        "end": 9939,
+        "median_s": 1.3339890000006562,
+        "slowdown_pct": 3.334397670964373
+      }
+    ],
+    "baseline_M11_s_per_step": 1.2909437999999973,
+    "reason": null,
+    "elapsed_wall_s": 135.63,
+    "io_bytes": 54413296
+  }
+}

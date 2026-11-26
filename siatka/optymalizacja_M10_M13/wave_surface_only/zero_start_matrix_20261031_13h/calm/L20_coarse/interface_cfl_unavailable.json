@@ -1,0 +1,1 @@
+{"reason":"Threshold 0.01..0.99 VOF returned NaN (empty or unmeasured interface region). Bulk maximum CFL and gauge/volume guards remain active; interface CFL is NOT validated.","last_time_s":0.07000000000000005,"bulk_max_CFL":0.09000000000001647}

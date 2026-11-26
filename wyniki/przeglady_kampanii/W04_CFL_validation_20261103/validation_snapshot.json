@@ -1,0 +1,86 @@
+{
+  "at": "2026-11-03T11:06:04+01:00",
+  "read_only": true,
+  "run": "E:\\ntnu_mesh_optimization_20261030\\nwar_automation_20261102\\runs\\W04_20261103_084458_e67f66",
+  "run_status": "running",
+  "reported_complete_cycles": 1,
+  "gates": {
+    "mesh_geometry_passed": true,
+    "protected_mesh_passed": true,
+    "C01_inherited_reference_compatible": true,
+    "four_cycles_complete": false,
+    "wave_arrival_confirmed": false,
+    "N1_N2_comparison_complete": false
+  },
+  "scientific_validation_complete": false,
+  "stats": {
+    "n_samples": 4742,
+    "range_s": [
+      11.84080000000729,
+      13.737200000011292
+    ],
+    "dt_s": 0.0004,
+    "period_s": 1.5115894239782313,
+    "steps_per_encounter_period": 3778.973559945578,
+    "interface_CFL": {
+      "min": 0.7672627221902071,
+      "max": 1.8898271657516594,
+      "mean": 1.186277909973707,
+      "last": 1.8313621682534853,
+      "fraction_over_1": 0.37557992408266555,
+      "fraction_over_1p5": 0.2794179671024884,
+      "fraction_over_2": 0.0
+    },
+    "global_CFL_max": 18.08179046373438,
+    "water_volume_initial_m3": 76.7501144539694,
+    "water_volume_latest_m3": 76.80424774636262,
+    "water_inventory_shift_m3": 0.0541332923932174,
+    "water_inventory_is_NOT_mass_balance": true,
+    "last_CL": 0.2841220277666493,
+    "last_CD": 0.009736463197065278,
+    "C01_reference": {
+      "CL": 0.31565950495122014,
+      "CD": 0.007002316911710474
+    },
+    "last_delta_CL": -0.03153747718457084,
+    "last_delta_CD": 0.002734146285354804,
+    "PRE_substeps": [
+      1
+    ],
+    "PRE_substep_samples": 1702,
+    "W04_substeps_native_readback": "NOT_YET_VERIFIED",
+    "wave_probe_diagnostic": {
+      "-15.0": {
+        "samples_last_period": 378,
+        "peak_to_peak_last_period_m": 1.4973181335731391,
+        "eta_min_m": -0.6305910815820548,
+        "eta_max_m": 0.8667270519910844
+      },
+      "-0.5": {
+        "samples_last_period": 378,
+        "peak_to_peak_last_period_m": 1.495836410039117,
+        "eta_min_m": -0.48231679878790423,
+        "eta_max_m": 1.0135196112512128
+      },
+      "0.0": {
+        "samples_last_period": 378,
+        "peak_to_peak_last_period_m": 1.4887319959597969,
+        "eta_min_m": -0.46920902166208656,
+        "eta_max_m": 1.0195229742977103
+      },
+      "5.0": {
+        "samples_last_period": 378,
+        "peak_to_peak_last_period_m": 1.5820372878547255,
+        "eta_min_m": -0.536919146408759,
+        "eta_max_m": 1.0451181414459665
+      }
+    }
+  },
+  "limitations": [
+    "VOF substeps directly verified for PRE, not native-read from running W04.",
+    "Global CFL and interface CFL are maxima; spatial origins unknown.",
+    "W04 snapshot must reach four repeated, wave-arrival-confirmed cycles before means can be accepted.",
+    "Water inventory in a wave-driven open domain cannot prove mass flux closure.",
+    "N=2 sensitivity run must branch from identical source checkpoint; never switch mid-W04."
+  ]
+}

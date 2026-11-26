@@ -1,0 +1,267 @@
+{
+  "at": "2026-10-31T23:32:10.787513+01:00",
+  "scope": "Read-only log/history comparison, not convergence or wave acceptance",
+  "cases": {
+    "H05_CPU1_dt1": {
+      "directory": "E:\\ntnu_mesh_optimization_20261030\\wave_surface_only\\zero_start_matrix_evening_20261031_182305_689cb9\\waves\\L20_H500_baseline",
+      "raw_history_records": 19,
+      "completed_steps_from_history": 18.0,
+      "last_time_s": 0.4180000000000003,
+      "last_speed_m_s": 18.000096312179185,
+      "last_CFL": 0.09000258860130422,
+      "last_water_m3": 38.40000001568626,
+      "interface_CFL_first_finite_step": null,
+      "legacy_nonfinite_by_monitor": {
+        "Fx_half Monitor": 195,
+        "Fz_half Monitor": 196,
+        "Maximum Velocity Monitor": 196
+      },
+      "last_full_inner_block": {
+        "iteration": 4180,
+        "continuity_printed": 14246590.0,
+        "water_printed": 43713.84
+      },
+      "client_connection_reset": true,
+      "macro_error": {
+        "error": "error: java.net.SocketException: Connection reset\n",
+        "time_s": 0.4190000000000003
+      },
+      "stage_receipt": {
+        "at": "2026-10-31T18:30:58.426865+01:00",
+        "phase": "waves",
+        "exit_code": 1,
+        "completed": {},
+        "source_unchanged": true,
+        "controller_reason": null,
+        "no_propagation_acceptance_claim": true
+      },
+      "completion": {},
+      "median_last_seconds_per_step": null,
+      "timing_step_count": 18,
+      "history_sha256_snapshot": "c65b11405477cb5b9fede48494d2f43e0c6854c11a537565db579ddd723d817b",
+      "log_sha256_snapshot": "cf140cd5bc8b15c4d171792b09a2d349f0c4452ffa480bb0e7963a2cbd73981c"
+    },
+    "H05_CPU1_dt05": {
+      "directory": "E:\\ntnu_mesh_optimization_20261030\\wave_surface_only\\zero_start_matrix_evening_dt05_20261031\\waves\\L20_H500_baseline",
+      "raw_history_records": 20,
+      "completed_steps_from_history": 19.0,
+      "last_time_s": 0.4095000000000003,
+      "last_speed_m_s": 18.000020075539567,
+      "last_CFL": 0.04500013935534682,
+      "last_water_m3": 38.40000000392781,
+      "interface_CFL_first_finite_step": null,
+      "legacy_nonfinite_by_monitor": {
+        "Fx_half Monitor": 196,
+        "Fz_half Monitor": 196,
+        "Maximum Velocity Monitor": 196
+      },
+      "last_full_inner_block": {
+        "iteration": 4190,
+        "continuity_printed": 2232546.0,
+        "water_printed": 43.03117
+      },
+      "client_connection_reset": true,
+      "macro_error": {},
+      "stage_receipt": {
+        "exit_code": 1,
+        "source_unchanged": true,
+        "controller_reason": null,
+        "completed": {},
+        "phase": "waves",
+        "at": "2026-10-31T18:49:16.769967+01:00",
+        "wall_s": 1020.2211366999982,
+        "timing": []
+      },
+      "completion": {},
+      "median_last_seconds_per_step": null,
+      "timing_step_count": 19,
+      "history_sha256_snapshot": "9a7a28ee51d85899cc616627ff62f81c2be64b2578f920548acde1c81962be80",
+      "log_sha256_snapshot": "b7cb51560fe4107b191971c2fd8b5042b76285c552cbccd5a009b94827ad4be0"
+    },
+    "H0001_CPU1_dt1": {
+      "directory": "E:\\ntnu_mesh_optimization_20261030\\wave_surface_only\\wave_nearflat_inlet_CPU1_20261031_once",
+      "raw_history_records": 201,
+      "completed_steps_from_history": 200.0,
+      "last_time_s": 0.6000000000000004,
+      "last_speed_m_s": 18.000006685208028,
+      "last_CFL": 0.09000012187274813,
+      "last_water_m3": 38.399999935896126,
+      "interface_CFL_first_finite_step": null,
+      "legacy_nonfinite_by_monitor": {
+        "Fx_half Monitor": 2000,
+        "Fz_half Monitor": 2000,
+        "Maximum Velocity Monitor": 2000
+      },
+      "last_full_inner_block": {
+        "iteration": 6000,
+        "continuity_printed": 652589.3,
+        "water_printed": 3095.43
+      },
+      "client_connection_reset": false,
+      "macro_error": {},
+      "stage_receipt": {
+        "exit_code": 0,
+        "source_unchanged": true,
+        "controller_reason": null,
+        "completed": {
+          "status": "target_reached",
+          "steps": 200,
+          "time_s": 0.6000000000000004,
+          "stage": "incident_wave_ramp_only; no acceptance; downstream arrival not yet established",
+          "calm_source_preserved": true,
+          "initialization_performed": false
+        },
+        "phase": "nearflat_inlet_boundary_diagnostic_only",
+        "at": "2026-10-31T21:34:46.915425+01:00",
+        "wall_s": 453.3088141000044,
+        "timing": []
+      },
+      "completion": {
+        "status": "target_reached",
+        "steps": 200,
+        "time_s": 0.6000000000000004,
+        "stage": "incident_wave_ramp_only; no acceptance; downstream arrival not yet established",
+        "calm_source_preserved": true,
+        "initialization_performed": false
+      },
+      "median_last_seconds_per_step": 1.2117137999999983,
+      "timing_step_count": 100,
+      "history_sha256_snapshot": "231510ea9fd61a29babe6fdc78660df293b3ef04ee6e20a095c4d8f5e447e01f",
+      "log_sha256_snapshot": "8a843e1c8d27615461a49a80940443c618074957bdaff9625e5efad81fecc672"
+    },
+    "H05_CPU2_dt1": {
+      "directory": "E:\\ntnu_mesh_optimization_20261030\\wave_surface_only\\WS_L20_H050_baseline_inlet_wave_CPU2_20261031_101019_5dd9f0",
+      "raw_history_records": 501,
+      "completed_steps_from_history": 500.0,
+      "last_time_s": 0.9000000000000007,
+      "last_speed_m_s": 18.109495207454938,
+      "last_CFL": 0.09382307746514076,
+      "last_water_m3": 38.398504609507214,
+      "interface_CFL_first_finite_step": 68.0,
+      "legacy_nonfinite_by_monitor": {
+        "Fx_half Monitor": 5000,
+        "Fz_half Monitor": 5000,
+        "Maximum Velocity Monitor": 5000
+      },
+      "last_full_inner_block": {
+        "iteration": 9000,
+        "continuity_printed": 12645790000.0,
+        "water_printed": 35548200.0
+      },
+      "client_connection_reset": false,
+      "macro_error": {},
+      "stage_receipt": {},
+      "completion": {
+        "status": "target_reached",
+        "steps": 500,
+        "time_s": 0.9000000000000007,
+        "stage": "incident_wave_ramp_only; no acceptance; downstream arrival not yet established",
+        "calm_source_preserved": true,
+        "initialization_performed": false
+      },
+      "median_last_seconds_per_step": 0.8375061499999958,
+      "timing_step_count": 100,
+      "history_sha256_snapshot": "48d3cfdb91bd97eea9262f7c0c40bc473612b8456240314e8eb1e331e94158dc",
+      "log_sha256_snapshot": "a3f066f24dcdff01b7f22b26a0cfef81a519fe254382091c3440553d9ca2a522"
+    },
+    "H05_CPU1_pressure_aligned": {
+      "directory": "E:\\ntnu_mesh_optimization_20261030\\wave_surface_only\\WAVE_H050_pressure_aligned_CPU1_20261031_once",
+      "raw_history_records": 19,
+      "completed_steps_from_history": 18.0,
+      "last_time_s": 0.4180000000000003,
+      "last_speed_m_s": 18.016350629764982,
+      "last_CFL": 0.09009319196010263,
+      "last_water_m3": 38.400000011132825,
+      "interface_CFL_first_finite_step": null,
+      "legacy_nonfinite_by_monitor": {
+        "Fx_half Monitor": 185,
+        "Fz_half Monitor": 185,
+        "Maximum Velocity Monitor": 185
+      },
+      "last_full_inner_block": {
+        "iteration": 4180,
+        "continuity_printed": 15161140.0,
+        "water_printed": 26109.94
+      },
+      "client_connection_reset": true,
+      "macro_error": {},
+      "stage_receipt": {
+        "exit_code": 1,
+        "source_unchanged": true,
+        "controller_reason": null,
+        "completed": {},
+        "phase": "nofoil_pressure_aligned_H050_single_pilot",
+        "at": "2026-10-31T23:10:45.619293+01:00",
+        "wall_s": 364.7860070000024,
+        "timing": []
+      },
+      "completion": {},
+      "median_last_seconds_per_step": null,
+      "timing_step_count": 18,
+      "history_sha256_snapshot": "f11e50998167d425a1994bdbcd75fa90958d40f481028645111943c6189881da",
+      "log_sha256_snapshot": "a918f16734e7e2f8703295b5597ba5d732a32a3a3f36e802f96eb876becfbb8d"
+    },
+    "foil_M13_GPU_R1": {
+      "directory": "E:\\ntnu_mesh_optimization_20261030\\M13_wave_direct_20261031\\M13_GPU_W20_H050_pilot_20261031",
+      "raw_history_records": 0,
+      "completed_steps_from_history": null,
+      "last_time_s": null,
+      "last_speed_m_s": null,
+      "last_CFL": null,
+      "last_water_m3": null,
+      "interface_CFL_first_finite_step": null,
+      "legacy_nonfinite_by_monitor": {},
+      "last_full_inner_block": null,
+      "client_connection_reset": false,
+      "macro_error": {
+        "error": "java.lang.IllegalStateException: Unexpected wave period",
+        "at": "2026-10-31T23:28:31.786635100+01:00"
+      },
+      "stage_receipt": {
+        "exit_code": 1,
+        "source_unchanged": true,
+        "controller_reason": null,
+        "completed": {},
+        "phase": "isolated_M13_gpu_foil_wave_pilot",
+        "at": "2026-10-31T23:28:39.120688+01:00",
+        "wall_s": 150.3469713999948,
+        "timing": []
+      },
+      "completion": {},
+      "median_last_seconds_per_step": null,
+      "timing_step_count": 0,
+      "history_sha256_snapshot": null,
+      "log_sha256_snapshot": "f50d79cf76c68f918837417d49d70dbf6650357c70ce3363a985cd594f9aa768"
+    },
+    "foil_M13_GPU_R2": {
+      "directory": "E:\\ntnu_mesh_optimization_20261030\\M13_wave_direct_20261031\\M13_GPU_W20_H050_pilot_20261031_r2",
+      "raw_history_records": 0,
+      "completed_steps_from_history": null,
+      "last_time_s": null,
+      "last_speed_m_s": null,
+      "last_CFL": null,
+      "last_water_m3": null,
+      "interface_CFL_first_finite_step": null,
+      "legacy_nonfinite_by_monitor": {},
+      "last_full_inner_block": null,
+      "client_connection_reset": false,
+      "macro_error": {},
+      "stage_receipt": {},
+      "completion": {},
+      "median_last_seconds_per_step": null,
+      "timing_step_count": 0,
+      "history_sha256_snapshot": null,
+      "log_sha256_snapshot": "da1504749eb613dbc6e368a1904bcc7a25c6b292ffb3bf15f60b2a4151dafed6"
+    }
+  },
+  "findings": {
+    "confirmed_software_setup_failure": "M13 R1 exits before any history/CFD step on Unexpected wave period. It does not test foil-wave numerical stability.",
+    "confirmed_resource_guard_gap": "Old pressure-aligned frontend exited and locks were released while native PID6932 was alive/idle; identity-checked cleanup completed and preserved all data.",
+    "not_proven": "Root cause of CPU1 communication loss or spatial mesh defect. Finite last recorded speed/CFL is not a field-wide convergence proof.",
+    "residual_gate": "Read actual monitor normalization factors and unnormalized values before interpreting huge printed residuals. Audit compiled but its launch correctly refused due to concurrent M13 R2 GPU ownership.",
+    "R2_scope": "Separate existing controller launched M13 R2. Do not duplicate, edit active macro, or label 1200 steps x .0004s as wave arrival or 20 periods.",
+    "R2_period_caution": "R2 uses 20/23.612 only to plan inlet ramp. Its setup wave_period_s is not an independently verified STAR FifthOrder period; phase assessment must use local gauges/actual native period.",
+    "rebuild_gate": "No measured mesh defect currently warrants wholesale rebuilding. A clean CPU1 configuration may later isolate legacy-report/repartition effects, but only within approved recovery budgets and platform authorization.",
+    "preserve": "F campaign_hold, HF, original simulations, and STOP markers unchanged."
+  }
+}

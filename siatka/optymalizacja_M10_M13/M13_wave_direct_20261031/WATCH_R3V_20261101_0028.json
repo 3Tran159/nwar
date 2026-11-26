@@ -1,0 +1,72 @@
+{
+  "at_local": "2026-11-01T00:28:00+01:00",
+  "mode": "read_only_watch",
+  "run": "M13_GPU_W20_H050_continuation_R3V_20261101",
+  "process": {
+    "frontend_pid": 34564,
+    "controller_pid": 24364,
+    "frontend_start": "2026-10-31T23:49:33.703118+01:00",
+    "controller_start": "2026-10-31T23:49:32.567049+01:00",
+    "identity_verified": true
+  },
+  "runbook_sha256": "b3d24d5a5e0dec25035465fa5ad464069965e042c04ab1df4cfcacaf52450845",
+  "progress": {
+    "step": 2500,
+    "physical_time_s": 5.379199999999473,
+    "previous_step": 2337,
+    "previous_time_s": 5.3139999999994805,
+    "real_step_increase": true,
+    "last_force_sample_t_s": 5.374799999999474,
+    "CL_hydrodynamic": 0.31547432094958866,
+    "CD_total": 0.006971071375817034,
+    "max_CFL": 17.412637699552835,
+    "max_speed_m_s": 22.14343189328151,
+    "water_volume_m3": 38.397852861569035,
+    "alpha_min": 0,
+    "alpha_max": 1,
+    "pressure_min_Pa": -66926.17823451027,
+    "pressure_max_Pa": 236810.97328110613
+  },
+  "visualization": {
+    "latest_frame_time_s": 5.363199999999475,
+    "latest_frame_sha256": "08c8615bf0dd5783b4940cc594039c9e7f12cc7d18e9538cbbe26ec932d925fa",
+    "latest_interface_CFL": 0.9009485876683601,
+    "previous_frame_time_s": 5.307199999999481,
+    "previous_interface_CFL": 1.9237341160152175,
+    "comment": "Single earlier high interface CFL; subsequent reading returned below 1. Still monitor potential local free-surface transport sensitivity, not proof of failure."
+  },
+  "checkpoint_times_s": [
+    4.7792,
+    5.1792
+  ],
+  "scientific_status": {
+    "foil_wave_propagation_validated": false,
+    "calm_reference": "provisional",
+    "full_post_arrival_ramp_cycles": 0,
+    "arrival_time_verified": false,
+    "post_arrival_20_cycles_accepted": false,
+    "legacy_C01_hold_preserved": true
+  },
+  "guards": {
+    "STOP_ALL_E": false,
+    "STOP_ALL_F": false,
+    "STOP_R3V": false,
+    "free_C_GiB": 53.4,
+    "free_E_GiB": 198.6,
+    "gpu_free_MiB": 9467,
+    "resource_safety_risk_observed": false
+  },
+  "dashboard": {
+    "report_sync": "2026-11-01T00:27:36.258952+01:00",
+    "sync_status": "ok",
+    "native_frame_live": true
+  },
+  "actions": {
+    "solver_starts": 0,
+    "solver_restarts": 0,
+    "mesh_rebuilds": 0,
+    "configuration_changes": 0,
+    "active_solver_unmodified": true
+  },
+  "next": "Observe finite fields and interface CFL when wave arrives and inlet ramp completes (~t5.593s); do not count pre-ramp force cycles; do not duplicate the active solver. If evidence of sustained instability appears, diagnose before any bounded recovery."
+}

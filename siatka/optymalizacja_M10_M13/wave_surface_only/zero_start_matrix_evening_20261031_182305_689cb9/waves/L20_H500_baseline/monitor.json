@@ -1,0 +1,12 @@
+{
+  "at": "2026-10-31T18:30:54.420921+01:00",
+  "status": "running",
+  "phase": "waves",
+  "case": "L20_H500_baseline",
+  "directory": "E:\\ntnu_mesh_optimization_20261030\\wave_surface_only\\zero_start_matrix_evening_20261031_182305_689cb9\\waves\\L20_H500_baseline",
+  "pid": 27088,
+  "steps": 18,
+  "time_s": 0.4180000000000003,
+  "reason": null,
+  "main_windows": []
+}

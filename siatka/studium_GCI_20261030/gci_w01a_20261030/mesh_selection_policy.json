@@ -1,0 +1,13 @@
+{
+  "target_cells": 300000,
+  "choose_lightest_acceptable_mesh_after_campaign": true,
+  "selected_wave_case_name": "C01",
+  "rename_only_after_selection": true,
+  "preserve_existing_C01_results": true,
+  "status": "pending_mesh_campaign_results",
+  "selected_mesh": null,
+  "selected_case_name": "C01",
+  "wave_execution": "after_mesh_selection",
+  "current_legacy_C01_cases_preserved": true,
+  "scope": "Use the selected calm-water mesh as the basis for future C01 wave calculations; do not treat calm-water GCI as wave-response GCI."
+}

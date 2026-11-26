@@ -1,0 +1,23 @@
+{
+  "at": "2026-11-01T10:46:16+01:00",
+  "event": "owned_forcing_audit_hung_native_cleanup_completed",
+  "controller_pid": 8196,
+  "frontend_pid": 34760,
+  "native_server_pid": 12440,
+  "full_stop_created": "2026-11-01T10:14:19+01:00",
+  "reason": "After 900s budget STOP had existed >30m; no steps, I/O or CPU progress. STAR macro had exported audit and 77 MB CSV but lost server connection.",
+  "action": "Terminated precisely native rank0 STAR pid12440 after two independent process observations; frontend and controller then exited themselves. No generic tree termination.",
+  "native_termination_confirmed": true,
+  "frontend_and_controller_exited": true,
+  "owned_locks_released_by_controller": true,
+  "stage_result": {
+    "exit_code": 4294967295,
+    "source_unchanged": true,
+    "controller_reason": "wall_budget",
+    "completed": {}
+  },
+  "no_new_CFD_timesteps": true,
+  "original_R4V_saved_untouched": true,
+  "zero_step_audit_inconclusive": true,
+  "no_duplicate_launched": true
+}

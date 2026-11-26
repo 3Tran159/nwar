@@ -1,0 +1,40 @@
+{
+  "at": "2026-10-30T21:57:11.658130+01:00",
+  "source": "F:\\ntnu\\mesh_screening_20261028\\force_stabilization_20261029\\build_exact_wave24m_r5.py",
+  "source_sha256": "03cfb11df4c387e70ae68750f6b6ddce3bc762bd5dbaa287c5c187fb9e9a6114",
+  "reference_sha256": "355bf6aa23d9fa5468c1ce29f090d98e477b1601822af6f076173b659605aac6",
+  "geometry_only": true,
+  "no_solver_started": true,
+  "records": [
+    {
+      "name": "FS_coarse",
+      "status": "geometry_generated",
+      "cells": 41200,
+      "dx_m": 0.2,
+      "dz_surface_m": 0.05,
+      "volume_m3": 48.00000000000001,
+      "hash": "10fa85a936ca7eb62714322e32b593cd5ab727392e35bd61f8195a8230e56375",
+      "reference_match": null
+    },
+    {
+      "name": "FS_baseline",
+      "status": "geometry_generated",
+      "cells": 53200,
+      "dx_m": 0.2,
+      "dz_surface_m": 0.025,
+      "volume_m3": 48.0,
+      "hash": "ffa3ded3f52472c8f4127cb56a55f269a4e815580a8ebb0d00e2b135eabf10a7",
+      "reference_match": false
+    },
+    {
+      "name": "FS_fine",
+      "status": "geometry_generated",
+      "cells": 77200,
+      "dx_m": 0.2,
+      "dz_surface_m": 0.0125,
+      "volume_m3": 48.0,
+      "hash": "28d8bb4ba5d60178a7d8d4f6dfe81d08bd0a88a3f120ec0250ce7064109d2837",
+      "reference_match": null
+    }
+  ]
+}

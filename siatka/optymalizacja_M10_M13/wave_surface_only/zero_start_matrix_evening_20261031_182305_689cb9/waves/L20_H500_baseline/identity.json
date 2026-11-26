@@ -1,0 +1,10 @@
+{
+  "created": "2026-10-31T18:23:05.411266+01:00",
+  "phase": "waves",
+  "source": "E:\\ntnu_mesh_optimization_20261030\\wave_surface_only\\WS_L20_H050_baseline_flatCalm_CPU2_20261031_075518_43108c\\calm_pilot_final.sim",
+  "source_sha256": "fdc5d295ac806813dbc783f6ba30c9e626f2ee5c2f91b7825164e69660bc5d28",
+  "macro_sha256": "537898ca5080ba19ba52cfa7bb570f69cff1a97c17caa2540e8b46a1f91de0ac",
+  "cpu_workers": 1,
+  "gpu": false,
+  "original_untouched": true
+}

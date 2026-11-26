@@ -1,0 +1,9 @@
+{
+  "status": "running",
+  "phase": "waves",
+  "case": "L20_H500_coarse",
+  "at": "2026-10-31T15:51:24.089842+01:00",
+  "steps": 995,
+  "main_M11": "E:\\ntnu_mesh_optimization_20261030\\M11_G10_M_GPU_queue_20261031_105607_91db08",
+  "stop_reason": "M11_slowdown_two_windows_over_15pct"
+}

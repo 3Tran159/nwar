@@ -1,0 +1,286 @@
+{
+  "time_s": 4.699199999999548,
+  "cells": 309441,
+  "region_wave_settings": [
+    {
+      "class": "star.vof.ForcingVofWaveSpecification",
+      "text": "Forcing VOF Wave Specification",
+      "getForcingVofWave": {
+        "class": "star.vof.FlatVofWave",
+        "text": "Calm",
+        "getPointOnLevelVector": [
+          0.0,
+          0.0,
+          2.0
+        ],
+        "getLightFluidDensity": {
+          "class": "star.common.ScalarPhysicalQuantity",
+          "text": "1.2 kg/m^3",
+          "getValue": 1.2,
+          "getDefinition": "1.2",
+          "getSIValue": 1.2,
+          "getPresentationName": "Scalar Physical Quantity"
+        },
+        "getHeavyFluidDensity": {
+          "class": "star.common.ScalarPhysicalQuantity",
+          "text": "1000.0 kg/m^3",
+          "getValue": 1000.0,
+          "getDefinition": "1000.0",
+          "getSIValue": 1000.0,
+          "getPresentationName": "Scalar Physical Quantity"
+        },
+        "getCurrentVector": [
+          18.0,
+          0.0,
+          0.0
+        ],
+        "getWindVector": [
+          18.0,
+          0.0,
+          0.0
+        ],
+        "getPresentationName": "Calm"
+      },
+      "getPresentationName": "Forcing VOF Wave Specification"
+    },
+    {
+      "class": "star.vof.VofWaveZoneOption",
+      "text": "VOF Wave Zone Option",
+      "getSelected": "FORCING_DAMPING",
+      "getPresentationName": "VOF Wave Zone Option"
+    },
+    {
+      "class": "star.vof.ForcingLengthSpecificationOption",
+      "text": "Forcing Length Specification",
+      "getSelected": "BOUNDARY",
+      "getPresentationName": "Forcing Length Specification"
+    },
+    {
+      "class": "star.vof.DampingLengthSpecificationOption",
+      "text": "Damping Length Specification",
+      "getSelected": "BOUNDARY",
+      "getPresentationName": "Damping Length Specification"
+    }
+  ],
+  "boundaries": [
+    {
+      "name": "DOMAIN.bottom",
+      "type": "star.common.WallBoundary",
+      "wave_settings": [
+        {
+          "class": "star.vof.VofWaveDampingBoundaryOption",
+          "text": "VOF Wave Damping Boundary Option",
+          "getSelected": 0,
+          "getSelectedElement": "NO",
+          "getPresentationName": "VOF Wave Damping Boundary Option"
+        },
+        {
+          "class": "star.vof.VofWaveForcingBoundaryOption",
+          "text": "VOF Wave Forcing Boundary Option",
+          "getSelected": 0,
+          "getSelectedElement": "NO",
+          "getPresentationName": "VOF Wave Forcing Boundary Option"
+        }
+      ]
+    },
+    {
+      "name": "DOMAIN.inlet",
+      "type": "star.common.InletBoundary",
+      "wave_settings": [
+        {
+          "class": "star.vof.VofWaveForcingLength",
+          "text": "VOF Wave Forcing Length",
+          "getMethod": {
+            "class": "star.common.ConstantScalarProfileMethod",
+            "text": "Constant",
+            "getQuantity": {
+              "class": "star.common.ScalarPhysicalQuantity",
+              "text": "20.0 m",
+              "getValue": 20.0,
+              "getDefinition": "20.0",
+              "getSIValue": 20.0,
+              "getPresentationName": "Scalar Physical Quantity"
+            },
+            "getPresentationName": "Constant"
+          },
+          "getPresentationName": "VOF Wave Forcing Length"
+        },
+        {
+          "class": "star.vof.VofWaveDampingBoundaryOption",
+          "text": "VOF Wave Damping Boundary Option",
+          "getSelected": 0,
+          "getSelectedElement": "NO",
+          "getPresentationName": "VOF Wave Damping Boundary Option"
+        },
+        {
+          "class": "star.vof.VofWaveForcingBoundaryOption",
+          "text": "VOF Wave Forcing Boundary Option",
+          "getSelected": 1,
+          "getSelectedElement": "YES",
+          "getPresentationName": "VOF Wave Forcing Boundary Option"
+        }
+      ]
+    },
+    {
+      "name": "DOMAIN.outlet",
+      "type": "star.common.PressureBoundary",
+      "wave_settings": [
+        {
+          "class": "star.vof.VofWaveDampingLength",
+          "text": "VOF Wave Damping Length",
+          "getMethod": {
+            "class": "star.common.ConstantScalarProfileMethod",
+            "text": "Constant",
+            "getQuantity": {
+              "class": "star.common.ScalarPhysicalQuantity",
+              "text": "20.0 m",
+              "getValue": 20.0,
+              "getDefinition": "20.0",
+              "getSIValue": 20.0,
+              "getPresentationName": "Scalar Physical Quantity"
+            },
+            "getPresentationName": "Constant"
+          },
+          "getPresentationName": "VOF Wave Damping Length"
+        },
+        {
+          "class": "star.vof.VofWaveDampingBoundaryOption",
+          "text": "VOF Wave Damping Boundary Option",
+          "getSelected": 1,
+          "getSelectedElement": "YES",
+          "getPresentationName": "VOF Wave Damping Boundary Option"
+        },
+        {
+          "class": "star.vof.VofWaveForcingBoundaryOption",
+          "text": "VOF Wave Forcing Boundary Option",
+          "getSelected": 0,
+          "getSelectedElement": "NO",
+          "getPresentationName": "VOF Wave Forcing Boundary Option"
+        }
+      ]
+    },
+    {
+      "name": "DOMAIN.top",
+      "type": "star.common.PressureBoundary",
+      "wave_settings": [
+        {
+          "class": "star.vof.VofWaveDampingBoundaryOption",
+          "text": "VOF Wave Damping Boundary Option",
+          "getSelected": 0,
+          "getSelectedElement": "NO",
+          "getPresentationName": "VOF Wave Damping Boundary Option"
+        },
+        {
+          "class": "star.vof.VofWaveForcingBoundaryOption",
+          "text": "VOF Wave Forcing Boundary Option",
+          "getSelected": 0,
+          "getSelectedElement": "NO",
+          "getPresentationName": "VOF Wave Forcing Boundary Option"
+        }
+      ]
+    },
+    {
+      "name": "HF_012_wall",
+      "type": "star.common.WallBoundary",
+      "wave_settings": [
+        {
+          "class": "star.vof.VofWaveDampingBoundaryOption",
+          "text": "VOF Wave Damping Boundary Option",
+          "getSelected": 0,
+          "getSelectedElement": "NO",
+          "getPresentationName": "VOF Wave Damping Boundary Option"
+        },
+        {
+          "class": "star.vof.VofWaveForcingBoundaryOption",
+          "text": "VOF Wave Forcing Boundary Option",
+          "getSelected": 0,
+          "getSelectedElement": "NO",
+          "getPresentationName": "VOF Wave Forcing Boundary Option"
+        }
+      ]
+    },
+    {
+      "name": "Q2D_span_source",
+      "type": "star.common.SymmetryBoundary",
+      "wave_settings": [
+        {
+          "class": "star.vof.VofWaveDampingBoundaryOption",
+          "text": "VOF Wave Damping Boundary Option",
+          "getSelected": 0,
+          "getSelectedElement": "NO",
+          "getPresentationName": "VOF Wave Damping Boundary Option"
+        },
+        {
+          "class": "star.vof.VofWaveForcingBoundaryOption",
+          "text": "VOF Wave Forcing Boundary Option",
+          "getSelected": 0,
+          "getSelectedElement": "NO",
+          "getPresentationName": "VOF Wave Forcing Boundary Option"
+        }
+      ]
+    },
+    {
+      "name": "Q2D_span_target",
+      "type": "star.common.SymmetryBoundary",
+      "wave_settings": [
+        {
+          "class": "star.vof.VofWaveDampingBoundaryOption",
+          "text": "VOF Wave Damping Boundary Option",
+          "getSelected": 0,
+          "getSelectedElement": "NO",
+          "getPresentationName": "VOF Wave Damping Boundary Option"
+        },
+        {
+          "class": "star.vof.VofWaveForcingBoundaryOption",
+          "text": "VOF Wave Forcing Boundary Option",
+          "getSelected": 0,
+          "getSelectedElement": "NO",
+          "getPresentationName": "VOF Wave Forcing Boundary Option"
+        }
+      ]
+    }
+  ],
+  "waves": [
+    {
+      "class": "star.vof.FlatVofWave",
+      "text": "Calm",
+      "getPointOnLevelVector": [
+        0.0,
+        0.0,
+        2.0
+      ],
+      "getLightFluidDensity": {
+        "class": "star.common.ScalarPhysicalQuantity",
+        "text": "1.2 kg/m^3",
+        "getValue": 1.2,
+        "getDefinition": "1.2",
+        "getSIValue": 1.2,
+        "getPresentationName": "Scalar Physical Quantity"
+      },
+      "getHeavyFluidDensity": {
+        "class": "star.common.ScalarPhysicalQuantity",
+        "text": "1000.0 kg/m^3",
+        "getValue": 1000.0,
+        "getDefinition": "1000.0",
+        "getSIValue": 1000.0,
+        "getPresentationName": "Scalar Physical Quantity"
+      },
+      "getCurrentVector": [
+        18.0,
+        0.0,
+        0.0
+      ],
+      "getWindVector": [
+        18.0,
+        0.0,
+        0.0
+      ],
+      "getPresentationName": "Calm"
+    }
+  ],
+  "steps_taken": 0,
+  "no_initialization": true,
+  "no_remesh": true,
+  "no_state_save": true,
+  "time_after_s": 4.699199999999548
+}

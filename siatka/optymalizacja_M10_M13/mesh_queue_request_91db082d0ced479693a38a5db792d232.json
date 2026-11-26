@@ -1,0 +1,16 @@
+{
+  "token": "91db082d0ced479693a38a5db792d232",
+  "created": "2026-10-31T10:56:06.090236+01:00",
+  "resume_from": "paused",
+  "stage": "M11",
+  "prior": {
+    "token": "b59373c2a49c449bad3e2bff6dcfcf61",
+    "status": "paused",
+    "stage": "M11",
+    "stage_index": 0,
+    "directory": "E:\\ntnu_mesh_optimization_20261030\\M11_G10_M_GPU_queue_20261031_104358_b59373",
+    "controller_pid": 20788,
+    "at": "2026-10-31T10:49:42.706616+01:00",
+    "reason": "saved_user_pause"
+  }
+}

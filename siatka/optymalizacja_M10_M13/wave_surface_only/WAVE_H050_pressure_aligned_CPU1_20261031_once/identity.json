@@ -1,0 +1,10 @@
+{
+  "phase": "nofoil_pressure_aligned_H050_single_pilot",
+  "source": "E:\\ntnu_mesh_optimization_20261030\\wave_surface_only\\WS_L20_H050_baseline_flatCalm_CPU2_20261031_075518_43108c\\calm_pilot_final.sim",
+  "source_sha256": "fdc5d295ac806813dbc783f6ba30c9e626f2ee5c2f91b7825164e69660bc5d28",
+  "macro_sha256": "20f068db030ea4e67c09d0509605beb1fa035ebd587a96df9ac9c5f0b588b3ac",
+  "workers": 1,
+  "cpu_workers": 1,
+  "gpu": false,
+  "created": "2026-10-31T23:04:40.832731+01:00"
+}

@@ -1,0 +1,95 @@
+{
+  "at": "2026-10-31T09:35:42.365339+01:00",
+  "main_M12": {
+    "status": "PROJECT PRIMARY CL/CD SETTLED / LEGACY FOUR-COMPONENT TEST NOT PASSED",
+    "saved_stop_verified": true,
+    "time_s": 3.3314000000026542,
+    "steps": 24414,
+    "cells": 1154199,
+    "saved_path": "C:\\Users\\ThinkPad\\Documents\\ChatGPT\\ntnu science\\mesh_study_20261030\\gci_w01a_20261030\\force_stabilization_20261029\\calm_settle_G10_F_GPU_live_r2_resume_20261030_173420_4854e1\\final.sim",
+    "saved_bytes": 1561427475,
+    "solver_exit_zero": true,
+    "owner_paused": true,
+    "source_unchanged": true,
+    "formal_checks": {
+      "3.0013": {
+        "CL": {
+          "mean": 0.3098037543098608,
+          "shift_pct": 0.21901062244690614,
+          "rms_previous_pct": 0.06648257996615127,
+          "rms_latest_pct": 0.05995192307674094,
+          "pass": true
+        },
+        "CD": {
+          "mean": 0.007349877064161134,
+          "shift_pct": 0.48895329850240943,
+          "rms_previous_pct": 0.14840371933361376,
+          "rms_latest_pct": 0.13306114243207254,
+          "pass": true
+        },
+        "component_pressure_pct_of_total_CD": 0.4772266830654683,
+        "component_viscous_pct_of_total_CD": 0.011726615436793642,
+        "sum_abs_components_pct_of_total_CD": 0.48895329850226193,
+        "component_opposing_drift": false,
+        "raw_samples_previous": 2000,
+        "raw_samples_recent": 2000,
+        "legacy_four_way": false
+      },
+      "3.2013": {
+        "CL": {
+          "mean": 0.31041660384878117,
+          "shift_pct": 0.19742807933654466,
+          "rms_previous_pct": 0.05995192307674094,
+          "rms_latest_pct": 0.05446879853533557,
+          "pass": true
+        },
+        "CD": {
+          "mean": 0.0073176240339776445,
+          "shift_pct": 0.44075823018141463,
+          "rms_previous_pct": 0.13306114243207254,
+          "rms_latest_pct": 0.1215057748537579,
+          "pass": true
+        },
+        "component_pressure_pct_of_total_CD": 0.4307104914706995,
+        "component_viscous_pct_of_total_CD": 0.010047738710700267,
+        "sum_abs_components_pct_of_total_CD": 0.44075823018139976,
+        "component_opposing_drift": false,
+        "raw_samples_previous": 2000,
+        "raw_samples_recent": 2000,
+        "legacy_four_way": false
+      }
+    },
+    "flow_guards": {
+      "water_volume_range_pct_0p45s": 0.004904571285917411,
+      "water_volume_m3": 38.35757259525556,
+      "net_outward_mass_kg_s": -10.916675866392914,
+      "max_bulk_CFL_0p45s": 8.890939344572953,
+      "max_interface_CFL_0p45s": 0.953828687305892,
+      "max_velocity_m_s_0p45s": 22.147637609034337,
+      "configured_dt_s": 0.0001,
+      "stop_markers": false,
+      "M12_controller_pid": 19040,
+      "M12_solver_pid": 1996
+    },
+    "cross_mesh_1pct_agreement_proved": false,
+    "ITTC_or_GCI_certified": false
+  },
+  "wave_nofoil": {
+    "status": "CALM THROUGH-FLOW NUMERIC PILOT COMPLETE; WAVE NOT ACTIVATED",
+    "cells": 53200,
+    "time_s": 0.4000000000000003,
+    "steps": 400,
+    "dt_s": 0.001,
+    "saved_calm": "E:\\ntnu_mesh_optimization_20261030\\wave_surface_only\\WS_L20_H050_baseline_flatCalm_CPU2_20261031_075518_43108c\\calm_pilot_final.sim",
+    "source_bytes": 61671423,
+    "max_velocity_deviation_from_18": 4.105515927221859e-11,
+    "max_bulk_CFL": 0.09000000000020053,
+    "water_volume_range_m3": 1.9895196601282805e-13,
+    "max_abs_eta_m": 5.115907697472721e-13,
+    "interface_CFL": "NOT_MEASURED",
+    "wave_activated": false,
+    "propagation_accepted": false
+  },
+  "next": "Do not restart saved M12 automatically. Obtain comparable primary settled results for M10/M11 before light foil mesh selection. Independently test λ20 H0.5 no-foil wave inlet from saved flat calm, with conservative guards; original C01 wave hold remains.",
+  "intervention": "M12 gentle pause and verified save only; no hard kill, no wave solver started."
+}

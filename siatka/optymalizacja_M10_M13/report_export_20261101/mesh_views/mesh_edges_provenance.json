@@ -1,0 +1,399 @@
+{
+  "created_at": "2026-11-01T10:16:33.127650+01:00",
+  "method": "Unmodified X/Z coordinates and actual Q2D_span_source CGNS polygon edges. Shared physical crops defined from M10. No interpolation or synthetic grid.",
+  "panels": {
+    "near_foil": {
+      "title": "Foil and near field",
+      "bounds": [
+        -0.15036858432393924,
+        1.3900000000000003,
+        -0.19214490729867748,
+        0.25091477404404605
+      ]
+    },
+    "leading_edge": {
+      "title": "Leading edge",
+      "bounds": [
+        -0.02536858432393925,
+        0.11963141567606074,
+        -0.05714490729867749,
+        0.11591477404404608
+      ]
+    },
+    "trailing_edge": {
+      "title": "Trailing edge",
+      "bounds": [
+        1.0700000000000003,
+        1.2250000000000003,
+        -0.05714490729867749,
+        0.11591477404404608
+      ]
+    },
+    "free_surface": {
+      "title": "Free-surface band",
+      "bounds": [
+        -0.2,
+        0.2,
+        1.85,
+        2.15
+      ]
+    },
+    "domain": {
+      "title": "Domain and local refinement",
+      "bounds": [
+        -40.0,
+        50.0,
+        -25.0,
+        10.0
+      ]
+    }
+  },
+  "reference_foil_bounds_xz_min_max": [
+    -0.0003685843239392502,
+    -0.04214490729867749,
+    1.1900000000000004,
+    0.10091477404404608
+  ],
+  "entries": [
+    {
+      "mesh": "M01",
+      "source": "F:\\ntnu\\mesh_screening_20261028\\quasi2d_012_20261029\\M01\\mesh.CGNS",
+      "status": "exported",
+      "source_size_bytes": 15071490,
+      "source_mtime_ns": 1793269009556920900,
+      "source_sha256": "231b0f9e48024f8154ba2abdd67e82b74a4f6349ce9f1cf5eb84f5f64eff6a73",
+      "source_identity_check": "Size and modification time unchanged during read",
+      "cells": 37411,
+      "foil_bounds_xz_min_max": [
+        -0.000368584323939604,
+        -0.042144648046935886,
+        1.1900000000000004,
+        0.10091482032757786
+      ],
+      "max_foil_bounds_difference_from_M10_m": 2.5925174160223996e-07,
+      "npz_file": "M01_actual_edges.npz",
+      "npz_sha256": "03fb63b5e353f5ec1116286b8fd90ac0694ecf745cf32c9f3a2e7e336e9ce701",
+      "unique_selected_edges": 17290,
+      "panel_edge_counts": {
+        "near_foil_edges": 16734,
+        "leading_edge_edges": 2204,
+        "trailing_edge_edges": 1339,
+        "free_surface_edges": 90
+      }
+    },
+    {
+      "mesh": "M02",
+      "source": "F:\\ntnu\\mesh_screening_20261028\\quasi2d_012_20261029\\M02\\mesh.CGNS",
+      "status": "exported",
+      "source_size_bytes": 30514204,
+      "source_mtime_ns": 1793269672364636000,
+      "source_sha256": "e9d0307d93e87d331b4ca928f6a1648f7e6cd5c6e1b46b554337d7ea972cae90",
+      "source_identity_check": "Size and modification time unchanged during read",
+      "cells": 66707,
+      "foil_bounds_xz_min_max": [
+        -0.000368584323939604,
+        -0.04214505546692081,
+        1.1900000000000004,
+        0.10091470704193474
+      ],
+      "max_foil_bounds_difference_from_M10_m": 1.4816824332047895e-07,
+      "npz_file": "M02_actual_edges.npz",
+      "npz_sha256": "d4e792e35c64ac1eeb58f2d8daf61142d0c5ae8fd36ae138b8e20bdc052adfb7",
+      "unique_selected_edges": 25523,
+      "panel_edge_counts": {
+        "near_foil_edges": 24788,
+        "leading_edge_edges": 2705,
+        "trailing_edge_edges": 2079,
+        "free_surface_edges": 119
+      }
+    },
+    {
+      "mesh": "M03",
+      "source": "F:\\ntnu\\mesh_screening_20261028\\quasi2d_012_20261029\\M03\\mesh.CGNS",
+      "status": "exported",
+      "source_size_bytes": 49659260,
+      "source_mtime_ns": 1793270214107302400,
+      "source_sha256": "e5cfec465dc85432a3fae658698c7f237664604d9f78108b0141defbc8736ef7",
+      "source_identity_check": "Size and modification time unchanged during read",
+      "cells": 123256,
+      "foil_bounds_xz_min_max": [
+        -0.000368584323939604,
+        -0.0421449335804829,
+        1.1900000000000004,
+        0.10091557640811544
+      ],
+      "max_foil_bounds_difference_from_M10_m": 8.023640693521905e-07,
+      "npz_file": "M03_actual_edges.npz",
+      "npz_sha256": "7ca27d5f2f82836b0eec57eed383a644fc9d75d72aa852706ea00459fe7265b2",
+      "unique_selected_edges": 39448,
+      "panel_edge_counts": {
+        "near_foil_edges": 38196,
+        "leading_edge_edges": 3503,
+        "trailing_edge_edges": 3041,
+        "free_surface_edges": 337
+      }
+    },
+    {
+      "mesh": "M04",
+      "source": "F:\\ntnu\\mesh_screening_20261028\\quasi2d_012_20261029\\M04\\mesh.CGNS",
+      "status": "exported",
+      "source_size_bytes": 54416639,
+      "source_mtime_ns": 1793279655006706700,
+      "source_sha256": "a7034b6289b42ca9222dcf587425d0470a8f061b18a40fa5cda5054a6067e2b7",
+      "source_identity_check": "Size and modification time unchanged during read",
+      "cells": 138468,
+      "foil_bounds_xz_min_max": [
+        -0.0003685843239392502,
+        -0.042144930875786246,
+        1.1900000000000004,
+        0.10091283315338
+      ],
+      "max_foil_bounds_difference_from_M10_m": 1.9408906660883796e-06,
+      "npz_file": "M04_actual_edges.npz",
+      "npz_sha256": "917ea062e9369f9c3a849033a95afb417dd6fe4542bb668e1e7e7220a426ed80",
+      "unique_selected_edges": 69947,
+      "panel_edge_counts": {
+        "near_foil_edges": 68695,
+        "leading_edge_edges": 7330,
+        "trailing_edge_edges": 5865,
+        "free_surface_edges": 337
+      }
+    },
+    {
+      "mesh": "M05",
+      "source": "F:\\ntnu\\mesh_screening_20261028\\quasi2d_012_20261029\\M05\\mesh.CGNS",
+      "status": "exported",
+      "source_size_bytes": 77666008,
+      "source_mtime_ns": 1793279568425241800,
+      "source_sha256": "c57d96f2a2621a6ddc2e9fa3221684d5c71102736903362fd87ba10c6a4506f3",
+      "source_identity_check": "Size and modification time unchanged during read",
+      "cells": 182527,
+      "foil_bounds_xz_min_max": [
+        -0.000368584323939604,
+        -0.04214508134460061,
+        1.1900000000000004,
+        0.10091557681982054
+      ],
+      "max_foil_bounds_difference_from_M10_m": 8.027757744527575e-07,
+      "npz_file": "M05_actual_edges.npz",
+      "npz_sha256": "51e2d70d5a2321a0bced5029e53118655a8c6fe3f15f244d7766ddcd7cdf0992",
+      "unique_selected_edges": 52795,
+      "panel_edge_counts": {
+        "near_foil_edges": 51274,
+        "leading_edge_edges": 4271,
+        "trailing_edge_edges": 3973,
+        "free_surface_edges": 386
+      }
+    },
+    {
+      "mesh": "M06",
+      "source": "F:\\ntnu\\mesh_screening_20261028\\quasi2d_012_20261029\\M06\\mesh.CGNS",
+      "status": "exported",
+      "source_size_bytes": 99628231,
+      "source_mtime_ns": 1793285465770702900,
+      "source_sha256": "a087b472c4325d7726c5442f369b0e4494c7debfb6f635d1805fa16526e01c1b",
+      "source_identity_check": "Size and modification time unchanged during read",
+      "cells": 251605,
+      "foil_bounds_xz_min_max": [
+        -0.0003685843239392502,
+        -0.04214490729867748,
+        1.1900000000000004,
+        0.10091477404404608
+      ],
+      "max_foil_bounds_difference_from_M10_m": 6.938893903907228e-18,
+      "npz_file": "M06_actual_edges.npz",
+      "npz_sha256": "fdd0002f16dbfbf582711bba799f43bb1ebdffb0bb5190ee62214f5a73ece582",
+      "unique_selected_edges": 110758,
+      "panel_edge_counts": {
+        "near_foil_edges": 109171,
+        "leading_edge_edges": 10728,
+        "trailing_edge_edges": 9199,
+        "free_surface_edges": 386
+      }
+    },
+    {
+      "mesh": "M07",
+      "source": "F:\\ntnu\\mesh_screening_20261028\\quasi2d_012_20261029\\M07\\mesh.CGNS",
+      "status": "exported",
+      "source_size_bytes": 201081736,
+      "source_mtime_ns": 1793285616832469100,
+      "source_sha256": "b1a19f2bb6e47911a1225259f59b91edc2610053810314851a4dd615b994c030",
+      "source_identity_check": "Size and modification time unchanged during read",
+      "cells": 481635,
+      "foil_bounds_xz_min_max": [
+        -0.0003685843239392502,
+        -0.042145028799763576,
+        1.1900000000000004,
+        0.10091514805593307
+      ],
+      "max_foil_bounds_difference_from_M10_m": 3.7401188698882315e-07,
+      "npz_file": "M07_actual_edges.npz",
+      "npz_sha256": "6ebc6e6d7c7dc05bd634dff3eb6c49a14ad3c28d7cb46fbe8183a5ca1c1b90ae",
+      "unique_selected_edges": 178879,
+      "panel_edge_counts": {
+        "near_foil_edges": 175994,
+        "leading_edge_edges": 15706,
+        "trailing_edge_edges": 14542,
+        "free_surface_edges": 1148
+      }
+    },
+    {
+      "mesh": "M08",
+      "source": "F:\\ntnu\\mesh_screening_20261028\\quasi2d_012_20261029\\M08\\mesh.CGNS",
+      "status": "exported",
+      "source_size_bytes": 100786095,
+      "source_mtime_ns": 1793296812570669400,
+      "source_sha256": "03d34e803622db1d4069f95cbac6cc409e41c558288100bef9cebd77f3cdac38",
+      "source_identity_check": "Size and modification time unchanged during read",
+      "cells": 254989,
+      "foil_bounds_xz_min_max": [
+        -0.0003685843239392502,
+        -0.04214490729867748,
+        1.1900000000000004,
+        0.10091477404404608
+      ],
+      "max_foil_bounds_difference_from_M10_m": 6.938893903907228e-18,
+      "npz_file": "M08_actual_edges.npz",
+      "npz_sha256": "b269138eadc5e1a8971511e737c9f4c38393e129c6293dcf1b3d94426071c3f3",
+      "unique_selected_edges": 117533,
+      "panel_edge_counts": {
+        "near_foil_edges": 115946,
+        "leading_edge_edges": 11540,
+        "trailing_edge_edges": 9820,
+        "free_surface_edges": 386
+      }
+    },
+    {
+      "mesh": "M09",
+      "source": "F:\\ntnu\\mesh_screening_20261028\\quasi2d_012_20261029\\M09\\mesh.CGNS",
+      "status": "exported",
+      "source_size_bytes": 85763622,
+      "source_mtime_ns": 1793303138939642700,
+      "source_sha256": "9079ce01c95d6ca45c6c723d04f25c32060c5c846b4d701017dc592b84281fb0",
+      "source_identity_check": "Size and modification time unchanged during read",
+      "cells": 214908,
+      "foil_bounds_xz_min_max": [
+        -0.0003685843239392502,
+        -0.04214490729867749,
+        1.1900000000000004,
+        0.10091477404404608
+      ],
+      "max_foil_bounds_difference_from_M10_m": 0.0,
+      "npz_file": "M09_actual_edges.npz",
+      "npz_sha256": "bbea2cce4c000a56fdf812eb242cea7905854352542b7a0488f6a65a8055d33f",
+      "unique_selected_edges": 117533,
+      "panel_edge_counts": {
+        "near_foil_edges": 115946,
+        "leading_edge_edges": 11540,
+        "trailing_edge_edges": 9820,
+        "free_surface_edges": 386
+      }
+    },
+    {
+      "mesh": "M10",
+      "source": "C:\\Users\\ThinkPad\\Documents\\ChatGPT\\ntnu science\\mesh_study_20261030\\gci_w01a_20261030\\handoff\\mesh_star_export.CGNS",
+      "status": "exported",
+      "source_size_bytes": 119249889,
+      "source_mtime_ns": 1793358692278672300,
+      "source_sha256": "b753a668779dc5b9c7da17c781d508d73f5ac353c5005a4f04f7a757f55e7aac",
+      "source_identity_check": "Size and modification time unchanged during read",
+      "cells": 317277,
+      "foil_bounds_xz_min_max": [
+        -0.0003685843239392502,
+        -0.04214490729867749,
+        1.1900000000000004,
+        0.10091477404404608
+      ],
+      "max_foil_bounds_difference_from_M10_m": 0.0,
+      "npz_file": "M10_actual_edges.npz",
+      "npz_sha256": "35909516a1b4c288aa7f206960f15193f3813a3a348f882c63fb130182de4844",
+      "unique_selected_edges": 118726,
+      "panel_edge_counts": {
+        "near_foil_edges": 115946,
+        "leading_edge_edges": 11540,
+        "trailing_edge_edges": 9820,
+        "free_surface_edges": 1485
+      }
+    },
+    {
+      "mesh": "M11",
+      "source": "C:\\Users\\ThinkPad\\Documents\\ChatGPT\\ntnu science\\mesh_study_20261030\\gci_w01a_20261030\\G10_M\\mesh.CGNS",
+      "status": "exported",
+      "source_size_bytes": 232690657,
+      "source_mtime_ns": 1793360082495875100,
+      "source_sha256": "432f83ed42ad964e6e1317ecbf7e2a2edff97e54c2ddebc0cfe238a26fad9aa1",
+      "source_identity_check": "Size and modification time unchanged during read",
+      "cells": 595285,
+      "foil_bounds_xz_min_max": [
+        -0.0003685843239392502,
+        -0.042144918858452264,
+        1.1900000000000004,
+        0.10091524842442595
+      ],
+      "max_foil_bounds_difference_from_M10_m": 4.7438037986680115e-07,
+      "npz_file": "M11_actual_edges.npz",
+      "npz_sha256": "c99786bd1f27046533befbd58725d2aab14196f3c66b72d43ea2b2e7b6b7fc98",
+      "unique_selected_edges": 224235,
+      "panel_edge_counts": {
+        "near_foil_edges": 220187,
+        "leading_edge_edges": 20947,
+        "trailing_edge_edges": 18655,
+        "free_surface_edges": 2240
+      }
+    },
+    {
+      "mesh": "M12",
+      "source": "C:\\Users\\ThinkPad\\Documents\\ChatGPT\\ntnu science\\mesh_study_20261030\\gci_w01a_20261030\\G10_F\\mesh.CGNS",
+      "status": "exported",
+      "source_size_bytes": 456039651,
+      "source_mtime_ns": 1793362913982277600,
+      "source_sha256": "cb5bdf25cf59167089e0285218a330f980c6d89ef917856848ba0ae5194621bb",
+      "source_identity_check": "Size and modification time unchanged during read",
+      "cells": 1154199,
+      "foil_bounds_xz_min_max": [
+        -0.0003685843239392502,
+        -0.04214506105497034,
+        1.1900000000000004,
+        0.10091545196330004
+      ],
+      "max_foil_bounds_difference_from_M10_m": 6.77919253955217e-07,
+      "npz_file": "M12_actual_edges.npz",
+      "npz_sha256": "5acfceb562be270b0962891ecfcd8ee240c061cd352e4ebdc235c83a06cf4356",
+      "unique_selected_edges": 434095,
+      "panel_edge_counts": {
+        "near_foil_edges": 427103,
+        "leading_edge_edges": 39538,
+        "trailing_edge_edges": 36187,
+        "free_surface_edges": 4446
+      }
+    },
+    {
+      "mesh": "M13",
+      "source": "E:\\ntnu_mesh_optimization_20261030\\M13_farfield15_20261031\\geometry\\mesh.CGNS",
+      "status": "exported",
+      "source_size_bytes": 120083231,
+      "source_mtime_ns": 1793468212849673100,
+      "source_sha256": "4ea5e7a7585d83cb4c5c555bf354d56739f54e15f36d60343d113a770adad121",
+      "source_identity_check": "Size and modification time unchanged during read",
+      "cells": 309441,
+      "foil_bounds_xz_min_max": [
+        -0.0003685843239392502,
+        -0.042144907298677495,
+        1.1900000000000004,
+        0.10091477404404608
+      ],
+      "max_foil_bounds_difference_from_M10_m": 6.938893903907228e-18,
+      "npz_file": "M13_actual_edges.npz",
+      "npz_sha256": "3deef1fa134d8412581496800b753f7eeee0f31de743f6273d37d4309d269716",
+      "unique_selected_edges": 118726,
+      "panel_edge_counts": {
+        "near_foil_edges": 115946,
+        "leading_edge_edges": 11540,
+        "trailing_edge_edges": 9820,
+        "free_surface_edges": 1485
+      }
+    }
+  ],
+  "flow_steps": 0,
+  "source_files_modified": false
+}

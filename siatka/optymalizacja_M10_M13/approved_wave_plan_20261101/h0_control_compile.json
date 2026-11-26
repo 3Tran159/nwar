@@ -1,0 +1,12 @@
+{
+  "at": "2026-11-01T10:59:46.184891+01:00",
+  "status": "javac_pass",
+  "source_sha256": "616ae2931a04b0e2d0aa9c20449684d03c126da5d5683a6b462cda22d950eea8",
+  "macro_sha256": "9e743ed94de318d02d9bd4135767b1f9a1940adda2c0d620cc55c42c49b089e2",
+  "only_physical_change_vs_M13_wave": "target wave height from0.5m to1e-6m; current18m/s, mesh, dt0.4ms,10inner, pressure, wave forcing preserved",
+  "added_reporting": "CL/CD primary settling, one narrow after-step forcing read; no 77MB audit",
+  "max_steps": 10000,
+  "min_eligible_time_s": 2.4,
+  "compiler_note": "Note: E:\\ntnu_mesh_optimization_20261030\\approved_wave_plan_20261101\\M13NearZeroControl.java uses or overrides a deprecated API.\nNote: Recompile with -Xlint:deprecation for details.\n",
+  "no_solver_started": true
+}

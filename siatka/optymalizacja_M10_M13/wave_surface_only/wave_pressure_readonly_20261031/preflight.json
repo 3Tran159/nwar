@@ -1,0 +1,8 @@
+{
+  "at": "2026-10-31T22:53:37.570533+01:00",
+  "read_only": true,
+  "source_count": 2,
+  "macro_sha256": "d480fc877b983f59c2c68ee654bf4d485dfd707e2bbd9dd1484cbd86391d6d8d",
+  "target": "finite pressure/VOF/velocity fields in otherwise suspect wave-only solver, no new CFD run",
+  "C01_hold_unchanged": true
+}

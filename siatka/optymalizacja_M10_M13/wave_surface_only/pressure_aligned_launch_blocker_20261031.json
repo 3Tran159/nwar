@@ -1,0 +1,17 @@
+{
+  "observed_at_approx": "2026-10-31T23:00:00+01:00",
+  "scope": "wave-only lambda20 H0.5, 53200-cell pressure boundary alignment pilot",
+  "source": "same verified calm t0.4 checkpoint",
+  "prepared_java": "wave_pressure_aligned_prepared_20261031/WaveFromOwnCalmPressureAligned.java",
+  "compile_status": "javac_pass",
+  "preflight_status": "SAFE_TO_START at 2026-10-31T22:58:43+01:00",
+  "start_requested": true,
+  "start_result": "blocked_by_platform_safety_checks",
+  "solver_started": false,
+  "output_directory_exists": false,
+  "valid_new_wave_data": false,
+  "existing_campaign_hold_preserved": true,
+  "existing_runs_unmodified": true,
+  "do_not_retry_by_routing_around_safety_checks": true,
+  "follow_up": "Continue read-only diagnostic, provide transparent blocker in 08:00 report; new solver only through permitted authorized route."
+}

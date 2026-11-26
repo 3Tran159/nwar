@@ -1,0 +1,118 @@
+{
+  "at": "2026-11-01T07:33:46.765964+01:00",
+  "case": "M13 R4V H0.5m lambda20m FifthOrder upstream only",
+  "scope": "diagnostic measured eta harmonic; not STAR FifthOrder exact theory verification",
+  "period_fit_s": 0.84727,
+  "physical_window_s": [
+    9.928564996364855,
+    13.31733761495712
+  ],
+  "probe_data_sha256": "5ade798d209a2a2357da5001a4fea2992542bff123b1cd34aa038a1743edd10a",
+  "source": "E:\\ntnu_mesh_optimization_20261030\\M13_wave_direct_20261031\\M13_GPU_W20_H050_continuation_R4V_20261101\\gauges.csv",
+  "gauges": {
+    "-34.0": {
+      "points": 847,
+      "mean_m": 0.00012702609923311836,
+      "harmonic_height_m": 0.49930584470220657,
+      "phase_rad": -1.9122704984732912,
+      "fit_RMS_m": 0.007024630902388535,
+      "height_error_vs_H0p5_pct": -0.13883105955868613,
+      "phase_diff_vs_x_minus25_rad": 2.8220985329514976,
+      "phase_error_vs_lambda20_rad": -0.0053348552793162085
+    },
+    "-25.0": {
+      "points": 847,
+      "mean_m": 0.004434642888198736,
+      "harmonic_height_m": 0.502008402952873,
+      "phase_rad": 1.5488162757547974,
+      "fit_RMS_m": 0.007370944545815736,
+      "height_error_vs_H0p5_pct": 0.4016805905745935,
+      "phase_diff_vs_x_minus25_rad": 0.0,
+      "phase_error_vs_lambda20_rad": 0.0
+    },
+    "-15.0": {
+      "points": 847,
+      "mean_m": 0.021596365897695636,
+      "harmonic_height_m": 0.5006396947733135,
+      "phase_rad": -1.5820680265109144,
+      "fit_RMS_m": 0.007406414812094587,
+      "height_error_vs_H0p5_pct": 0.12793895466269856,
+      "phase_diff_vs_x_minus25_rad": -3.130884302265712,
+      "phase_error_vs_lambda20_rad": 0.0107083513240811
+    },
+    "-10.0": {
+      "points": 847,
+      "mean_m": 0.04491844283432404,
+      "harmonic_height_m": 0.496456000259472,
+      "phase_rad": 3.137246999630585,
+      "fit_RMS_m": 0.007966671815022754,
+      "height_error_vs_H0p5_pct": -0.7087999481055984,
+      "phase_diff_vs_x_minus25_rad": 1.5884307238757875,
+      "phase_error_vs_lambda20_rad": 0.017634397080890096
+    },
+    "-6.0": {
+      "points": 847,
+      "mean_m": 0.07527255593470501,
+      "harmonic_height_m": 0.49488782518577384,
+      "phase_rad": 1.882532947970715,
+      "fit_RMS_m": 0.0077205758209386915,
+      "height_error_vs_H0p5_pct": -1.0224349628452312,
+      "phase_diff_vs_x_minus25_rad": 0.3337166722159175,
+      "phase_error_vs_lambda20_rad": 0.019557406856938186
+    },
+    "-0.5": {
+      "points": 847,
+      "mean_m": 0.15868665194948867,
+      "harmonic_height_m": 0.4919914668369009,
+      "phase_rad": 0.1584637660402411,
+      "fit_RMS_m": 0.0075230630079594915,
+      "height_error_vs_H0p5_pct": -1.6017066326198148,
+      "phase_diff_vs_x_minus25_rad": -1.3903525097145564,
+      "phase_error_vs_lambda20_rad": 0.023364184400849197
+    },
+    "5.0": {
+      "points": 847,
+      "mean_m": 0.09247864215701523,
+      "harmonic_height_m": 0.5041382563644227,
+      "phase_rad": -1.6228598544308042,
+      "fit_RMS_m": 0.009829791810599793,
+      "height_error_vs_H0p5_pct": 0.8276512728845331,
+      "phase_diff_vs_x_minus25_rad": 3.1115091769939847,
+      "phase_error_vs_lambda20_rad": -0.030083476595809344
+    },
+    "10.0": {
+      "points": 847,
+      "mean_m": 0.033898302839548394,
+      "harmonic_height_m": 0.4609593421267538,
+      "phase_rad": 3.0349676655181583,
+      "fit_RMS_m": 0.009915052093499377,
+      "height_error_vs_H0p5_pct": -7.808131574649235,
+      "phase_diff_vs_x_minus25_rad": 1.4861513897633607,
+      "phase_error_vs_lambda20_rad": -0.08464493703153586
+    },
+    "20.0": {
+      "points": 847,
+      "mean_m": -0.03200802405806573,
+      "harmonic_height_m": 0.42991540662801364,
+      "phase_rad": 0.060795806693995647,
+      "fit_RMS_m": 0.007584901253161005,
+      "height_error_vs_H0p5_pct": -14.016918674397271,
+      "phase_diff_vs_x_minus25_rad": -1.4880204690608019,
+      "phase_error_vs_lambda20_rad": 0.08277585773409513
+    },
+    "40.0": {
+      "points": 847,
+      "mean_m": -0.07042289642126202,
+      "harmonic_height_m": 0.42759465385954315,
+      "phase_rad": -0.2623103809240138,
+      "fit_RMS_m": 0.006217359008747019,
+      "height_error_vs_H0p5_pct": -14.48106922809137,
+      "phase_diff_vs_x_minus25_rad": -1.8111266566788111,
+      "phase_error_vs_lambda20_rad": -0.24033032988391767
+    }
+  },
+  "phase_ref_x_m": -25,
+  "damping_probe_x40_excluded_from_quality_claims": true,
+  "relevant_limitations": "A fit of 4 nominal periods cannot establish wave reflection, exact imposed FifthOrder field, arrival timing or converged forces.",
+  "no_new_solver": true
+}

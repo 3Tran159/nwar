@@ -1,0 +1,15 @@
+{
+  "at": "2026-10-31T18:23:05.412220+01:00",
+  "authorization": "User explicitly requested waves in parallel while M10 completes and M13 is prepared",
+  "main_at_start": "None",
+  "main_baseline_s_step": null,
+  "wave_target": {
+    "lambda_m": 20,
+    "H_m": 0.5,
+    "mesh": "baseline"
+  },
+  "source_calm_validated_from_gauges": true,
+  "initialization_performed": false,
+  "old_C01_hold_unchanged": true,
+  "one_auxiliary_CPU": true
+}

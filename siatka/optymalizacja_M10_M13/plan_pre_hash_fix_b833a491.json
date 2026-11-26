@@ -1,0 +1,134 @@
+{
+  "version": "light-mesh-watch-4-adaptive-recovery",
+  "created_at": "2026-10-30T21:02:57.427218+01:00",
+  "authorization": "User extended mesh search through Saturday 31 October 2026, requested a decision by 06:00 before a cycling trip, and wants wave work after mesh selection. Keep the existing M12/M11/M10 campaign computing; additional combinations remain conditional on its verified completion and resource availability. No further cleanup is authorized by this optimization task. User additionally authorized preparing an autonomous recovery prompt to direct further calculations during absence when an unintended stop or hang occurs. Bounded verified recovery is now permitted; healthy solvers, user pauses, scientific gates, HF and wave hold remain protected. User additionally authorized targeted parameter change or independent simulation after repeated failure, with scientific and safety gates unchanged.",
+  "status": "conditional_plan_only_no_extra_solver_launched",
+  "deadline_local": "2026-10-31T23:59:59+01:00",
+  "deadline_meaning": "The complete calendar day Saturday is available for mesh search. This supersedes the former 09:00 overnight cutoff. The 06:00 morning review is a decision point, not a solver stop. After the search horizon, do not start additional optimization attempts; never stop original or already running jobs solely because the date changed. Do not assume all meshes will stabilize by a deadline.",
+  "root": "E:\\ntnu_mesh_optimization_20261030",
+  "baseline_study": "C:\\Users\\ThinkPad\\Documents\\ChatGPT\\ntnu science\\mesh_study_20261030\\gci_w01a_20261030",
+  "legacy_policy": "F:\\ntnu\\mesh_screening_20261028\\force_stabilization_20261029\\mesh_selection_plan.json",
+  "baseline_cases": {
+    "M10": "W01a",
+    "M11": "G10_M",
+    "M12": "G10_F"
+  },
+  "gate": [
+    "All three baseline meshes have verified stabilized results, not merely target_reached or absent processes.",
+    "Original controller and its planned numerical/GCI controls are finished and all campaign resources are idle; never steal GPU or remove an existing lock.",
+    "No STOP_ALL, no user pause, no unresolved safety failure, and the separate C01/wave hold remains intact.",
+    "Check actual current time, measured cost, available memory and disk before each attempt; include mesh generation, warm start, stabilization and saves in the budget.",
+    "All new scripts, meshes, temporary folders and logs are under this E-drive root; preserve original scripts, inputs, checkpoints and histories."
+  ],
+  "selection": {
+    "agreement_pct": 1.0,
+    "agreement_basis": "Existing policy: settled CL and total CD agree with at least two genuinely finer comparable meshes. Recompute identical last 0.2 s means from raw data, with hydrodynamic CL. Retain the adjacent-window stability checks and examine force components.",
+    "stabilization": {
+      "window_s": 0.2,
+      "threshold_pct": 0.5,
+      "mean_shift": true,
+      "RMS_each_window": true,
+      "consecutive_passes": 2,
+      "coefficients": [
+        "CL",
+        "CD",
+        "CD_pressure",
+        "CD_viscous"
+      ]
+    },
+    "CL_convention": "CL_total - buoyancy/(0.5*rho*U^2*S); unchanged baseline: 22.718189111947265/3855.6. Validate geometry, span, rho, U and area before reusing offset.",
+    "comparability": "Same foil, angle, domain, waterline, single spanwise cell, physics, boundary conditions, time order, dt and inner-iteration treatment. More cells alone do not prove finer resolution.",
+    "no_claims": "Optimization candidates are not automatically a systematic GCI family or wave validation. Keep original M10/M11/M12 GCI evidence intact."
+  },
+  "candidates": [
+    {
+      "order": 1,
+      "condition": "M10 satisfies agreement with M11 and M12",
+      "change": "Increase far-field base size by about 15%; keep absolute foil, near-field, free-surface, protected region and prism controls unchanged. Audit actual cells and quality; do not promise a cell count."
+    },
+    {
+      "order": 2,
+      "condition": "First coarsening passes and time remains",
+      "change": "Increase far-field base size to about 30% above original M10, keeping protected absolute resolutions unchanged. Stop coarsening at first failed acceptance or negligible computational saving."
+    },
+    {
+      "alternative": "If M10 fails",
+      "change": "Do not blindly coarsen. Inspect component differences and refine the likely sensitive region on a copy of M10, aiming for fewer cells than M11. Keep dt and solver settings fixed for the comparison."
+    }
+  ],
+  "limits": {
+    "maximum_extra_attempts": 3,
+    "maximum_mesh_number": 15,
+    "assign_ids": "Read registry before assigning unused M13/M14/M15; never overwrite a prior case.",
+    "minimum_C_free_GiB": 15,
+    "minimum_E_free_GiB_before_launch": 25,
+    "minimum_RAM_free_GiB_before_launch": 16,
+    "minimum_GPU_free_MiB_before_launch": 4000,
+    "no_parallel_solver": true,
+    "no_unvalidated_import_side_effects": true,
+    "no_cleanup_authorized": true
+  },
+  "implementation": "Only use a separately copied, inspected and validated build/audit/map/continue workflow. Existing references include MeshG10_M.java, MeshG10_F.java, audit_family.py, extrude.py, FinalizeG10_*.java and MapW01Solution.java. Redirect every output path before execution. If safe automation cannot be validated, record the blocker and launch nothing.",
+  "journal": "Record each decision, source identity, parameters, actual cells, audit gates, source checkpoint, current attempt PID, last outcome and acceptance in this directory to avoid duplicate launches.",
+  "updated_at": "2026-10-30T21:39:45.953280+01:00",
+  "morning_review": {
+    "scheduled_local": "2026-10-31T05:45:00+01:00",
+    "decision_requested_by_local": "2026-10-31T06:00:00+01:00",
+    "read_only": true,
+    "deliver_even_if_still_running": true,
+    "output": "Verified progress and checkpoints, pass/fail of all four stability metrics, comparable mesh agreement when available, actual s/step and resources, recommendation for the rest of Saturday and readiness or blockers for waves."
+  },
+  "watch_policy": {
+    "cadence": "hourly",
+    "while_existing_jobs_run": "Healthy progress: read only and silent. Suspected fault: diagnose against prior readings and save/load activity, then follow the bounded recovery runbook. Never parallelize solvers or meshers.",
+    "unexpected_stop": "Diagnose first. Follow recovery runbook H on repeated verified failures: controlled one-parameter diagnostic on separate copy, then pivot to independently prepared next mesh or offline analysis if appropriate. Preserve locks, hardware gates, wave hold, original solver and total start limit.",
+    "idle_after_verified_completion": "Follow the separately copied and validated optimization workflow only when acceptance gates and resources permit. Journal attempts and verify that the next authorized job actually advances.",
+    "normal_progress_notifications": false,
+    "preserve_separate_M12_monitor": true
+  },
+  "finish_objective": "Seek a useful light production mesh with supported accuracy and measured computational saving, not indefinite optimization. Retain the at-most-three extra attempts and M15 cap. Stop adding variants when supported selection is sufficient and further saving is negligible; do not lower scientific gates to meet the calendar.",
+  "wave_handoff": {
+    "goal": "Move to wave work after Saturday mesh selection.",
+    "prepare_when_ready": "Record the supported chosen mesh, saved calm-state checkpoint, unchanged physics and nominal buoyancy correction, relevant boundary/free-surface settings and existing outstanding wave-propagation checks.",
+    "launch_policy": "Prepare a concrete next wave setup and readiness decision. Do not equate a calendar deadline or calm-water stabilization with wave readiness. Preserve the current C01/wave hold until confirmed mesh selection and review; no automatic wave launch as part of this mesh-search task.",
+    "preserve_HF_session": true
+  },
+  "completed_separate_cleanup": {
+    "target": "C:\\Autodesk",
+    "authorized_and_completed": true,
+    "deleted_logical_GiB": 26.956,
+    "free_C_after_GiB": 60.055,
+    "audit": "E:\\ntnu_audits\\cleanup_Autodesk_20261030_211710\\result.json",
+    "scope": "One-off extracted-installer cleanup only; no CFD, ProgramData, installed programs or Arduino files changed."
+  },
+  "recovery_policy": {
+    "runbook": "E:\\ntnu_mesh_optimization_20261030\\AUTONOMOUS_RECOVERY_PROMPT.md",
+    "runbook_sha256": "66cafd301647a5cdea338c267682fa2b46e61e5af1d73ecb9e037afb59ae7e7f",
+    "authorized": true,
+    "scope": "Diagnose unintended stalls; recover from verified healthy checkpoints, following runbook and limits. Never override deliberate pauses or numerical acceptance gates.",
+    "maximum_restarts_per_logical_stage": 2,
+    "maximum_recovery_starts_total": 4,
+    "maximum_extra_continuation_chunks": 2,
+    "extra_chunk_physical_s": 0.4,
+    "maximum_diagnostic_dt_half_pilots": 1,
+    "normal_progress_read_only": true,
+    "state_journal_root": "E:\\ntnu_mesh_optimization_20261030",
+    "existing_resume_endpoint_exception": "A validated existing campaign endpoint may write its required metadata and new registered continuation under the original study root, with recorded paths and sufficient C space. Source files and prior attempts stay immutable. New standalone trials remain on E.",
+    "repeated_failure_pivot": {
+      "authorized": true,
+      "trigger": "two evidenced matching failures",
+      "max_distinct_diagnostic_changes_per_failure_family": 2,
+      "all_starts_count_against_existing_global_limit": 4,
+      "one_variable_at_a_time": true,
+      "fallback": "M11, then M10 if independent start is safe; otherwise offline analysis",
+      "no_false_M12_stabilization": true,
+      "no_wave_autostart": true
+    }
+  },
+  "dashboard_forecast": {
+    "scope": "Conditional estimate of CL/CD mean-change threshold only; never a solver stop or mesh acceptance criterion.",
+    "implementation_root": "E:\\ntnu_mesh_optimization_20261030\\dashboard_forecast_v4",
+    "methods": "Anchored linear trend plus exponential/window-sensitivity scenarios; no calibrated confidence interval.",
+    "cannot_establish_full_stabilization": true
+  }
+}

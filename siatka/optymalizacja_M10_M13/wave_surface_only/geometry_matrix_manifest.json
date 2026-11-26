@@ -1,0 +1,324 @@
+{
+  "created_at": "2026-10-30T22:02:34.106962+01:00",
+  "scope": "wave_geometry_only",
+  "formal_wave_GCI": false,
+  "dt_primary_s": 0.001,
+  "dt_check_s": 0.0005,
+  "simulation_steps_taken": 0,
+  "C01_hold_changed": false,
+  "M12_changed": false,
+  "records": [
+    {
+      "wave": "L10",
+      "lambda_m": 10.0,
+      "height_options_m": [
+        0.5
+      ],
+      "name": "coarse",
+      "dx_m": 0.1,
+      "dz_m": 0.05,
+      "lambda_per_dx": 100.0,
+      "H_per_dz": {
+        "0.50": 10.0
+      },
+      "n_cells": 41200,
+      "domain": [
+        [
+          -17.5,
+          20,
+          -22
+        ],
+        [
+          22.5,
+          20.02,
+          8
+        ]
+      ],
+      "volume_m3": 24.000000000000004,
+      "mesh_path": "E:\\ntnu_mesh_optimization_20261030\\wave_surface_only\\L10\\coarse\\mesh_exact.CGNS",
+      "sha256": "da4c6fd44eceba5cdce708b94eeed59b969b78be91f83333a0d9107200649362",
+      "status": "new_geometry",
+      "has_CFD_result": false
+    },
+    {
+      "wave": "L10",
+      "lambda_m": 10.0,
+      "height_options_m": [
+        0.5
+      ],
+      "name": "baseline",
+      "dx_m": 0.1,
+      "dz_m": 0.025,
+      "lambda_per_dx": 100.0,
+      "H_per_dz": {
+        "0.50": 20.0
+      },
+      "n_cells": 53200,
+      "domain": [
+        [
+          -17.5,
+          20,
+          -22
+        ],
+        [
+          22.5,
+          20.02,
+          8
+        ]
+      ],
+      "volume_m3": 24.0,
+      "mesh_path": "E:\\ntnu_mesh_optimization_20261030\\wave_surface_only\\L10\\baseline\\mesh_exact.CGNS",
+      "sha256": "f38f8c090304fd23c2d94d00f80f338d2c72fe066f57f506c874f72b8dfdfaad",
+      "status": "new_geometry",
+      "has_CFD_result": false
+    },
+    {
+      "wave": "L10",
+      "lambda_m": 10.0,
+      "height_options_m": [
+        0.5
+      ],
+      "name": "fine",
+      "dx_m": 0.1,
+      "dz_m": 0.0125,
+      "lambda_per_dx": 100.0,
+      "H_per_dz": {
+        "0.50": 40.0
+      },
+      "n_cells": 77200,
+      "domain": [
+        [
+          -17.5,
+          20,
+          -22
+        ],
+        [
+          22.5,
+          20.02,
+          8
+        ]
+      ],
+      "volume_m3": 24.0,
+      "mesh_path": "E:\\ntnu_mesh_optimization_20261030\\wave_surface_only\\L10\\fine\\mesh_exact.CGNS",
+      "sha256": "03bc1b0f1746f70a3621349a9954a1e95e1ffab99e99d7deeae53a01c05f8531",
+      "status": "new_geometry",
+      "has_CFD_result": false
+    },
+    {
+      "wave": "L20",
+      "lambda_m": 20.0,
+      "height_options_m": [
+        0.25,
+        0.5,
+        0.75
+      ],
+      "name": "coarse",
+      "dx_m": 0.2,
+      "dz_m": 0.05,
+      "lambda_per_dx": 100.0,
+      "H_per_dz": {
+        "0.25": 5.0,
+        "0.50": 10.0,
+        "0.75": 15.0
+      },
+      "n_cells": 41200,
+      "domain": [
+        [
+          -35,
+          20,
+          -22
+        ],
+        [
+          45,
+          20.02,
+          8
+        ]
+      ],
+      "volume_m3": 48.00000000000001,
+      "mesh_path": "E:\\ntnu_mesh_optimization_20261030\\wave_surface_only\\FS_coarse\\mesh_exact.CGNS",
+      "sha256": "10fa85a936ca7eb62714322e32b593cd5ab727392e35bd61f8195a8230e56375",
+      "status": "existing_geometry",
+      "has_CFD_result": false
+    },
+    {
+      "wave": "L20",
+      "lambda_m": 20.0,
+      "height_options_m": [
+        0.25,
+        0.5,
+        0.75
+      ],
+      "name": "baseline",
+      "dx_m": 0.2,
+      "dz_m": 0.025,
+      "lambda_per_dx": 100.0,
+      "H_per_dz": {
+        "0.25": 10.0,
+        "0.50": 20.0,
+        "0.75": 30.0
+      },
+      "n_cells": 53200,
+      "domain": [
+        [
+          -35,
+          20,
+          -22
+        ],
+        [
+          45,
+          20.02,
+          8
+        ]
+      ],
+      "volume_m3": 48.0,
+      "mesh_path": "E:\\ntnu_mesh_optimization_20261030\\wave_surface_only\\FS_baseline\\mesh_exact.CGNS",
+      "sha256": "ffa3ded3f52472c8f4127cb56a55f269a4e815580a8ebb0d00e2b135eabf10a7",
+      "status": "existing_geometry",
+      "has_CFD_result": false
+    },
+    {
+      "wave": "L20",
+      "lambda_m": 20.0,
+      "height_options_m": [
+        0.25,
+        0.5,
+        0.75
+      ],
+      "name": "fine",
+      "dx_m": 0.2,
+      "dz_m": 0.0125,
+      "lambda_per_dx": 100.0,
+      "H_per_dz": {
+        "0.25": 20.0,
+        "0.50": 40.0,
+        "0.75": 60.0
+      },
+      "n_cells": 77200,
+      "domain": [
+        [
+          -35,
+          20,
+          -22
+        ],
+        [
+          45,
+          20.02,
+          8
+        ]
+      ],
+      "volume_m3": 48.0,
+      "mesh_path": "E:\\ntnu_mesh_optimization_20261030\\wave_surface_only\\FS_fine\\mesh_exact.CGNS",
+      "sha256": "28d8bb4ba5d60178a7d8d4f6dfe81d08bd0a88a3f120ec0250ce7064109d2837",
+      "status": "existing_geometry",
+      "has_CFD_result": false
+    },
+    {
+      "wave": "L30",
+      "lambda_m": 30.0,
+      "height_options_m": [
+        0.25,
+        0.5,
+        0.75
+      ],
+      "name": "coarse",
+      "dx_m": 0.2,
+      "dz_m": 0.05,
+      "lambda_per_dx": 150.0,
+      "H_per_dz": {
+        "0.25": 5.0,
+        "0.50": 10.0,
+        "0.75": 15.0
+      },
+      "n_cells": 61800,
+      "domain": [
+        [
+          -52.5,
+          20,
+          -22
+        ],
+        [
+          67.5,
+          20.02,
+          8
+        ]
+      ],
+      "volume_m3": 72.00000000000001,
+      "mesh_path": "E:\\ntnu_mesh_optimization_20261030\\wave_surface_only\\L30\\coarse\\mesh_exact.CGNS",
+      "sha256": "6f1109403466e58ed4137a672917f3d1556b8d73363a0cf14581d92f659a165b",
+      "status": "new_geometry",
+      "has_CFD_result": false
+    },
+    {
+      "wave": "L30",
+      "lambda_m": 30.0,
+      "height_options_m": [
+        0.25,
+        0.5,
+        0.75
+      ],
+      "name": "baseline",
+      "dx_m": 0.2,
+      "dz_m": 0.025,
+      "lambda_per_dx": 150.0,
+      "H_per_dz": {
+        "0.25": 10.0,
+        "0.50": 20.0,
+        "0.75": 30.0
+      },
+      "n_cells": 79800,
+      "domain": [
+        [
+          -52.5,
+          20,
+          -22
+        ],
+        [
+          67.5,
+          20.02,
+          8
+        ]
+      ],
+      "volume_m3": 72.0,
+      "mesh_path": "E:\\ntnu_mesh_optimization_20261030\\wave_surface_only\\L30\\baseline\\mesh_exact.CGNS",
+      "sha256": "0c8203a2b72ead96bb6fc90e672453ffd1f6df9f9b330ebe75c9b7ff809f6f3d",
+      "status": "new_geometry",
+      "has_CFD_result": false
+    },
+    {
+      "wave": "L30",
+      "lambda_m": 30.0,
+      "height_options_m": [
+        0.25,
+        0.5,
+        0.75
+      ],
+      "name": "fine",
+      "dx_m": 0.2,
+      "dz_m": 0.0125,
+      "lambda_per_dx": 150.0,
+      "H_per_dz": {
+        "0.25": 20.0,
+        "0.50": 40.0,
+        "0.75": 60.0
+      },
+      "n_cells": 115800,
+      "domain": [
+        [
+          -52.5,
+          20,
+          -22
+        ],
+        [
+          67.5,
+          20.02,
+          8
+        ]
+      ],
+      "volume_m3": 72.00000000000001,
+      "mesh_path": "E:\\ntnu_mesh_optimization_20261030\\wave_surface_only\\L30\\fine\\mesh_exact.CGNS",
+      "sha256": "cfa5ae03b784c006872d252a89cf5f82a86148fe62d59b837ee338cb8692bf7e",
+      "status": "new_geometry",
+      "has_CFD_result": false
+    }
+  ]
+}

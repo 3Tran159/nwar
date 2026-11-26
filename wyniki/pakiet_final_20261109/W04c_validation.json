@@ -1,0 +1,214 @@
+{
+  "id": "GLHF_W04c_2823f5c9c95244d3",
+  "case_id": "W04c",
+  "generated_at": "2026-11-08T20:33:34.641386+01:00",
+  "project_accepted": true,
+  "run_verification": "passed",
+  "verification_kind": "glhf_saved_state",
+  "policy_id": "quasi2d_five_cycles_discard_first_20261103",
+  "scope": "Independent review of imported GLHF native save and cycles 2–5",
+  "manifest_sha256": "092dde59fe96ea58e8a8237c11e2a59ef09e20659600dbaa566f4c2407968b18",
+  "checkpoint": "H:\\NTNU_RESEARCH_ARCHIVE\\NWAR_SIM_FINALS\\W04c\\checkpoint\\latest.sim",
+  "checkpoint_sha256": "bac6d5a99790cd153087c67dac99052e9b5fc83d536b31d32c6899ce8f7e840c",
+  "checkpoint_bytes": 869572793,
+  "checkpoint_mtime_ns": 1794166340526223800,
+  "time_s": 15.049600000014062,
+  "measured_cycles": 5,
+  "checks": [
+    {
+      "id": "checkpoint",
+      "title": "Native SIM matches the final force-history step",
+      "criterion": "Native SIM matches the final force-history step",
+      "group": "run",
+      "status": "passed",
+      "values": {
+        "time_s": 15.049600000014062,
+        "step": 37624,
+        "iteration": 376240,
+        "release": "21.04.009",
+        "mpi": "Np=1",
+        "wave_numbers": [
+          0.3141592653589793
+        ],
+        "time_steps": [
+          0.0004
+        ],
+        "scene_count": 30,
+        "state_offset": 860695327
+      },
+      "evidence_files": [
+        "H:\\NTNU_RESEARCH_ARCHIVE\\NWAR_SIM_FINALS\\W04c\\manifest.json",
+        "H:\\NTNU_RESEARCH_ARCHIVE\\NWAR_SIM_FINALS\\W04c\\checkpoint\\latest.sim"
+      ]
+    },
+    {
+      "id": "reference",
+      "title": "Pinned original C01 and PRE lineage",
+      "criterion": "Pinned original C01 and PRE lineage",
+      "group": "run",
+      "status": "passed",
+      "values": {
+        "C01_sha256": "9af4857b948e0494088b5421f8ede100e66344fc2631cc00030406640d7cc295",
+        "PRE_sha256": "d86beded68b41f5e6ce324a93cea39177dbe93fff516af10d33a71761528b85a"
+      },
+      "evidence_files": [
+        "H:\\NTNU_RESEARCH_ARCHIVE\\NWAR_SIM_FINALS\\W04c\\manifest.json",
+        "H:\\NTNU_RESEARCH_ARCHIVE\\NWAR_SIM_FINALS\\W04c\\checkpoint\\latest.sim"
+      ]
+    },
+    {
+      "id": "solver_exit",
+      "title": "Clean saved solver exit",
+      "criterion": "Clean saved solver exit",
+      "group": "run",
+      "status": "passed",
+      "values": {
+        "exit_code": 0,
+        "source_unchanged": true,
+        "controller_reason": null,
+        "completed": {
+          "complete_cycles": 5,
+          "steps": 14124,
+          "time_s": 15.049600000014062,
+          "propagation_validated": false,
+          "periodic_forces_validated": false,
+          "global_initialization": false,
+          "phase_probe_x_m": -0.5,
+          "status": "five_cycles_repeated",
+          "max_complete_cycles": 5
+        },
+        "phase": "NWAR_CUSTOM001",
+        "at": "2026-11-07T07:17:05.788747+01:00",
+        "wall_s": 30618.233999999997,
+        "release": "2606"
+      },
+      "evidence_files": [
+        "H:\\NTNU_RESEARCH_ARCHIVE\\NWAR_SIM_FINALS\\W04c\\manifest.json",
+        "H:\\NTNU_RESEARCH_ARCHIVE\\NWAR_SIM_FINALS\\W04c\\checkpoint\\latest.sim"
+      ]
+    },
+    {
+      "id": "health",
+      "title": "Independent joined-history numerical health",
+      "criterion": "Independent joined-history numerical health",
+      "group": "run",
+      "status": "passed",
+      "values": {
+        "ok": true,
+        "checks": {
+          "max_CFL": {
+            "ok": true,
+            "min": 16.77466584627706,
+            "max": 17.92729884025228
+          },
+          "interface_CFL": {
+            "ok": true,
+            "min": 0.7704842162828366,
+            "max": 1.9960668930922147
+          },
+          "max_speed_m_s": {
+            "ok": true,
+            "min": 20.916130156796545,
+            "max": 28.558507087540395
+          },
+          "alpha_min": {
+            "ok": true,
+            "min": 0.0,
+            "max": 0.0
+          },
+          "alpha_max": {
+            "ok": true,
+            "min": 1.0,
+            "max": 1.0
+          },
+          "p_min_Pa": {
+            "ok": true,
+            "min": -78662.3269087534,
+            "max": -58082.41294482566
+          },
+          "p_max_Pa": {
+            "ok": true,
+            "min": 236730.17043742182,
+            "max": 237960.1805460981
+          },
+          "water_inventory": {
+            "ok": true,
+            "change_m3": 0.0353672784235215,
+            "note": "Volume change does not replace mass-flux closure."
+          },
+          "CL_hydrodynamic": {
+            "ok": true
+          },
+          "CD_total": {
+            "ok": true
+          },
+          "Fx_N": {
+            "ok": true
+          },
+          "Fz_N": {
+            "ok": true
+          }
+        }
+      },
+      "evidence_files": [
+        "H:\\NTNU_RESEARCH_ARCHIVE\\NWAR_SIM_FINALS\\W04c\\manifest.json",
+        "H:\\NTNU_RESEARCH_ARCHIVE\\NWAR_SIM_FINALS\\W04c\\checkpoint\\latest.sim"
+      ]
+    },
+    {
+      "id": "cycles",
+      "title": "Five measured cycles; discard cycle 1 and analyze cycles 2–5",
+      "criterion": "Five measured cycles; discard cycle 1 and analyze cycles 2–5",
+      "group": "run",
+      "status": "passed",
+      "values": {
+        "count": 5,
+        "analyzed_cycle_numbers": [
+          2,
+          3,
+          4,
+          5
+        ],
+        "discarded_cycle_numbers": [
+          1
+        ],
+        "cycle_policy_id": "five_measured_cycles_discard_first_20261103"
+      },
+      "evidence_files": [
+        "H:\\NTNU_RESEARCH_ARCHIVE\\NWAR_SIM_FINALS\\W04c\\manifest.json",
+        "H:\\NTNU_RESEARCH_ARCHIVE\\NWAR_SIM_FINALS\\W04c\\checkpoint\\latest.sim"
+      ]
+    },
+    {
+      "id": "repeatability",
+      "title": "Repeatability of measured cycles 2–5",
+      "criterion": "Repeatability of measured cycles 2–5",
+      "group": "run",
+      "status": "passed",
+      "values": {
+        "CL": {
+          "mean_spread": 0.0015483781772796508,
+          "amplitude_spread": 0.0007419050828178164,
+          "phase_RMS": 0.00136406214153803,
+          "passed": true
+        },
+        "CD": {
+          "mean_spread": 0.005032679795844027,
+          "amplitude_spread": 0.005237858707652499,
+          "phase_RMS": 0.004841004642727904,
+          "passed": true
+        }
+      },
+      "evidence_files": [
+        "H:\\NTNU_RESEARCH_ARCHIVE\\NWAR_SIM_FINALS\\W04c\\manifest.json",
+        "H:\\NTNU_RESEARCH_ARCHIVE\\NWAR_SIM_FINALS\\W04c\\checkpoint\\latest.sim"
+      ]
+    }
+  ],
+  "counts": {
+    "passed": 6,
+    "failed": 0,
+    "pending": 0,
+    "future": 0
+  }
+}

@@ -1,0 +1,19 @@
+{
+  "created": "2026-10-31T13:10:51.870332+01:00",
+  "deadline": "2026-10-31T16:10:51.870332+01:00",
+  "target_cases": 12,
+  "actual_results_required": true,
+  "one_solver_max": true,
+  "workers": 2,
+  "gpu": false,
+  "flow": "independent_mesh_replace_after_CLEARED_solution => own flat water t0 => validate calm => inlet wave (never global initialize)",
+  "source": "E:\\ntnu_mesh_optimization_20261030\\wave_surface_only\\WS_L20_H050_baseline_flatCalm_CPU2_20261031_075518_43108c\\input.sim",
+  "source_hash": "0b422d8c395f985212c056ed5434a92551cc1ded79a178539b3782ce123a59f0",
+  "runbook_SHA": "b3d24d5a5e0dec25035465fa5ad464069965e042c04ab1df4cfcacaf52450845",
+  "main": "E:\\ntnu_mesh_optimization_20261030\\M11_G10_M_GPU_queue_20261031_105607_91db08",
+  "main_baseline_s_step": 1.2909437999999973,
+  "preserved_campaign_hold": true,
+  "wave_steps_per_case": 2200,
+  "calm_steps_per_mesh": 400,
+  "note": "No 12-case validation guarantee. Allow 3 hours for starts; existing started job is not killed on deadline."
+}

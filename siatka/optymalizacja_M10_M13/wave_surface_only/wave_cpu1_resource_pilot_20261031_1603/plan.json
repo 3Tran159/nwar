@@ -1,0 +1,19 @@
+{
+  "at": "2026-10-31T16:05:09.951874+01:00",
+  "scope": "resource test CPU1 only",
+  "M11": "E:\\ntnu_mesh_optimization_20261030\\M11_G10_M_GPU_queue_20261031_105607_91db08",
+  "M11_baseline_s_step": 1.2909437999999973,
+  "workers": 1,
+  "priority": "BELOW_NORMAL",
+  "gpu": false,
+  "source": "E:\\ntnu_mesh_optimization_20261030\\wave_surface_only\\zero_start_matrix_R2_coarse_continuation_20261031_4\\waves\\L20_H500_coarse\\wave_pilot_final.sim",
+  "source_sha256": "8e02d1713b1329471343aff2b9b2fe026ca8e470cbad9e14ecd2dfbf0236fb34",
+  "start_t_s": 5.503000000000172,
+  "steps": 120,
+  "dt_s": 0.001,
+  "inner": 10,
+  "from_saved_wave_no_reinitialization": true,
+  "original_wave_hold_preserved": true,
+  "no_auto_extension": true,
+  "guard": "two independent M11 windows above 15% stop only helper"
+}
